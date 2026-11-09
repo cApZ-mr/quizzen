@@ -158,7 +158,10 @@ struct SignupView: View {
                     .cornerRadius(14)
                 }
                 .padding(.horizontal, 24)
-                
+
+                legalConsent
+                    .padding(.horizontal, 32)
+
                 Button {
                     dismiss()
                 } label: {
@@ -495,6 +498,22 @@ struct SignupView: View {
                 }
             }
         }
+    }
+
+    /// Hinweis auf Regeln und Datenschutz (App-Store-Richtlinie 1.2: keine Toleranz für anstößige Inhalte)
+    private var legalConsent: some View {
+        var text = AttributedString("Mit der Registrierung akzeptierst du unsere ")
+        var terms = AttributedString("Nutzungsbedingungen")
+        if let url = AppLinks.terms { terms.link = url; terms.underlineStyle = .single }
+        var privacy = AttributedString("Datenschutzerklärung")
+        if let url = AppLinks.privacyPolicy { privacy.link = url; privacy.underlineStyle = .single }
+        text += terms + AttributedString(" und ") + privacy
+            + AttributedString(". Beleidigende oder anstößige Inhalte werden nicht toleriert und führen zur Sperrung.")
+        return Text(text)
+            .font(.system(.caption, design: .rounded))
+            .foregroundColor(.white.opacity(0.5))
+            .tint(.white.opacity(0.8))
+            .multilineTextAlignment(.center)
     }
 
     private func showSuccessAnimation() {

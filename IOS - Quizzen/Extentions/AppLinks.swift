@@ -2,20 +2,18 @@
 //  AppLinks.swift
 //  IOS - Quizzen
 //
-//  Zentrale Links. ⚠️ Vor dem Release ausfüllen: Apple verlangt eine
-//  erreichbare Datenschutzerklärung (die Domain quizzen-app.de existiert
-//  derzeit nicht).
+//  Zentrale Links (Google-Sites-Seite von Quizzen).
 //
 
 import SwiftUI
 
 enum AppLinks {
-    /// TODO: echte URL eintragen
-    static let privacyPolicy: URL? = nil
-    /// TODO: echte URL eintragen
-    static let terms: URL? = nil
-    /// TODO: echte URL eintragen (wird im Profil unter „Mehr von Quizzen“ angezeigt)
-    static let website: URL? = nil
+    /// Datenschutzerklärung (steht auf der Startseite)
+    static let privacyPolicy: URL? = URL(string: "https://sites.google.com/view/quizzen-app/startseite")
+    /// Nutzungsbedingungen
+    static let terms: URL? = URL(string: "https://sites.google.com/view/quizzen-app/nutzungsbedingungen")
+    /// Website (im Profil unter „Mehr von Quizzen“)
+    static let website: URL? = URL(string: "https://sites.google.com/view/quizzen-app/startseite")
 }
 
 /// Link-Button, der bei fehlender URL einen Hinweis statt nichts zeigt

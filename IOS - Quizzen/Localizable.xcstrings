@@ -42,6 +42,15 @@
         }
       }
     },
+    "%@ auch blockieren" : {
+
+    },
+    "%@ blockieren?" : {
+
+    },
+    "%@ fordert dich heraus" : {
+
+    },
     "%@ gewinnt dann automatisch. Ein Duell lässt sich nicht pausieren." : {
 
     },
@@ -49,6 +58,9 @@
 
     },
     "%@ hat schon geantwortet" : {
+
+    },
+    "%@ melden" : {
 
     },
     "%@ XP" : {
@@ -124,6 +136,9 @@
 
     },
     "%lld %% richtig beantwortet" : {
+
+    },
+    "%lld offene Anfragen" : {
 
     },
     "%lld passende Fragen" : {
@@ -209,6 +224,9 @@
     "10" : {
 
     },
+    "10 Fragen aus allen Quizzen" : {
+
+    },
     "10 s" : {
 
     },
@@ -269,13 +287,13 @@
     "Annehmen" : {
 
     },
-    "Antwort bestätigen" : {
-
-    },
     "Antworten" : {
 
     },
     "Aufgeben" : {
+
+    },
+    "Aufheben" : {
 
     },
     "Auflösung kommt…" : {
@@ -290,10 +308,16 @@
     "Befreundet" : {
 
     },
+    "Befreundet – Optionen" : {
+
+    },
     "Beitreten" : {
 
     },
     "Beliebige andere Antworten." : {
+
+    },
+    "Benachrichtigungen sind in den iOS-Einstellungen für Quizzen ausgeschaltet." : {
 
     },
     "Benutzername" : {
@@ -333,6 +357,24 @@
 
     },
     "Bist du absolut sicher?" : {
+
+    },
+    "Blockieren" : {
+
+    },
+    "Blockieren kannst du über „…“ oben rechts in einem Profil." : {
+
+    },
+    "Blockiert – aufheben" : {
+
+    },
+    "Blockierte Nutzer" : {
+
+    },
+    "Blockierte Nutzer sehen dich nicht in der Suche, können dir keine Anfragen schicken und dich nicht zum Duell einladen." : {
+
+    },
+    "Blockierung aufheben" : {
 
     },
     "Code %@" : {
@@ -392,6 +434,9 @@
     "Diese Aktion kann nicht rückgängig gemacht werden." : {
 
     },
+    "Dieser Link wird gerade eingerichtet. Bei Fragen erreichst du uns über „Feedback“ in den Einstellungen." : {
+
+    },
     "Du" : {
 
     },
@@ -422,6 +467,12 @@
     "Eine neuere Version ist im App Store verfügbar." : {
 
     },
+    "Einladung an %@ gesendet – sie erscheint dort im Duell-Tab. Alternativ den Code teilen:" : {
+
+    },
+    "Einladungen" : {
+
+    },
     "Einloggen" : {
 
     },
@@ -437,13 +488,19 @@
     "Erfolg" : {
 
     },
-    "Ergebnis anzeigen" : {
-
-    },
     "Ergebnisse" : {
 
     },
+    "Erinnert dich abends, wenn du heute noch nicht gespielt hast." : {
+
+    },
+    "Erledigt" : {
+
+    },
     "Erneut versuchen" : {
+
+    },
+    "Eure Freundschaft und offene Anfragen werden beendet. Ihr seht euch nicht mehr in der Suche und könnt euch nicht mehr zum Duell einladen. Du kannst das in den Einstellungen wieder aufheben." : {
 
     },
     "Falsche Antworten" : {
@@ -514,6 +571,9 @@
     "Füge Freunde hinzu, um euch zu vergleichen." : {
 
     },
+    "Für alle gleich · 20 s pro Frage · 1 Versuch" : {
+
+    },
     "Gemeldet" : {
 
     },
@@ -529,6 +589,16 @@
     },
     "Gesamtübersicht" : {
 
+    },
+    "Geschafft: %lld/%lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Geschafft: %1$lld/%2$lld"
+          }
+        }
+      }
     },
     "Gesendet" : {
 
@@ -658,13 +728,16 @@
     "Melde dich mit deinem Account an." : {
 
     },
+    "Meldungen sind anonym. Wir prüfen sie und entfernen Inhalte, die gegen unsere Regeln verstoßen." : {
+
+    },
     "Meldungsgrund" : {
 
     },
     "Mindestens 6 Zeichen." : {
 
     },
-    "Nächste Frage" : {
+    "Morgen gibt's neue Fragen" : {
 
     },
     "Neue E-Mail-Adresse" : {
@@ -677,6 +750,9 @@
 
     },
     "Nicht verfügbar" : {
+
+    },
+    "Niemand blockiert" : {
 
     },
     "Noch %@ XP bis Level %lld" : {
@@ -720,6 +796,9 @@
     "Noch nicht platziert" : {
 
     },
+    "Noch nicht verfügbar" : {
+
+    },
     "Nochmal" : {
 
     },
@@ -727,6 +806,9 @@
 
     },
     "Nutze die Suche, um andere zu finden" : {
+
+    },
+    "Nutzer melden" : {
 
     },
     "offline" : {
@@ -772,6 +854,9 @@
     "Profil öffnen" : {
 
     },
+    "Profil Vorschau" : {
+
+    },
     "Profilbild ändern" : {
 
     },
@@ -788,6 +873,9 @@
 
     },
     "Quizzen App" : {
+
+    },
+    "Rechtliches" : {
 
     },
     "Repräsentiertes Land" : {
@@ -811,9 +899,6 @@
     "So funktioniert's" : {
 
     },
-    "So sehen dich andere" : {
-
-    },
     "Später" : {
 
     },
@@ -832,13 +917,16 @@
     "Statistiken zurücksetzten" : {
 
     },
+    "Tages-Bestenliste" : {
+
+    },
+    "TAGESCHALLENGE" : {
+
+    },
+    "Tageschallenge starten" : {
+
+    },
     "Trete an, sammle Punkte und\nvergleiche dich mit der Welt." : {
-
-    },
-    "Unsere AGB's" : {
-
-    },
-    "Unsere Datenschutzrichtlinien" : {
 
     },
     "Update verfügbar" : {
@@ -871,7 +959,16 @@
     "Warte auf %@…" : {
 
     },
+    "Warum meldest du %@?" : {
+
+    },
+    "Was ist passiert? (optional)" : {
+
+    },
     "Was möchtest du uns mitteilen?" : {
+
+    },
+    "Weitere Optionen" : {
 
     },
     "Wenn du dich ausloggst, dann musst du dich wieder einloggen oder dir einen neuen Account erstellen um die App nutzen zu können." : {
@@ -886,7 +983,7 @@
     "Zeit" : {
 
     },
-    "Zeit abgelaufen!" : {
+    "Zum Duell fordern" : {
 
     },
     "Zurück" : {

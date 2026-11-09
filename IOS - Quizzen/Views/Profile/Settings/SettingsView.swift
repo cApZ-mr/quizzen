@@ -165,6 +165,13 @@ struct SettingsView: View {
                     SettingsRow(icon: "ant.fill", title: "Fehler melden", iconColor: .orange)
                 }
             }
+
+            Section {
+                legalRow(icon: "hand.raised.circle", title: "Datenschutzerklärung", url: AppLinks.privacyPolicy)
+                legalRow(icon: "doc.text", title: "Nutzungsbedingungen", url: AppLinks.terms)
+            } header: {
+                Text("Rechtliches")
+            }
             
             Section() {
                 Button(role: .destructive) {
@@ -205,6 +212,20 @@ struct SettingsView: View {
     
     
     // MARK: FAQ
+    @ViewBuilder
+    private func legalRow(icon: String, title: String, url: URL?) -> some View {
+        if let url {
+            Button { openURL(url) } label: {
+                HStack {
+                    SettingsRow(icon: icon, title: title)
+                    Spacer()
+                    Image(systemName: "arrow.up.right").font(.footnote).foregroundStyle(.secondary)
+                }
+            }
+            .foregroundStyle(.primary)
+        }
+    }
+
     private var faqSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Häufige fragen")
