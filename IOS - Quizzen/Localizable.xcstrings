@@ -63,6 +63,9 @@
     "%@ melden" : {
 
     },
+    "%@ öffnen" : {
+
+    },
     "%@ XP" : {
 
     },
@@ -260,10 +263,10 @@
     "Abzeichen von %@" : {
 
     },
-    "Account bearbeiten" : {
+    "Account erstellen" : {
 
     },
-    "Account erstellen" : {
+    "Accountdaten" : {
 
     },
     "Alle" : {
@@ -344,6 +347,9 @@
     "Bestenliste" : {
 
     },
+    "Bewerten" : {
+
+    },
     "Bild entfernen" : {
 
     },
@@ -357,6 +363,9 @@
 
     },
     "Bist du absolut sicher?" : {
+
+    },
+    "Bitte schreib uns direkt an %@." : {
 
     },
     "Blockieren" : {
@@ -401,10 +410,16 @@
     "Das bist du" : {
 
     },
+    "Das hat nicht geklappt" : {
+
+    },
     "Das passiert, wenn du dein Konto löschst:" : {
 
     },
     "Das passiert, wenn du deine Statistiken zurücksetzt:" : {
+
+    },
+    "Datenschutz" : {
 
     },
     "Dein Account wird sicher gespeichert und synchronisiert." : {
@@ -440,9 +455,6 @@
     "Du" : {
 
     },
-    "Du erhältst einen Bestätigungslink an die neue Adresse. Die Änderung wird erst nach der Bestätigung wirksam." : {
-
-    },
     "Du hast dieses Quiz noch nicht gespielt. Leg los!" : {
 
     },
@@ -461,10 +473,16 @@
     "E-Mail" : {
 
     },
-    "E-Mail ändern" : {
+    "Eine Bewertung oder eine Einladung an Freunde hilft uns am meisten." : {
 
     },
     "Eine neuere Version ist im App Store verfügbar." : {
+
+    },
+    "Eingabe löschen" : {
+
+    },
+    "Einladen" : {
 
     },
     "Einladung an %@ gesendet – sie erscheint dort im Duell-Tab. Alternativ den Code teilen:" : {
@@ -483,9 +501,6 @@
 
     },
     "Entdecken" : {
-
-    },
-    "Erfolg" : {
 
     },
     "Ergebnisse" : {
@@ -574,6 +589,9 @@
     "Für alle gleich · 20 s pro Frage · 1 Versuch" : {
 
     },
+    "Gefällt dir Quizzen?" : {
+
+    },
     "Gemeldet" : {
 
     },
@@ -652,6 +670,9 @@
 
     },
     "Keine eingehenden Anfragen" : {
+
+    },
+    "Keine Mail-App eingerichtet" : {
 
     },
     "Keine passenden Fragen" : {
@@ -734,19 +755,10 @@
     "Meldungsgrund" : {
 
     },
-    "Mindestens 6 Zeichen." : {
-
-    },
     "Morgen gibt's neue Fragen" : {
 
     },
-    "Neue E-Mail-Adresse" : {
-
-    },
     "Neues Duell" : {
-
-    },
-    "Neues Passwort" : {
 
     },
     "Nicht verfügbar" : {
@@ -811,6 +823,9 @@
     "Nutzer melden" : {
 
     },
+    "Nutzungsbedingungen" : {
+
+    },
     "offline" : {
 
     },
@@ -827,12 +842,6 @@
 
     },
     "Passwort" : {
-
-    },
-    "Passwort ändern" : {
-
-    },
-    "Passwort bestätigen" : {
 
     },
     "Personen (%lld)" : {
@@ -872,16 +881,16 @@
     "Quizze (%lld)" : {
 
     },
-    "Quizzen App" : {
+    "Quizzen" : {
+
+    },
+    "Quizzen %@" : {
 
     },
     "Rechtliches" : {
 
     },
     "Repräsentiertes Land" : {
-
-    },
-    "Schau dir Quizzen an – die App für spaßige Quizze! \n->" : {
 
     },
     "Schließen" : {
@@ -930,12 +939,6 @@
 
     },
     "Update verfügbar" : {
-
-    },
-    "Username" : {
-
-    },
-    "Username speichern" : {
 
     },
     "Vielen Dank, dass du uns dabei hilfst, Quizzen sicher und korrekt zu halten." : {
