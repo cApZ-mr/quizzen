@@ -43,9 +43,9 @@ Kostenlos und ohne Werbung.
 
 quiz,wissen,flaggen,hauptstädte,allgemeinwissen,duell,trivia,geografie,geschichte,ratespiel
 
-## Neue Funktionen (Version 1.0)
+## Neue Funktionen (Version 2.0.1)
 
-Erste Version von Quizzen.
+Siehe App Store Connect („Das große Quizzen-Update“).
 
 ## Altersfreigabe (Fragebogen)
 
@@ -85,11 +85,10 @@ Tracking: **Nein**. Für jede Datenart: mit Identität verknüpft = Ja, Tracking
 
 ## Screenshots
 
-Ordner `AppStore/Screenshots/` – 6,9" (1320 × 2868), Reihenfolge:
+Alle mit dem Konto „Tester 001“. Ordner `AppStore/Screenshots_6.3/` (1206 × 2622) und `AppStore/Screenshots_6.9/` (1320 × 2868):
 
 1. 01_home.png – Startseite mit Tageschallenge
 2. 02_stufen.png – Stufen eines Quiz
-3. 03_frage_beantwortet.png – Frage im Spiel
-4. 05_duell.png – Duell
-5. 04_bestenliste.png – Bestenliste
-6. 06_profil.png – Profil
+3. 03_frage.png – Frage mit richtiger Antwort
+4. 04_duell.png – Duell
+5. 05_entdecken.png – Entdecken / Themenbereiche
