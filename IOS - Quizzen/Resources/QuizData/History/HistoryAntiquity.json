@@ -1,0 +1,131 @@
+{
+  "id": "HistoryAntiquity",
+  "categoryId": "history",
+  "subCategory": "Antike",
+  "title": "Geschichte (Antike)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "In welcher Stadt steht das Kolosseum?",
+      "options": [
+        "Karthago",
+        "Athen",
+        "Alexandria",
+        "Rom"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wer war der erste römische Kaiser?",
+      "options": [
+        "Konstantin",
+        "Nero",
+        "Augustus",
+        "Julius Caesar"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Für wen wurden die Pyramiden von Gizeh als Grabmäler errichtet?",
+      "options": [
+        "Priester",
+        "Schreiber",
+        "Feldherren",
+        "Pharaonen"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche Stadt gilt als Wiege der Demokratie?",
+      "options": [
+        "Sparta",
+        "Rom",
+        "Athen",
+        "Theben"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welcher Feldherr überquerte mit Elefanten die Alpen?",
+      "options": [
+        "Alexander der Große",
+        "Julius Caesar",
+        "Spartacus",
+        "Hannibal"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche Schrift benutzten die alten Ägypter?",
+      "options": [
+        "Keilschrift",
+        "Kyrillisch",
+        "Runen",
+        "Hieroglyphen"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wer war der Lehrer Alexanders des Großen?",
+      "options": [
+        "Sokrates",
+        "Platon",
+        "Aristoteles",
+        "Pythagoras"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "In welchem Jahr wurde Julius Caesar ermordet?",
+      "options": [
+        "27 v. Chr.",
+        "100 v. Chr.",
+        "44 v. Chr.",
+        "79 n. Chr."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welche Stadt wurde 79 n. Chr. beim Ausbruch des Vesuvs verschüttet?",
+      "options": [
+        "Pompeji",
+        "Ostia",
+        "Neapel",
+        "Syrakus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wo fanden in der Antike die Olympischen Spiele statt?",
+      "options": [
+        "Delphi",
+        "Korinth",
+        "Olympia",
+        "Athen"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Volk entwickelte die Keilschrift?",
+      "options": [
+        "Griechen",
+        "Ägypter",
+        "Phönizier",
+        "Sumerer"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie nannte man die Schwertkämpfer in den römischen Arenen?",
+      "options": [
+        "Prätorianer",
+        "Zenturionen",
+        "Legionäre",
+        "Gladiatoren"
+      ],
+      "correctAnswerIndex": 3
+    }
+  ]
+}

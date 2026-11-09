@@ -1,0 +1,16 @@
+{
+  "id": "SportFootball",
+  "categoryId": "sport",
+  "subCategory": "sport",
+  "title": "Fußball",
+  "description": "Sehenswürdigkeiten die jeder erkennen und bennen sollte.",
+  "difficulty": "Mittel",
+  "imageName": "SportFußball",
+  "questions": [
+      {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswerIndex": 0
+      }
+  ]
+}

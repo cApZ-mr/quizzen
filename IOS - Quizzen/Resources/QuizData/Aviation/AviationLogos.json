@@ -1,0 +1,33 @@
+{
+  "id": "AviationLogos",
+  "categoryId": "aviation",
+  "subCategory": "AirportLogos",
+  "title": "Luftfahrt Logos",
+  "description": "Grundlegendes Allgemeinwissen aus Geografie, Naturwissenschaften, Geschichte und Kultur – Fragen, wie man sie aus dem Alltag oder der Schule kennt.",
+  "difficulty": "Leicht",
+  "imageName": "LuftfahrtFlughafenCodes",
+  "questions": [
+    {
+      "question": "Lufthansa",
+      "imageName": "lufthansa_logo",
+      "options": [
+        "Lufthansa",
+        "Condor",
+        "Emirates",
+        "Germanwings"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Condor",
+      "imageName": "condor_logo",
+      "options": [
+        "Condor",
+        "Lufthansa",
+        "Emirates",
+        "Airlingus"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

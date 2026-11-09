@@ -1,0 +1,583 @@
+{
+  "id": "FlagsAfrica",
+  "categoryId": "flags",
+  "subCategory": "Flaggen",
+  "title": "Flaggen (Afrika)",
+  "description": "Flaggen die jeder erkennen und bennen sollte.",
+  "difficulty": "Schwer",
+  "imageName": "FlaggenAfrika",
+  "questions": [
+    {
+      "question": "Ägypten",
+      "imageName": "eg",
+      "options": [
+        "Ägypten",
+        "Syrien",
+        "Irak",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Algerien",
+      "imageName": "dz",
+      "options": [
+        "Algerien",
+        "Pakistan",
+        "Tunesien",
+        "Türkei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Angola",
+      "imageName": "ao",
+      "options": [
+        "Angola",
+        "Mosambik",
+        "Namibia",
+        "Sambia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Äquatorialguinea",
+      "imageName": "gq",
+      "options": [
+        "Äquatorialguinea",
+        "Gabun",
+        "Kamerun",
+        "Kongo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Äthiopien",
+      "imageName": "et",
+      "options": [
+        "Äthiopien",
+        "Senegal",
+        "Mali",
+        "Ghana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Benin",
+      "imageName": "bj",
+      "options": [
+        "Benin",
+        "Mali",
+        "Guinea",
+        "Senegal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Botswana",
+      "imageName": "bw",
+      "options": [
+        "Botswana",
+        "Namibia",
+        "Südafrika",
+        "Simbabwe"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Burkina Faso",
+      "imageName": "bf",
+      "options": [
+        "Burkina Faso",
+        "Benin",
+        "Mali",
+        "Togo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Burundi",
+      "imageName": "bi",
+      "options": [
+        "Burundi",
+        "Ruanda",
+        "Uganda",
+        "Kenia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Dschibuti",
+      "imageName": "dj",
+      "options": [
+        "Dschibuti",
+        "Somalia",
+        "Eritrea",
+        "Äthiopien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Elfenbeinküste",
+      "imageName": "ci",
+      "options": [
+        "Elfenbeinküste",
+        "Irland",
+        "Nigeria",
+        "Ghana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Eritrea",
+      "imageName": "er",
+      "options": [
+        "Eritrea",
+        "Dschibuti",
+        "Somalia",
+        "Äthiopien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Eswatini",
+      "imageName": "sz",
+      "options": [
+        "Eswatini",
+        "Südafrika",
+        "Lesotho",
+        "Botswana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Gabun",
+      "imageName": "ga",
+      "options": [
+        "Gabun",
+        "Kamerun",
+        "Äquatorialguinea",
+        "Kongo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Gambia",
+      "imageName": "gm",
+      "options": [
+        "Gambia",
+        "Senegal",
+        "Sierra Leone",
+        "Guinea-Bissau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Ghana",
+      "imageName": "gh",
+      "options": [
+        "Ghana",
+        "Senegal",
+        "Äthiopien",
+        "Mali"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Guinea",
+      "imageName": "gn",
+      "options": [
+        "Guinea",
+        "Mali",
+        "Senegal",
+        "Benin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Guinea-Bissau",
+      "imageName": "gw",
+      "options": [
+        "Guinea-Bissau",
+        "Guinea",
+        "Senegal",
+        "Kap Verde"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kamerun",
+      "imageName": "cm",
+      "options": [
+        "Kamerun",
+        "Senegal",
+        "Mali",
+        "Guinea"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kap Verde",
+      "imageName": "cv",
+      "options": [
+        "Kap Verde",
+        "Guinea-Bissau",
+        "Komoren",
+        "Mauritius"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kenia",
+      "imageName": "ke",
+      "options": [
+        "Kenia",
+        "Uganda",
+        "Tansania",
+        "Ruanda"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Komoren",
+      "imageName": "km",
+      "options": [
+        "Komoren",
+        "Seychellen",
+        "Mauritius",
+        "Madagaskar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kongo",
+      "imageName": "cg",
+      "options": [
+        "Kongo",
+        "Demokratische Republik Kongo",
+        "Gabun",
+        "Kamerun"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Lesotho",
+      "imageName": "ls",
+      "options": [
+        "Lesotho",
+        "Südafrika",
+        "Eswatini",
+        "Botswana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Liberia",
+      "imageName": "lr",
+      "options": [
+        "Liberia",
+        "USA",
+        "Malaysia",
+        "Sierra Leone"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Libyen",
+      "imageName": "ly",
+      "options": [
+        "Libyen",
+        "Ägypten",
+        "Algerien",
+        "Tunesien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Madagaskar",
+      "imageName": "mg",
+      "options": [
+        "Madagaskar",
+        "Mauritius",
+        "Seychellen",
+        "Komoren"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Malawi",
+      "imageName": "mw",
+      "options": [
+        "Malawi",
+        "Sambia",
+        "Mosambik",
+        "Simbabwe"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mali",
+      "imageName": "ml",
+      "options": [
+        "Mali",
+        "Guinea",
+        "Senegal",
+        "Benin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Marokko",
+      "imageName": "ma",
+      "options": [
+        "Marokko",
+        "Tunesien",
+        "Algerien",
+        "Libyen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mauretanien",
+      "imageName": "mr",
+      "options": [
+        "Mauretanien",
+        "Niger",
+        "Mali",
+        "Senegal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mauritius",
+      "imageName": "mu",
+      "options": [
+        "Mauritius",
+        "Seychellen",
+        "Madagaskar",
+        "Komoren"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mosambik",
+      "imageName": "mz",
+      "options": [
+        "Mosambik",
+        "Angola",
+        "Sambia",
+        "Simbabwe"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Namibia",
+      "imageName": "na",
+      "options": [
+        "Namibia",
+        "Südafrika",
+        "Botswana",
+        "Angola"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Niger",
+      "imageName": "ne",
+      "options": [
+        "Niger",
+        "Indien",
+        "Indonesien",
+        "Mali"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Nigeria",
+      "imageName": "ng",
+      "options": [
+        "Nigeria",
+        "Elfenbeinküste",
+        "Irland",
+        "Ghana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Ruanda",
+      "imageName": "rw",
+      "options": [
+        "Ruanda",
+        "Burundi",
+        "Uganda",
+        "Kenia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Sambia",
+      "imageName": "zm",
+      "options": [
+        "Sambia",
+        "Malawi",
+        "Mosambik",
+        "Simbabwe"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Senegal",
+      "imageName": "sn",
+      "options": [
+        "Senegal",
+        "Mali",
+        "Guinea",
+        "Kamerun"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Seychellen",
+      "imageName": "sc",
+      "options": [
+        "Seychellen",
+        "Mauritius",
+        "Madagaskar",
+        "Komoren"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Sierra Leone",
+      "imageName": "sl",
+      "options": [
+        "Sierra Leone",
+        "Nigeria",
+        "Gambia",
+        "Liberia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Simbabwe",
+      "imageName": "zw",
+      "options": [
+        "Simbabwe",
+        "Sambia",
+        "Malawi",
+        "Mosambik"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Somalia",
+      "imageName": "so",
+      "options": [
+        "Somalia",
+        "Vietnam",
+        "Dschibuti",
+        "Eritrea"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Südafrika",
+      "imageName": "za",
+      "options": [
+        "Südafrika",
+        "Namibia",
+        "Lesotho",
+        "Botswana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Sudan",
+      "imageName": "sd",
+      "options": [
+        "Sudan",
+        "Südsudan",
+        "Ägypten",
+        "Libyen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Südsudan",
+      "imageName": "ss",
+      "options": [
+        "Südsudan",
+        "Sudan",
+        "Kenia",
+        "Uganda"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tansania",
+      "imageName": "tz",
+      "options": [
+        "Tansania",
+        "Kenia",
+        "Uganda",
+        "Ruanda"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Togo",
+      "imageName": "tg",
+      "options": [
+        "Togo",
+        "Benin",
+        "Mali",
+        "Ghana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tschad",
+      "imageName": "td",
+      "options": [
+        "Tschad",
+        "Rumänien",
+        "Moldau",
+        "Andorra"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tunesien",
+      "imageName": "tn",
+      "options": [
+        "Tunesien",
+        "Türkei",
+        "Algerien",
+        "Libyen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Uganda",
+      "imageName": "ug",
+      "options": [
+        "Uganda",
+        "Kenia",
+        "Tansania",
+        "Ruanda"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zentralafrikanische Republik",
+      "imageName": "cf",
+      "options": [
+        "Zentralafrikanische Republik",
+        "Kamerun",
+        "Kongo",
+        "Gabun"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

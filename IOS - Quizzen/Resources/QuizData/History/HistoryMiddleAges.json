@@ -1,0 +1,131 @@
+{
+  "id": "HistoryMiddleAges",
+  "categoryId": "history",
+  "subCategory": "Mittelalter",
+  "title": "Geschichte (Mittelalter)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wer wurde im Jahr 800 in Rom zum Kaiser gekrönt?",
+      "options": [
+        "Ludwig der Fromme",
+        "Otto der Große",
+        "Karl der Große",
+        "Friedrich Barbarossa"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wie nennt man die Kriegszüge christlicher Heere ins Heilige Land?",
+      "options": [
+        "Reconquista",
+        "Hundertjähriger Krieg",
+        "Völkerwanderung",
+        "Kreuzzüge"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche Seuche tötete im 14. Jahrhundert einen großen Teil der Bevölkerung Europas?",
+      "options": [
+        "Pest",
+        "Cholera",
+        "Grippe",
+        "Pocken"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer erfand um 1450 den Buchdruck mit beweglichen Lettern?",
+      "options": [
+        "Albrecht Dürer",
+        "Johannes Gutenberg",
+        "Leonardo da Vinci",
+        "Martin Luther"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welches Volk aus Skandinavien unternahm Raubzüge mit Langschiffen?",
+      "options": [
+        "Goten",
+        "Hunnen",
+        "Vandalen",
+        "Wikinger"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche französische Heldin wurde 1431 in Rouen verbrannt?",
+      "options": [
+        "Marie Antoinette",
+        "Eleonore von Aquitanien",
+        "Jeanne d'Arc",
+        "Katharina von Medici"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wie hieß der Bund norddeutscher Handelsstädte?",
+      "options": [
+        "Kurie",
+        "Gilde",
+        "Zunft",
+        "Hanse"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "In welchem Jahr fand die Schlacht bei Hastings statt?",
+      "options": [
+        "1066",
+        "1215",
+        "1415",
+        "966"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches englische Dokument von 1215 schränkte die Macht des Königs ein?",
+      "options": [
+        "Magna Carta",
+        "Habeas Corpus Act",
+        "Domesday Book",
+        "Bill of Rights"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer gründete das Mongolische Reich?",
+      "options": [
+        "Dschingis Khan",
+        "Timur",
+        "Attila",
+        "Kublai Khan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Stadt war die Hauptstadt des Byzantinischen Reiches?",
+      "options": [
+        "Rom",
+        "Antiochia",
+        "Athen",
+        "Konstantinopel"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welcher venezianische Händler berichtete von seiner Reise an den Hof in China?",
+      "options": [
+        "Amerigo Vespucci",
+        "Galileo Galilei",
+        "Marco Polo",
+        "Christoph Kolumbus"
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

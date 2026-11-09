@@ -1,0 +1,33 @@
+{
+  "id": "AviationPlaneModel",
+  "categoryId": "aviation",
+  "subCategory": "AirportPlaneModel",
+  "title": "Luftfahrt Flugzeug Modelle",
+  "description": "Grundlegendes Allgemeinwissen aus Geografie, Naturwissenschaften, Geschichte und Kultur – Fragen, wie man sie aus dem Alltag oder der Schule kennt.",
+  "difficulty": "Leicht",
+  "imageName": "LuftfahrtFlughafenCodes",
+  "questions": [
+    {
+      "question": "Ägypten",
+      "imageName": "eg",
+      "options": [
+        "Ägypten",
+        "Syrien",
+        "Irak",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Ägypten",
+      "imageName": "eg",
+      "options": [
+        "Ägypten",
+        "Syrien",
+        "Irak",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

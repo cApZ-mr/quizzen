@@ -1,0 +1,19 @@
+{
+  "id": "GamesFakeOrFact",
+  "categoryId": "games",
+  "subCategory": "games",
+  "title": "Fake oder Fakt",
+  "description": "Flaggen die jeder erkennen und bennen sollte.",
+  "difficulty": "Mittel",
+  "imageName": "FakeorFakt",
+  "questions": [
+    {
+      "question": "",
+      "options": [
+        "Wahr",
+        "Falsch"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

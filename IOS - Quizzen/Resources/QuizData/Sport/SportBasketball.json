@@ -1,0 +1,16 @@
+{
+  "id": "SportBasketball",
+  "categoryId": "sport",
+  "subCategory": "sport",
+  "title": "Basketball",
+  "description": "Sehenswürdigkeiten die jeder erkennen und bennen sollte.",
+  "difficulty": "Mittel",
+  "imageName": "SportBasketball",
+  "questions": [
+      {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswerIndex": 0
+      }
+  ]
+}

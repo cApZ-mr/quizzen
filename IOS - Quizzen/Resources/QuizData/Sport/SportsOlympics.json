@@ -1,0 +1,131 @@
+{
+  "id": "SportsOlympics",
+  "categoryId": "sport",
+  "subCategory": "Olympia",
+  "title": "Sport (Olympia)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wie viele Ringe hat das olympische Symbol?",
+      "options": [
+        "5",
+        "7",
+        "6",
+        "4"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wo fanden 1896 die ersten Olympischen Spiele der Neuzeit statt?",
+      "options": [
+        "Paris",
+        "Athen",
+        "London",
+        "Rom"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie oft finden Olympische Sommerspiele statt?",
+      "options": [
+        "Alle 2 Jahre",
+        "Jedes Jahr",
+        "Alle 5 Jahre",
+        "Alle 4 Jahre"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche Disziplin besteht aus Schwimmen, Radfahren und Laufen?",
+      "options": [
+        "Zehnkampf",
+        "Moderner Fünfkampf",
+        "Biathlon",
+        "Triathlon"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie lang ist ein Marathon?",
+      "options": [
+        "40 km",
+        "21,1 km",
+        "42,195 km",
+        "50 km"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welcher Schwimmer gewann die meisten olympischen Goldmedaillen?",
+      "options": [
+        "Ryan Lochte",
+        "Michael Phelps",
+        "Mark Spitz",
+        "Ian Thorpe"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wer stellte 2009 den 100-Meter-Weltrekord von 9,58 Sekunden auf?",
+      "options": [
+        "Carl Lewis",
+        "Asafa Powell",
+        "Usain Bolt",
+        "Tyson Gay"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welche Wintersportart verbindet Skilanglauf und Schießen?",
+      "options": [
+        "Nordische Kombination",
+        "Skispringen",
+        "Triathlon",
+        "Biathlon"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "In welcher Stadt fanden 1972 Olympische Sommerspiele in Deutschland statt?",
+      "options": [
+        "Stuttgart",
+        "Hamburg",
+        "München",
+        "Berlin"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Woraus besteht eine olympische Goldmedaille überwiegend?",
+      "options": [
+        "Bronze",
+        "Silber",
+        "Platin",
+        "Gold"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wo fanden die Olympischen Sommerspiele 2012 statt?",
+      "options": [
+        "London",
+        "Athen",
+        "Rio de Janeiro",
+        "Peking"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Disziplin ist der „Fosbury-Flop“ bekannt?",
+      "options": [
+        "Weitsprung",
+        "Hochsprung",
+        "Stabhochsprung",
+        "Turmspringen"
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

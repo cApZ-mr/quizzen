@@ -1,0 +1,16 @@
+{
+  "id": "SportNBA",
+  "categoryId": "sport",
+  "subCategory": "sport",
+  "title": "National Basketball Association",
+  "description": "Sehenswürdigkeiten die jeder erkennen und bennen sollte.",
+  "difficulty": "Leicht",
+  "imageName": "SportNBA",
+  "questions": [
+      {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswerIndex": 0
+      }
+  ]
+}

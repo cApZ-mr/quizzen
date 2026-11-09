@@ -1,0 +1,396 @@
+{
+  "id": "FlagsAmerica",
+  "categoryId": "flags",
+  "subCategory": "Flaggen",
+  "title": "Flaggen (Amerika)",
+  "description": "Flaggen die jeder erkennen und bennen sollte.",
+  "difficulty": "Schwer",
+  "imageName": "FlaggenAmerika",
+  "questions": [
+    {
+      "question": "Antigua und Barbuda",
+      "imageName": "ag",
+      "options": [
+        "Antigua und Barbuda",
+        "Bahamas",
+        "Barbados",
+        "Dominica"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Argentinien",
+      "imageName": "ar",
+      "options": [
+        "Argentinien",
+        "Uruguay",
+        "Chile",
+        "Paraguay"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Bahamas",
+      "imageName": "bs",
+      "options": [
+        "Bahamas",
+        "Barbados",
+        "Kuba",
+        "Jamaika"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Barbados",
+      "imageName": "bb",
+      "options": [
+        "Barbados",
+        "Bahamas",
+        "Trinidad und Tobago",
+        "Grenada"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Belize",
+      "imageName": "bz",
+      "options": [
+        "Belize",
+        "Guatemala",
+        "Honduras",
+        "Nicaragua"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Bolivien",
+      "imageName": "bo",
+      "options": [
+        "Bolivien",
+        "Kolumbien",
+        "Ecuador",
+        "Venezuela"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Brasilien",
+      "imageName": "br",
+      "options": [
+        "Brasilien",
+        "Portugal",
+        "Argentinien",
+        "Kolumbien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Chile",
+      "imageName": "cl",
+      "options": [
+        "Chile",
+        "Texas",
+        "Argentinien",
+        "Peru"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Costa Rica",
+      "imageName": "cr",
+      "options": [
+        "Costa Rica",
+        "Thailand",
+        "Panama",
+        "El Salvador"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Dominica",
+      "imageName": "dm",
+      "options": [
+        "Dominica",
+        "Dominikanische Republik",
+        "Grenada",
+        "St. Lucia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Dominikanische Republik",
+      "imageName": "do",
+      "options": [
+        "Dominikanische Republik",
+        "Haiti",
+        "Dominica",
+        "Kuba"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Ecuador",
+      "imageName": "ec",
+      "options": [
+        "Ecuador",
+        "Kolumbien",
+        "Venezuela",
+        "Bolivien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "El Salvador",
+      "imageName": "sv",
+      "options": [
+        "El Salvador",
+        "Honduras",
+        "Nicaragua",
+        "Guatemala"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Grenada",
+      "imageName": "gd",
+      "options": [
+        "Grenada",
+        "Dominica",
+        "St. Lucia",
+        "Barbados"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Guatemala",
+      "imageName": "gt",
+      "options": [
+        "Guatemala",
+        "Honduras",
+        "El Salvador",
+        "Nicaragua"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Guyana",
+      "imageName": "gy",
+      "options": [
+        "Guyana",
+        "Suriname",
+        "Brasilien",
+        "Venezuela"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Haiti",
+      "imageName": "ht",
+      "options": [
+        "Haiti",
+        "Dominikanische Republik",
+        "Liechtenstein",
+        "Philippinen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Honduras",
+      "imageName": "hn",
+      "options": [
+        "Honduras",
+        "El Salvador",
+        "Nicaragua",
+        "Guatemala"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jamaika",
+      "imageName": "jm",
+      "options": [
+        "Jamaika",
+        "Bahamas",
+        "Trinidad und Tobago",
+        "Kuba"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kanada",
+      "imageName": "ca",
+      "options": [
+        "Kanada",
+        "Peru",
+        "Österreich",
+        "Dänemark"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kolumbien",
+      "imageName": "co",
+      "options": [
+        "Kolumbien",
+        "Ecuador",
+        "Venezuela",
+        "Bolivien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kuba",
+      "imageName": "cu",
+      "options": [
+        "Kuba",
+        "Puerto Rico",
+        "Chile",
+        "Dominikanische Republik"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mexiko",
+      "imageName": "mx",
+      "options": [
+        "Mexiko",
+        "Italien",
+        "Ungarn",
+        "Irland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Nicaragua",
+      "imageName": "ni",
+      "options": [
+        "Nicaragua",
+        "El Salvador",
+        "Honduras",
+        "Guatemala"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Panama",
+      "imageName": "pa",
+      "options": [
+        "Panama",
+        "USA",
+        "Costa Rica",
+        "Chile"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Paraguay",
+      "imageName": "py",
+      "options": [
+        "Paraguay",
+        "Uruguay",
+        "Argentinien",
+        "Chile"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Peru",
+      "imageName": "pe",
+      "options": [
+        "Peru",
+        "Kanada",
+        "Österreich",
+        "Spanien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "St. Kitts und Nevis",
+      "imageName": "kn",
+      "options": [
+        "St. Kitts und Nevis",
+        "St. Lucia",
+        "Grenada",
+        "Antigua und Barbuda"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "St. Lucia",
+      "imageName": "lc",
+      "options": [
+        "St. Lucia",
+        "St. Vincent und die Grenadinen",
+        "Grenada",
+        "Dominica"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "St. Vincent und die Grenadinen",
+      "imageName": "vc",
+      "options": [
+        "St. Vincent und die Grenadinen",
+        "St. Lucia",
+        "Grenada",
+        "Barbados"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Suriname",
+      "imageName": "sr",
+      "options": [
+        "Suriname",
+        "Guyana",
+        "Paraguay",
+        "Chile"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Trinidad und Tobago",
+      "imageName": "tt",
+      "options": [
+        "Trinidad und Tobago",
+        "Jamaika",
+        "Bahamas",
+        "Barbados"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Uruguay",
+      "imageName": "uy",
+      "options": [
+        "Uruguay",
+        "Argentinien",
+        "Paraguay",
+        "Griechenland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "USA",
+      "imageName": "us",
+      "options": [
+        "USA",
+        "Liberia",
+        "Malaysia",
+        "Chile"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Venezuela",
+      "imageName": "ve",
+      "options": [
+        "Venezuela",
+        "Ecuador",
+        "Kolumbien",
+        "Rumänien"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

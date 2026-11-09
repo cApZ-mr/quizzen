@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Xcode – benutzerspezifische Daten
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+DerivedData/
+build/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Sonstiges
+*.ipa
+*.dSYM.zip
+*.dSYM

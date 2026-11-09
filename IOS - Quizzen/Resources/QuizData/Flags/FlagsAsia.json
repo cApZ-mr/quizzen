@@ -1,0 +1,495 @@
+{
+  "id": "FlagsAsia",
+  "categoryId": "flags",
+  "subCategory": "Flaggen",
+  "title": "Flaggen (Asien)",
+  "description": "Flaggen die jeder erkennen und bennen sollte.",
+  "difficulty": "Mittel",
+  "imageName": "FlaggenAsien",
+  "questions": [
+    {
+      "question": "Afghanistan",
+      "imageName": "af",
+      "options": [
+        "Afghanistan",
+        "Pakistan",
+        "Iran",
+        "Tadschikistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Armenien",
+      "imageName": "am",
+      "options": [
+        "Armenien",
+        "Aserbaidschan",
+        "Georgien",
+        "Kasachstan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Aserbaidschan",
+      "imageName": "az",
+      "options": [
+        "Aserbaidschan",
+        "Türkei",
+        "Armenien",
+        "Turkmenistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Bahrain",
+      "imageName": "bh",
+      "options": [
+        "Bahrain",
+        "Katar",
+        "Kuwait",
+        "Vereinigte Arabische Emirate"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Bangladesch",
+      "imageName": "bd",
+      "options": [
+        "Bangladesch",
+        "Japan",
+        "Palau",
+        "Indien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Bhutan",
+      "imageName": "bt",
+      "options": [
+        "Bhutan",
+        "Nepal",
+        "Indien",
+        "China"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Brunei",
+      "imageName": "bn",
+      "options": [
+        "Brunei",
+        "Malaysia",
+        "Indonesien",
+        "Philippinen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "China",
+      "imageName": "cn",
+      "options": [
+        "China",
+        "Vietnam",
+        "Südkorea",
+        "Japan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Georgien",
+      "imageName": "ge",
+      "options": [
+        "Georgien",
+        "Armenien",
+        "Aserbaidschan",
+        "Türkei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Indien",
+      "imageName": "in",
+      "options": [
+        "Indien",
+        "Pakistan",
+        "Sri Lanka",
+        "Bangladesch"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Indonesien",
+      "imageName": "id",
+      "options": [
+        "Indonesien",
+        "Monaco",
+        "Polen",
+        "Singapur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Irak",
+      "imageName": "iq",
+      "options": [
+        "Irak",
+        "Syrien",
+        "Ägypten",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Iran",
+      "imageName": "ir",
+      "options": [
+        "Iran",
+        "Tadschikistan",
+        "Afghanistan",
+        "Aserbaidschan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Israel",
+      "imageName": "il",
+      "options": [
+        "Israel",
+        "Griechenland",
+        "Libanon",
+        "Jordanien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Japan",
+      "imageName": "jp",
+      "options": [
+        "Japan",
+        "Palau",
+        "Südkorea",
+        "China"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jemen",
+      "imageName": "ye",
+      "options": [
+        "Jemen",
+        "Syrien",
+        "Ägypten",
+        "Irak"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jordanien",
+      "imageName": "jo",
+      "options": [
+        "Jordanien",
+        "Palästina",
+        "Kuwait",
+        "Vereinigte Arabische Emirate"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kambodscha",
+      "imageName": "kh",
+      "options": [
+        "Kambodscha",
+        "Thailand",
+        "Laos",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kasachstan",
+      "imageName": "kz",
+      "options": [
+        "Kasachstan",
+        "Usbekistan",
+        "Kirgisistan",
+        "Mongolei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Katar",
+      "imageName": "qa",
+      "options": [
+        "Katar",
+        "Bahrain",
+        "Kuwait",
+        "Saudi-Arabien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kirgisistan",
+      "imageName": "kg",
+      "options": [
+        "Kirgisistan",
+        "Kasachstan",
+        "Tadschikistan",
+        "Usbekistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kuwait",
+      "imageName": "kw",
+      "options": [
+        "Kuwait",
+        "Jordanien",
+        "Vereinigte Arabische Emirate",
+        "Bahrain"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Laos",
+      "imageName": "la",
+      "options": [
+        "Laos",
+        "Thailand",
+        "Kambodscha",
+        "Myanmar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Libanon",
+      "imageName": "lb",
+      "options": [
+        "Libanon",
+        "Kanada",
+        "Israel",
+        "Zypern"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Malaysia",
+      "imageName": "my",
+      "options": [
+        "Malaysia",
+        "USA",
+        "Liberia",
+        "Philippinen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Malediven",
+      "imageName": "mv",
+      "options": [
+        "Malediven",
+        "Pakistan",
+        "Türkei",
+        "Tunesien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mongolei",
+      "imageName": "mn",
+      "options": [
+        "Mongolei",
+        "China",
+        "Kasachstan",
+        "Russland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Myanmar",
+      "imageName": "mm",
+      "options": [
+        "Myanmar",
+        "Laos",
+        "Thailand",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Nepal",
+      "imageName": "np",
+      "options": [
+        "Nepal",
+        "Bhutan",
+        "Indien",
+        "Tibet"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Nordkorea",
+      "imageName": "kp",
+      "options": [
+        "Nordkorea",
+        "Südkorea",
+        "China",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Oman",
+      "imageName": "om",
+      "options": [
+        "Oman",
+        "VAE",
+        "Kuwait",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Pakistan",
+      "imageName": "pk",
+      "options": [
+        "Pakistan",
+        "Indien",
+        "Afghanistan",
+        "Türkei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Philippinen",
+      "imageName": "ph",
+      "options": [
+        "Philippinen",
+        "Malaysia",
+        "Thailand",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Saudi-Arabien",
+      "imageName": "sa",
+      "options": [
+        "Saudi-Arabien",
+        "Pakistan",
+        "Iran",
+        "Ägypten"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Singapur",
+      "imageName": "sg",
+      "options": [
+        "Singapur",
+        "Indonesien",
+        "Polen",
+        "Monaco"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Sri Lanka",
+      "imageName": "lk",
+      "options": [
+        "Sri Lanka",
+        "Indien",
+        "Thailand",
+        "Myanmar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Südkorea",
+      "imageName": "kr",
+      "options": [
+        "Südkorea",
+        "Nordkorea",
+        "Japan",
+        "China"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Syrien",
+      "imageName": "sy",
+      "options": [
+        "Syrien",
+        "Irak",
+        "Ägypten",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tadschikistan",
+      "imageName": "tj",
+      "options": [
+        "Tadschikistan",
+        "Kirgisistan",
+        "Usbekistan",
+        "Iran"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Thailand",
+      "imageName": "th",
+      "options": [
+        "Thailand",
+        "Laos",
+        "Kambodscha",
+        "Malaysia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Turkmenistan",
+      "imageName": "tm",
+      "options": [
+        "Turkmenistan",
+        "Usbekistan",
+        "Kasachstan",
+        "Aserbaidschan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Usbekistan",
+      "imageName": "uz",
+      "options": [
+        "Usbekistan",
+        "Tadschikistan",
+        "Kasachstan",
+        "Turkmenistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Vereinigte Arabische Emirate",
+      "imageName": "ae",
+      "options": [
+        "Vereinigte Arabische Emirate",
+        "Kuwait",
+        "Jordanien",
+        "Oman"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Vietnam",
+      "imageName": "vn",
+      "options": [
+        "Vietnam",
+        "China",
+        "Nordkorea",
+        "Thailand"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

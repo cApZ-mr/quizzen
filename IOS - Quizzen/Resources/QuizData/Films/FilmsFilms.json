@@ -1,0 +1,16 @@
+{
+  "id": "FilmsFilms",
+  "categoryId": "films",
+  "subCategory": "Films",
+  "title": "Filme",
+  "description": "Wissensfragen über Filme rund um den Globus und Zeitraum",
+  "difficulty": "Leicht",
+  "imageName": "SportNBA",
+  "questions": [
+      {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswerIndex": 0
+      }
+  ]
+}

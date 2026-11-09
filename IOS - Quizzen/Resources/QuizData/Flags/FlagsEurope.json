@@ -1,0 +1,561 @@
+{
+  "id": "FlagsEurope",
+  "categoryId": "flags",
+  "subCategory": "Flaggen",
+  "title": "Flaggen (Europa)",
+  "description": "Flaggen die jeder erkennen und bennen sollte.",
+  "difficulty": "Leicht",
+  "imageName": "FlaggenEuropa",
+  "questions": [
+    {
+      "question": "Albanien",
+      "imageName": "al",
+      "options": [
+        "Albanien",
+        "Montenegro",
+        "Serbien",
+        "Kosovo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Andorra",
+      "imageName": "ad",
+      "options": [
+        "Andorra",
+        "Rumänien",
+        "Moldau",
+        "Tschad"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Belarus",
+      "imageName": "by",
+      "options": [
+        "Belarus",
+        "Lettland",
+        "Litauen",
+        "Ukraine"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Belgien",
+      "imageName": "be",
+      "options": [
+        "Belgien",
+        "Deutschland",
+        "Irland",
+        "Italien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Bosnien und Herzegowina",
+      "imageName": "ba",
+      "options": [
+        "Bosnien und Herzegowina",
+        "Ukraine",
+        "Schweden",
+        "Kosovo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Bulgarien",
+      "imageName": "bg",
+      "options": [
+        "Bulgarien",
+        "Ungarn",
+        "Irland",
+        "Italien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Dänemark",
+      "imageName": "dk",
+      "options": [
+        "Dänemark",
+        "Schweiz",
+        "Norwegen",
+        "Finnland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Deutschland",
+      "imageName": "de",
+      "options": [
+        "Deutschland",
+        "Belgien",
+        "Österreich",
+        "Niederlande"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "England",
+      "imageName": "gb-eng",
+      "options": [
+        "England",
+        "Dänemark",
+        "Finnalnd",
+        "Schweiz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Estland",
+      "imageName": "ee",
+      "options": [
+        "Estland",
+        "Litauen",
+        "Lettland",
+        "Finnland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Finnland",
+      "imageName": "fi",
+      "options": [
+        "Finnland",
+        "Schweden",
+        "Dänemark",
+        "Norwegen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Frankreich",
+      "imageName": "fr",
+      "options": [
+        "Frankreich",
+        "Italien",
+        "Niederlande",
+        "Luxemburg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Griechenland",
+      "imageName": "gr",
+      "options": [
+        "Griechenland",
+        "Zypern",
+        "Finnland",
+        "Schweden"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Irland",
+      "imageName": "ie",
+      "options": [
+        "Irland",
+        "Elfenbeinküste",
+        "Italien",
+        "Belgien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Island",
+      "imageName": "is",
+      "options": [
+        "Island",
+        "Norwegen",
+        "Färöer",
+        "Schweden"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Italien",
+      "imageName": "it",
+      "options": [
+        "Italien",
+        "Frankreich",
+        "Irland",
+        "Ungarn"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kosovo",
+      "imageName": "xk",
+      "options": [
+        "Kosovo",
+        "Bosnien und Herzogovina",
+        "Serbien",
+        "Slowakei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kroatien",
+      "imageName": "hr",
+      "options": [
+        "Kroatien",
+        "Slowenien",
+        "Serbien",
+        "Slowakei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Lettland",
+      "imageName": "lv",
+      "options": [
+        "Lettland",
+        "Österreich",
+        "Litauen",
+        "Estland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Liechtenstein",
+      "imageName": "li",
+      "options": [
+        "Liechtenstein",
+        "Österreich",
+        "Schweiz",
+        "Polen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Litauen",
+      "imageName": "lt",
+      "options": [
+        "Litauen",
+        "Lettland",
+        "Estland",
+        "Ungarn"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Luxemburg",
+      "imageName": "lu",
+      "options": [
+        "Luxemburg",
+        "Niederlande",
+        "Frankreich",
+        "Belgien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Malta",
+      "imageName": "mt",
+      "options": [
+        "Malta",
+        "Österreich",
+        "Polen",
+        "Schweiz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Moldau",
+      "imageName": "md",
+      "options": [
+        "Moldau",
+        "Rumänien",
+        "Andorra",
+        "Tschad"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Monaco",
+      "imageName": "mc",
+      "options": [
+        "Monaco",
+        "Indonesien",
+        "Polen",
+        "Singapur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Montenegro",
+      "imageName": "me",
+      "options": [
+        "Montenegro",
+        "Albanien",
+        "Serbien",
+        "Nordmazedonien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Niederlande",
+      "imageName": "nl",
+      "options": [
+        "Niederlande",
+        "Luxemburg",
+        "Frankreich",
+        "Russland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Nordmazedonien",
+      "imageName": "mk",
+      "options": [
+        "Nordmazedonien",
+        "Japan",
+        "Montenegro",
+        "Albanien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Norwegen",
+      "imageName": "no",
+      "options": [
+        "Norwegen",
+        "Island",
+        "Dänemark",
+        "Finnland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Österreich",
+      "imageName": "at",
+      "options": [
+        "Österreich",
+        "Lettland",
+        "Polen",
+        "Schweiz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Polen",
+      "imageName": "pl",
+      "options": [
+        "Polen",
+        "Österreich",
+        "Indonesien",
+        "Monaco"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Portugal",
+      "imageName": "pt",
+      "options": [
+        "Portugal",
+        "Spanien",
+        "Frankreich",
+        "Italien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Rumänien",
+      "imageName": "ro",
+      "options": [
+        "Rumänien",
+        "Tschad",
+        "Moldau",
+        "Andorra"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Russland",
+      "imageName": "ru",
+      "options": [
+        "Russland",
+        "Bulgarien",
+        "Litaun",
+        "Frankreich"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "San Marino",
+      "imageName": "sm",
+      "options": [
+        "San Marino",
+        "Vatikaanstadt",
+        "Liechtenstein",
+        "Zypern"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Schottland",
+      "imageName": "gb-sct",
+      "options": [
+        "Schottland",
+        "Jersey",
+        "San Marino",
+        "Finnland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Schweden",
+      "imageName": "se",
+      "options": [
+        "Schweden",
+        "Finnland",
+        "Dänemark",
+        "Norwegen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Schweiz",
+      "imageName": "ch",
+      "options": [
+        "Schweiz",
+        "Dänemark",
+        "Österreich",
+        "Polen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Serbien",
+      "imageName": "rs",
+      "options": [
+        "Serbien",
+        "Kroatien",
+        "Slowenien",
+        "Montenegro"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Slowakei",
+      "imageName": "sk",
+      "options": [
+        "Slowakei",
+        "Slowenien",
+        "Russland",
+        "Tschechien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Slowenien",
+      "imageName": "si",
+      "options": [
+        "Slowenien",
+        "Slowakei",
+        "Kroatien",
+        "Serbien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Spanien",
+      "imageName": "es",
+      "options": [
+        "Spanien",
+        "Portugal",
+        "Frankreich",
+        "Italien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tschechien",
+      "imageName": "cz",
+      "options": [
+        "Tschechien",
+        "Slowakei",
+        "Polen",
+        "Russland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Türkei",
+      "imageName": "tr",
+      "options": [
+        "Türkei",
+        "Tunesien",
+        "Albanien",
+        "Ilse of Man"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Ungarn",
+      "imageName": "hu",
+      "options": [
+        "Ungarn",
+        "Bulgarien",
+        "Italien",
+        "Irland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Ukraine",
+      "imageName": "ua",
+      "options": [
+        "Ukraine",
+        "Schweden",
+        "Lettland",
+        "Tschechien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Vatikanstadt",
+      "imageName": "va",
+      "options": [
+        "Vatikanstadt",
+        "Italien",
+        "Schweiz",
+        "Österreich"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Vereinigtes Königreich",
+      "imageName": "gb",
+      "options": [
+        "Vereinigtes Königreich",
+        "USA",
+        "Australien",
+        "Irland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wales",
+      "imageName": "gb-wls",
+      "options": [
+        "Wales",
+        "Schottland",
+        "Spanien",
+        "Albanien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zypern",
+      "imageName": "cy",
+      "options": [
+        "Zypern",
+        "Griechenland",
+        "Türkei",
+        "Malta"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

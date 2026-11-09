@@ -1,0 +1,131 @@
+{
+  "id": "ScienceAstronomy",
+  "categoryId": "science",
+  "subCategory": "Astronomie",
+  "title": "Wissenschaft (Astronomie)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Welcher Planet ist der Sonne am nächsten?",
+      "options": [
+        "Venus",
+        "Erde",
+        "Mars",
+        "Merkur"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welcher ist der größte Planet unseres Sonnensystems?",
+      "options": [
+        "Uranus",
+        "Neptun",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welcher Planet wird „Roter Planet“ genannt?",
+      "options": [
+        "Jupiter",
+        "Mars",
+        "Merkur",
+        "Venus"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie viele Planeten hat unser Sonnensystem?",
+      "options": [
+        "10",
+        "8",
+        "9",
+        "7"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welcher Planet ist für seine auffälligen Ringe bekannt?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt unsere Galaxie?",
+      "options": [
+        "Triangulum",
+        "Andromeda",
+        "Milchstraße",
+        "Sombrero"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wie lange braucht Sonnenlicht ungefähr bis zur Erde?",
+      "options": [
+        "8 Minuten",
+        "1 Stunde",
+        "1 Tag",
+        "8 Sekunden"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Himmelskörper wurde 2006 zum Zwergplaneten herabgestuft?",
+      "options": [
+        "Pluto",
+        "Merkur",
+        "Eris",
+        "Ceres"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher ist der hellste Stern am Nachthimmel?",
+      "options": [
+        "Beteigeuze",
+        "Sirius",
+        "Polarstern",
+        "Wega"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welcher Planet ist der heißeste in unserem Sonnensystem?",
+      "options": [
+        "Mars",
+        "Jupiter",
+        "Merkur",
+        "Venus"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie lange braucht die Erde für eine Umrundung der Sonne?",
+      "options": [
+        "Etwa 30 Tage",
+        "Etwa 687 Tage",
+        "Etwa 24 Stunden",
+        "Etwa 365 Tage"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Mit welcher Mission landeten 1969 die ersten Menschen auf dem Mond?",
+      "options": [
+        "Sojus 1",
+        "Apollo 13",
+        "Apollo 11",
+        "Gemini 4"
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

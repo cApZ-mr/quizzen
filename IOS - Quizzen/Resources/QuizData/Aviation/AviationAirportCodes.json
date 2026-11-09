@@ -1,0 +1,1491 @@
+{
+  "id": "AviationAirportCodes",
+  "categoryId": "aviation",
+  "subCategory": "AirportCodes",
+  "title": "Luftfahrt Flughafen Codes",
+  "description": "Grundlegendes Allgemeinwissen aus Geografie, Naturwissenschaften, Geschichte und Kultur – Fragen, wie man sie aus dem Alltag oder der Schule kennt.",
+  "difficulty": "Leicht",
+  "imageName": "LuftfahrtFlughafenCodes",
+  "questions": [
+    {
+      "question": "Abkürzung für den Flughafen Frankfurt?",
+      "options": [
+        "FRA",
+        "FKF",
+        "JFK",
+        "DUS"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'FRA'?",
+      "options": [
+        "Frankfurt",
+        "Franken",
+        "Florida",
+        "Düsseldorf"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen New York?",
+      "options": [
+        "JFK",
+        "NYC",
+        "LGA",
+        "EWR"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'JFK'?",
+      "options": [
+        "New York",
+        "Newark",
+        "Boston",
+        "Washington"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Los Angeles?",
+      "options": [
+        "LAX",
+        "LAS",
+        "SAN",
+        "SFO"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'LAX'?",
+      "options": [
+        "Los Angeles",
+        "Las Vegas",
+        "San Diego",
+        "San Francisco"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen London Heathrow?",
+      "options": [
+        "LHR",
+        "LGW",
+        "LTN",
+        "STN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'LHR'?",
+      "options": [
+        "London",
+        "Liverpool",
+        "Leeds",
+        "Luton"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Paris Charles de Gaulle?",
+      "options": [
+        "CDG",
+        "ORY",
+        "BVA",
+        "LYS"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'CDG'?",
+      "options": [
+        "Paris",
+        "Lyon",
+        "Nizza",
+        "Marseille"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Amsterdam?",
+      "options": [
+        "AMS",
+        "RTM",
+        "EIN",
+        "GRQ"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'AMS'?",
+      "options": [
+        "Amsterdam",
+        "Rotterdam",
+        "Eindhoven",
+        "Brüssel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Madrid?",
+      "options": [
+        "MAD",
+        "BCN",
+        "VLC",
+        "AGP"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'MAD'?",
+      "options": [
+        "Madrid",
+        "Barcelona",
+        "Valencia",
+        "Malaga"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Rom Fiumicino?",
+      "options": [
+        "FCO",
+        "CIA",
+        "MXP",
+        "VCE"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'FCO'?",
+      "options": [
+        "Rom",
+        "Mailand",
+        "Venedig",
+        "Neapel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen München?",
+      "options": [
+        "MUC",
+        "FRA",
+        "NUE",
+        "STR"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'MUC'?",
+      "options": [
+        "München",
+        "Nürnberg",
+        "Stuttgart",
+        "Augsburg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Düsseldorf?",
+      "options": [
+        "DUS",
+        "CGN",
+        "DTM",
+        "FMO"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'DUS'?",
+      "options": [
+        "Düsseldorf",
+        "Köln",
+        "Dortmund",
+        "Münster"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Berlin Brandenburg?",
+      "options": [
+        "BER",
+        "TXL",
+        "SXF",
+        "BBI"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BER'?",
+      "options": [
+        "Berlin",
+        "Bremen",
+        "Bonn",
+        "Bielefeld"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Hamburg?",
+      "options": [
+        "HAM",
+        "HAJ",
+        "BRE",
+        "LBC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'HAM'?",
+      "options": [
+        "Hamburg",
+        "Hannover",
+        "Bremen",
+        "Lübeck"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Wien?",
+      "options": [
+        "VIE",
+        "GRZ",
+        "SZG",
+        "INN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'VIE'?",
+      "options": [
+        "Wien",
+        "Graz",
+        "Salzburg",
+        "Innsbruck"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Zürich?",
+      "options": [
+        "ZRH",
+        "GVA",
+        "BSL",
+        "BRN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'ZRH'?",
+      "options": [
+        "Zürich",
+        "Genf",
+        "Basel",
+        "Bern"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Brüssel?",
+      "options": [
+        "BRU",
+        "ANR",
+        "CRL",
+        "LGG"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BRU'?",
+      "options": [
+        "Brüssel",
+        "Antwerpen",
+        "Charleroi",
+        "Lüttich"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Kopenhagen?",
+      "options": [
+        "CPH",
+        "AAL",
+        "BLL",
+        "AAR"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'CPH'?",
+      "options": [
+        "Kopenhagen",
+        "Aalborg",
+        "Billund",
+        "Aarhus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Oslo?",
+      "options": [
+        "OSL",
+        "BGO",
+        "TRD",
+        "SVG"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'OSL'?",
+      "options": [
+        "Oslo",
+        "Bergen",
+        "Trondheim",
+        "Stavanger"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Stockholm Arlanda?",
+      "options": [
+        "ARN",
+        "GOT",
+        "MMX",
+        "BMA"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'ARN'?",
+      "options": [
+        "Stockholm",
+        "Göteborg",
+        "Malmö",
+        "Uppsala"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Helsinki?",
+      "options": [
+        "HEL",
+        "TKU",
+        "TMP",
+        "OUL"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'HEL'?",
+      "options": [
+        "Helsinki",
+        "Turku",
+        "Tampere",
+        "Oulu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Dublin?",
+      "options": [
+        "DUB",
+        "ORK",
+        "SNN",
+        "NOC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'DUB'?",
+      "options": [
+        "Dublin",
+        "Cork",
+        "Shannon",
+        "Knock"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Lissabon?",
+      "options": [
+        "LIS",
+        "OPO",
+        "FAO",
+        "PDL"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'LIS'?",
+      "options": [
+        "Lissabon",
+        "Porto",
+        "Faro",
+        "Ponta Delgada"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Athen?",
+      "options": [
+        "ATH",
+        "SKG",
+        "HER",
+        "RHO"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'ATH'?",
+      "options": [
+        "Athen",
+        "Thessaloniki",
+        "Heraklion",
+        "Rhodos"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Istanbul?",
+      "options": [
+        "IST",
+        "SAW",
+        "ADB",
+        "AYT"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'IST'?",
+      "options": [
+        "Istanbul",
+        "Sabiha (Istanbul)",
+        "Izmir",
+        "Antalya"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Moskau Scheremetjewo?",
+      "options": [
+        "SVO",
+        "DME",
+        "VKO",
+        "LED"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'SVO'?",
+      "options": [
+        "Moskau",
+        "St. Petersburg",
+        "Kiew",
+        "Minsk"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Dubai?",
+      "options": [
+        "DXB",
+        "AUH",
+        "DWC",
+        "SHJ"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'DXB'?",
+      "options": [
+        "Dubai",
+        "Abu Dhabi",
+        "Sharjah",
+        "Doha"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Doha?",
+      "options": [
+        "DOH",
+        "AUH",
+        "DXB",
+        "BAH"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'DOH'?",
+      "options": [
+        "Doha",
+        "Abu Dhabi",
+        "Dubai",
+        "Manama"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Singapur?",
+      "options": [
+        "SIN",
+        "KUL",
+        "BKK",
+        "HKG"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'SIN'?",
+      "options": [
+        "Singapur",
+        "Kuala Lumpur",
+        "Bangkok",
+        "Hongkong"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Hongkong?",
+      "options": [
+        "HKG",
+        "MFM",
+        "CAN",
+        "SZX"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'HKG'?",
+      "options": [
+        "Hongkong",
+        "Macau",
+        "Guangzhou",
+        "Shenzhen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Tokio Narita?",
+      "options": [
+        "NRT",
+        "HND",
+        "KIX",
+        "NGO"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'NRT'?",
+      "options": [
+        "Tokio",
+        "Osaka",
+        "Nagoya",
+        "Kyoto"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Seoul Incheon?",
+      "options": [
+        "ICN",
+        "GMP",
+        "PUS",
+        "CJU"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'ICN'?",
+      "options": [
+        "Seoul",
+        "Busan",
+        "Jeju",
+        "Daegu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Peking?",
+      "options": [
+        "PEK",
+        "PKX",
+        "PVG",
+        "CAN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'PEK'?",
+      "options": [
+        "Peking",
+        "Shanghai",
+        "Guangzhou",
+        "Shenzhen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Shanghai Pudong?",
+      "options": [
+        "PVG",
+        "SHA",
+        "PEK",
+        "CAN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'PVG'?",
+      "options": [
+        "Shanghai",
+        "Peking",
+        "Guangzhou",
+        "Hangzhou"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Bangkok Suvarnabhumi?",
+      "options": [
+        "BKK",
+        "DMK",
+        "CNX",
+        "HKT"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BKK'?",
+      "options": [
+        "Bangkok",
+        "Chiang Mai",
+        "Phuket",
+        "Pattaya"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Kuala Lumpur?",
+      "options": [
+        "KUL",
+        "PEN",
+        "BKI",
+        "JHB"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'KUL'?",
+      "options": [
+        "Kuala Lumpur",
+        "Penang",
+        "Kota Kinabalu",
+        "Johor Bahru"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Neu-Delhi?",
+      "options": [
+        "DEL",
+        "BOM",
+        "BLR",
+        "MAA"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'DEL'?",
+      "options": [
+        "Neu-Delhi",
+        "Mumbai",
+        "Bangalore",
+        "Chennai"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Mumbai?",
+      "options": [
+        "BOM",
+        "DEL",
+        "BLR",
+        "GOI"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BOM'?",
+      "options": [
+        "Mumbai",
+        "Neu-Delhi",
+        "Bangalore",
+        "Goa"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Sydney?",
+      "options": [
+        "SYD",
+        "MEL",
+        "BNE",
+        "PER"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'SYD'?",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Perth"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Melbourne?",
+      "options": [
+        "MEL",
+        "SYD",
+        "ADL",
+        "HBA"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'MEL'?",
+      "options": [
+        "Melbourne",
+        "Sydney",
+        "Adelaide",
+        "Hobart"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Auckland?",
+      "options": [
+        "AKL",
+        "WLG",
+        "CHC",
+        "ZQN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'AKL'?",
+      "options": [
+        "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Toronto?",
+      "options": [
+        "YYZ",
+        "YVR",
+        "YUL",
+        "YYC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'YYZ'?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Vancouver?",
+      "options": [
+        "YVR",
+        "YYZ",
+        "YUL",
+        "YYC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'YVR'?",
+      "options": [
+        "Vancouver",
+        "Toronto",
+        "Montreal",
+        "Calgary"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Chicago O'Hare?",
+      "options": [
+        "ORD",
+        "MDW",
+        "DTW",
+        "MSP"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'ORD'?",
+      "options": [
+        "Chicago",
+        "Detroit",
+        "Minneapolis",
+        "Indianapolis"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Miami?",
+      "options": [
+        "MIA",
+        "FLL",
+        "TPA",
+        "MCO"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'MIA'?",
+      "options": [
+        "Miami",
+        "Fort Lauderdale",
+        "Tampa",
+        "Orlando"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen San Francisco?",
+      "options": [
+        "SFO",
+        "OAK",
+        "SJC",
+        "LAX"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'SFO'?",
+      "options": [
+        "San Francisco",
+        "Oakland",
+        "San Jose",
+        "Los Angeles"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Seattle?",
+      "options": [
+        "SEA",
+        "PDX",
+        "GEG",
+        "BOI"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'SEA'?",
+      "options": [
+        "Seattle",
+        "Portland",
+        "Spokane",
+        "Boise"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Boston?",
+      "options": [
+        "BOS",
+        "PVD",
+        "BDL",
+        "MHT"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BOS'?",
+      "options": [
+        "Boston",
+        "Providence",
+        "Hartford",
+        "Manchester (USA)"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Atlanta?",
+      "options": [
+        "ATL",
+        "CLT",
+        "BNA",
+        "RDU"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'ATL'?",
+      "options": [
+        "Atlanta",
+        "Charlotte",
+        "Nashville",
+        "Raleigh"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Dallas/Fort Worth?",
+      "options": [
+        "DFW",
+        "DAL",
+        "HOU",
+        "IAH"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'DFW'?",
+      "options": [
+        "Dallas",
+        "Houston",
+        "Austin",
+        "San Antonio"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Denver?",
+      "options": [
+        "DEN",
+        "COS",
+        "SLC",
+        "ABQ"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'DEN'?",
+      "options": [
+        "Denver",
+        "Colorado Springs",
+        "Salt Lake City",
+        "Albuquerque"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Las Vegas?",
+      "options": [
+        "LAS",
+        "PHX",
+        "RNO",
+        "SLC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'LAS'?",
+      "options": [
+        "Las Vegas",
+        "Phoenix",
+        "Reno",
+        "Salt Lake City"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Mexiko-Stadt?",
+      "options": [
+        "MEX",
+        "GDL",
+        "MTY",
+        "CUN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'MEX'?",
+      "options": [
+        "Mexiko-Stadt",
+        "Guadalajara",
+        "Monterrey",
+        "Cancún"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen São Paulo?",
+      "options": [
+        "GRU",
+        "GIG",
+        "BSB",
+        "CGH"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'GRU'?",
+      "options": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Brasília",
+        "Salvador"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Rio de Janeiro?",
+      "options": [
+        "GIG",
+        "GRU",
+        "BSB",
+        "SDU"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'GIG'?",
+      "options": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Brasília",
+        "Salvador"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Buenos Aires?",
+      "options": [
+        "EZE",
+        "AEP",
+        "COR",
+        "MDZ"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'EZE'?",
+      "options": [
+        "Buenos Aires",
+        "Córdoba",
+        "Mendoza",
+        "Rosario"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Santiago de Chile?",
+      "options": [
+        "SCL",
+        "ARI",
+        "ANF",
+        "PUQ"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'SCL'?",
+      "options": [
+        "Santiago",
+        "Arica",
+        "Antofagasta",
+        "Punta Arenas"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Bogotá?",
+      "options": [
+        "BOG",
+        "MDE",
+        "CLO",
+        "CTG"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BOG'?",
+      "options": [
+        "Bogotá",
+        "Medellín",
+        "Cali",
+        "Cartagena"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Lima?",
+      "options": [
+        "LIM",
+        "CUZ",
+        "AQP",
+        "TRU"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'LIM'?",
+      "options": [
+        "Lima",
+        "Cusco",
+        "Arequipa",
+        "Trujillo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Johannesburg?",
+      "options": [
+        "JNB",
+        "CPT",
+        "DUR",
+        "PLZ"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'JNB'?",
+      "options": [
+        "Johannesburg",
+        "Kapstadt",
+        "Durban",
+        "Port Elizabeth"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Kairo?",
+      "options": [
+        "CAI",
+        "HRG",
+        "SSH",
+        "LXR"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'CAI'?",
+      "options": [
+        "Kairo",
+        "Hurghada",
+        "Sharm El-Sheikh",
+        "Luxor"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Casablanca?",
+      "options": [
+        "CMN",
+        "RAK",
+        "FEZ",
+        "TNG"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'CMN'?",
+      "options": [
+        "Casablanca",
+        "Marrakesch",
+        "Fès",
+        "Tanger"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Nairobi?",
+      "options": [
+        "NBO",
+        "MBA",
+        "KIS",
+        "EDL"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'NBO'?",
+      "options": [
+        "Nairobi",
+        "Mombasa",
+        "Kisumu",
+        "Addis Abeba"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Lagos?",
+      "options": [
+        "LOS",
+        "ABV",
+        "PHC",
+        "KAN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'LOS'?",
+      "options": [
+        "Lagos",
+        "Abuja",
+        "Port Harcourt",
+        "Kano"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Warschau?",
+      "options": [
+        "WAW",
+        "KRK",
+        "GDN",
+        "WRO"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'WAW'?",
+      "options": [
+        "Warschau",
+        "Krakau",
+        "Gdansk",
+        "Wroclaw"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Prag?",
+      "options": [
+        "PRG",
+        "BRQ",
+        "OSR",
+        "KLV"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'PRG'?",
+      "options": [
+        "Prag",
+        "Brno",
+        "Ostrava",
+        "Karlsbad"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Budapest?",
+      "options": [
+        "BUD",
+        "DEB",
+        "SOB",
+        "PEV"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BUD'?",
+      "options": [
+        "Budapest",
+        "Debrecen",
+        "Sármellék",
+        "Pécs"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Bukarest?",
+      "options": [
+        "OTP",
+        "CLJ",
+        "TSR",
+        "IAS"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'OTP'?",
+      "options": [
+        "Bukarest",
+        "Cluj-Napoca",
+        "Timisoara",
+        "Iasi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Sofia?",
+      "options": [
+        "SOF",
+        "VAR",
+        "BOJ",
+        "PDV"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'SOF'?",
+      "options": [
+        "Sofia",
+        "Varna",
+        "Burgas",
+        "Plovdiv"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Reykjavik?",
+      "options": [
+        "KEF",
+        "RKV",
+        "AEY",
+        "EGS"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'KEF'?",
+      "options": [
+        "Reykjavik",
+        "Akureyri",
+        "Egilsstadir",
+        "Vestmannaeyjar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Genf?",
+      "options": [
+        "GVA",
+        "ZRH",
+        "BSL",
+        "BRN"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'GVA'?",
+      "options": [
+        "Genf",
+        "Zürich",
+        "Basel",
+        "Bern"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Manchester?",
+      "options": [
+        "MAN",
+        "LBA",
+        "NCL",
+        "LPL"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'MAN'?",
+      "options": [
+        "Manchester",
+        "Leeds",
+        "Newcastle",
+        "Liverpool"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Edinburgh?",
+      "options": [
+        "EDI",
+        "GLA",
+        "ABZ",
+        "INV"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'EDI'?",
+      "options": [
+        "Edinburgh",
+        "Glasgow",
+        "Aberdeen",
+        "Inverness"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Barcelona?",
+      "options": [
+        "BCN",
+        "MAD",
+        "VLC",
+        "AGP"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'BCN'?",
+      "options": [
+        "Barcelona",
+        "Madrid",
+        "Valencia",
+        "Malaga"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Mailand Malpensa?",
+      "options": [
+        "MXP",
+        "LIN",
+        "BGY",
+        "FCO"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'MXP'?",
+      "options": [
+        "Mailand",
+        "Bergamo",
+        "Rom",
+        "Venedig"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Abkürzung für den Flughafen Venedig?",
+      "options": [
+        "VCE",
+        "TSF",
+        "VRN",
+        "BLQ"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Flughafen ist 'VCE'?",
+      "options": [
+        "Venedig",
+        "Treviso",
+        "Verona",
+        "Bologna"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

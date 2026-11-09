@@ -1,0 +1,141 @@
+{
+  "id": "HistoryEarlyModern",
+  "categoryId": "history",
+  "subCategory": "Neuzeit",
+  "title": "Geschichte (Neuzeit)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Welcher Seefahrer erreichte 1492 Amerika?",
+      "options": [
+        "Ferdinand Magellan",
+        "Christoph Kolumbus",
+        "Vasco da Gama",
+        "James Cook"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wer veröffentlichte 1517 seine 95 Thesen?",
+      "options": [
+        "Johannes Calvin",
+        "Thomas Müntzer",
+        "Martin Luther",
+        "Huldrych Zwingli"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "In welchem Jahr begann die Französische Revolution?",
+      "options": [
+        "1848",
+        "1815",
+        "1776",
+        "1789"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welcher französische Kaiser wurde 1815 bei Waterloo besiegt?",
+      "options": [
+        "Ludwig XIV.",
+        "Napoleon III.",
+        "Napoleon Bonaparte",
+        "Karl X."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Land erklärte 1776 seine Unabhängigkeit von Großbritannien?",
+      "options": [
+        "Indien",
+        "Kanada",
+        "Vereinigte Staaten",
+        "Australien"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wer leitete die Expedition der ersten Weltumsegelung?",
+      "options": [
+        "Ferdinand Magellan",
+        "Francis Drake",
+        "Vasco da Gama",
+        "James Cook"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man den Krieg von 1618 bis 1648?",
+      "options": [
+        "Hundertjähriger Krieg",
+        "Dreißigjähriger Krieg",
+        "Spanischer Erbfolgekrieg",
+        "Siebenjähriger Krieg"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welcher französische König wurde „Sonnenkönig“ genannt?",
+      "options": [
+        "Ludwig XIV.",
+        "Heinrich IV.",
+        "Franz I.",
+        "Ludwig XVI."
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Jahr wurde das Deutsche Kaiserreich gegründet?",
+      "options": [
+        "1871",
+        "1848",
+        "1815",
+        "1890"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der erste Reichskanzler des Deutschen Kaiserreichs?",
+      "options": [
+        "Wilhelm II.",
+        "Gustav Stresemann",
+        "Otto von Bismarck",
+        "Friedrich Ebert"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welche Erfindung von James Watt trieb die Industrielle Revolution voran?",
+      "options": [
+        "Glühbirne",
+        "Telefon",
+        "Verbesserte Dampfmaschine",
+        "Automobil"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welcher Seefahrer fand den Seeweg nach Indien um Afrika herum?",
+      "options": [
+        "Christoph Kolumbus",
+        "Ferdinand Magellan",
+        "Abel Tasman",
+        "Vasco da Gama"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welcher englische König gründete die Anglikanische Kirche?",
+      "options": [
+        "Richard III.",
+        "Heinrich VIII.",
+        "Karl I.",
+        "Eduard VI."
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

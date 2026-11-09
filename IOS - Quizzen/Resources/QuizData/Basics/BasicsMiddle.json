@@ -1,0 +1,761 @@
+{
+  "id": "BasicsMiddle",
+  "categoryId": "basics",
+  "subCategory": "Allgemeinwissen",
+  "title": "Allgemeinwissen (Mittel)",
+  "description": "Etwas anspruchsvolleres Wissen mit mehr Tiefe in Geschichte, Politik, Literatur, Naturwissenschaften und Philosophie – verlangt schon ein vernetzteres Verständnis von Zusammenhängen statt reinem Faktenwissen.",
+  "difficulty": "Mittel",
+  "imageName": "allgemeinwissenMittel",
+  "questions": [
+    {
+      "question": "Wer war Bundeskanzler während der deutschen Wiedervereinigung 1990?",
+      "options": [
+        "Helmut Kohl",
+        "Willy Brandt",
+        "Gerhard Schröder",
+        "Helmut Schmidt"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Theorie stammt von Albert Einstein?",
+      "options": [
+        "Relativitätstheorie",
+        "Quantenmechanik",
+        "Evolutionstheorie",
+        "Urknalltheorie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Jahr begann die Französische Revolution?",
+      "options": [
+        "1789",
+        "1776",
+        "1804",
+        "1815"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Land löste den Ersten Weltkrieg durch die Ermordung des Erzherzogs Franz Ferdinand aus?",
+      "options": [
+        "Serbien",
+        "Russland",
+        "Österreich-Ungarn",
+        "Deutschland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man die chemische Bindung, bei der Elektronen geteilt werden?",
+      "options": [
+        "Kovalente Bindung",
+        "Ionenbindung",
+        "Metallbindung",
+        "Van-der-Waals-Bindung"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb das Werk 'Also sprach Zarathustra'?",
+      "options": [
+        "Nietzsche",
+        "Kant",
+        "Hegel",
+        "Schopenhauer"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Organ produziert Insulin?",
+      "options": [
+        "Bauchspeicheldrüse",
+        "Leber",
+        "Niere",
+        "Milz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wann wurde die Bundesrepublik Deutschland gegründet?",
+      "options": [
+        "1949",
+        "1945",
+        "1955",
+        "1961"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Philosoph formulierte den 'kategorischen Imperativ'?",
+      "options": [
+        "Kant",
+        "Hume",
+        "Locke",
+        "Rousseau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die Hauptstadt von Kanada?",
+      "options": [
+        "Ottawa",
+        "Toronto",
+        "Vancouver",
+        "Montreal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Element hat die Ordnungszahl 6?",
+      "options": [
+        "Kohlenstoff",
+        "Stickstoff",
+        "Sauerstoff",
+        "Bor"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer verfasste 'Der Gesellschaftsvertrag'?",
+      "options": [
+        "Rousseau",
+        "Voltaire",
+        "Montesquieu",
+        "Diderot"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Schlacht wurde Napoleon endgültig geschlagen?",
+      "options": [
+        "Waterloo",
+        "Austerlitz",
+        "Trafalgar",
+        "Leipzig"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Land war während des Kalten Krieges Teil des 'Warschauer Pakts'?",
+      "options": [
+        "Polen",
+        "Spanien",
+        "Schweden",
+        "Österreich"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man den Prozess, bei dem Pflanzen Lichtenergie in chemische Energie umwandeln?",
+      "options": [
+        "Photosynthese",
+        "Atmung",
+        "Osmose",
+        "Diffusion"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer ist der Autor von 'Die Verwandlung'?",
+      "options": [
+        "Franz Kafka",
+        "Thomas Mann",
+        "Hermann Hesse",
+        "Bertolt Brecht"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche geometrische Form hat die Summe der Innenwinkel von 540 Grad?",
+      "options": [
+        "Fünfeck",
+        "Viereck",
+        "Sechseck",
+        "Dreieck"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Vertrag beendete den Ersten Weltkrieg?",
+      "options": [
+        "Vertrag von Versailles",
+        "Vertrag von Lissabon",
+        "Vertrag von Wien",
+        "Vertrag von Utrecht"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das Grundgesetz-Organ, das die Bundesregierung kontrolliert?",
+      "options": [
+        "Bundestag",
+        "Bundesrat",
+        "Bundesverfassungsgericht",
+        "Bundespräsident"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer komponierte die Oper 'Die Zauberflöte'?",
+      "options": [
+        "Mozart",
+        "Beethoven",
+        "Wagner",
+        "Haydn"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Reich wurde 1806 durch Napoleon aufgelöst?",
+      "options": [
+        "Heiliges Römisches Reich",
+        "Römisches Reich",
+        "Byzantinisches Reich",
+        "Osmanisches Reich"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Zahl ist die Eulersche Zahl ungefähr?",
+      "options": [
+        "2,72",
+        "3,14",
+        "1,62",
+        "1,41"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb 'Krieg und Frieden'?",
+      "options": [
+        "Tolstoi",
+        "Dostojewski",
+        "Tschechow",
+        "Puschkin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Land führte als erstes das Frauenwahlrecht in Europa ein?",
+      "options": [
+        "Finnland",
+        "Deutschland",
+        "Frankreich",
+        "Großbritannien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man die Lehre von Säuren und Basen, gemessen über den pH-Wert?",
+      "options": [
+        "Säure-Base-Chemie",
+        "Thermodynamik",
+        "Stöchiometrie",
+        "Elektrochemie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Fluss bildet einen Teil der Grenze zwischen den USA und Mexiko?",
+      "options": [
+        "Rio Grande",
+        "Mississippi",
+        "Colorado River",
+        "Rio Bravo del Norte"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der erste Bundeskanzler der BRD?",
+      "options": [
+        "Konrad Adenauer",
+        "Ludwig Erhard",
+        "Kurt Schumacher",
+        "Theodor Heuss"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches literarische Werk stammt von Goethe und behandelt einen Pakt mit dem Teufel?",
+      "options": [
+        "Faust",
+        "Werther",
+        "Wilhelm Meister",
+        "Iphigenie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Stadt war die Hauptstadt des Byzantinischen Reiches?",
+      "options": [
+        "Konstantinopel",
+        "Athen",
+        "Rom",
+        "Alexandria"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man die SI-Einheit der Kraft?",
+      "options": [
+        "Newton",
+        "Joule",
+        "Watt",
+        "Pascal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die Evolutionstheorie durch natürliche Selektion?",
+      "options": [
+        "Darwin",
+        "Mendel",
+        "Lamarck",
+        "Linné"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Krieg endete mit dem Westfälischen Frieden 1648?",
+      "options": [
+        "Dreißigjähriger Krieg",
+        "Siebenjähriger Krieg",
+        "Spanischer Erbfolgekrieg",
+        "Hundertjähriger Krieg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Land liegt die Stadt Timbuktu?",
+      "options": [
+        "Mali",
+        "Niger",
+        "Tschad",
+        "Senegal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher griechische Philosoph war Lehrer von Alexander dem Großen?",
+      "options": [
+        "Aristoteles",
+        "Sokrates",
+        "Platon",
+        "Epikur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man die Verfassungsorgane, die in Deutschland Gesetze beschließen?",
+      "options": [
+        "Bundestag und Bundesrat",
+        "Bundestag und Bundesregierung",
+        "Bundesrat und Bundespräsident",
+        "Bundesregierung und Bundesrat"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Element wird in Atomkraftwerken meist als Brennstoff verwendet?",
+      "options": [
+        "Uran",
+        "Plutonium",
+        "Thorium",
+        "Radium"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb das Manifest der Kommunistischen Partei zusammen mit Engels?",
+      "options": [
+        "Marx",
+        "Lenin",
+        "Trotzki",
+        "Bakunin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Schlacht gilt als Wendepunkt des Zweiten Weltkrieges an der Ostfront?",
+      "options": [
+        "Schlacht von Stalingrad",
+        "Schlacht um Berlin",
+        "Schlacht von Kursk",
+        "Schlacht um Moskau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man die mathematische Konstante Pi ungefähr?",
+      "options": [
+        "3,14",
+        "2,72",
+        "1,41",
+        "1,73"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Maler schuf die 'Mona Lisa'?",
+      "options": [
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Raffael",
+        "Botticelli"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Gebirge bildet die Grenze zwischen Europa und Asien?",
+      "options": [
+        "Ural",
+        "Alpen",
+        "Karpaten",
+        "Kaukasus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer formulierte die drei Gesetze der Bewegung in der klassischen Mechanik?",
+      "options": [
+        "Newton",
+        "Galilei",
+        "Kepler",
+        "Huygens"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Land war vor 1990 in BRD und DDR geteilt?",
+      "options": [
+        "Deutschland",
+        "Österreich",
+        "Polen",
+        "Tschechoslowakei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der Prozess der Zellteilung zur Bildung von Keimzellen?",
+      "options": [
+        "Meiose",
+        "Mitose",
+        "Osmose",
+        "Apoptose"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Dichter schrieb 'Die Leiden des jungen Werthers'?",
+      "options": [
+        "Goethe",
+        "Schiller",
+        "Lessing",
+        "Kleist"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Jahr trat das Grundgesetz der BRD in Kraft?",
+      "options": [
+        "1949",
+        "1945",
+        "1948",
+        "1955"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Element ist für die Knochenstabilität besonders wichtig?",
+      "options": [
+        "Calcium",
+        "Eisen",
+        "Kalium",
+        "Magnesium"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Vertrag gründete die Europäische Wirtschaftsgemeinschaft?",
+      "options": [
+        "Vertrag von Rom",
+        "Vertrag von Maastricht",
+        "Vertrag von Lissabon",
+        "Vertrag von Paris"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war Reichskanzler des Deutschen Kaiserreichs von 1871 bis 1890?",
+      "options": [
+        "Otto von Bismarck",
+        "Wilhelm I.",
+        "Theobald von Bethmann-Hollweg",
+        "Leo von Caprivi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Land besiegte die spanische Armada 1588?",
+      "options": [
+        "England",
+        "Frankreich",
+        "Niederlande",
+        "Portugal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man die Theorie, dass das Universum aus einem extrem dichten Zustand expandierte?",
+      "options": [
+        "Urknalltheorie",
+        "Stringtheorie",
+        "Multiversum-Theorie",
+        "Steady-State-Theorie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Komponist war taub und schrieb trotzdem bedeutende Symphonien?",
+      "options": [
+        "Beethoven",
+        "Mozart",
+        "Brahms",
+        "Schubert"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer prägte den Begriff 'kategorischer Imperativ' in der 'Kritik der praktischen Vernunft'?",
+      "options": [
+        "Kant",
+        "Hegel",
+        "Fichte",
+        "Schelling"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches chemische Element hat das Symbol Fe?",
+      "options": [
+        "Eisen",
+        "Fluor",
+        "Francium",
+        "Fermium"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Stadt fand der Wiener Kongress statt?",
+      "options": [
+        "Wien",
+        "Berlin",
+        "Paris",
+        "Frankfurt"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher griechische Stadtstaat war für seine Kriegerkultur bekannt?",
+      "options": [
+        "Sparta",
+        "Athen",
+        "Korinth",
+        "Theben"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man das Prinzip von Angebot und Nachfrage in der Wirtschaft?",
+      "options": [
+        "Marktmechanismus",
+        "Planwirtschaft",
+        "Protektionismus",
+        "Subvention"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb das Drama 'Nathan der Weise'?",
+      "options": [
+        "Lessing",
+        "Goethe",
+        "Schiller",
+        "Büchner"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Himmelskörper umkreisen die Sonne und haben eine elliptische Bahn nach Keplers erstem Gesetz?",
+      "options": [
+        "Planeten",
+        "Sterne",
+        "Galaxien",
+        "Nebel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Land war Gastgeber der Olympischen Sommerspiele 1936?",
+      "options": [
+        "Deutschland",
+        "Italien",
+        "Frankreich",
+        "Großbritannien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die Wissenschaft von Vererbung und Genen?",
+      "options": [
+        "Genetik",
+        "Anatomie",
+        "Physiologie",
+        "Mikrobiologie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Fluss ist der längste in Afrika?",
+      "options": [
+        "Nil",
+        "Kongo",
+        "Niger",
+        "Sambesi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der englische König, der die Church of England gründete?",
+      "options": [
+        "Heinrich VIII.",
+        "Heinrich VII.",
+        "Eduard VI.",
+        "Jakob I."
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches mathematische Konzept beschreibt die Steigung einer Funktion an einem Punkt?",
+      "options": [
+        "Ableitung",
+        "Integral",
+        "Grenzwert",
+        "Reihe"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Ideologie vertrat Karl Marx vor allem?",
+      "options": [
+        "Kommunismus",
+        "Liberalismus",
+        "Konservatismus",
+        "Anarchismus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Jahrhundert lebte Martin Luther?",
+      "options": [
+        "15.-16. Jahrhundert",
+        "14. Jahrhundert",
+        "17. Jahrhundert",
+        "18. Jahrhundert"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Gas entsteht hauptsächlich bei der Zellatmung als Abfallprodukt?",
+      "options": [
+        "Kohlendioxid",
+        "Sauerstoff",
+        "Stickstoff",
+        "Wasserstoff"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der römische Diktator, der 44 v. Chr. ermordet wurde?",
+      "options": [
+        "Julius Caesar",
+        "Augustus",
+        "Nero",
+        "Pompeius"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Stadt war Zentrum der italienischen Renaissance?",
+      "options": [
+        "Florenz",
+        "Venedig",
+        "Mailand",
+        "Neapel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man die Staatsform, in der das Volk durch gewählte Vertreter regiert?",
+      "options": [
+        "Repräsentative Demokratie",
+        "Monarchie",
+        "Diktatur",
+        "Oligarchie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Teilchen hat eine negative Ladung im Atom?",
+      "options": [
+        "Elektron",
+        "Proton",
+        "Neutron",
+        "Photon"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb 'Der Prozess'?",
+      "options": [
+        "Kafka",
+        "Mann",
+        "Hesse",
+        "Musil"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Ereignis löste 1914 den Ersten Weltkrieg unmittelbar aus?",
+      "options": [
+        "Attentat von Sarajevo",
+        "Invasion Polens",
+        "Versenkung der Lusitania",
+        "Annexion von Elsass-Lothringen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Theorie beschreibt das Verhalten von Materie auf subatomarer Ebene?",
+      "options": [
+        "Quantenmechanik",
+        "Relativitätstheorie",
+        "Thermodynamik",
+        "Elektrodynamik"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der erste Kaiser des Römischen Reiches?",
+      "options": [
+        "Augustus",
+        "Julius Caesar",
+        "Tiberius",
+        "Claudius"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

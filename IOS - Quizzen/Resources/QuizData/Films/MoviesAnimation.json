@@ -1,0 +1,131 @@
+{
+  "id": "MoviesAnimation",
+  "categoryId": "films",
+  "subCategory": "Animation",
+  "title": "Film & Serien (Animation)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wie heißt der Schneemann in „Die Eiskönigin“?",
+      "options": [
+        "Hans",
+        "Kristoff",
+        "Olaf",
+        "Sven"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Studio produzierte „Toy Story“?",
+      "options": [
+        "Illumination",
+        "Blue Sky Studios",
+        "DreamWorks",
+        "Pixar"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt Simbas Vater in „Der König der Löwen“?",
+      "options": [
+        "Mufasa",
+        "Timon",
+        "Rafiki",
+        "Scar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt Nemos Vater in „Findet Nemo“?",
+      "options": [
+        "Dorie",
+        "Gill",
+        "Crush",
+        "Marlin"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche gelben Helfer begleiten Gru in „Ich – Einfach unverbesserlich“?",
+      "options": [
+        "Gremlins",
+        "Pokémon",
+        "Schlümpfe",
+        "Minions"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt der Cowboy in „Toy Story“?",
+      "options": [
+        "Woody",
+        "Buzz",
+        "Jessie",
+        "Rex"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Film träumt eine Ratte davon, in Paris Koch zu werden?",
+      "options": [
+        "Ratatouille",
+        "Stuart Little",
+        "Zoomania",
+        "Feivel der Mauswanderer"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die Königin mit Eiskräften in „Die Eiskönigin“?",
+      "options": [
+        "Rapunzel",
+        "Anna",
+        "Elsa",
+        "Merida"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Tier ist Dumbo?",
+      "options": [
+        "Hirsch",
+        "Elefant",
+        "Maus",
+        "Bär"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie heißt das junge Reh aus Disneys Klassiker von 1942?",
+      "options": [
+        "Bambi",
+        "Klopfer",
+        "Balu",
+        "Blume"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der Bär im „Dschungelbuch“?",
+      "options": [
+        "Balu",
+        "Shir Khan",
+        "Kaa",
+        "Baghira"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Tier ist Judy Hopps aus „Zoomania“?",
+      "options": [
+        "Faultier",
+        "Fuchs",
+        "Schaf",
+        "Hase"
+      ],
+      "correctAnswerIndex": 3
+    }
+  ]
+}

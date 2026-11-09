@@ -1,0 +1,331 @@
+{
+  "id": "CapitalsOceania",
+  "categoryId": "geography",
+  "subCategory": "capitals",
+  "title": "Hauptstädte (Ozeanien)",
+  "description": "Sehenswürdigkeiten die jeder erkennen und bennen sollte.",
+  "difficulty": "Schwer",
+  "imageName": "HauptstadtOzeanien",
+  "questions": [
+    {
+      "question": "Was ist die Hauptstadt von Australien?",
+      "options": [
+        "Canberra",
+        "Wellington",
+        "Suva",
+        "Funafuti"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Canberra?",
+      "options": [
+        "Australien",
+        "Neuseeland",
+        "Fidschi",
+        "Tuvalu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt der Cookinseln?",
+      "options": [
+        "Avarua",
+        "Wellington",
+        "Canberra",
+        "Suva"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Avarua?",
+      "options": [
+        "Cookinseln",
+        "Neuseeland",
+        "Australien",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Fidschi?",
+      "options": [
+        "Suva",
+        "Canberra",
+        "Wellington",
+        "Port Vila"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Suva?",
+      "options": [
+        "Fidschi",
+        "Australien",
+        "Neuseeland",
+        "Vanuatu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Kiribati?",
+      "options": [
+        "Tarawa",
+        "Majuro",
+        "Yaren",
+        "Funafuti"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Tarawa?",
+      "options": [
+        "Kiribati",
+        "Marshallinseln",
+        "Nauru",
+        "Tuvalu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt der Marshallinseln?",
+      "options": [
+        "Majuro",
+        "Tarawa",
+        "Ngerulmud",
+        "Palikir"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Majuro?",
+      "options": [
+        "Marshallinseln",
+        "Kiribati",
+        "Palau",
+        "Mikronesien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Mikronesien?",
+      "options": [
+        "Palikir",
+        "Ngerulmud",
+        "Majuro",
+        "Yaren"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Palikir?",
+      "options": [
+        "Mikronesien",
+        "Palau",
+        "Marshallinseln",
+        "Nauru"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Nauru?",
+      "options": [
+        "Yaren",
+        "Tarawa",
+        "Funafuti",
+        "Ngerulmud"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Yaren?",
+      "options": [
+        "Nauru",
+        "Kiribati",
+        "Tuvalu",
+        "Palau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Neuseeland?",
+      "options": [
+        "Wellington",
+        "Canberra",
+        "Avarua",
+        "Suva"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Wellington?",
+      "options": [
+        "Neuseeland",
+        "Australien",
+        "Cookinseln",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Niue?",
+      "options": [
+        "Alofi",
+        "Wellington",
+        "Avarua",
+        "Nukuʻalofa"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Alofi?",
+      "options": [
+        "Niue",
+        "Neuseeland",
+        "Cookinseln",
+        "Tonga"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Palau?",
+      "options": [
+        "Ngerulmud",
+        "Palikir",
+        "Tokio",
+        "Majuro"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Ngerulmud?",
+      "options": [
+        "Palau",
+        "Mikronesien",
+        "Japan",
+        "Marshallinseln"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Papua-Neuguinea?",
+      "options": [
+        "Port Moresby",
+        "Honiara",
+        "Port Vila",
+        "Suva"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Port Moresby?",
+      "options": [
+        "Papua-Neuguinea",
+        "Salomonen",
+        "Vanuatu",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt der Salomonen?",
+      "options": [
+        "Honiara",
+        "Port Moresby",
+        "Port Vila",
+        "Suva"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Honiara?",
+      "options": [
+        "Salomonen",
+        "Papua-Neuguinea",
+        "Vanuatu",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Samoa?",
+      "options": [
+        "Apia",
+        "Nukuʻalofa",
+        "Suva",
+        "Port Vila"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Apia?",
+      "options": [
+        "Samoa",
+        "Tonga",
+        "Fidschi",
+        "Vanuatu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Tonga?",
+      "options": [
+        "Nukuʻalofa",
+        "Apia",
+        "Suva",
+        "Port Vila"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Nukuʻalofa?",
+      "options": [
+        "Tonga",
+        "Samoa",
+        "Fidschi",
+        "Vanuatu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Tuvalu?",
+      "options": [
+        "Funafuti",
+        "Tarawa",
+        "Suva",
+        "Yaren"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Funafuti?",
+      "options": [
+        "Tuvalu",
+        "Kiribati",
+        "Fidschi",
+        "Nauru"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Vanuatu?",
+      "options": [
+        "Port Vila",
+        "Honiara",
+        "Port Moresby",
+        "Suva"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Port Vila?",
+      "options": [
+        "Vanuatu",
+        "Salomonen",
+        "Papua-Neuguinea",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

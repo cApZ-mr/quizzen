@@ -1,0 +1,131 @@
+{
+  "id": "SportsOther",
+  "categoryId": "sport",
+  "subCategory": "Weitere Sportarten",
+  "title": "Sport (Weitere Sportarten)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wie viele Punkte zählt im Basketball ein Wurf von außerhalb der Dreierlinie?",
+      "options": [
+        "2",
+        "4",
+        "3",
+        "1"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Tennisturnier wird auf Rasen gespielt?",
+      "options": [
+        "US Open",
+        "French Open",
+        "Wimbledon",
+        "Australian Open"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wie viele Spieler pro Team stehen beim Volleyball auf dem Feld?",
+      "options": [
+        "7",
+        "4",
+        "6",
+        "5"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wie viele Punkte sind beim Bowling das höchstmögliche Ergebnis?",
+      "options": [
+        "500",
+        "300",
+        "200",
+        "250"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "In welcher Sportart gibt es einen „Touchdown“?",
+      "options": [
+        "Eishockey",
+        "Baseball",
+        "American Football",
+        "Rugby"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Womit wird beim Eishockey gespielt?",
+      "options": [
+        "Puck",
+        "Federball",
+        "Ball",
+        "Stein"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Löcher hat ein regulärer Golfplatz?",
+      "options": [
+        "24",
+        "12",
+        "9",
+        "18"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche Sportart wird bei der Tour de France ausgetragen?",
+      "options": [
+        "Radsport",
+        "Laufen",
+        "Motorsport",
+        "Rudern"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Sportart wird mit einem Federball gespielt?",
+      "options": [
+        "Squash",
+        "Tennis",
+        "Tischtennis",
+        "Badminton"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie viele Spieler einer Basketballmannschaft sind gleichzeitig auf dem Feld?",
+      "options": [
+        "5",
+        "4",
+        "7",
+        "6"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das Spielende im Schach, wenn der König nicht mehr entkommen kann?",
+      "options": [
+        "Rochade",
+        "Patt",
+        "Remis",
+        "Schachmatt"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche Kampfsportart aus Japan bedeutet „sanfter Weg“?",
+      "options": [
+        "Judo",
+        "Karate",
+        "Kung-Fu",
+        "Taekwondo"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

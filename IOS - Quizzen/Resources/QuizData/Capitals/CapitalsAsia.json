@@ -1,0 +1,891 @@
+{
+  "id": "CapitalsAsia",
+  "categoryId": "geography",
+  "subCategory": "capitals",
+  "title": "Hauptstädte (Asien)",
+  "description": "Sehenswürdigkeiten die jeder erkennen und bennen sollte.",
+  "difficulty": "Mittel",
+  "imageName": "HauptstadtAsien",
+  "questions": [
+    {
+      "question": "Was ist die Hauptstadt von Afghanistan?",
+      "options": [
+        "Kabul",
+        "Islamabad",
+        "Teheran",
+        "Duschanbe"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Kabul?",
+      "options": [
+        "Afghanistan",
+        "Pakistan",
+        "Iran",
+        "Tadschikistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Armenien?",
+      "options": [
+        "Jerewan",
+        "Baku",
+        "Tiflis",
+        "Astana"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Jerewan?",
+      "options": [
+        "Armenien",
+        "Aserbaidschan",
+        "Georgien",
+        "Kasachstan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Aserbaidschan?",
+      "options": [
+        "Baku",
+        "Ankara",
+        "Jerewan",
+        "Aşgabat"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Baku?",
+      "options": [
+        "Aserbaidschan",
+        "Türkei",
+        "Armenien",
+        "Turkmenistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Bahrain?",
+      "options": [
+        "Manama",
+        "Doha",
+        "Kuwait-Stadt",
+        "Abu Dhabi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Manama?",
+      "options": [
+        "Bahrain",
+        "Katar",
+        "Kuwait",
+        "Vereinigte Arabische Emirate"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Bangladesch?",
+      "options": [
+        "Dhaka",
+        "Tokio",
+        "Ngerulmud",
+        "Neu-Delhi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Dhaka?",
+      "options": [
+        "Bangladesch",
+        "Japan",
+        "Palau",
+        "Indien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Bhutan?",
+      "options": [
+        "Thimphu",
+        "Kathmandu",
+        "Neu-Delhi",
+        "Peking"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Thimphu?",
+      "options": [
+        "Bhutan",
+        "Nepal",
+        "Indien",
+        "China"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Brunei?",
+      "options": [
+        "Bandar Seri Begawan",
+        "Kuala Lumpur",
+        "Jakarta",
+        "Manila"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Bandar Seri Begawan?",
+      "options": [
+        "Brunei",
+        "Malaysia",
+        "Indonesien",
+        "Philippinen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von China?",
+      "options": [
+        "Peking",
+        "Hanoi",
+        "Seoul",
+        "Tokio"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Peking?",
+      "options": [
+        "China",
+        "Vietnam",
+        "Südkorea",
+        "Japan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Georgien?",
+      "options": [
+        "Tiflis",
+        "Jerewan",
+        "Baku",
+        "Ankara"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Tiflis?",
+      "options": [
+        "Georgien",
+        "Armenien",
+        "Aserbaidschan",
+        "Türkei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Indien?",
+      "options": [
+        "Neu-Delhi",
+        "Islamabad",
+        "Colombo",
+        "Dhaka"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Neu-Delhi?",
+      "options": [
+        "Indien",
+        "Pakistan",
+        "Sri Lanka",
+        "Bangladesch"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Indonesien?",
+      "options": [
+        "Jakarta",
+        "Monaco-Ville",
+        "Warschau",
+        "Singapur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Jakarta?",
+      "options": [
+        "Indonesien",
+        "Monaco",
+        "Polen",
+        "Singapur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt vom Irak?",
+      "options": [
+        "Bagdad",
+        "Damaskus",
+        "Kairo",
+        "Sanaa"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Bagdad?",
+      "options": [
+        "Irak",
+        "Syrien",
+        "Ägypten",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt vom Iran?",
+      "options": [
+        "Teheran",
+        "Duschanbe",
+        "Kabul",
+        "Baku"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Teheran?",
+      "options": [
+        "Iran",
+        "Tadschikistan",
+        "Afghanistan",
+        "Aserbaidschan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Israel?",
+      "options": [
+        "Jerusalem",
+        "Athen",
+        "Beirut",
+        "Amman"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Jerusalem?",
+      "options": [
+        "Israel",
+        "Griechenland",
+        "Libanon",
+        "Jordanien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Japan?",
+      "options": [
+        "Tokio",
+        "Ngerulmud",
+        "Seoul",
+        "Peking"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Tokio?",
+      "options": [
+        "Japan",
+        "Palau",
+        "Südkorea",
+        "China"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt vom Jemen?",
+      "options": [
+        "Sanaa",
+        "Damaskus",
+        "Kairo",
+        "Bagdad"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Sanaa?",
+      "options": [
+        "Jemen",
+        "Syrien",
+        "Ägypten",
+        "Irak"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Jordanien?",
+      "options": [
+        "Amman",
+        "Ramallah",
+        "Kuwait-Stadt",
+        "Abu Dhabi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Amman?",
+      "options": [
+        "Jordanien",
+        "Palästina",
+        "Kuwait",
+        "Vereinigte Arabische Emirate"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Kambodscha?",
+      "options": [
+        "Phnom Penh",
+        "Bangkok",
+        "Vientiane",
+        "Hanoi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Phnom Penh?",
+      "options": [
+        "Kambodscha",
+        "Thailand",
+        "Laos",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Kasachstan?",
+      "options": [
+        "Astana",
+        "Taschkent",
+        "Bischkek",
+        "Ulaanbaatar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Astana?",
+      "options": [
+        "Kasachstan",
+        "Usbekistan",
+        "Kirgisistan",
+        "Mongolei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Katar?",
+      "options": [
+        "Doha",
+        "Manama",
+        "Kuwait-Stadt",
+        "Riad"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Doha?",
+      "options": [
+        "Katar",
+        "Bahrain",
+        "Kuwait",
+        "Saudi-Arabien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Kirgisistan?",
+      "options": [
+        "Bischkek",
+        "Astana",
+        "Duschanbe",
+        "Taschkent"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Bischkek?",
+      "options": [
+        "Kirgisistan",
+        "Kasachstan",
+        "Tadschikistan",
+        "Usbekistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Kuwait?",
+      "options": [
+        "Kuwait-Stadt",
+        "Amman",
+        "Abu Dhabi",
+        "Manama"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Kuwait-Stadt?",
+      "options": [
+        "Kuwait",
+        "Jordanien",
+        "Vereinigte Arabische Emirate",
+        "Bahrain"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Laos?",
+      "options": [
+        "Vientiane",
+        "Bangkok",
+        "Phnom Penh",
+        "Naypyidaw"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Vientiane?",
+      "options": [
+        "Laos",
+        "Thailand",
+        "Kambodscha",
+        "Myanmar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt vom Libanon?",
+      "options": [
+        "Beirut",
+        "Ottawa",
+        "Jerusalem",
+        "Nikosia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Beirut?",
+      "options": [
+        "Libanon",
+        "Kanada",
+        "Israel",
+        "Zypern"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Malaysia?",
+      "options": [
+        "Kuala Lumpur",
+        "Washington D.C.",
+        "Monrovia",
+        "Manila"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Kuala Lumpur?",
+      "options": [
+        "Malaysia",
+        "USA",
+        "Liberia",
+        "Philippinen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt der Malediven?",
+      "options": [
+        "Malé",
+        "Islamabad",
+        "Ankara",
+        "Tunis"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Malé?",
+      "options": [
+        "Malediven",
+        "Pakistan",
+        "Türkei",
+        "Tunesien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt der Mongolei?",
+      "options": [
+        "Ulaanbaatar",
+        "Peking",
+        "Astana",
+        "Moskau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Ulaanbaatar?",
+      "options": [
+        "Mongolei",
+        "China",
+        "Kasachstan",
+        "Russland"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Myanmar?",
+      "options": [
+        "Naypyidaw",
+        "Vientiane",
+        "Bangkok",
+        "Hanoi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Naypyidaw?",
+      "options": [
+        "Myanmar",
+        "Laos",
+        "Thailand",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Nepal?",
+      "options": [
+        "Kathmandu",
+        "Thimphu",
+        "Neu-Delhi",
+        "Lhasa"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Kathmandu?",
+      "options": [
+        "Nepal",
+        "Bhutan",
+        "Indien",
+        "Tibet"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Nordkorea?",
+      "options": [
+        "Pjöngjang",
+        "Seoul",
+        "Peking",
+        "Hanoi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Pjöngjang?",
+      "options": [
+        "Nordkorea",
+        "Südkorea",
+        "China",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Oman?",
+      "options": [
+        "Maskat",
+        "Abu Dhabi",
+        "Kuwait-Stadt",
+        "Sanaa"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Maskat?",
+      "options": [
+        "Oman",
+        "VAE",
+        "Kuwait",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Pakistan?",
+      "options": [
+        "Islamabad",
+        "Neu-Delhi",
+        "Kabul",
+        "Ankara"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Islamabad?",
+      "options": [
+        "Pakistan",
+        "Indien",
+        "Afghanistan",
+        "Türkei"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt der Philippinen?",
+      "options": [
+        "Manila",
+        "Kuala Lumpur",
+        "Bangkok",
+        "Hanoi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Manila?",
+      "options": [
+        "Philippinen",
+        "Malaysia",
+        "Thailand",
+        "Vietnam"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Saudi-Arabien?",
+      "options": [
+        "Riad",
+        "Islamabad",
+        "Teheran",
+        "Kairo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Riad?",
+      "options": [
+        "Saudi-Arabien",
+        "Pakistan",
+        "Iran",
+        "Ägypten"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Singapur?",
+      "options": [
+        "Singapur",
+        "Jakarta",
+        "Warschau",
+        "Monaco-Ville"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Singapur?",
+      "options": [
+        "Singapur",
+        "Indonesien",
+        "Polen",
+        "Monaco"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Sri Lanka?",
+      "options": [
+        "Colombo",
+        "Neu-Delhi",
+        "Bangkok",
+        "Naypyidaw"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Colombo?",
+      "options": [
+        "Sri Lanka",
+        "Indien",
+        "Thailand",
+        "Myanmar"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Südkorea?",
+      "options": [
+        "Seoul",
+        "Pjöngjang",
+        "Tokio",
+        "Peking"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Seoul?",
+      "options": [
+        "Südkorea",
+        "Nordkorea",
+        "Japan",
+        "China"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Syrien?",
+      "options": [
+        "Damaskus",
+        "Bagdad",
+        "Kairo",
+        "Sanaa"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Damaskus?",
+      "options": [
+        "Syrien",
+        "Irak",
+        "Ägypten",
+        "Jemen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Tadschikistan?",
+      "options": [
+        "Duschanbe",
+        "Bischkek",
+        "Taschkent",
+        "Teheran"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Duschanbe?",
+      "options": [
+        "Tadschikistan",
+        "Kirgisistan",
+        "Usbekistan",
+        "Iran"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Thailand?",
+      "options": [
+        "Bangkok",
+        "Vientiane",
+        "Phnom Penh",
+        "Kuala Lumpur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Bangkok?",
+      "options": [
+        "Thailand",
+        "Laos",
+        "Kambodscha",
+        "Malaysia"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Turkmenistan?",
+      "options": [
+        "Aşgabat",
+        "Taschkent",
+        "Astana",
+        "Baku"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Aşgabat?",
+      "options": [
+        "Turkmenistan",
+        "Usbekistan",
+        "Kasachstan",
+        "Aserbaidschan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Usbekistan?",
+      "options": [
+        "Taschkent",
+        "Duschanbe",
+        "Astana",
+        "Aşgabat"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Taschkent?",
+      "options": [
+        "Usbekistan",
+        "Tadschikistan",
+        "Kasachstan",
+        "Turkmenistan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt der Vereinigten Arabischen Emirate?",
+      "options": [
+        "Abu Dhabi",
+        "Kuwait-Stadt",
+        "Amman",
+        "Maskat"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Abu Dhabi?",
+      "options": [
+        "Vereinigte Arabische Emirate",
+        "Kuwait",
+        "Jordanien",
+        "Oman"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist die Hauptstadt von Vietnam?",
+      "options": [
+        "Hanoi",
+        "Peking",
+        "Pjöngjang",
+        "Bangkok"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Zu welchem Land gehört die Hauptstadt Hanoi?",
+      "options": [
+        "Vietnam",
+        "China",
+        "Nordkorea",
+        "Thailand"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

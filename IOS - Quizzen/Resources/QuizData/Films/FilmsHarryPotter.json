@@ -1,0 +1,621 @@
+{
+  "id": "FilmsHarryPotter",
+  "categoryId": "films",
+  "subCategory": "films",
+  "title": "Harry Potter",
+  "description": "Fragen über Harry Potter",
+  "difficulty": "Mittel",
+  "imageName": "SportBasketball",
+  "questions": [
+    {
+      "question": "Wie viele Hocruxe hatte Voldemord ursprünglich geplant ?",
+      "options": [
+        "6",
+        "3",
+        "5",
+        "7"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der Paten-Onkel von Harry Potter",
+      "options": [
+        "Sirius Black",
+        "Vernon",
+        "Severus Snape",
+        "Tom Riddle"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was beendet ein Quidditch Spiel direkt ?",
+      "options": [
+        "Fangen des Goldenen Schnatz",
+        "Ausschaltung eines Spielers",
+        "Erreichen von 100 Punkten",
+        "Vollmond"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt Voldemorts bürgerlicher Name?",
+      "options": [
+        "Tom Riddle",
+        "Salazar Slytherin",
+        "Gellert Grindelwald",
+        "Barty Crouch"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Haus ist Harry Potter?",
+      "options": [
+        "Gryffindor",
+        "Slytherin",
+        "Hufflepuff",
+        "Ravenclaw"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt Harrys Eule?",
+      "options": [
+        "Hedwig",
+        "Errol",
+        "Pigwidgeon",
+        "Fawkes"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer unterrichtet Harry im ersten Buch/Film Zaubertränke?",
+      "options": [
+        "Severus Snape",
+        "Minerva McGonagall",
+        "Horace Slughorn",
+        "Remus Lupin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der dreiköpfige Hund, der den Stein der Weisen bewacht?",
+      "options": [
+        "Fluffy",
+        "Fang",
+        "Nagini",
+        "Buckbeak"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Tier ist Hermines Haustier?",
+      "options": [
+        "Krummbein",
+        "Scabbers",
+        "Trevor",
+        "Errol"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wem gehört die Kröte Trevor?",
+      "options": [
+        "Neville Longbottom",
+        "Ron Weasley",
+        "Seamus Finnigan",
+        "Dean Thomas"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Von welchem Gleis fährt der Hogwarts-Express ab?",
+      "options": [
+        "Gleis 9 ¾",
+        "Gleis 12",
+        "Gleis 4",
+        "Gleis 1"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die Zaubererbank in London?",
+      "options": [
+        "Gringotts",
+        "Flourish & Blotts",
+        "Zonko's",
+        "Honigtopf"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer ist der Wildhüter von Hogwarts?",
+      "options": [
+        "Rubeus Hagrid",
+        "Argus Filch",
+        "Remus Lupin",
+        "Alastor Moody"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Tier ist Sirius Blacks Animagus-Form?",
+      "options": [
+        "Hund",
+        "Ratte",
+        "Hirsch",
+        "Katze"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Tier ist Peter Pettigrews Animagus-Form?",
+      "options": [
+        "Ratte",
+        "Hund",
+        "Hirsch",
+        "Wiesel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt James Potters Animagus-Form?",
+      "options": [
+        "Hirsch",
+        "Wolf",
+        "Hund",
+        "Ratte"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer verrät Harrys Eltern an Voldemort?",
+      "options": [
+        "Peter Pettigrew",
+        "Sirius Black",
+        "Remus Lupin",
+        "Severus Snape"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der mächtigste Zauberstab unter den Heiligtümern des Todes?",
+      "options": [
+        "Elderstab",
+        "Phönixstab",
+        "Drachenstab",
+        "Einhornstab"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Heiligtümer des Todes gibt es?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "7"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Heiligtum macht seinen Träger unsichtbar?",
+      "options": [
+        "Der Tarnumhang",
+        "Der Elderstab",
+        "Der Stein der Auferstehung",
+        "Das Amulett"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Aufgaben umfasst der Trimagische Wettkampf?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Schule nimmt neben Hogwarts und Durmstrang am Trimagischen Wettkampf teil?",
+      "options": [
+        "Beauxbatons",
+        "Ilvermorny",
+        "Mahoutokoro",
+        "Uagadou"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer ist Schulleiterin von Beauxbatons?",
+      "options": [
+        "Madame Maxime",
+        "Minerva McGonagall",
+        "Rita Skeeter",
+        "Bellatrix Lestrange"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Spieler hat eine Quidditch-Mannschaft?",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißen die aggressiven Bälle im Quidditch, die Spieler vom Besen schlagen wollen?",
+      "options": [
+        "Klatscher",
+        "Quaffel",
+        "Schnatz",
+        "Nimbus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt Harrys erster eigener Besen?",
+      "options": [
+        "Nimbus 2000",
+        "Feuerblitz",
+        "Sauberwisch 5",
+        "Komet 260"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schenkt Harry den Feuerblitz?",
+      "options": [
+        "Sirius Black",
+        "Hagrid",
+        "Dumbledore",
+        "Molly Weasley"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Weasley arbeitet als Drachenexperte in Rumänien?",
+      "options": [
+        "Charlie",
+        "Bill",
+        "Percy",
+        "George"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißen die Weasley-Zwillinge?",
+      "options": [
+        "Fred und George",
+        "Bill und Charlie",
+        "Percy und Ron",
+        "George und Percy"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der Scherzartikelladen von Fred und George?",
+      "options": [
+        "Weasleys Zauberhafte Zauberscherze",
+        "Zonko's Scherzartikel",
+        "Der Honigtopf",
+        "Flourish & Blotts"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das Haus der Weasleys?",
+      "options": [
+        "Der Fuchsbau",
+        "Grimmauldplatz 12",
+        "Malfoy Manor",
+        "Godric's Hollow"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das Elternhaus von Sirius Black in London?",
+      "options": [
+        "Grimmauldplatz 12",
+        "Der Fuchsbau",
+        "Godric's Hollow",
+        "Hogsmeade Manor"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Ort wurden Harrys Eltern getötet?",
+      "options": [
+        "Godric's Hollow",
+        "Hogsmeade",
+        "Little Whinging",
+        "Winkelgasse"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die Einkaufsstraße der Zauberwelt in London?",
+      "options": [
+        "Winkelgasse",
+        "Nokturngasse",
+        "Grimmauldplatz",
+        "Hogsmeade"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist Harrys Patronus?",
+      "options": [
+        "Hirsch",
+        "Fischotter",
+        "Terrier",
+        "Hirschkuh"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist Hermines Patronus?",
+      "options": [
+        "Fischotter",
+        "Hirsch",
+        "Terrier",
+        "Hase"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was ist Severus Snapes Patronus?",
+      "options": [
+        "Hirschkuh",
+        "Hirsch",
+        "Schlange",
+        "Fledermaus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wovor fürchtet sich Ron am meisten (Form seines Irrwichts)?",
+      "options": [
+        "Spinnen",
+        "Dementoren",
+        "Voldemort",
+        "Snape"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer besitzt das Tagebuch, das die Kammer des Schreckens öffnet?",
+      "options": [
+        "Lucius Malfoy",
+        "Voldemort",
+        "Ginny Weasley",
+        "Draco Malfoy"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Womit tötet Harry den Basilisken in der Kammer des Schreckens?",
+      "options": [
+        "Gryffindors Schwert",
+        "Zauberstab",
+        "Avada Kedavra",
+        "Feuer"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer ist der Werwolf unter den Lehrern in Der Gefangene von Askaban?",
+      "options": [
+        "Remus Lupin",
+        "Sirius Black",
+        "Severus Snape",
+        "Alastor Moody"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißen die vier Erschaffer der Karte des Rumtreibers?",
+      "options": [
+        "Moony, Wormtail, Padfoot, Prongs",
+        "Fred, George, Ron, Harry",
+        "James, Lily, Sirius, Remus",
+        "Harry, Ron, Hermine, Neville"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Was benutzt Hermine in Der Gefangene von Askaban, um mehrere Kurse zu belegen?",
+      "options": [
+        "Einen Zeitumkehrer",
+        "Vielsafttrank",
+        "Einen Portschlüssel",
+        "Floh-Pulver"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Womit verwandeln sich Harry und Ron in Crabbe und Goyle?",
+      "options": [
+        "Vielsafttrank",
+        "Felix Felicis",
+        "Amortentia",
+        "Veritaserum"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie wird der Trank genannt, der Glück bringt?",
+      "options": [
+        "Felix Felicis",
+        "Amortentia",
+        "Veritaserum",
+        "Wolfsbanntrank"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer ist der 'Halbblutprinz'?",
+      "options": [
+        "Severus Snape",
+        "Harry Potter",
+        "Tom Riddle",
+        "Horace Slughorn"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer übernimmt in Der Halbblutprinz den Zaubertrankunterricht von Snape?",
+      "options": [
+        "Horace Slughorn",
+        "Minerva McGonagall",
+        "Remus Lupin",
+        "Filius Flitwick"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Amt bekleidet Dolores Umbridge zeitweise in Der Orden des Phönix?",
+      "options": [
+        "Schulleiterin von Hogwarts",
+        "Zaubereiministerin",
+        "Leiterin der Auroren",
+        "Bankdirektorin von Gringotts"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer gründet Dumbledores Armee?",
+      "options": [
+        "Harry Potter",
+        "Ron Weasley",
+        "Neville Longbottom",
+        "Ginny Weasley"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wozu dient der Zauberspruch Expecto Patronum?",
+      "options": [
+        "Dementoren abwehren",
+        "Gegner entwaffnen",
+        "Gedanken lesen",
+        "Unsichtbar werden"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher der drei Unverzeihlichen Flüche tötet sofort?",
+      "options": [
+        "Avada Kedavra",
+        "Crucio",
+        "Imperio",
+        "Expelliarmus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer tötet Albus Dumbledore auf dem Astronomieturm?",
+      "options": [
+        "Severus Snape",
+        "Bellatrix Lestrange",
+        "Draco Malfoy",
+        "Voldemort"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer tötet Bellatrix Lestrange in der Schlacht um Hogwarts?",
+      "options": [
+        "Molly Weasley",
+        "Minerva McGonagall",
+        "Ginny Weasley",
+        "Hermine Granger"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer tötet Nagini in der finalen Schlacht?",
+      "options": [
+        "Neville Longbottom",
+        "Harry Potter",
+        "Ron Weasley",
+        "Hermine Granger"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wem gehörte der Sprechende Hut ursprünglich?",
+      "options": [
+        "Godric Gryffindor",
+        "Rowena Ravenclaw",
+        "Helga Hufflepuff",
+        "Salazar Slytherin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Bücher umfasst die Haupt-Harry-Potter-Reihe?",
+      "options": [
+        "7",
+        "6",
+        "8",
+        "9"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Filme umfasst die Haupt-Harry-Potter-Reihe (inkl. geteiltem letzten Teil)?",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "6"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Schauspieler spielt Harry Potter in den Filmen?",
+      "options": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Tom Felton",
+        "Matthew Lewis"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Schauspielerin spielt Hermine Granger?",
+      "options": [
+        "Emma Watson",
+        "Bonnie Wright",
+        "Evanna Lynch",
+        "Katie Leung"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Schauspieler spielt Severus Snape?",
+      "options": [
+        "Alan Rickman",
+        "Gary Oldman",
+        "Ralph Fiennes",
+        "Jason Isaacs"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer führte bei den ersten beiden Harry-Potter-Filmen Regie?",
+      "options": [
+        "Chris Columbus",
+        "Alfonso Cuarón",
+        "David Yates",
+        "Mike Newell"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

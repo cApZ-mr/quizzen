@@ -1,0 +1,141 @@
+{
+  "id": "HistoryModern",
+  "categoryId": "history",
+  "subCategory": "20. Jahrhundert",
+  "title": "Geschichte (20. Jahrhundert)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "In welchem Jahr begann der Erste Weltkrieg?",
+      "options": [
+        "1914",
+        "1916",
+        "1912",
+        "1918"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Jahr endete der Zweite Weltkrieg in Europa?",
+      "options": [
+        "1944",
+        "1945",
+        "1939",
+        "1946"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "In welchem Jahr fiel die Berliner Mauer?",
+      "options": [
+        "1991",
+        "1990",
+        "1961",
+        "1989"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wer betrat 1969 als erster Mensch den Mond?",
+      "options": [
+        "Michael Collins",
+        "Buzz Aldrin",
+        "Neil Armstrong",
+        "Juri Gagarin"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wer war der erste Mensch im Weltall?",
+      "options": [
+        "John Glenn",
+        "Neil Armstrong",
+        "Juri Gagarin",
+        "Alan Shepard"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "In welchem Jahr wurde Deutschland wiedervereinigt?",
+      "options": [
+        "1992",
+        "1989",
+        "1991",
+        "1990"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wer hielt 1963 die berühmte Rede „I Have a Dream“?",
+      "options": [
+        "John F. Kennedy",
+        "Martin Luther King Jr.",
+        "Nelson Mandela",
+        "Malcolm X"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wer wurde 1994 der erste schwarze Präsident Südafrikas?",
+      "options": [
+        "Desmond Tutu",
+        "Nelson Mandela",
+        "Jacob Zuma",
+        "Thabo Mbeki"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welcher indische Unabhängigkeitskämpfer setzte auf gewaltlosen Widerstand?",
+      "options": [
+        "Indira Gandhi",
+        "Mahatma Gandhi",
+        "Subhas Chandra Bose",
+        "Jawaharlal Nehru"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie nennt man den Konflikt zwischen den USA und der Sowjetunion nach 1945?",
+      "options": [
+        "Krimkrieg",
+        "Golfkrieg",
+        "Koreakrieg",
+        "Kalter Krieg"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "In welchem Jahr wurde die Berliner Mauer gebaut?",
+      "options": [
+        "1949",
+        "1953",
+        "1961",
+        "1968"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Passagierschiff sank 1912 nach der Kollision mit einem Eisberg?",
+      "options": [
+        "Queen Mary",
+        "Titanic",
+        "Lusitania",
+        "Bismarck"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
+      "options": [
+        "Willy Brandt",
+        "Ludwig Erhard",
+        "Helmut Schmidt",
+        "Konrad Adenauer"
+      ],
+      "correctAnswerIndex": 3
+    }
+  ]
+}

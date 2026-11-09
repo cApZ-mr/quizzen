@@ -1,0 +1,78 @@
+//
+//  Quiz.swift
+//  IOS - Quizzen
+//
+//  Created by Malte Rein on 29.05.26.
+//
+
+import Foundation
+
+// MARK: - Difficulty
+
+nonisolated enum Difficulty: String, Codable, CaseIterable {
+    case easy = "Leicht"
+    case medium = "Mittel"
+    case hard = "Schwer"
+}
+
+// MARK: - QuizDetail
+// Einzige Quelle für ein Quiz: eine Datei, alle Daten drin.
+
+nonisolated struct QuizDetail: Identifiable, Codable {
+    let id: String
+    let categoryId: String
+    let subCategory: String
+    let title: String
+    let description: String
+    let imageName: String
+    let difficulty: Difficulty
+    let questions: [Question]
+    /// Nur bei generierten Runden (z. B. Flaggen-Presets) gesetzt
+    var settings: QuizPlaySettings? = nil
+
+    // Kein gespeichertes questionCount-Feld -> wird immer live berechnet.
+    var questionCount: Int { questions.count }
+
+}
+
+/// Spiel-Einstellungen einer generierten Runde
+nonisolated struct QuizPlaySettings: Codable, Hashable {
+    /// Anzahl Fragen pro Runde (nil = Standard: max. 15)
+    var roundLength: Int?
+    /// Sekunden pro Frage (nil = kein Zeitlimit)
+    var timeLimit: Int?
+    /// Anzeigename, z. B. „Kenner“
+    var label: String?
+}
+
+// MARK: - Question
+
+nonisolated struct Question: Codable, Identifiable {
+    var id: String { question }
+    let question: String
+    let imageName: String?
+    let options: [String]
+    let correctAnswerIndex: Int
+}
+
+// MARK: - Angezeigter Fragetext
+
+extension Question {
+    /// Text, der beim Spielen über/unter dem Bild steht.
+    /// Achtung: Bei Bild-Fragen enthält `question` die LÖSUNG (dient als ID),
+    /// darf also während des Spiels nie angezeigt werden.
+    func prompt(quizId: String) -> String {
+        guard imageName != nil else { return question }
+        if quizId.hasPrefix("Flags") { return "Welches Land hat diese Flagge?" }
+        switch quizId {
+        case "AviationLogos":      return "Zu welcher Airline gehört dieses Logo?"
+        case "AviationPlaneModel": return "Welches Flugzeug ist das?"
+        default:                   return "Was ist auf dem Bild zu sehen?"
+        }
+    }
+}
+
+extension QuizDetail {
+    /// Definition mit Presets/Filtern (jedes Quiz der App hat eine)
+    @MainActor var definition: QuizDefinition? { QuizCatalog.definition(for: id) }
+}

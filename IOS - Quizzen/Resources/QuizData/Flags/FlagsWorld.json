@@ -1,0 +1,2186 @@
+{
+  "id": "FlagsWorld",
+  "categoryId": "flags",
+  "subCategory": "Flaggen",
+  "title": "Flaggen (Welt)",
+  "description": "Flaggen die jeder erkennen und bennen sollte.",
+  "difficulty": "Schwer",
+  "imageName": "FlaggenWelt",
+  "questions": [
+      {
+        "question": "Albanien",
+        "imageName": "al",
+        "options": [
+          "Albanien",
+          "Montenegro",
+          "Serbien",
+          "Kosovo"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Andorra",
+        "imageName": "ad",
+        "options": [
+          "Andorra",
+          "Rumänien",
+          "Moldau",
+          "Tschad"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Belarus",
+        "imageName": "by",
+        "options": [
+          "Belarus",
+          "Lettland",
+          "Litauen",
+          "Ukraine"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Belgien",
+        "imageName": "be",
+        "options": [
+          "Belgien",
+          "Deutschland",
+          "Irland",
+          "Italien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Bosnien und Herzegowina",
+        "imageName": "ba",
+        "options": [
+          "Bosnien und Herzegowina",
+          "Ukraine",
+          "Schweden",
+          "Kosovo"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Bulgarien",
+        "imageName": "bg",
+        "options": [
+          "Bulgarien",
+          "Ungarn",
+          "Irland",
+          "Italien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Dänemark",
+        "imageName": "dk",
+        "options": [
+          "Dänemark",
+          "Schweiz",
+          "Norwegen",
+          "Finnland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Deutschland",
+        "imageName": "de",
+        "options": [
+          "Deutschland",
+          "Belgien",
+          "Österreich",
+          "Niederlande"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "England",
+        "imageName": "gb-eng",
+        "options": [
+          "England",
+          "Dänemark",
+          "Finnalnd",
+          "Schweiz"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Estland",
+        "imageName": "ee",
+        "options": [
+          "Estland",
+          "Litauen",
+          "Lettland",
+          "Finnland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Finnland",
+        "imageName": "fi",
+        "options": [
+          "Finnland",
+          "Schweden",
+          "Dänemark",
+          "Norwegen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Frankreich",
+        "imageName": "fr",
+        "options": [
+          "Frankreich",
+          "Italien",
+          "Niederlande",
+          "Luxemburg"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Griechenland",
+        "imageName": "gr",
+        "options": [
+          "Griechenland",
+          "Zypern",
+          "Finnland",
+          "Schweden"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Irland",
+        "imageName": "ie",
+        "options": [
+          "Irland",
+          "Elfenbeinküste",
+          "Italien",
+          "Belgien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Island",
+        "imageName": "is",
+        "options": [
+          "Island",
+          "Norwegen",
+          "Färöer",
+          "Schweden"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Italien",
+        "imageName": "it",
+        "options": [
+          "Italien",
+          "Frankreich",
+          "Irland",
+          "Ungarn"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kosovo",
+        "imageName": "xk",
+        "options": [
+          "Kosovo",
+          "Bosnien und Herzogovina",
+          "Serbien",
+          "Slowakei"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kroatien",
+        "imageName": "hr",
+        "options": [
+          "Kroatien",
+          "Slowenien",
+          "Serbien",
+          "Slowakei"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Lettland",
+        "imageName": "lv",
+        "options": [
+          "Lettland",
+          "Österreich",
+          "Litauen",
+          "Estland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Liechtenstein",
+        "imageName": "li",
+        "options": [
+          "Liechtenstein",
+          "Österreich",
+          "Schweiz",
+          "Polen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Litauen",
+        "imageName": "lt",
+        "options": [
+          "Litauen",
+          "Lettland",
+          "Estland",
+          "Ungarn"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Luxemburg",
+        "imageName": "lu",
+        "options": [
+          "Luxemburg",
+          "Niederlande",
+          "Frankreich",
+          "Belgien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Malta",
+        "imageName": "mt",
+        "options": [
+          "Malta",
+          "Österreich",
+          "Polen",
+          "Schweiz"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Moldau",
+        "imageName": "md",
+        "options": [
+          "Moldau",
+          "Rumänien",
+          "Andorra",
+          "Tschad"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Monaco",
+        "imageName": "mc",
+        "options": [
+          "Monaco",
+          "Indonesien",
+          "Polen",
+          "Singapur"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Montenegro",
+        "imageName": "me",
+        "options": [
+          "Montenegro",
+          "Albanien",
+          "Serbien",
+          "Nordmazedonien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Niederlande",
+        "imageName": "nl",
+        "options": [
+          "Niederlande",
+          "Luxemburg",
+          "Frankreich",
+          "Russland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Nordmazedonien",
+        "imageName": "mk",
+        "options": [
+          "Nordmazedonien",
+          "Japan",
+          "Montenegro",
+          "Albanien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Norwegen",
+        "imageName": "no",
+        "options": [
+          "Norwegen",
+          "Island",
+          "Dänemark",
+          "Finnland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Österreich",
+        "imageName": "at",
+        "options": [
+          "Österreich",
+          "Lettland",
+          "Polen",
+          "Schweiz"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Polen",
+        "imageName": "pl",
+        "options": [
+          "Polen",
+          "Österreich",
+          "Indonesien",
+          "Monaco"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Portugal",
+        "imageName": "pt",
+        "options": [
+          "Portugal",
+          "Spanien",
+          "Frankreich",
+          "Italien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Rumänien",
+        "imageName": "ro",
+        "options": [
+          "Rumänien",
+          "Tschad",
+          "Moldau",
+          "Andorra"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Russland",
+        "imageName": "ru",
+        "options": [
+          "Russland",
+          "Bulgarien",
+          "Litaun",
+          "Frankreich"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "San Marino",
+        "imageName": "sm",
+        "options": [
+          "San Marino",
+          "Vatikaanstadt",
+          "Liechtenstein",
+          "Zypern"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Schottland",
+        "imageName": "gb-sct",
+        "options": [
+          "Schottland",
+          "Jersey",
+          "San Marino",
+          "Finnland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Schweden",
+        "imageName": "se",
+        "options": [
+          "Schweden",
+          "Finnland",
+          "Dänemark",
+          "Norwegen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Schweiz",
+        "imageName": "ch",
+        "options": [
+          "Schweiz",
+          "Dänemark",
+          "Österreich",
+          "Polen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Serbien",
+        "imageName": "rs",
+        "options": [
+          "Serbien",
+          "Kroatien",
+          "Slowenien",
+          "Montenegro"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Slowakei",
+        "imageName": "sk",
+        "options": [
+          "Slowakei",
+          "Slowenien",
+          "Russland",
+          "Tschechien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Slowenien",
+        "imageName": "si",
+        "options": [
+          "Slowenien",
+          "Slowakei",
+          "Kroatien",
+          "Serbien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Spanien",
+        "imageName": "es",
+        "options": [
+          "Spanien",
+          "Portugal",
+          "Frankreich",
+          "Italien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Tschechien",
+        "imageName": "cz",
+        "options": [
+          "Tschechien",
+          "Slowakei",
+          "Polen",
+          "Russland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Türkei",
+        "imageName": "tr",
+        "options": [
+          "Türkei",
+          "Tunesien",
+          "Albanien",
+          "Ilse of Man"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Ungarn",
+        "imageName": "hu",
+        "options": [
+          "Ungarn",
+          "Bulgarien",
+          "Italien",
+          "Irland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Ukraine",
+        "imageName": "ua",
+        "options": [
+          "Ukraine",
+          "Schweden",
+          "Lettland",
+          "Tschechien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Vatikanstadt",
+        "imageName": "va",
+        "options": [
+          "Vatikanstadt",
+          "Italien",
+          "Schweiz",
+          "Österreich"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Vereinigtes Königreich",
+        "imageName": "gb",
+        "options": [
+          "Vereinigtes Königreich",
+          "USA",
+          "Australien",
+          "Irland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Wales",
+        "imageName": "gb-wls",
+        "options": [
+          "Wales",
+          "Schottland",
+          "Spanien",
+          "Albanien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Zypern",
+        "imageName": "cy",
+        "options": [
+          "Zypern",
+          "Griechenland",
+          "Türkei",
+          "Malta"
+        ],
+        "correctAnswerIndex": 0
+      },
+      
+      
+      {
+        "question": "Afghanistan",
+        "imageName": "af",
+        "options": [
+          "Afghanistan",
+          "Pakistan",
+          "Iran",
+          "Tadschikistan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Armenien",
+        "imageName": "am",
+        "options": [
+          "Armenien",
+          "Aserbaidschan",
+          "Georgien",
+          "Kasachstan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Aserbaidschan",
+        "imageName": "az",
+        "options": [
+          "Aserbaidschan",
+          "Türkei",
+          "Armenien",
+          "Turkmenistan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Bahrain",
+        "imageName": "bh",
+        "options": [
+          "Bahrain",
+          "Katar",
+          "Kuwait",
+          "Vereinigte Arabische Emirate"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Bangladesch",
+        "imageName": "bd",
+        "options": [
+          "Bangladesch",
+          "Japan",
+          "Palau",
+          "Indien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Bhutan",
+        "imageName": "bt",
+        "options": [
+          "Bhutan",
+          "Nepal",
+          "Indien",
+          "China"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Brunei",
+        "imageName": "bn",
+        "options": [
+          "Brunei",
+          "Malaysia",
+          "Indonesien",
+          "Philippinen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "China",
+        "imageName": "cn",
+        "options": [
+          "China",
+          "Vietnam",
+          "Südkorea",
+          "Japan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Georgien",
+        "imageName": "ge",
+        "options": [
+          "Georgien",
+          "Armenien",
+          "Aserbaidschan",
+          "Türkei"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Indien",
+        "imageName": "in",
+        "options": [
+          "Indien",
+          "Pakistan",
+          "Sri Lanka",
+          "Bangladesch"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Indonesien",
+        "imageName": "id",
+        "options": [
+          "Indonesien",
+          "Monaco",
+          "Polen",
+          "Singapur"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Irak",
+        "imageName": "iq",
+        "options": [
+          "Irak",
+          "Syrien",
+          "Ägypten",
+          "Jemen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Iran",
+        "imageName": "ir",
+        "options": [
+          "Iran",
+          "Tadschikistan",
+          "Afghanistan",
+          "Aserbaidschan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Israel",
+        "imageName": "il",
+        "options": [
+          "Israel",
+          "Griechenland",
+          "Libanon",
+          "Jordanien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Japan",
+        "imageName": "jp",
+        "options": [
+          "Japan",
+          "Palau",
+          "Südkorea",
+          "China"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Jemen",
+        "imageName": "ye",
+        "options": [
+          "Jemen",
+          "Syrien",
+          "Ägypten",
+          "Irak"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Jordanien",
+        "imageName": "jo",
+        "options": [
+          "Jordanien",
+          "Palästina",
+          "Kuwait",
+          "Vereinigte Arabische Emirate"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kambodscha",
+        "imageName": "kh",
+        "options": [
+          "Kambodscha",
+          "Thailand",
+          "Laos",
+          "Vietnam"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kasachstan",
+        "imageName": "kz",
+        "options": [
+          "Kasachstan",
+          "Usbekistan",
+          "Kirgisistan",
+          "Mongolei"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Katar",
+        "imageName": "qa",
+        "options": [
+          "Katar",
+          "Bahrain",
+          "Kuwait",
+          "Saudi-Arabien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kirgisistan",
+        "imageName": "kg",
+        "options": [
+          "Kirgisistan",
+          "Kasachstan",
+          "Tadschikistan",
+          "Usbekistan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kuwait",
+        "imageName": "kw",
+        "options": [
+          "Kuwait",
+          "Jordanien",
+          "Vereinigte Arabische Emirate",
+          "Bahrain"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Laos",
+        "imageName": "la",
+        "options": [
+          "Laos",
+          "Thailand",
+          "Kambodscha",
+          "Myanmar"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Libanon",
+        "imageName": "lb",
+        "options": [
+          "Libanon",
+          "Kanada",
+          "Israel",
+          "Zypern"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Malaysia",
+        "imageName": "my",
+        "options": [
+          "Malaysia",
+          "USA",
+          "Liberia",
+          "Philippinen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Malediven",
+        "imageName": "mv",
+        "options": [
+          "Malediven",
+          "Pakistan",
+          "Türkei",
+          "Tunesien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Mongolei",
+        "imageName": "mn",
+        "options": [
+          "Mongolei",
+          "China",
+          "Kasachstan",
+          "Russland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Myanmar",
+        "imageName": "mm",
+        "options": [
+          "Myanmar",
+          "Laos",
+          "Thailand",
+          "Vietnam"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Nepal",
+        "imageName": "np",
+        "options": [
+          "Nepal",
+          "Bhutan",
+          "Indien",
+          "Tibet"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Nordkorea",
+        "imageName": "kp",
+        "options": [
+          "Nordkorea",
+          "Südkorea",
+          "China",
+          "Vietnam"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Oman",
+        "imageName": "om",
+        "options": [
+          "Oman",
+          "VAE",
+          "Kuwait",
+          "Jemen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Pakistan",
+        "imageName": "pk",
+        "options": [
+          "Pakistan",
+          "Indien",
+          "Afghanistan",
+          "Türkei"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Philippinen",
+        "imageName": "ph",
+        "options": [
+          "Philippinen",
+          "Malaysia",
+          "Thailand",
+          "Vietnam"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Saudi-Arabien",
+        "imageName": "sa",
+        "options": [
+          "Saudi-Arabien",
+          "Pakistan",
+          "Iran",
+          "Ägypten"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Singapur",
+        "imageName": "sg",
+        "options": [
+          "Singapur",
+          "Indonesien",
+          "Polen",
+          "Monaco"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Sri Lanka",
+        "imageName": "lk",
+        "options": [
+          "Sri Lanka",
+          "Indien",
+          "Thailand",
+          "Myanmar"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Südkorea",
+        "imageName": "kr",
+        "options": [
+          "Südkorea",
+          "Nordkorea",
+          "Japan",
+          "China"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Syrien",
+        "imageName": "sy",
+        "options": [
+          "Syrien",
+          "Irak",
+          "Ägypten",
+          "Jemen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Tadschikistan",
+        "imageName": "tj",
+        "options": [
+          "Tadschikistan",
+          "Kirgisistan",
+          "Usbekistan",
+          "Iran"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Thailand",
+        "imageName": "th",
+        "options": [
+          "Thailand",
+          "Laos",
+          "Kambodscha",
+          "Malaysia"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Turkmenistan",
+        "imageName": "tm",
+        "options": [
+          "Turkmenistan",
+          "Usbekistan",
+          "Kasachstan",
+          "Aserbaidschan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Usbekistan",
+        "imageName": "uz",
+        "options": [
+          "Usbekistan",
+          "Tadschikistan",
+          "Kasachstan",
+          "Turkmenistan"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Vereinigte Arabische Emirate",
+        "imageName": "ae",
+        "options": [
+          "Vereinigte Arabische Emirate",
+          "Kuwait",
+          "Jordanien",
+          "Oman"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Vietnam",
+        "imageName": "vn",
+        "options": [
+          "Vietnam",
+          "China",
+          "Nordkorea",
+          "Thailand"
+        ],
+        "correctAnswerIndex": 0
+      },
+      
+      
+      {
+        "question": "Antigua und Barbuda",
+        "imageName": "ag",
+        "options": [
+          "Antigua und Barbuda",
+          "Bahamas",
+          "Barbados",
+          "Dominica"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Argentinien",
+        "imageName": "ar",
+        "options": [
+          "Argentinien",
+          "Uruguay",
+          "Chile",
+          "Paraguay"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Bahamas",
+        "imageName": "bs",
+        "options": [
+          "Bahamas",
+          "Barbados",
+          "Kuba",
+          "Jamaika"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Barbados",
+        "imageName": "bb",
+        "options": [
+          "Barbados",
+          "Bahamas",
+          "Trinidad und Tobago",
+          "Grenada"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Belize",
+        "imageName": "bz",
+        "options": [
+          "Belize",
+          "Guatemala",
+          "Honduras",
+          "Nicaragua"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Bolivien",
+        "imageName": "bo",
+        "options": [
+          "Bolivien",
+          "Kolumbien",
+          "Ecuador",
+          "Venezuela"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Brasilien",
+        "imageName": "br",
+        "options": [
+          "Brasilien",
+          "Portugal",
+          "Argentinien",
+          "Kolumbien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Chile",
+        "imageName": "cl",
+        "options": [
+          "Chile",
+          "Texas",
+          "Argentinien",
+          "Peru"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Costa Rica",
+        "imageName": "cr",
+        "options": [
+          "Costa Rica",
+          "Thailand",
+          "Panama",
+          "El Salvador"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Dominica",
+        "imageName": "dm",
+        "options": [
+          "Dominica",
+          "Dominikanische Republik",
+          "Grenada",
+          "St. Lucia"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Dominikanische Republik",
+        "imageName": "do",
+        "options": [
+          "Dominikanische Republik",
+          "Haiti",
+          "Dominica",
+          "Kuba"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Ecuador",
+        "imageName": "ec",
+        "options": [
+          "Ecuador",
+          "Kolumbien",
+          "Venezuela",
+          "Bolivien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "El Salvador",
+        "imageName": "sv",
+        "options": [
+          "El Salvador",
+          "Honduras",
+          "Nicaragua",
+          "Guatemala"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Grenada",
+        "imageName": "gd",
+        "options": [
+          "Grenada",
+          "Dominica",
+          "St. Lucia",
+          "Barbados"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Guatemala",
+        "imageName": "gt",
+        "options": [
+          "Guatemala",
+          "Honduras",
+          "El Salvador",
+          "Nicaragua"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Guyana",
+        "imageName": "gy",
+        "options": [
+          "Guyana",
+          "Suriname",
+          "Brasilien",
+          "Venezuela"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Haiti",
+        "imageName": "ht",
+        "options": [
+          "Haiti",
+          "Dominikanische Republik",
+          "Liechtenstein",
+          "Philippinen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Honduras",
+        "imageName": "hn",
+        "options": [
+          "Honduras",
+          "El Salvador",
+          "Nicaragua",
+          "Guatemala"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Jamaika",
+        "imageName": "jm",
+        "options": [
+          "Jamaika",
+          "Bahamas",
+          "Trinidad und Tobago",
+          "Kuba"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kanada",
+        "imageName": "ca",
+        "options": [
+          "Kanada",
+          "Peru",
+          "Österreich",
+          "Dänemark"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kolumbien",
+        "imageName": "co",
+        "options": [
+          "Kolumbien",
+          "Ecuador",
+          "Venezuela",
+          "Bolivien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kuba",
+        "imageName": "cu",
+        "options": [
+          "Kuba",
+          "Puerto Rico",
+          "Chile",
+          "Dominikanische Republik"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Mexiko",
+        "imageName": "mx",
+        "options": [
+          "Mexiko",
+          "Italien",
+          "Ungarn",
+          "Irland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Nicaragua",
+        "imageName": "ni",
+        "options": [
+          "Nicaragua",
+          "El Salvador",
+          "Honduras",
+          "Guatemala"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Panama",
+        "imageName": "pa",
+        "options": [
+          "Panama",
+          "USA",
+          "Costa Rica",
+          "Chile"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Paraguay",
+        "imageName": "py",
+        "options": [
+          "Paraguay",
+          "Uruguay",
+          "Argentinien",
+          "Chile"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Peru",
+        "imageName": "pe",
+        "options": [
+          "Peru",
+          "Kanada",
+          "Österreich",
+          "Spanien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "St. Kitts und Nevis",
+        "imageName": "kn",
+        "options": [
+          "St. Kitts und Nevis",
+          "St. Lucia",
+          "Grenada",
+          "Antigua und Barbuda"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "St. Lucia",
+        "imageName": "lc",
+        "options": [
+          "St. Lucia",
+          "St. Vincent und die Grenadinen",
+          "Grenada",
+          "Dominica"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "St. Vincent und die Grenadinen",
+        "imageName": "vc",
+        "options": [
+          "St. Vincent und die Grenadinen",
+          "St. Lucia",
+          "Grenada",
+          "Barbados"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Suriname",
+        "imageName": "sr",
+        "options": [
+          "Suriname",
+          "Guyana",
+          "Paraguay",
+          "Chile"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Trinidad und Tobago",
+        "imageName": "tt",
+        "options": [
+          "Trinidad und Tobago",
+          "Jamaika",
+          "Bahamas",
+          "Barbados"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Uruguay",
+        "imageName": "uy",
+        "options": [
+          "Uruguay",
+          "Argentinien",
+          "Paraguay",
+          "Griechenland"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "USA",
+        "imageName": "us",
+        "options": [
+          "USA",
+          "Liberia",
+          "Malaysia",
+          "Chile"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Venezuela",
+        "imageName": "ve",
+        "options": [
+          "Venezuela",
+          "Ecuador",
+          "Kolumbien",
+          "Rumänien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      
+      
+      {
+        "question": "Ägypten",
+        "imageName": "eg",
+        "options": [
+          "Ägypten",
+          "Syrien",
+          "Irak",
+          "Jemen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Algerien",
+        "imageName": "dz",
+        "options": [
+          "Algerien",
+          "Pakistan",
+          "Tunesien",
+          "Türkei"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Angola",
+        "imageName": "ao",
+        "options": [
+          "Angola",
+          "Mosambik",
+          "Namibia",
+          "Sambia"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Äquatorialguinea",
+        "imageName": "gq",
+        "options": [
+          "Äquatorialguinea",
+          "Gabun",
+          "Kamerun",
+          "Kongo"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Äthiopien",
+        "imageName": "et",
+        "options": [
+          "Äthiopien",
+          "Senegal",
+          "Mali",
+          "Ghana"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Benin",
+        "imageName": "bj",
+        "options": [
+          "Benin",
+          "Mali",
+          "Guinea",
+          "Senegal"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Botswana",
+        "imageName": "bw",
+        "options": [
+          "Botswana",
+          "Namibia",
+          "Südafrika",
+          "Simbabwe"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Burkina Faso",
+        "imageName": "bf",
+        "options": [
+          "Burkina Faso",
+          "Benin",
+          "Mali",
+          "Togo"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Burundi",
+        "imageName": "bi",
+        "options": [
+          "Burundi",
+          "Ruanda",
+          "Uganda",
+          "Kenia"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Dschibuti",
+        "imageName": "dj",
+        "options": [
+          "Dschibuti",
+          "Somalia",
+          "Eritrea",
+          "Äthiopien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Elfenbeinküste",
+        "imageName": "ci",
+        "options": [
+          "Elfenbeinküste",
+          "Irland",
+          "Nigeria",
+          "Ghana"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Eritrea",
+        "imageName": "er",
+        "options": [
+          "Eritrea",
+          "Dschibuti",
+          "Somalia",
+          "Äthiopien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Eswatini",
+        "imageName": "sz",
+        "options": [
+          "Eswatini",
+          "Südafrika",
+          "Lesotho",
+          "Botswana"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Gabun",
+        "imageName": "ga",
+        "options": [
+          "Gabun",
+          "Kamerun",
+          "Äquatorialguinea",
+          "Kongo"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Gambia",
+        "imageName": "gm",
+        "options": [
+          "Gambia",
+          "Senegal",
+          "Sierra Leone",
+          "Guinea-Bissau"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Ghana",
+        "imageName": "gh",
+        "options": [
+          "Ghana",
+          "Senegal",
+          "Äthiopien",
+          "Mali"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Guinea",
+        "imageName": "gn",
+        "options": [
+          "Guinea",
+          "Mali",
+          "Senegal",
+          "Benin"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Guinea-Bissau",
+        "imageName": "gw",
+        "options": [
+          "Guinea-Bissau",
+          "Guinea",
+          "Senegal",
+          "Kap Verde"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kamerun",
+        "imageName": "cm",
+        "options": [
+          "Kamerun",
+          "Senegal",
+          "Mali",
+          "Guinea"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kap Verde",
+        "imageName": "cv",
+        "options": [
+          "Kap Verde",
+          "Guinea-Bissau",
+          "Komoren",
+          "Mauritius"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kenia",
+        "imageName": "ke",
+        "options": [
+          "Kenia",
+          "Uganda",
+          "Tansania",
+          "Ruanda"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Komoren",
+        "imageName": "km",
+        "options": [
+          "Komoren",
+          "Seychellen",
+          "Mauritius",
+          "Madagaskar"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kongo",
+        "imageName": "cg",
+        "options": [
+          "Kongo",
+          "Demokratische Republik Kongo",
+          "Gabun",
+          "Kamerun"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Lesotho",
+        "imageName": "ls",
+        "options": [
+          "Lesotho",
+          "Südafrika",
+          "Eswatini",
+          "Botswana"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Liberia",
+        "imageName": "lr",
+        "options": [
+          "Liberia",
+          "USA",
+          "Malaysia",
+          "Sierra Leone"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Libyen",
+        "imageName": "ly",
+        "options": [
+          "Libyen",
+          "Ägypten",
+          "Algerien",
+          "Tunesien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Madagaskar",
+        "imageName": "mg",
+        "options": [
+          "Madagaskar",
+          "Mauritius",
+          "Seychellen",
+          "Komoren"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Malawi",
+        "imageName": "mw",
+        "options": [
+          "Malawi",
+          "Sambia",
+          "Mosambik",
+          "Simbabwe"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Mali",
+        "imageName": "ml",
+        "options": [
+          "Mali",
+          "Guinea",
+          "Senegal",
+          "Benin"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Marokko",
+        "imageName": "ma",
+        "options": [
+          "Marokko",
+          "Tunesien",
+          "Algerien",
+          "Libyen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Mauretanien",
+        "imageName": "mr",
+        "options": [
+          "Mauretanien",
+          "Niger",
+          "Mali",
+          "Senegal"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Mauritius",
+        "imageName": "mu",
+        "options": [
+          "Mauritius",
+          "Seychellen",
+          "Madagaskar",
+          "Komoren"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Mosambik",
+        "imageName": "mz",
+        "options": [
+          "Mosambik",
+          "Angola",
+          "Sambia",
+          "Simbabwe"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Namibia",
+        "imageName": "na",
+        "options": [
+          "Namibia",
+          "Südafrika",
+          "Botswana",
+          "Angola"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Niger",
+        "imageName": "ne",
+        "options": [
+          "Niger",
+          "Indien",
+          "Indonesien",
+          "Mali"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Nigeria",
+        "imageName": "ng",
+        "options": [
+          "Nigeria",
+          "Elfenbeinküste",
+          "Irland",
+          "Ghana"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Ruanda",
+        "imageName": "rw",
+        "options": [
+          "Ruanda",
+          "Burundi",
+          "Uganda",
+          "Kenia"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Sambia",
+        "imageName": "zm",
+        "options": [
+          "Sambia",
+          "Malawi",
+          "Mosambik",
+          "Simbabwe"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Senegal",
+        "imageName": "sn",
+        "options": [
+          "Senegal",
+          "Mali",
+          "Guinea",
+          "Kamerun"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Seychellen",
+        "imageName": "sc",
+        "options": [
+          "Seychellen",
+          "Mauritius",
+          "Madagaskar",
+          "Komoren"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Sierra Leone",
+        "imageName": "sl",
+        "options": [
+          "Sierra Leone",
+          "Nigeria",
+          "Gambia",
+          "Liberia"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Simbabwe",
+        "imageName": "zw",
+        "options": [
+          "Simbabwe",
+          "Sambia",
+          "Malawi",
+          "Mosambik"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Somalia",
+        "imageName": "so",
+        "options": [
+          "Somalia",
+          "Vietnam",
+          "Dschibuti",
+          "Eritrea"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Südafrika",
+        "imageName": "za",
+        "options": [
+          "Südafrika",
+          "Namibia",
+          "Lesotho",
+          "Botswana"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Sudan",
+        "imageName": "sd",
+        "options": [
+          "Sudan",
+          "Südsudan",
+          "Ägypten",
+          "Libyen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Südsudan",
+        "imageName": "ss",
+        "options": [
+          "Südsudan",
+          "Sudan",
+          "Kenia",
+          "Uganda"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Tansania",
+        "imageName": "tz",
+        "options": [
+          "Tansania",
+          "Kenia",
+          "Uganda",
+          "Ruanda"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Togo",
+        "imageName": "tg",
+        "options": [
+          "Togo",
+          "Benin",
+          "Mali",
+          "Ghana"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Tschad",
+        "imageName": "td",
+        "options": [
+          "Tschad",
+          "Rumänien",
+          "Moldau",
+          "Andorra"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Tunesien",
+        "imageName": "tn",
+        "options": [
+          "Tunesien",
+          "Türkei",
+          "Algerien",
+          "Libyen"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Uganda",
+        "imageName": "ug",
+        "options": [
+          "Uganda",
+          "Kenia",
+          "Tansania",
+          "Ruanda"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Zentralafrikanische Republik",
+        "imageName": "cf",
+        "options": [
+          "Zentralafrikanische Republik",
+          "Kamerun",
+          "Kongo",
+          "Gabun"
+        ],
+        "correctAnswerIndex": 0
+      },
+      
+      
+      {
+        "question": "Australien",
+        "imageName": "au",
+        "options": [
+          "Australien",
+          "Neuseeland",
+          "Fidschi",
+          "Tuvalu"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Cookinseln",
+        "imageName": "ck",
+        "options": [
+          "Cookinseln",
+          "Neuseeland",
+          "Australien",
+          "Fidschi"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Fidschi",
+        "imageName": "fj",
+        "options": [
+          "Fidschi",
+          "Australien",
+          "Neuseeland",
+          "Vanuatu"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Kiribati",
+        "imageName": "ki",
+        "options": [
+          "Kiribati",
+          "Marshallinseln",
+          "Nauru",
+          "Tuvalu"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Marshallinseln",
+        "imageName": "mh",
+        "options": [
+          "Marshallinseln",
+          "Kiribati",
+          "Palau",
+          "Mikronesien"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Mikronesien",
+        "imageName": "fm",
+        "options": [
+          "Mikronesien",
+          "Palau",
+          "Marshallinseln",
+          "Nauru"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Nauru",
+        "imageName": "nr",
+        "options": [
+          "Nauru",
+          "Kiribati",
+          "Tuvalu",
+          "Palau"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Neuseeland",
+        "imageName": "nz",
+        "options": [
+          "Neuseeland",
+          "Australien",
+          "Cookinseln",
+          "Fidschi"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Niue",
+        "imageName": "nu",
+        "options": [
+          "Niue",
+          "Neuseeland",
+          "Cookinseln",
+          "Tonga"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Palau",
+        "imageName": "pw",
+        "options": [
+          "Palau",
+          "Mikronesien",
+          "Japan",
+          "Marshallinseln"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Papua-Neuguinea",
+        "imageName": "pg",
+        "options": [
+          "Papua-Neuguinea",
+          "Salomonen",
+          "Vanuatu",
+          "Fidschi"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Salomonen",
+        "imageName": "sb",
+        "options": [
+          "Salomonen",
+          "Papua-Neuguinea",
+          "Vanuatu",
+          "Fidschi"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Samoa",
+        "imageName": "ws",
+        "options": [
+          "Samoa",
+          "Tonga",
+          "Fidschi",
+          "Vanuatu"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Tonga",
+        "imageName": "to",
+        "options": [
+          "Tonga",
+          "Samoa",
+          "Fidschi",
+          "Vanuatu"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Tuvalu",
+        "imageName": "tv",
+        "options": [
+          "Tuvalu",
+          "Kiribati",
+          "Fidschi",
+          "Nauru"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "question": "Vanuatu",
+        "imageName": "vu",
+        "options": [
+          "Vanuatu",
+          "Salomonen",
+          "Papua-Neuguinea",
+          "Fidschi"
+        ],
+        "correctAnswerIndex": 0
+      }
+  ]
+}

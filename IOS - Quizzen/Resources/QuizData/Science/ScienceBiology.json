@@ -1,0 +1,131 @@
+{
+  "id": "ScienceBiology",
+  "categoryId": "science",
+  "subCategory": "Biologie",
+  "title": "Wissenschaft (Biologie)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Welches Organ pumpt das Blut durch den Körper?",
+      "options": [
+        "Niere",
+        "Lunge",
+        "Leber",
+        "Herz"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie viele Knochen hat ein erwachsener Mensch ungefähr?",
+      "options": [
+        "106",
+        "412",
+        "306",
+        "206"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt der grüne Farbstoff in Pflanzen?",
+      "options": [
+        "Chlorophyll",
+        "Carotin",
+        "Hämoglobin",
+        "Melanin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches ist das größte Organ des Menschen?",
+      "options": [
+        "Haut",
+        "Lunge",
+        "Gehirn",
+        "Leber"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Chromosomen hat ein Mensch normalerweise?",
+      "options": [
+        "48",
+        "46",
+        "44",
+        "23"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welches ist das größte Tier der Welt?",
+      "options": [
+        "Blauwal",
+        "Walhai",
+        "Afrikanischer Elefant",
+        "Pottwal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer begründete die Evolutionstheorie durch natürliche Selektion?",
+      "options": [
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Louis Pasteur",
+        "Alexander von Humboldt"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Blutgruppe gilt als Universalspender?",
+      "options": [
+        "AB positiv",
+        "A positiv",
+        "B negativ",
+        "0 negativ"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt der Prozess, mit dem Pflanzen aus Licht Energie gewinnen?",
+      "options": [
+        "Gärung",
+        "Zellatmung",
+        "Osmose",
+        "Photosynthese"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welche Zellbestandteile gelten als „Kraftwerke der Zelle“?",
+      "options": [
+        "Vakuolen",
+        "Mitochondrien",
+        "Zellkern",
+        "Ribosomen"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wer entdeckte 1928 das Penicillin?",
+      "options": [
+        "Robert Koch",
+        "Louis Pasteur",
+        "Marie Curie",
+        "Alexander Fleming"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welches Vitamin bildet der Körper mithilfe von Sonnenlicht?",
+      "options": [
+        "Vitamin B12",
+        "Vitamin A",
+        "Vitamin D",
+        "Vitamin C"
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

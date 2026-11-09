@@ -1,0 +1,131 @@
+{
+  "id": "SportsSoccer",
+  "categoryId": "sport",
+  "subCategory": "Fußball",
+  "title": "Sport (Fußball)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wie viele Spieler einer Mannschaft stehen beim Fußball auf dem Feld?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "11"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie lange dauert ein reguläres Fußballspiel?",
+      "options": [
+        "60 Minuten",
+        "80 Minuten",
+        "90 Minuten",
+        "100 Minuten"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wie oft wurde die deutsche Herren-Nationalmannschaft Fußball-Weltmeister?",
+      "options": [
+        "3-mal",
+        "4-mal",
+        "2-mal",
+        "5-mal"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welches Land hat die meisten Fußball-WM-Titel bei den Herren?",
+      "options": [
+        "Deutschland",
+        "Brasilien",
+        "Argentinien",
+        "Italien"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welche Karte bedeutet im Fußball einen Platzverweis?",
+      "options": [
+        "Blaue Karte",
+        "Rote Karte",
+        "Grüne Karte",
+        "Gelbe Karte"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "In welchem Land fand die Fußball-WM 2014 statt?",
+      "options": [
+        "Deutschland",
+        "Südafrika",
+        "Russland",
+        "Brasilien"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt die höchste Spielklasse im deutschen Fußball?",
+      "options": [
+        "Regionalliga",
+        "Bundesliga",
+        "Oberliga",
+        "Premier League"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Aus welcher Entfernung wird ein Elfmeter geschossen?",
+      "options": [
+        "7 Meter",
+        "9 Meter",
+        "11 Meter",
+        "16 Meter"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welcher Verein trägt den Spitznamen „Die Königlichen“?",
+      "options": [
+        "FC Bayern München",
+        "Real Madrid",
+        "FC Barcelona",
+        "Juventus Turin"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "In welchem Land entstand der moderne Fußball?",
+      "options": [
+        "Deutschland",
+        "Brasilien",
+        "Italien",
+        "England"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie oft findet eine Fußball-Weltmeisterschaft statt?",
+      "options": [
+        "Jedes Jahr",
+        "Alle 5 Jahre",
+        "Alle 4 Jahre",
+        "Alle 2 Jahre"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welche Karte zeigt der Schiedsrichter bei einer Verwarnung?",
+      "options": [
+        "Grüne Karte",
+        "Rote Karte",
+        "Gelbe Karte",
+        "Weiße Karte"
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

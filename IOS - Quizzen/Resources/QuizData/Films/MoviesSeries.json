@@ -1,0 +1,131 @@
+{
+  "id": "MoviesSeries",
+  "categoryId": "films",
+  "subCategory": "Serien",
+  "title": "Film & Serien (Serien)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "In welcher Stadt spielt die Serie „Friends“?",
+      "options": [
+        "Boston",
+        "New York",
+        "Los Angeles",
+        "Chicago"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie heißt der Chemielehrer in „Breaking Bad“?",
+      "options": [
+        "Walter White",
+        "Jesse Pinkman",
+        "Hank Schrader",
+        "Saul Goodman"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die Kleinstadt in „Stranger Things“?",
+      "options": [
+        "Hawkins",
+        "Springfield",
+        "Riverdale",
+        "Twin Peaks"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Serie kämpfen Adelshäuser um den Eisernen Thron?",
+      "options": [
+        "Game of Thrones",
+        "Das Rad der Zeit",
+        "Vikings",
+        "The Witcher"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der Sohn von Homer Simpson?",
+      "options": [
+        "Ned",
+        "Bart",
+        "Nelson",
+        "Milhouse"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "In welcher Serie arbeitet Sheldon Cooper als Physiker?",
+      "options": [
+        "The Big Bang Theory",
+        "How I Met Your Mother",
+        "Scrubs",
+        "Two and a Half Men"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Streamingdienst produziert „Stranger Things“?",
+      "options": [
+        "Disney+",
+        "Amazon Prime Video",
+        "Apple TV+",
+        "Netflix"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Aus welchem Land stammt die Serie „Haus des Geldes“?",
+      "options": [
+        "Argentinien",
+        "Italien",
+        "Spanien",
+        "Mexiko"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welche Zeichentrickserie spielt in der fiktiven Stadt Springfield?",
+      "options": [
+        "Family Guy",
+        "South Park",
+        "Futurama",
+        "Die Simpsons"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt der Hexer in der Serie „The Witcher“?",
+      "options": [
+        "Rittersporn",
+        "Geralt von Riva",
+        "Yennefer",
+        "Ciri"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie viele Freunde stehen im Mittelpunkt der Serie „Friends“?",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Aus welchem Land stammt die Netflix-Serie „Dark“?",
+      "options": [
+        "Deutschland",
+        "Norwegen",
+        "Dänemark",
+        "Österreich"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

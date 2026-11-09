@@ -1,0 +1,131 @@
+{
+  "id": "MoviesFilms",
+  "categoryId": "films",
+  "subCategory": "Filme",
+  "title": "Film & Serien (Filme)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wer spielte Jack im Film „Titanic“ von 1997?",
+      "options": [
+        "Brad Pitt",
+        "Leonardo DiCaprio",
+        "Johnny Depp",
+        "Matt Damon"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie heißt Steven Spielbergs Hai-Film von 1975?",
+      "options": [
+        "Deep Blue Sea",
+        "Der weiße Hai",
+        "Meg",
+        "Open Water"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welcher Regisseur drehte „E.T. – Der Außerirdische“?",
+      "options": [
+        "Ridley Scott",
+        "George Lucas",
+        "Steven Spielberg",
+        "James Cameron"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welcher Zauberer ruft in „Der Herr der Ringe“: „Du kannst nicht vorbei!“?",
+      "options": [
+        "Saruman",
+        "Elrond",
+        "Radagast",
+        "Gandalf"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "In welcher Filmreihe kommt Darth Vader vor?",
+      "options": [
+        "Dune",
+        "Star Wars",
+        "Star Trek",
+        "Alien"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welcher Film von James Cameron gewann elf Oscars?",
+      "options": [
+        "Titanic",
+        "Avatar",
+        "Aliens",
+        "Terminator 2"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Schauspieler spielte Iron Man im Marvel Cinematic Universe?",
+      "options": [
+        "Mark Ruffalo",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Robert Downey Jr."
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wie heißt der Archäologe mit Hut und Peitsche, gespielt von Harrison Ford?",
+      "options": [
+        "Indiana Jones",
+        "Han Solo",
+        "Jack Ryan",
+        "Rick Deckard"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Film fällt der berühmte Satz „I'll be back“?",
+      "options": [
+        "Terminator",
+        "RoboCop",
+        "Rambo",
+        "Predator"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Film spielt in einem Freizeitpark mit geklonten Dinosauriern?",
+      "options": [
+        "Godzilla",
+        "Die Mumie",
+        "Jurassic Park",
+        "King Kong"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welche Pille schluckt Neo in „Matrix“?",
+      "options": [
+        "Die blaue",
+        "Die rote",
+        "Die grüne",
+        "Die gelbe"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie heißt der Kapitän der „Black Pearl“ in „Fluch der Karibik“?",
+      "options": [
+        "Will Turner",
+        "Jack Sparrow",
+        "Hector Barbossa",
+        "Davy Jones"
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

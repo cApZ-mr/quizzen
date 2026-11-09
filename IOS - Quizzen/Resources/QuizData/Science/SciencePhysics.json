@@ -1,0 +1,131 @@
+{
+  "id": "SciencePhysics",
+  "categoryId": "science",
+  "subCategory": "Physik",
+  "title": "Wissenschaft (Physik)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wie schnell ist Licht im Vakuum ungefähr?",
+      "options": [
+        "3.000 km/s",
+        "3.000.000 km/s",
+        "30.000 km/s",
+        "300.000 km/s"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wer entwickelte die Relativitätstheorie?",
+      "options": [
+        "Isaac Newton",
+        "Max Planck",
+        "Niels Bohr",
+        "Albert Einstein"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "In welcher Einheit wird elektrische Spannung gemessen?",
+      "options": [
+        "Ampere",
+        "Watt",
+        "Ohm",
+        "Volt"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Wer formulierte das Gravitationsgesetz?",
+      "options": [
+        "Isaac Newton",
+        "Johannes Kepler",
+        "Galileo Galilei",
+        "Albert Einstein"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Einheit wird Kraft gemessen?",
+      "options": [
+        "Pascal",
+        "Newton",
+        "Watt",
+        "Joule"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Bei welcher Temperatur gefriert Wasser?",
+      "options": [
+        "4 °C",
+        "0 °C",
+        "32 °C",
+        "-10 °C"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wie viel Grad Celsius beträgt der absolute Nullpunkt (gerundet)?",
+      "options": [
+        "-273 °C",
+        "-459 °C",
+        "-100 °C",
+        "-180 °C"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Farbe des sichtbaren Lichts hat die längste Wellenlänge?",
+      "options": [
+        "Rot",
+        "Grün",
+        "Violett",
+        "Blau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Einheit wird die elektrische Stromstärke gemessen?",
+      "options": [
+        "Ohm",
+        "Hertz",
+        "Ampere",
+        "Volt"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Was wird in Hertz gemessen?",
+      "options": [
+        "Temperatur",
+        "Druck",
+        "Frequenz",
+        "Lautstärke"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Wie schnell breitet sich Schall in der Luft ungefähr aus?",
+      "options": [
+        "34 m/s",
+        "300.000 km/s",
+        "343 m/s",
+        "3.430 m/s"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Teilchen eines Atoms ist negativ geladen?",
+      "options": [
+        "Proton",
+        "Elektron",
+        "Neutron",
+        "Photon"
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

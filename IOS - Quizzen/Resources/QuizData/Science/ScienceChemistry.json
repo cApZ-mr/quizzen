@@ -1,0 +1,141 @@
+{
+  "id": "ScienceChemistry",
+  "categoryId": "science",
+  "subCategory": "Chemie",
+  "title": "Wissenschaft (Chemie)",
+  "description": "",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Welches chemische Symbol hat Gold?",
+      "options": [
+        "Ag",
+        "Gd",
+        "Au",
+        "Go"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welche chemische Formel hat Wasser?",
+      "options": [
+        "H₂O",
+        "CO₂",
+        "H₂O₂",
+        "O₂"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Element hat die Ordnungszahl 1?",
+      "options": [
+        "Kohlenstoff",
+        "Wasserstoff",
+        "Sauerstoff",
+        "Helium"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welches Gas atmen Menschen aus und Pflanzen nehmen es auf?",
+      "options": [
+        "Stickstoff",
+        "Sauerstoff",
+        "Kohlenstoffdioxid",
+        "Helium"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Gas macht den größten Teil der Luft aus?",
+      "options": [
+        "Sauerstoff",
+        "Kohlenstoffdioxid",
+        "Stickstoff",
+        "Argon"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welchen pH-Wert hat reines Wasser?",
+      "options": [
+        "14",
+        "0",
+        "5",
+        "7"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welches chemische Symbol hat Eisen?",
+      "options": [
+        "Fe",
+        "Es",
+        "Ei",
+        "Ir"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Metall ist bei Raumtemperatur flüssig?",
+      "options": [
+        "Blei",
+        "Quecksilber",
+        "Zinn",
+        "Aluminium"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wer entwickelte 1869 das Periodensystem der Elemente?",
+      "options": [
+        "Antoine Lavoisier",
+        "Marie Curie",
+        "Niels Bohr",
+        "Dmitri Mendelejew"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Welches Element ist das häufigste in der Erdkruste?",
+      "options": [
+        "Silizium",
+        "Aluminium",
+        "Sauerstoff",
+        "Eisen"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Bei wie viel Grad Celsius siedet Wasser auf Meereshöhe?",
+      "options": [
+        "80 °C",
+        "120 °C",
+        "100 °C",
+        "90 °C"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Welches Edelgas leuchtet in Leuchtreklamen rot-orange?",
+      "options": [
+        "Xenon",
+        "Neon",
+        "Radon",
+        "Argon"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Welches Element hat das chemische Symbol „Na“?",
+      "options": [
+        "Nickel",
+        "Natrium",
+        "Stickstoff",
+        "Neon"
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

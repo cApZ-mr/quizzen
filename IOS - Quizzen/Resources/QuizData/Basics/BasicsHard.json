@@ -1,0 +1,761 @@
+{
+  "id": "BasicsHard",
+  "categoryId": "basics",
+  "subCategory": "Allgemeinwissen",
+  "title": "Allgemeinwissen (Schwer)",
+  "description": "Anspruchsvolle Fragen zu spezifischen Theorien, Konzepten und Persönlichkeiten aus Wissenschaft, Philosophie, Geschichte und Sozialwissenschaften – setzt fundierteres Fachwissen und akademischen Kontext voraus.",
+  "difficulty": "Schwer",
+  "imageName": "allgemeinwissenSchwer",
+  "questions": [
+    {
+      "question": "Welches Prinzip besagt, dass Ort und Impuls eines Teilchens nicht gleichzeitig beliebig genau bestimmt werden können?",
+      "options": [
+        "Heisenbergsche Unschärferelation",
+        "Pauli-Prinzip",
+        "Korrespondenzprinzip",
+        "Superpositionsprinzip"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die Theorie der Falsifizierbarkeit als Wissenschaftskriterium?",
+      "options": [
+        "Karl Popper",
+        "Thomas Kuhn",
+        "Paul Feyerabend",
+        "Imre Lakatos"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Vertrag markierte formal das Ende des Heiligen Römischen Reiches?",
+      "options": [
+        "Niederlegung der Kaiserkrone 1806",
+        "Frieden von Lunéville",
+        "Reichsdeputationshauptschluss 1803",
+        "Wiener Kongress 1815"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Enzym katalysiert die Verlängerung der DNA bei der Replikation?",
+      "options": [
+        "DNA-Polymerase",
+        "DNA-Ligase",
+        "Helicase",
+        "Topoisomerase"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer prägte den Begriff des 'Paradigmenwechsels' in der Wissenschaftsgeschichte?",
+      "options": [
+        "Thomas Kuhn",
+        "Karl Popper",
+        "Ludwig Wittgenstein",
+        "Bruno Latour"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Verfassungstheorie unterscheidet zwischen pouvoir constituant und pouvoir constitué?",
+      "options": [
+        "Emmanuel Sieyès",
+        "Carl Schmitt",
+        "Hans Kelsen",
+        "Montesquieu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches mathematische Resultat besagt, dass jedes hinreichend mächtige formale System unentscheidbare Aussagen enthält?",
+      "options": [
+        "Gödels Unvollständigkeitssatz",
+        "Cantors Diagonalargument",
+        "Russells Paradoxon",
+        "Church-Turing-These"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer formulierte die Theorie der 'kommunikativen Rationalität'?",
+      "options": [
+        "Habermas",
+        "Adorno",
+        "Horkheimer",
+        "Marcuse"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Periode bezeichnet die Zeit zwischen Perm und Trias als Massenaussterben?",
+      "options": [
+        "Perm-Trias-Grenze",
+        "Kreide-Tertiär-Grenze",
+        "Trias-Jura-Grenze",
+        "Devon-Karbon-Grenze"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte das Konzept der 'Hegemonie' im marxistischen Denken weiter?",
+      "options": [
+        "Antonio Gramsci",
+        "Lenin",
+        "Trotzki",
+        "Rosa Luxemburg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Reaktion beschreibt die Umwandlung von Stickstoff und Wasserstoff zu Ammoniak industriell?",
+      "options": [
+        "Haber-Bosch-Verfahren",
+        "Ostwald-Verfahren",
+        "Kontaktverfahren",
+        "Solvay-Verfahren"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Philosoph schrieb 'Sein und Zeit'?",
+      "options": [
+        "Heidegger",
+        "Husserl",
+        "Sartre",
+        "Gadamer"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Abkommen beendete 1990 formal den Viermächtestatus über Deutschland?",
+      "options": [
+        "Zwei-plus-Vier-Vertrag",
+        "Grundlagenvertrag",
+        "Moskauer Vertrag",
+        "Deutsch-Sowjetischer Vertrag"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die moderne Synthetische Evolutionstheorie zusammen mit Darwins Selektionstheorie und Mendels Genetik?",
+      "options": [
+        "Ernst Mayr und Theodosius Dobzhansky",
+        "Watson und Crick",
+        "Gould und Eldredge",
+        "Fisher und Wright allein"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept beschreibt Foucault als Form der Machtausübung durch Überwachung und Normalisierung?",
+      "options": [
+        "Disziplinargesellschaft",
+        "Biopolitik",
+        "Diskursanalyse",
+        "Gouvernementalität"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Theorie postuliert, dass Licht sich gleichzeitig als Welle und Teilchen verhalten kann?",
+      "options": [
+        "Wellen-Teilchen-Dualismus",
+        "Tunneleffekt",
+        "Photoelektrischer Effekt",
+        "Compton-Effekt"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der byzantinische Kaiser, unter dem Konstantinopel 1453 fiel?",
+      "options": [
+        "Konstantin XI.",
+        "Justinian I.",
+        "Manuel II.",
+        "Andronikos II."
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Modell der Atomphysik führte erstmals Energiequantelung der Elektronenbahnen ein?",
+      "options": [
+        "Bohr-Modell",
+        "Rutherford-Modell",
+        "Thomson-Modell",
+        "Schrödinger-Modell"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Ökonom prägte den Begriff der 'schöpferischen Zerstörung'?",
+      "options": [
+        "Schumpeter",
+        "Keynes",
+        "Hayek",
+        "Friedman"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Schlacht 1683 beendete die osmanische Expansion nach Mitteleuropa entscheidend?",
+      "options": [
+        "Belagerung von Wien",
+        "Schlacht von Mohács",
+        "Schlacht von Lepanto",
+        "Schlacht bei Zenta"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept beschreibt in der Linguistik Saussures Unterscheidung zwischen Sprache als System und konkreter Rede?",
+      "options": [
+        "Langue und Parole",
+        "Signifikant und Signifikat",
+        "Synchronie und Diachronie",
+        "Syntagma und Paradigma"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die Spieltheorie mit von Neumann maßgeblich weiter im Werk 'Theory of Games and Economic Behavior'?",
+      "options": [
+        "Oskar Morgenstern",
+        "John Nash",
+        "Thomas Schelling",
+        "Reinhard Selten"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Gesetz beschreibt die Beziehung zwischen Druck und Volumen eines Gases bei konstanter Temperatur?",
+      "options": [
+        "Boyle-Mariotte-Gesetz",
+        "Gay-Lussac-Gesetz",
+        "Charles-Gesetz",
+        "Avogadro-Gesetz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Historiker prägte den Begriff der 'longue durée'?",
+      "options": [
+        "Fernand Braudel",
+        "Marc Bloch",
+        "Lucien Febvre",
+        "Georges Duby"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Theorie postulierte Alfred Wegener, die später zur Plattentektonik führte?",
+      "options": [
+        "Kontinentalverschiebung",
+        "Isostasie",
+        "Gebirgsbildung",
+        "Erdmagnetismus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb 'Die Traumdeutung' und begründete die Psychoanalyse?",
+      "options": [
+        "Freud",
+        "Jung",
+        "Adler",
+        "Lacan"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Abkommen von 1648 begründete das moderne Konzept staatlicher Souveränität?",
+      "options": [
+        "Westfälischer Frieden",
+        "Augsburger Religionsfrieden",
+        "Frieden von Utrecht",
+        "Edikt von Nantes"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Strukturformel-Theorie erklärte die Bindungsverhältnisse im Benzolring erstmals plausibel?",
+      "options": [
+        "Kekulé-Struktur",
+        "Lewis-Struktur",
+        "VSEPR-Modell",
+        "Molekülorbitaltheorie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die Idee des 'Schleiers des Nichtwissens' in der Gerechtigkeitstheorie?",
+      "options": [
+        "John Rawls",
+        "Robert Nozick",
+        "Amartya Sen",
+        "Michael Sandel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Dynastie regierte China während der größten territorialen Ausdehnung im 18. Jahrhundert?",
+      "options": [
+        "Qing-Dynastie",
+        "Ming-Dynastie",
+        "Tang-Dynastie",
+        "Song-Dynastie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Theorem der Mikroökonomie besagt, dass unter bestimmten Annahmen die Anfangsverteilung von Eigentumsrechten irrelevant für die Effizienz ist?",
+      "options": [
+        "Coase-Theorem",
+        "Arrow-Unmöglichkeitstheorem",
+        "Pareto-Optimum",
+        "Modigliani-Miller-Theorem"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der Begründer des Logischen Positivismus im Wiener Kreis maßgeblich?",
+      "options": [
+        "Moritz Schlick",
+        "Bertrand Russell",
+        "Gottlob Frege",
+        "Alfred Tarski"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept der Genetik beschreibt die Veränderung der Genexpression ohne Änderung der DNA-Sequenz?",
+      "options": [
+        "Epigenetik",
+        "Mutation",
+        "Rekombination",
+        "Transduktion"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Vertrag 1919 regelte die Neuordnung Europas nach dem Ersten Weltkrieg primär gegenüber Deutschland?",
+      "options": [
+        "Vertrag von Versailles",
+        "Vertrag von Saint-Germain",
+        "Vertrag von Trianon",
+        "Vertrag von Neuilly"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Theorem besagt, dass es bei mehr als zwei Alternativen keine perfekte demokratische Abstimmungsregel ohne Mängel geben kann?",
+      "options": [
+        "Arrows Unmöglichkeitstheorem",
+        "Condorcet-Paradoxon",
+        "Median-Wähler-Theorem",
+        "Gibbard-Satterthwaite-Theorem"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die Relativitätstheorie der Allgemeinen Relativität 1915?",
+      "options": [
+        "Albert Einstein",
+        "Max Planck",
+        "Niels Bohr",
+        "Werner Heisenberg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Epoche der Kunstgeschichte folgte unmittelbar auf den Barock in Europa?",
+      "options": [
+        "Rokoko",
+        "Klassizismus",
+        "Romantik",
+        "Manierismus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches biochemische Verfahren wird zur Vervielfältigung von DNA-Abschnitten im Labor verwendet?",
+      "options": [
+        "PCR (Polymerase-Kettenreaktion)",
+        "Gelelektrophorese",
+        "Southern-Blot",
+        "CRISPR"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer formulierte die These vom 'Ende der Geschichte' nach dem Kalten Krieg?",
+      "options": [
+        "Francis Fukuyama",
+        "Samuel Huntington",
+        "Zbigniew Brzezinski",
+        "Henry Kissinger"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Schlacht 1815 markierte das endgültige militärische Ende Napoleons?",
+      "options": [
+        "Waterloo",
+        "Leipzig",
+        "Borodino",
+        "Austerlitz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept beschreibt in der Soziologie Max Webers Idee rationaler Herrschaft durch Regeln und Hierarchie?",
+      "options": [
+        "Bürokratie",
+        "Charismatische Herrschaft",
+        "Traditionale Herrschaft",
+        "Anomie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Element wurde von Marie und Pierre Curie 1898 entdeckt und nach Marie Curies Heimat benannt?",
+      "options": [
+        "Polonium",
+        "Radium",
+        "Curium",
+        "Francium"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die Theorie der 'kognitiven Dissonanz'?",
+      "options": [
+        "Leon Festinger",
+        "Albert Bandura",
+        "B.F. Skinner",
+        "Jean Piaget"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Frieden beendete 1713 den Spanischen Erbfolgekrieg?",
+      "options": [
+        "Frieden von Utrecht",
+        "Frieden von Rastatt",
+        "Frieden von Nimwegen",
+        "Frieden von Ryswick"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Gesetz der Thermodynamik besagt, dass die Entropie eines geschlossenen Systems nicht abnimmt?",
+      "options": [
+        "Zweiter Hauptsatz",
+        "Erster Hauptsatz",
+        "Dritter Hauptsatz",
+        "Nullter Hauptsatz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb 'Das Kapital' als zentrales Werk der politischen Ökonomie?",
+      "options": [
+        "Karl Marx",
+        "Friedrich Engels",
+        "Ferdinand Lassalle",
+        "Wilhelm Liebknecht"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Dynastie der ägyptischen Geschichte regierte während der Erbauung der großen Pyramiden von Gizeh?",
+      "options": [
+        "4. Dynastie",
+        "3. Dynastie",
+        "5. Dynastie",
+        "6. Dynastie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept aus der Linguistik beschreibt Chomskys Idee einer angeborenen Sprachfähigkeit?",
+      "options": [
+        "Universalgrammatik",
+        "Generative Semantik",
+        "Spracherwerbsmechanismus allein behavioristisch",
+        "Strukturalismus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer formulierte das Prinzip 'Cogito ergo sum'?",
+      "options": [
+        "Descartes",
+        "Spinoza",
+        "Leibniz",
+        "Pascal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Massenaussterben wird mit dem Chicxulub-Einschlag in Verbindung gebracht?",
+      "options": [
+        "Kreide-Paläogen",
+        "Perm-Trias",
+        "Trias-Jura",
+        "Ordovizium-Silur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Soziologe entwickelte das Konzept des 'sozialen Kapitals' und des 'Habitus' maßgeblich?",
+      "options": [
+        "Pierre Bourdieu",
+        "Niklas Luhmann",
+        "Anthony Giddens",
+        "Émile Durkheim"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Abkommen 1944 etablierte das System fester Wechselkurse nach dem Zweiten Weltkrieg?",
+      "options": [
+        "Bretton-Woods-Abkommen",
+        "Marshallplan",
+        "GATT-Abkommen",
+        "Genfer Abkommen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer formulierte die Unschärferelation und arbeitete maßgeblich an der Matrizenmechanik?",
+      "options": [
+        "Werner Heisenberg",
+        "Erwin Schrödinger",
+        "Paul Dirac",
+        "Wolfgang Pauli"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Reformbewegung des 16. Jahrhunderts begann offiziell mit dem Thesenanschlag 1517?",
+      "options": [
+        "Reformation",
+        "Gegenreformation",
+        "Humanismus",
+        "Aufklärung"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept der Wirtschaftstheorie beschreibt Informationsasymmetrien zwischen Vertragsparteien, z.B. bei Gebrauchtwagenmärkten?",
+      "options": [
+        "Adverse Selektion",
+        "Moral Hazard",
+        "Principal-Agent-Problem",
+        "Marktversagen allgemein"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte die Doppelhelix-Struktur der DNA zusammen mit Crick anhand von Röntgenbeugungsdaten unter anderem von Franklin?",
+      "options": [
+        "James Watson",
+        "Linus Pauling",
+        "Erwin Chargaff",
+        "Maurice Wilkins allein"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Begriff beschreibt Carl Schmitts Theorie souveräner Entscheidungsgewalt im Ausnahmezustand?",
+      "options": [
+        "Dezisionismus",
+        "Institutionalismus",
+        "Normativismus",
+        "Legitimität durch Verfahren"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Schlacht 1066 markierte die normannische Eroberung Englands?",
+      "options": [
+        "Schlacht von Hastings",
+        "Schlacht von Bannockburn",
+        "Schlacht von Agincourt",
+        "Schlacht von Bosworth"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Theorem der Logik bewies die Unentscheidbarkeit des Halteproblems?",
+      "options": [
+        "Turings Theorem",
+        "Gödels Theorem",
+        "Churchs These",
+        "Cantors Theorem"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer prägte den Begriff 'Strukturalismus' in der Anthropologie maßgeblich?",
+      "options": [
+        "Claude Lévi-Strauss",
+        "Marcel Mauss",
+        "Émile Durkheim",
+        "Bronisław Malinowski"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzil legte 325 n. Chr. das nizänische Glaubensbekenntnis fest?",
+      "options": [
+        "Konzil von Nicäa",
+        "Konzil von Chalcedon",
+        "Konzil von Konstantinopel",
+        "Konzil von Ephesus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Wechselwirkung der Physik ist für den radioaktiven Beta-Zerfall verantwortlich?",
+      "options": [
+        "Schwache Wechselwirkung",
+        "Starke Wechselwirkung",
+        "Elektromagnetische Wechselwirkung",
+        "Gravitation"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb das einflussreiche Werk 'Die Geburt der Tragödie'?",
+      "options": [
+        "Nietzsche",
+        "Schopenhauer",
+        "Heidegger",
+        "Adorno"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Krieg endete 1856 mit dem Pariser Frieden und betraf Russland gegen eine Koalition um die Krim?",
+      "options": [
+        "Krimkrieg",
+        "Russisch-Türkischer Krieg",
+        "Kaukasuskrieg",
+        "Russisch-Japanischer Krieg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept der Volkswirtschaftslehre beschreibt John Maynard Keynes' Idee staatlicher Nachfragesteuerung in Rezessionen?",
+      "options": [
+        "Keynesianismus",
+        "Monetarismus",
+        "Angebotsökonomie",
+        "Institutionenökonomik"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entdeckte das Penicillin 1928?",
+      "options": [
+        "Alexander Fleming",
+        "Robert Koch",
+        "Louis Pasteur",
+        "Paul Ehrlich"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Dynastie folgte den Karolingern als Königsdynastie im Ostfränkischen Reich?",
+      "options": [
+        "Ottonen",
+        "Salier",
+        "Staufer",
+        "Welfen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Modell beschreibt die Struktur von Proteinen auf der Ebene ihrer dreidimensionalen Faltung?",
+      "options": [
+        "Tertiärstruktur",
+        "Primärstruktur",
+        "Sekundärstruktur",
+        "Quartärstruktur"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer formulierte die Theorie der 'Anerkennung' als zentrales Konzept der Sozialphilosophie neu?",
+      "options": [
+        "Axel Honneth",
+        "Jürgen Habermas",
+        "Charles Taylor",
+        "Nancy Fraser"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Krieg in Ostasien endete 1905 mit einer überraschenden Niederlage einer europäischen Großmacht durch Japan?",
+      "options": [
+        "Russisch-Japanischer Krieg",
+        "Erster Sino-Japanischer Krieg",
+        "Boxeraufstand",
+        "Zweiter Opiumkrieg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Konzept beschreibt in der Quantenmechanik den Zustand verschränkter Teilchen über große Entfernungen?",
+      "options": [
+        "Quantenverschränkung",
+        "Quantentunneln",
+        "Superposition allein",
+        "Dekohärenz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer war der Begründer der modernen Bakteriologie, bekannt für Postulate zur Krankheitsursache?",
+      "options": [
+        "Robert Koch",
+        "Louis Pasteur",
+        "Joseph Lister",
+        "Edward Jenner"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Abkommen 1885 regelte die Aufteilung Afrikas unter den europäischen Kolonialmächten?",
+      "options": [
+        "Berliner Kongokonferenz",
+        "Vertrag von Tordesillas",
+        "Wiener Kongress",
+        "Vertrag von Versailles"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Theorie der Erkenntnistheorie vertrat, dass alles Wissen letztlich auf Sinneserfahrung zurückgeht?",
+      "options": [
+        "Empirismus",
+        "Rationalismus",
+        "Idealismus",
+        "Konstruktivismus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer entwickelte das Konzept des 'kategorischen Imperativs' als Grundlage der Pflichtethik?",
+      "options": [
+        "Immanuel Kant",
+        "John Stuart Mill",
+        "Jeremy Bentham",
+        "G.E. Moore"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

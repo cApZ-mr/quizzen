@@ -1,0 +1,897 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "" : {
+
+    },
+    " " : {
+
+    },
+    "–" : {
+
+    },
+    ":" : {
+
+    },
+    "·" : {
+
+    },
+    "· %lld %% richtig" : {
+
+    },
+    "#%lld" : {
+
+    },
+    "%@ · %@ starten" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · %2$@ starten"
+          }
+        }
+      }
+    },
+    "%@ · %lld Fragen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · %2$lld Fragen"
+          }
+        }
+      }
+    },
+    "%@ gewinnt dann automatisch. Ein Duell lässt sich nicht pausieren." : {
+
+    },
+    "%@ hat das gewählt" : {
+
+    },
+    "%@ hat schon geantwortet" : {
+
+    },
+    "%@ XP" : {
+
+    },
+    "%@, %@%@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@%3$@"
+          }
+        }
+      }
+    },
+    "%@%@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@%2$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "%lld / %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "%lld %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld %2$@"
+          }
+        }
+      }
+    },
+    "%lld %@ · %lld Stufen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld %2$@ · %3$lld Stufen"
+          }
+        }
+      }
+    },
+    "%lld %@ verfügbar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld %2$@ verfügbar"
+          }
+        }
+      }
+    },
+    "%lld %%" : {
+
+    },
+    "%lld %% gesehen" : {
+
+    },
+    "%lld %% richtig beantwortet" : {
+
+    },
+    "%lld passende Fragen" : {
+
+    },
+    "%lld Quizze" : {
+
+    },
+    "%lld s" : {
+
+    },
+    "%lld von %lld %@ gesehen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld von %2$lld %3$@ gesehen"
+          }
+        }
+      }
+    },
+    "%lld von %lld Fragen gesehen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld von %2$lld Fragen gesehen"
+          }
+        }
+      }
+    },
+    "%lld von %lld freigeschaltet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld von %2$lld freigeschaltet"
+          }
+        }
+      }
+    },
+    "%lld von %lld richtig" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld von %2$lld richtig"
+          }
+        }
+      }
+    },
+    "%lld." : {
+
+    },
+    "%lld/%lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld/%2$lld"
+          }
+        }
+      }
+    },
+    "%lld× gespielt" : {
+
+    },
+    "+%lld XP" : {
+
+    },
+    "1 gegen 1" : {
+
+    },
+    "1 passende Frage" : {
+
+    },
+    "1 Quiz" : {
+
+    },
+    "5 s" : {
+
+    },
+    "10" : {
+
+    },
+    "10 s" : {
+
+    },
+    "20" : {
+
+    },
+    "20 s" : {
+
+    },
+    "30" : {
+
+    },
+    "Ab Level %lld" : {
+
+    },
+    "Abbrechen" : {
+
+    },
+    "Ablehnen" : {
+
+    },
+    "Abmelden" : {
+
+    },
+    "Absenden" : {
+
+    },
+    "Abzeichen" : {
+
+    },
+    "Abzeichen von %@" : {
+
+    },
+    "Account bearbeiten" : {
+
+    },
+    "Account erstellen" : {
+
+    },
+    "Alle" : {
+
+    },
+    "Alle ansehen" : {
+
+    },
+    "Alle deine Statistiken werden unwiederruflich zurückgesetzt und können nicht wiederhergesdtellt werden." : {
+
+    },
+    "Als Freund hinzufügen" : {
+
+    },
+    "Anfrage gesendet" : {
+
+    },
+    "Anfrage zurückziehen" : {
+
+    },
+    "Annehmen" : {
+
+    },
+    "Antwort bestätigen" : {
+
+    },
+    "Antworten" : {
+
+    },
+    "Aufgeben" : {
+
+    },
+    "Auflösung kommt…" : {
+
+    },
+    "Aus" : {
+
+    },
+    "Ausloggen" : {
+
+    },
+    "Befreundet" : {
+
+    },
+    "Beitreten" : {
+
+    },
+    "Beliebige andere Antworten." : {
+
+    },
+    "Benutzername" : {
+
+    },
+    "Bereich" : {
+
+    },
+    "Bereich erkundet" : {
+
+    },
+    "Bereit für dein nächstes Quiz?" : {
+
+    },
+    "Bericht senden" : {
+
+    },
+    "Beschreibe dein Anliegen oder melde einen Fehler. Screenshots helfen uns, das Problem schneller zu verstehen." : {
+
+    },
+    "Beschreibung" : {
+
+    },
+    "Bestenliste" : {
+
+    },
+    "Bild entfernen" : {
+
+    },
+    "Bilder" : {
+
+    },
+    "Bilder werden geladen…" : {
+
+    },
+    "Bis Level %lld" : {
+
+    },
+    "Bist du absolut sicher?" : {
+
+    },
+    "Code %@" : {
+
+    },
+    "Code eingeben" : {
+
+    },
+    "Code teilen" : {
+
+    },
+    "Code, %lld von 6 Ziffern" : {
+
+    },
+    "Cover: %@" : {
+
+    },
+    "Dabei seit %@" : {
+
+    },
+    "Danach wählst du die Schwierigkeit oder eigene Einstellungen." : {
+
+    },
+    "Das bist du" : {
+
+    },
+    "Das passiert, wenn du dein Konto löschst:" : {
+
+    },
+    "Das passiert, wenn du deine Statistiken zurücksetzt:" : {
+
+    },
+    "Dein Account wird sicher gespeichert und synchronisiert." : {
+
+    },
+    "Dein Einladungscode" : {
+
+    },
+    "Dein Fortschritt" : {
+
+    },
+    "Dein Konto sowie alle Statistiken, Fortschritte und persönlichen Einstellungen werden unwiderruflich gelöscht." : {
+
+    },
+    "Dein Platz" : {
+
+    },
+    "Deine Fehler (%lld)" : {
+
+    },
+    "Deine Nutzerdaten" : {
+
+    },
+    "Details" : {
+
+    },
+    "Diese Aktion kann nicht rückgängig gemacht werden." : {
+
+    },
+    "Du" : {
+
+    },
+    "Du erhältst einen Bestätigungslink an die neue Adresse. Die Änderung wird erst nach der Bestätigung wirksam." : {
+
+    },
+    "Du hast dieses Quiz noch nicht gespielt. Leg los!" : {
+
+    },
+    "Duell" : {
+
+    },
+    "Duell konnte nicht erstellt werden" : {
+
+    },
+    "Duell wird erstellt…" : {
+
+    },
+    "Duell wirklich aufgeben?" : {
+
+    },
+    "E-Mail" : {
+
+    },
+    "E-Mail ändern" : {
+
+    },
+    "Eine neuere Version ist im App Store verfügbar." : {
+
+    },
+    "Einloggen" : {
+
+    },
+    "Einstellungen" : {
+
+    },
+    "Endgültig löschen" : {
+
+    },
+    "Entdecken" : {
+
+    },
+    "Erfolg" : {
+
+    },
+    "Ergebnis anzeigen" : {
+
+    },
+    "Ergebnisse" : {
+
+    },
+    "Erneut versuchen" : {
+
+    },
+    "Falsche Antworten" : {
+
+    },
+    "Feedback" : {
+
+    },
+    "Fehler" : {
+
+    },
+    "Fertig" : {
+
+    },
+    "Fordere deine Freunde heraus" : {
+
+    },
+    "Frage %lld von %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Frage %1$lld von %2$lld"
+          }
+        }
+      }
+    },
+    "Frage %lld von %lld, noch %lld Sekunden" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Frage %1$lld von %2$lld, noch %3$lld Sekunden"
+          }
+        }
+      }
+    },
+    "Frage melden" : {
+
+    },
+    "Frage Melden" : {
+
+    },
+    "Frage wird geladen…" : {
+
+    },
+    "Frage:  %@" : {
+
+    },
+    "Fragen" : {
+
+    },
+    "Freunde" : {
+
+    },
+    "Freunde durchsuchen" : {
+
+    },
+    "Freunde seit %@" : {
+
+    },
+    "Freundschaft beenden" : {
+
+    },
+    "Freundschaft mit %@ beenden?" : {
+
+    },
+    "Füge Freunde hinzu, um euch zu vergleichen." : {
+
+    },
+    "Gemeldet" : {
+
+    },
+    "Gesamt-Level %lld / %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Gesamt-Level %1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "Gesamtübersicht" : {
+
+    },
+    "Gesendet" : {
+
+    },
+    "Gib den 6-stelligen Code ein, den dir dein Freund geschickt hat." : {
+
+    },
+    "Gleiche Fragen, gleiche Zeit – wer weiß mehr?" : {
+
+    },
+    "Grund" : {
+
+    },
+    "Hallo 👋" : {
+
+    },
+    "Hallo, %@ 👋" : {
+
+    },
+    "Häufige fragen" : {
+
+    },
+    "Hilf uns, Quizzen zu verbessern" : {
+
+    },
+    "Hinzufügen" : {
+
+    },
+    "Home" : {
+
+    },
+    "Im Tab „Freunde“ kannst du andere suchen und Anfragen senden." : {
+
+    },
+    "In deinem Land hat hier noch niemand gepunktet. Sei die erste Person!" : {
+
+    },
+    "Inhalt melden" : {
+
+    },
+    "Jetzt aktualisieren" : {
+
+    },
+    "Kein Freund heißt „%@“." : {
+
+    },
+    "Keine %@ passen zu diesen Einstellungen." : {
+
+    },
+    "Keine ausgehenden Anfragen" : {
+
+    },
+    "Keine eingehenden Anfragen" : {
+
+    },
+    "Keine passenden Fragen" : {
+
+    },
+    "Keine Person heißt so." : {
+
+    },
+    "Keine Treffer" : {
+
+    },
+    "Keine Treffer für „%@“" : {
+
+    },
+    "Konto endgültig löschen" : {
+
+    },
+    "Konto löschen" : {
+
+    },
+    "Konto wirklich löschen?" : {
+
+    },
+    "Kopieren" : {
+
+    },
+    "Land suchen" : {
+
+    },
+    "Land wählen" : {
+
+    },
+    "Lass uns dein Profil in wenigen\nSchritten einrichten." : {
+
+    },
+    "Lege in deinem Profil ein Land fest." : {
+
+    },
+    "Leicht zu verwechselnde Antworten – deutlich schwerer." : {
+
+    },
+    "Level %lld" : {
+
+    },
+    "Level %lld · %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Level %1$lld · %2$@"
+          }
+        }
+      }
+    },
+    "Level %lld von %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Level %1$lld von %2$lld"
+          }
+        }
+      }
+    },
+    "Löschen" : {
+
+    },
+    "Maximum erreicht" : {
+
+    },
+    "Mehr von Quizzen" : {
+
+    },
+    "Melde dich mit deinem Account an." : {
+
+    },
+    "Meldungsgrund" : {
+
+    },
+    "Mindestens 6 Zeichen." : {
+
+    },
+    "Nächste Frage" : {
+
+    },
+    "Neue E-Mail-Adresse" : {
+
+    },
+    "Neues Duell" : {
+
+    },
+    "Neues Passwort" : {
+
+    },
+    "Nicht verfügbar" : {
+
+    },
+    "Noch %@ XP bis Level %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Noch %1$@ XP bis Level %2$lld"
+          }
+        }
+      }
+    },
+    "Noch %@ XP bis Level %lld · %lld XP pro richtiger Antwort, %lld XP pro Runde" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Noch %1$@ XP bis Level %2$lld · %3$lld XP pro richtiger Antwort, %4$lld XP pro Runde"
+          }
+        }
+      }
+    },
+    "Noch %lld Sekunden" : {
+
+    },
+    "Noch keine Abzeichen freigeschaltet." : {
+
+    },
+    "Noch keine Einträge" : {
+
+    },
+    "Noch keine Freunde" : {
+
+    },
+    "Noch keinen Account? Registrieren" : {
+
+    },
+    "Noch nicht gespielt" : {
+
+    },
+    "Noch nicht platziert" : {
+
+    },
+    "Nochmal" : {
+
+    },
+    "Nur %@, die ich noch nicht kann" : {
+
+    },
+    "Nutze die Suche, um andere zu finden" : {
+
+    },
+    "offline" : {
+
+    },
+    "OK" : {
+
+    },
+    "online" : {
+
+    },
+    "Optional – du kannst es jederzeit später ändern." : {
+
+    },
+    "Optional – wähle das Land, welches du repräsentieren möchtest." : {
+
+    },
+    "Passwort" : {
+
+    },
+    "Passwort ändern" : {
+
+    },
+    "Passwort bestätigen" : {
+
+    },
+    "Personen (%lld)" : {
+
+    },
+    "Platz %lld, %@, %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Platz %1$lld, %2$@, %3$@"
+          }
+        }
+      }
+    },
+    "Profil gestalten" : {
+
+    },
+    "Profil öffnen" : {
+
+    },
+    "Profilbild ändern" : {
+
+    },
+    "Punkte" : {
+
+    },
+    "Quiz, Frage oder Person" : {
+
+    },
+    "Quiz: %@" : {
+
+    },
+    "Quizze (%lld)" : {
+
+    },
+    "Quizzen App" : {
+
+    },
+    "Repräsentiertes Land" : {
+
+    },
+    "Schau dir Quizzen an – die App für spaßige Quizze! \n->" : {
+
+    },
+    "Schließen" : {
+
+    },
+    "Schon einen Account? Einloggen" : {
+
+    },
+    "Schwierigkeit" : {
+
+    },
+    "Senden" : {
+
+    },
+    "So funktioniert's" : {
+
+    },
+    "So sehen dich andere" : {
+
+    },
+    "Später" : {
+
+    },
+    "Speichern" : {
+
+    },
+    "Spiel ein Quiz und sichere dir den ersten Platz!" : {
+
+    },
+    "Sprache" : {
+
+    },
+    "Statistiken" : {
+
+    },
+    "Statistiken zurücksetzten" : {
+
+    },
+    "Trete an, sammle Punkte und\nvergleiche dich mit der Welt." : {
+
+    },
+    "Unsere AGB's" : {
+
+    },
+    "Unsere Datenschutzrichtlinien" : {
+
+    },
+    "Update verfügbar" : {
+
+    },
+    "Username" : {
+
+    },
+    "Username speichern" : {
+
+    },
+    "Vielen Dank, dass du uns dabei hilfst, Quizzen sicher und korrekt zu halten." : {
+
+    },
+    "Vorschau deines öffentlichen Profils" : {
+
+    },
+    "VS" : {
+
+    },
+    "Wähle ein Profilbild" : {
+
+    },
+    "Wähle ein Quiz" : {
+
+    },
+    "Wähle zuerst ein Quiz" : {
+
+    },
+    "Warte auf %@…" : {
+
+    },
+    "Was möchtest du uns mitteilen?" : {
+
+    },
+    "Wenn du dich ausloggst, dann musst du dich wieder einloggen oder dir einen neuen Account erstellen um die App nutzen zu können." : {
+
+    },
+    "Willkommen" : {
+
+    },
+    "Willkommen zurück" : {
+
+    },
+    "Zeit" : {
+
+    },
+    "Zeit abgelaufen!" : {
+
+    },
+    "Zurück" : {
+
+    }
+  },
+  "version" : "1.0"
+}

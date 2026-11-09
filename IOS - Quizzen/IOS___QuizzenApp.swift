@@ -1,12 +1,25 @@
-//___FILEHEADER___
+//
+//  IOS___QuizzenApp.swift
+//  IOS - Quizzen
+//
 
 import SwiftUI
 
 @main
-struct ___PACKAGENAME:identifier___App: App {
+struct IOS___Quizzen: App {
+    @StateObject private var statsManager = StatsManager()
+    @StateObject private var userViewModel = UserViewModel()
+    @StateObject private var authViewModel = AuthViewModel()
+    @StateObject private var friendsViewModel = FriendsViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(statsManager)
+                .environmentObject(userViewModel)
+                .environmentObject(authViewModel)
+                .environmentObject(friendsViewModel)
+                .preferredColorScheme(.dark)
         }
     }
 }

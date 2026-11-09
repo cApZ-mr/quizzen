@@ -1,0 +1,187 @@
+{
+  "id": "FlagsOceania",
+  "categoryId": "flags",
+  "subCategory": "Flaggen",
+  "title": "Flaggen (Ozeanien)",
+  "description": "Flaggen die jeder erkennen und bennen sollte.",
+  "difficulty": "Schwer",
+  "imageName": "FlaggenOzeanien",
+  "questions": [
+    {
+      "question": "Australien",
+      "imageName": "au",
+      "options": [
+        "Australien",
+        "Neuseeland",
+        "Fidschi",
+        "Tuvalu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Cookinseln",
+      "imageName": "ck",
+      "options": [
+        "Cookinseln",
+        "Neuseeland",
+        "Australien",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Fidschi",
+      "imageName": "fj",
+      "options": [
+        "Fidschi",
+        "Australien",
+        "Neuseeland",
+        "Vanuatu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kiribati",
+      "imageName": "ki",
+      "options": [
+        "Kiribati",
+        "Marshallinseln",
+        "Nauru",
+        "Tuvalu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Marshallinseln",
+      "imageName": "mh",
+      "options": [
+        "Marshallinseln",
+        "Kiribati",
+        "Palau",
+        "Mikronesien"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mikronesien",
+      "imageName": "fm",
+      "options": [
+        "Mikronesien",
+        "Palau",
+        "Marshallinseln",
+        "Nauru"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Nauru",
+      "imageName": "nr",
+      "options": [
+        "Nauru",
+        "Kiribati",
+        "Tuvalu",
+        "Palau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Neuseeland",
+      "imageName": "nz",
+      "options": [
+        "Neuseeland",
+        "Australien",
+        "Cookinseln",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Niue",
+      "imageName": "nu",
+      "options": [
+        "Niue",
+        "Neuseeland",
+        "Cookinseln",
+        "Tonga"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Palau",
+      "imageName": "pw",
+      "options": [
+        "Palau",
+        "Mikronesien",
+        "Japan",
+        "Marshallinseln"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Papua-Neuguinea",
+      "imageName": "pg",
+      "options": [
+        "Papua-Neuguinea",
+        "Salomonen",
+        "Vanuatu",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Salomonen",
+      "imageName": "sb",
+      "options": [
+        "Salomonen",
+        "Papua-Neuguinea",
+        "Vanuatu",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Samoa",
+      "imageName": "ws",
+      "options": [
+        "Samoa",
+        "Tonga",
+        "Fidschi",
+        "Vanuatu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tonga",
+      "imageName": "to",
+      "options": [
+        "Tonga",
+        "Samoa",
+        "Fidschi",
+        "Vanuatu"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tuvalu",
+      "imageName": "tv",
+      "options": [
+        "Tuvalu",
+        "Kiribati",
+        "Fidschi",
+        "Nauru"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Vanuatu",
+      "imageName": "vu",
+      "options": [
+        "Vanuatu",
+        "Salomonen",
+        "Papua-Neuguinea",
+        "Fidschi"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}
