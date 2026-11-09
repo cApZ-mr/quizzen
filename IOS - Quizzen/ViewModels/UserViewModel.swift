@@ -16,6 +16,12 @@ class UserViewModel: ObservableObject {
     @Published var email: String = ""
     @AppStorage("selectedOriginCode") var selectedOriginCode: String = ""
     @AppStorage("selectedLanguageCode") var selectedLanguageCode: String = ""
+    /// Registrierungsdatum (accounts.created_at) für „Dabei seit“ / Mitglied-Badge
+    @AppStorage("accountCreatedAt") var accountCreatedAtTimestamp: Double = 0
+
+    var accountCreatedAt: Date? {
+        accountCreatedAtTimestamp > 0 ? Date(timeIntervalSince1970: accountCreatedAtTimestamp) : nil
+    }
 
     /// Profilbild liegt als Datei im Caches-Ordner, nicht in UserDefaults.
     @Published var profileImageData: Data? {
@@ -42,6 +48,7 @@ class UserViewModel: ObservableObject {
     /// damit der nächste Account nichts vom vorherigen übernimmt.
     func clearLocalData() {
         username = ""
+        accountCreatedAtTimestamp = 0
         email = ""
         password = ""
         selectedOriginCode = ""
@@ -54,6 +61,7 @@ nonisolated struct AccountRow: Decodable {
     let username: String
     let avatar_url: String?
     let country: String
+    let created_at: Date?
 }
 
 extension UserViewModel {
@@ -64,7 +72,7 @@ extension UserViewModel {
 
             let row: AccountRow = try await supabase
                 .from("accounts")
-                .select("username, avatar_url, country")
+                .select("username, avatar_url, country, created_at")
                 .eq("id", value: userId)
                 .single()
                 .execute()
@@ -72,6 +80,7 @@ extension UserViewModel {
 
             self.username = row.username
             self.selectedOriginCode = row.country
+            if let created = row.created_at { self.accountCreatedAtTimestamp = created.timeIntervalSince1970 }
             self.email = user.email ?? ""
 
             if let urlString = row.avatar_url, let url = URL(string: urlString) {

@@ -20,8 +20,11 @@ struct ReportQuizView: View {
     @State private var selectedQuizId = ""
     @State private var selectedReason = "Frage Fehlerhaft"
     @State private var beschreibung = ""
-    @State private var showMail = false
+    @State private var mailDraft: MailDraft?
     @State private var showNoMailAlert = false
+    @Environment(\.openURL) private var openURL
+
+    private let recipient = AppLinks.supportEmail
     
     
     let anliegenReason = ["Frage Fehlerhaft", "Frage unpassend", "Antwortmöglichkeiten Fehlerhaft", "Sonstiges"]
@@ -49,23 +52,23 @@ struct ReportQuizView: View {
                 
                 
                 Section {
-                    Button("Absenden") {
-                        if MFMailComposeViewController.canSendMail() {
-                            showMail = true
-                        } else {
-                            showNoMailAlert = true
-                        }
-                    }
+                    Button("Absenden") { send() }
                 }
             }
             .navigationTitle("Frage Melden")
-            .sheet(isPresented: $showMail) {
+            // Inhalt wird beim Tippen auf „Absenden“ festgehalten und übergeben
+            .sheet(item: $mailDraft) { draft in
                 MailView(
-                    isShowing: $showMail,
-                    subject: "Report: \(selectedReason)",
-                    bodyText: "Quiz: \(quiz.title) \nAnliegen: \(selectedReason) \nFrage: \(viewModel.currentQuestion.question) \n\nBeschreibung:\n\(beschreibung)",
-                    recipient: "support@quizzen-app.com",
+                    isShowing: Binding(get: { mailDraft != nil }, set: { if !$0 { mailDraft = nil } }),
+                    subject: draft.subject,
+                    bodyText: draft.body,
+                    recipient: recipient
                 )
+            }
+            .alert("Keine Mail-App eingerichtet", isPresented: $showNoMailAlert) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text("Bitte schreib uns direkt an \(recipient).")
             }
             .onAppear {
                 // Setze Standardwert beim Laden
@@ -74,6 +77,49 @@ struct ReportQuizView: View {
                 }
             }
         }
+    }
+
+    private func send() {
+        let question = viewModel.currentQuestion
+        let text = beschreibung.trimmingCharacters(in: .whitespacesAndNewlines)
+        let draft = MailDraft(
+            subject: "Report: \(selectedReason) – \(quiz.title)",
+            body: """
+            Quiz: \(quiz.title)
+            Anliegen: \(selectedReason)
+            Frage: \(question.prompt(quizId: quiz.id))
+            Richtige Antwort: \(question.options.indices.contains(question.correctAnswerIndex) ? question.options[question.correctAnswerIndex] : "–")
+            Bild: \(question.imageName ?? "–")
+
+            Beschreibung:
+            \(text.isEmpty ? "–" : text)
+            """
+        )
+        if MFMailComposeViewController.canSendMail() {
+            mailDraft = draft
+        } else if let url = draft.mailtoURL(to: recipient) {
+            openURL(url) { accepted in
+                if !accepted { showNoMailAlert = true }
+            }
+        } else {
+            showNoMailAlert = true
+        }
+    }
+}
+
+/// Fertig zusammengestellte Mail (wird beim Absenden erzeugt)
+struct MailDraft: Identifiable {
+    let id = UUID()
+    let subject: String
+    let body: String
+
+    func mailtoURL(to recipient: String) -> URL? {
+        var components = URLComponents()
+        components.scheme = "mailto"
+        components.path = recipient
+        components.queryItems = [URLQueryItem(name: "subject", value: subject),
+                                 URLQueryItem(name: "body", value: body)]
+        return components.url
     }
 }
 

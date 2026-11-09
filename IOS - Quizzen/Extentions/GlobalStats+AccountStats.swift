@@ -8,7 +8,10 @@
 import Foundation
 
 extension GlobalStats {
-    init(from accountStats: AccountStats) {
+    /// - Parameter memberSince: Registrierungsdatum (accounts.created_at). Ohne
+    ///   Angabe wäre installDate „heute“ – das Mitglied-Badge zeigte dann
+    ///   bei fremden Profilen immer das aktuelle Datum.
+    init(from accountStats: AccountStats, memberSince: Date? = nil) {
         let correct = accountStats.correctAnswers ?? 0
         let wrong = accountStats.falseAnswers ?? 0
         self.init(
@@ -20,5 +23,6 @@ extension GlobalStats {
             currentStreak: accountStats.currentStreak ?? 0,
             bestStreak: accountStats.bestStreak ?? 0
         )
+        if let memberSince { self.installDate = memberSince }
     }
 }

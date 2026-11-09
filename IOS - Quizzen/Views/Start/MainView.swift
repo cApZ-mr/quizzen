@@ -35,6 +35,16 @@ struct MainView: View {
             await clearDataIfAccountChanged()
             await userViewModel.loadProfile()
             await statsManager.syncFromServer()
+            // „Dabei seit“ = Registrierung, nicht Installation auf diesem Gerät
+            if let created = userViewModel.accountCreatedAt {
+                if created < statsManager.globalManager.stats.installDate {
+                    statsManager.globalManager.stats.installDate = created
+                }
+                // Unmögliche Streaks (länger als das Konto alt ist) korrigieren
+                if statsManager.globalManager.clampStreaks(accountCreated: created) {
+                    await supabase.syncUserStats(statsManager.globalManager.stats)
+                }
+            }
         }
         .task {
             // Splash höchstens 0,5 s zeigen, egal wie lange der Versions-Check braucht.

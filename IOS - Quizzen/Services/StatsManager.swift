@@ -263,6 +263,27 @@ class GlobalStatsManager: ObservableObject {
         }
     }
 
+    /// Streaks können nicht länger sein als das Konto alt ist. Korrigiert
+    /// übernommene Werte (z. B. lokale Daten eines früheren Kontos auf
+    /// diesem Gerät). Gibt `true` zurück, wenn etwas geändert wurde.
+    @discardableResult
+    func clampStreaks(accountCreated: Date) -> Bool {
+        let maxDays = Self.maxStreakDays(since: accountCreated)
+        var changed = false
+        if stats.bestStreak > maxDays { stats.bestStreak = maxDays; changed = true }
+        if stats.currentStreak > maxDays { stats.currentStreak = maxDays; changed = true }
+        if stats.bestStreak < stats.currentStreak { stats.bestStreak = stats.currentStreak; changed = true }
+        return changed
+    }
+
+    /// Anzahl Kalendertage seit der Registrierung, inklusive heute
+    nonisolated static func maxStreakDays(since created: Date, now: Date = Date(), calendar: Calendar = .current) -> Int {
+        let start = calendar.startOfDay(for: created)
+        let today = calendar.startOfDay(for: now)
+        let days = calendar.dateComponents([.day], from: start, to: today).day ?? 0
+        return max(days, 0) + 1
+    }
+
     // MARK: - Persistenz
 
     private func save() {

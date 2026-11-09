@@ -218,6 +218,6 @@ struct PublicProfileView: View {
 
     private var globalStatsFromAccount: GlobalStats? {
         guard let accountStats = viewModel.stats else { return nil }
-        return GlobalStats(from: accountStats)
+        return GlobalStats(from: accountStats, memberSince: account.createdAt)
     }
 }

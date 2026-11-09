@@ -13,6 +13,8 @@ enum AppLinks {
     /// Nutzungsbedingungen
     static let terms: URL? = URL(string: "https://sites.google.com/view/quizzen-app/nutzungsbedingungen")
     /// Website (im Profil unter „Mehr von Quizzen“)
+    /// Support-Adresse (steht auch auf der Website)
+    static let supportEmail = "support@quizzen-app.com"
     static let website: URL? = URL(string: "https://sites.google.com/view/quizzen-app/startseite")
 }
 

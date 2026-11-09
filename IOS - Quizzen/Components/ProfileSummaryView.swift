@@ -26,7 +26,11 @@ struct ProfileSummaryView: View {
 
     var actionContent: AnyView? = nil
 
-    private var resolvedStats: GlobalStats { stats ?? GlobalStats() }
+    private var resolvedStats: GlobalStats {
+        var resolved = stats ?? GlobalStats()
+        if let createdAt { resolved.installDate = min(resolved.installDate, createdAt) }
+        return resolved
+    }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -45,7 +49,7 @@ struct ProfileSummaryView: View {
             ProfileLevelCard(level: resolvedStats.level, showsHowToEarn: false)
             ProfileStatsGrid(stats: resolvedStats, friendsCount: friendsCount)
             ProfileBadgeShowcase(badges: Badge.showcase(from: resolvedStats, selected: selectedBadges)) {
-                ProfileBadgeDetailView(stats: stats, username: username)
+                ProfileBadgeDetailView(stats: resolvedStats, username: username)
             }
         }
         .padding(.bottom, 32)
