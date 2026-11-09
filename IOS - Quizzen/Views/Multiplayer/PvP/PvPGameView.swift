@@ -73,7 +73,7 @@ struct PvPGameView: View {
                                 .transition(.scale)
                         } else if !isMe && session.connection == .connected && !session.opponentOnline {
                             Image(systemName: "wifi.slash")
-                                .font(.system(size: 9, weight: .bold))
+                                .font(.system(.caption2, weight: .bold))
                                 .foregroundStyle(.white)
                                 .padding(3)
                                 .background(Color.gray, in: Circle())
@@ -92,7 +92,7 @@ struct PvPGameView: View {
 
     private func scoreText(_ score: Int, isMe: Bool) -> some View {
         Text("\(score)")
-            .font(.system(size: 30, weight: .black, design: .rounded))
+            .font(.system(.largeTitle, design: .rounded, weight: .black))
             .foregroundStyle(isMe ? Color.brandLight : .primary)
             .contentTransition(.numericText())
             .animation(.spring, value: score)
@@ -117,7 +117,7 @@ struct PvPGameView: View {
                     .monospacedDigit()
                     .foregroundStyle(color)
                 Text("\(session.currentIndex + 1)/\(session.totalQuestions)")
-                    .font(.system(size: 9, weight: .semibold))
+                    .font(.system(.caption2, weight: .semibold))
                     .foregroundStyle(.secondary)
             }
         }
@@ -157,7 +157,7 @@ struct PvPGameView: View {
                     .accessibilityHidden(true)
             }
             Text(question.prompt(quizId: session.quiz?.id ?? ""))
-                .font(.system(size: 20, weight: .semibold, design: .rounded))
+                .font(.system(.title3, design: .rounded, weight: .semibold))
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
         }
@@ -203,7 +203,7 @@ struct PvPGameView: View {
 
         return HStack(spacing: 10) {
             Text(option.text)
-                .font(.system(size: 17, weight: .medium))
+                .font(.system(.body, weight: .medium))
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
 

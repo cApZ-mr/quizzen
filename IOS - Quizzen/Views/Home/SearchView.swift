@@ -442,7 +442,7 @@ struct SearchView: View {
 
     private func levelBubble(_ level: PlayerLevel) -> some View {
         Text("\(level.level)")
-            .font(.system(size: 10, weight: .black, design: .rounded))
+            .font(.system(.caption2, design: .rounded, weight: .black))
             .foregroundStyle(.white)
             .frame(width: 20, height: 20)
             .background(level.color, in: Circle())

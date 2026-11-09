@@ -12,6 +12,7 @@ struct LeaderboardView: View {
     @EnvironmentObject var statsManager: StatsManager
     @EnvironmentObject var userViewModel: UserViewModel
     @EnvironmentObject var friendsViewModel: FriendsViewModel
+    @EnvironmentObject var router: AppRouter
 
     @StateObject private var viewModel = LeaderboardViewModel()
 
@@ -32,10 +33,18 @@ struct LeaderboardView: View {
             .navigationDestination(for: Account.self) { PublicProfileView(account: $0) }
         }
         .task(id: reloadKey) { await reload() }
+        .onAppear(perform: applyRequestedBoard)
+        .onChange(of: router.requestedBoard) { _, _ in applyRequestedBoard() }
     }
 
     /// Ändert sich Bestenliste oder Filter, wird neu geladen.
     private var reloadKey: String { viewModel.board.id + viewModel.scope.rawValue }
+
+    private func applyRequestedBoard() {
+        guard let board = router.requestedBoard else { return }
+        router.requestedBoard = nil
+        viewModel.board = board
+    }
 
     private func reload() async {
         if viewModel.scope == .friends && friendsViewModel.friends.isEmpty {

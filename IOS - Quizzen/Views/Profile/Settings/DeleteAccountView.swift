@@ -78,19 +78,9 @@ struct DeleteAccountView: View {
                 )
 
                 VStack(alignment: .leading) {
-                    Button {
-                        // TODO: Link zu echter URL öffnen
-                        log.debug("zu den Datenschutzrichtlinien")
-                    } label: {
-                        Text("Unsere Datenschutzrichtlinien").font(.footnote)
-                    }
+                    LegalLinkButton(title: "Unsere Datenschutzrichtlinien", url: AppLinks.privacyPolicy)
 
-                    Button {
-                        // TODO: Link zu echter URL öffnen
-                        log.debug("zu den AGB's")
-                    } label: {
-                        Text("Unsere AGB's").font(.footnote)
-                    }
+                    LegalLinkButton(title: "Unsere AGB", url: AppLinks.terms)
                 }
                 .padding(.horizontal)
 

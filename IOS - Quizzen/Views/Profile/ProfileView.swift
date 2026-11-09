@@ -32,8 +32,13 @@ struct ProfileView: View {
 
     private var appShareURL: URL { AppVersionService.appStoreURL }
 
-    let socialLinks: [SocialLink] = [
-        .init(name: "Website", imageName: "LogoWeb", urlString: "https://www.quizzen-app.de"),
+    /// Website erscheint erst, wenn AppLinks.website gesetzt ist
+    var socialLinks: [SocialLink] {
+        (AppLinks.website.map { [SocialLink(name: "Website", imageName: "LogoWeb", urlString: $0.absoluteString)] } ?? []) + baseSocialLinks
+    }
+
+    private let baseSocialLinks: [SocialLink] = [
+
         .init(name: "Instagram", imageName: "LogoInstagram", urlString: "https://www.instagram.com/quizzen.app"),
         .init(name: "WhatsApp", imageName: "LogoWhatsApp", urlString: "https://whatsapp.com/channel/0029Vb88Rot6RGJ8TvJKz90L")
     ]
@@ -57,7 +62,7 @@ struct ProfileView: View {
                         .tint(.brand)
 
                         NavigationLink { EditProfilView() } label: {
-                            Label("So sehen dich andere", systemImage: "eye")
+                            Label("Profil Vorschau", systemImage: "eye")
                         }
                         .buttonStyle(.bordered)
                     }
@@ -66,7 +71,7 @@ struct ProfileView: View {
 
                 ProfileLevelCard(level: level)
                 ProfileStatsGrid(stats: stats, friendsCount: friendsViewModel.friends.count,
-                                 friendsDestination: FriendsListView())
+                                 friendsDestination: FriendsView())
                 ProfileBadgeShowcase(badges: Badge.showcase(from: stats, selected: socialViewModel.selectedBadgeIdentifiers)) {
                     ProfileBadgeView()
                 }
@@ -91,6 +96,7 @@ struct ProfileView: View {
         .task {
             await socialViewModel.load()
             if friendsViewModel.friends.isEmpty { await friendsViewModel.loadFriends() }
+            await friendsViewModel.loadIncomingRequests()
         }
     }
 
@@ -98,6 +104,11 @@ struct ProfileView: View {
 
     private var menu: some View {
         VStack(spacing: 0) {
+            NavigationLink { FriendsView() } label: {
+                ProfileMenuRow(icon: "person.2.fill", tint: .purple, title: "Freunde & Anfragen",
+                               badge: friendsViewModel.incomingRequests.count)
+            }
+            Divider().padding(.leading, 56)
             NavigationLink { ProfileStatsView() } label: {
                 ProfileMenuRow(icon: "chart.bar.fill", tint: .blue, title: "Statistiken pro Quiz")
             }
@@ -124,6 +135,7 @@ private struct ProfileMenuRow: View {
     let icon: String
     let tint: Color
     let title: String
+    var badge: Int = 0
 
     var body: some View {
         HStack(spacing: 14) {
@@ -135,6 +147,14 @@ private struct ProfileMenuRow: View {
             Text(title)
                 .font(.body)
             Spacer()
+            if badge > 0 {
+                Text("\(badge)")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(.white)
+                    .frame(minWidth: 22, minHeight: 22)
+                    .background(Color.red, in: Capsule())
+                    .accessibilityLabel("\(badge) offene Anfragen")
+            }
             Image(systemName: "chevron.right")
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(.tertiary)
@@ -191,10 +211,10 @@ struct StatTile: View {
     private var content: some View {
         VStack(spacing: 3) {
             Text(value)
-                .font(.system(size: 17, weight: .semibold))
+                .font(.system(.body, weight: .semibold))
                 .foregroundColor(.white)
             Text(label)
-                .font(.system(size: 11))
+                .font(.system(.caption2))
                 .foregroundColor(.white.opacity(0.45))
         }
         .frame(maxWidth: .infinity)
@@ -223,12 +243,12 @@ struct MenuRow: View {
     var body: some View {
         HStack(spacing: 12) {
             Image(systemName: icon)
-                .font(.system(size: 15))
+                .font(.system(.subheadline))
                 .foregroundColor(tint)
                 .frame(width: 20)
 
             Text(title)
-                .font(.system(size: 14))
+                .font(.system(.subheadline))
                 .foregroundColor(.white)
                 .lineLimit(1)
 
@@ -236,7 +256,7 @@ struct MenuRow: View {
 
             if showChevron {
                 Image(systemName: "chevron.right")
-                    .font(.system(size: 12, weight: .medium))
+                    .font(.system(.caption, weight: .medium))
                     .foregroundColor(.white.opacity(0.3))
             }
         }

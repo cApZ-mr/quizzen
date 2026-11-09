@@ -113,12 +113,6 @@ struct QuizPlayView: View {
 
                 // Antwortmöglichkeiten
                 VStack(spacing: 12) {
-                    if viewModel.didTimeOut {
-                        Label("Zeit abgelaufen!", systemImage: "clock.badge.xmark")
-                            .font(.headline)
-                            .foregroundStyle(.red)
-                            .transition(.scale.combined(with: .opacity))
-                    }
                     ForEach(viewModel.displayOptions) { option in
                         Button(action: {
                             viewModel.selectOption(option)
@@ -126,7 +120,7 @@ struct QuizPlayView: View {
                         }) {
                             HStack(spacing: 10) {
                                 Text(option.text)
-                                    .font(.system(size: 18, weight: .medium))
+                                    .font(.system(.title3, weight: .medium))
                                     .multilineTextAlignment(.center)
                                     .frame(maxWidth: .infinity)
                                 if let icon = resultIcon(for: option) {
@@ -148,30 +142,18 @@ struct QuizPlayView: View {
                         .accessibilityAddTraits(option.id == viewModel.selectedOptionId ? .isSelected : [])
                     }
 
-                    // Action Button
-                    if viewModel.selectedOptionId != nil, !viewModel.isConfirmed {
-                        Button(action: {
-                            viewModel.confirmAnswer()
-                            let wasCorrect = viewModel.answerLog.last?.isCorrect ?? false
-                            UINotificationFeedbackGenerator().notificationOccurred(wasCorrect ? .success : .error)
-                        }) {
-                            Text("Antwort bestätigen")
-                                .font(.headline)
-                                .frame(maxWidth: .infinity).padding(18)
-                                .background(Color.brand)
-                                .foregroundColor(.white)
-                                .cornerRadius(18)
-                        }
-                    } else if viewModel.isConfirmed {
-                        Button(action: { viewModel.nextQuestion() }) {
-                            Text(viewModel.currentIndex + 1 >= viewModel.maxQuestions ? "Ergebnis anzeigen" : "Nächste Frage")
-                                .font(.headline)
-                                .frame(maxWidth: .infinity).padding(18)
-                                .background(Color.brand)
-                                .foregroundColor(.white)
-                                .cornerRadius(18)
-                        }
+                    // Aktions-Button ist immer da (vor der Auswahl deaktiviert),
+                    // damit sich das Layout beim Antworten nicht verschiebt.
+                    Button(action: primaryAction) {
+                        Label(primaryTitle, systemImage: viewModel.didTimeOut ? "clock.badge.xmark" : "")
+                            .labelStyle(PrimaryLabelStyle(showsIcon: viewModel.didTimeOut))
+                            .font(.headline)
+                            .frame(maxWidth: .infinity).padding(18)
+                            .background(primaryEnabled ? Color.brand : Color.brand.opacity(0.35))
+                            .foregroundColor(.white.opacity(primaryEnabled ? 1 : 0.6))
+                            .cornerRadius(18)
                     }
+                    .disabled(!primaryEnabled)
                 }
                 .padding(20)
                 .background(.ultraThinMaterial)
@@ -193,6 +175,29 @@ struct QuizPlayView: View {
     }
 
 
+
+    // MARK: Aktions-Button
+
+    private var primaryEnabled: Bool { viewModel.isConfirmed || viewModel.selectedOptionId != nil }
+
+    private var primaryTitle: String {
+        if viewModel.isConfirmed {
+            let last = viewModel.currentIndex + 1 >= viewModel.maxQuestions
+            let next = last ? "Ergebnis anzeigen" : "Nächste Frage"
+            return viewModel.didTimeOut ? "Zeit abgelaufen – \(next)" : next
+        }
+        return viewModel.selectedOptionId == nil ? "Antwort wählen" : "Antwort bestätigen"
+    }
+
+    private func primaryAction() {
+        if viewModel.isConfirmed {
+            viewModel.nextQuestion()
+        } else {
+            viewModel.confirmAnswer()
+            let wasCorrect = viewModel.answerLog.last?.isCorrect ?? false
+            UINotificationFeedbackGenerator().notificationOccurred(wasCorrect ? .success : .error)
+        }
+    }
 
     func buttonColor(for option: QuizOption) -> Color {
         if viewModel.isConfirmed {
@@ -239,7 +244,7 @@ private struct QuestionHeaderView: View {
                         .accessibilityHidden(true)
                 }
                 Text(question.prompt(quizId: quizId))
-                    .font(.system(size: 21, weight: .semibold, design: .rounded))
+                    .font(.system(.title2, design: .rounded, weight: .semibold))
                     .multilineTextAlignment(.center)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -264,5 +269,16 @@ private struct QuestionHeaderView: View {
         RoundedRectangle(cornerRadius: 24)
             .fill(Color(UIColor.secondarySystemBackground))
             .shadow(color: .black.opacity(0.1), radius: 5, x: 0, y: 2)
+    }
+}
+
+/// Zeigt das Icon nur bei Bedarf (z. B. „Zeit abgelaufen“)
+private struct PrimaryLabelStyle: LabelStyle {
+    let showsIcon: Bool
+    func makeBody(configuration: Configuration) -> some View {
+        HStack(spacing: 8) {
+            if showsIcon { configuration.icon }
+            configuration.title
+        }
     }
 }

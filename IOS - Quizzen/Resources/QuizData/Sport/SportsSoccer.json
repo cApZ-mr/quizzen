@@ -28,22 +28,22 @@
       "correctAnswerIndex": 2
     },
     {
-      "question": "Wie oft wurde die deutsche Herren-Nationalmannschaft Fußball-Weltmeister?",
+      "question": "In welchem Jahr wurde Deutschland zum ersten Mal Fußball-Weltmeister?",
       "options": [
-        "3-mal",
-        "4-mal",
-        "2-mal",
-        "5-mal"
+        "1974",
+        "1954",
+        "1966",
+        "1990"
       ],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Welches Land hat die meisten Fußball-WM-Titel bei den Herren?",
+      "question": "Welches Land gewann 1930 die erste Fußball-Weltmeisterschaft?",
       "options": [
-        "Deutschland",
         "Brasilien",
-        "Argentinien",
-        "Italien"
+        "Uruguay",
+        "Italien",
+        "Argentinien"
       ],
       "correctAnswerIndex": 1
     },

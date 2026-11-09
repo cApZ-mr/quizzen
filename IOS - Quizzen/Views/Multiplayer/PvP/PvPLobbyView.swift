@@ -18,8 +18,16 @@ enum PvPRoute: Hashable {
 struct PvPLobbyView: View {
     /// Eine Session für den ganzen Tab – korrekt als StateObject gehalten
     @StateObject private var session = PvPSession()
+    @EnvironmentObject var router: AppRouter
     @State private var path: [PvPRoute] = []
     @State private var abandonedNotice: String?
+    /// Freund, der beim Erstellen eingeladen wird
+    @State private var inviteTarget: Account?
+    @State private var invitations: [Match] = []
+    @State private var invitationHosts: [UUID: Account] = [:]
+    @State private var declinedInvitations: Set<UUID> = []
+
+    private var visibleInvitations: [Match] { invitations.filter { !declinedInvitations.contains($0.id) } }
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -35,6 +43,9 @@ struct PvPLobbyView: View {
                             .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
                             .transition(.opacity)
                     }
+                    if !visibleInvitations.isEmpty {
+                        invitationsSection
+                    }
                     actionCards
                     howItWorks
                 }
@@ -48,10 +59,17 @@ struct PvPLobbyView: View {
                 // verlassen (App beendet/abgestürzt) und wird abgebrochen.
                 guard path.isEmpty, session.match == nil else { return }
                 await cancelAbandonedMatch()
+                // Einladungen abfragen, solange der Hub sichtbar ist
+                while !Task.isCancelled {
+                    await loadInvitations()
+                    try? await Task.sleep(for: .seconds(8))
+                }
             }
+            .onAppear(perform: consumeRouterInvite)
+            .onChange(of: router.duelInvite) { _, _ in consumeRouterInvite() }
             .navigationDestination(for: PvPRoute.self) { route in
                 switch route {
-                case .create: PvPMatchView(session: session, mode: .create, path: $path)
+                case .create: PvPMatchView(session: session, mode: .create, invite: inviteTarget, path: $path)
                 case .join:   PvPMatchView(session: session, mode: .join, path: $path)
                 }
             }
@@ -68,8 +86,73 @@ struct PvPLobbyView: View {
         #endif
         .onChange(of: path) { _, newPath in
             // Zurück im Hub → laufendes Match sauber verlassen
-            if newPath.isEmpty, session.match != nil {
-                Task { await session.leave() }
+            if newPath.isEmpty {
+                inviteTarget = nil
+                if session.match != nil { Task { await session.leave() } }
+            }
+        }
+    }
+
+    // MARK: - Einladungen
+
+    /// „Zum Duell fordern“ aus einem Profil: Duell mit Einladung erstellen
+    private func consumeRouterInvite() {
+        guard let friend = router.duelInvite else { return }
+        router.duelInvite = nil
+        guard session.match == nil else { return }
+        inviteTarget = friend
+        path = [.create]
+    }
+
+    private func loadInvitations() async {
+        let service = PvPLobbyService()
+        guard var matches = try? await service.fetchInvitations() else { return }
+        matches.removeAll { BlockList.shared.isHidden($0.host_id) }
+        let missing = Set(matches.map(\.host_id)).filter { invitationHosts[$0] == nil }
+        if !missing.isEmpty, let accounts = try? await service.fetchAccounts(ids: Array(missing)) {
+            for account in accounts { invitationHosts[account.id] = account }
+        }
+        withAnimation { invitations = matches }
+    }
+
+    private var invitationsSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Label("Einladungen", systemImage: "envelope.badge.fill")
+                .font(.headline)
+            ForEach(visibleInvitations) { match in
+                let host = invitationHosts[match.host_id]
+                HStack(spacing: 12) {
+                    AvatarView(username: host?.username ?? "?", url: host?.avatarUrl, size: 44)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("\(host?.username ?? "Ein Freund") fordert dich heraus")
+                            .font(.subheadline.weight(.semibold))
+                        Text(match.created_at.formatted(.relative(presentation: .named)))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    Spacer(minLength: 0)
+                    Button {
+                        withAnimation { _ = declinedInvitations.insert(match.id) }
+                    } label: {
+                        Image(systemName: "xmark")
+                            .frame(width: 34, height: 34)
+                    }
+                    .buttonStyle(.bordered)
+                    .accessibilityLabel("Ablehnen")
+                    Button {
+                        Task {
+                            await session.joinMatch(code: match.invite_code)
+                            if session.match != nil { path = [.join] }
+                        }
+                    } label: {
+                        Text("Annehmen").font(.subheadline.weight(.semibold))
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.brand)
+                }
+                .padding(12)
+                .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
+                .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.brandLight.opacity(0.6), lineWidth: 1.5))
             }
         }
     }
@@ -178,6 +261,7 @@ struct PvPMatchView: View {
 
     @ObservedObject var session: PvPSession
     let mode: Mode
+    var invite: Account? = nil
     @Binding var path: [PvPRoute]
 
     @State private var confirmLeave = false
@@ -209,7 +293,7 @@ struct PvPMatchView: View {
             }
             .task {
                 if mode == .create, session.match == nil, !session.isBusy {
-                    await session.createMatch()
+                    await session.createMatch(inviting: invite)
                 }
             }
             .animation(.easeInOut(duration: 0.25), value: session.phase)
@@ -234,7 +318,7 @@ struct PvPMatchView: View {
                 } description: {
                     Text(error)
                 } actions: {
-                    Button("Erneut versuchen") { Task { await session.createMatch() } }
+                    Button("Erneut versuchen") { Task { await session.createMatch(inviting: invite) } }
                         .buttonStyle(.borderedProminent)
                         .tint(.brand)
                 }

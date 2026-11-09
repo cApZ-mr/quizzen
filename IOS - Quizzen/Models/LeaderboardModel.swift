@@ -62,11 +62,13 @@ nonisolated enum LeaderboardMetric: String, CaseIterable, Identifiable, Hashable
 /// oder ein Quiz (Summe der Bestwerte, inkl. früherer Einzel-Quizze).
 enum LeaderboardBoard: Hashable, Identifiable {
     case stat(LeaderboardMetric)
+    case daily
     case quiz(id: String, name: String, icon: String)
 
     var id: String {
         switch self {
         case .stat(let metric): "stat_\(metric.rawValue)"
+        case .daily: "daily"
         case .quiz(let id, _, _): "quiz_\(id)"
         }
     }
@@ -74,6 +76,7 @@ enum LeaderboardBoard: Hashable, Identifiable {
     var title: String {
         switch self {
         case .stat(let metric): metric.shortTitle
+        case .daily: "Heute"
         case .quiz(_, let name, _): name
         }
     }
@@ -81,6 +84,7 @@ enum LeaderboardBoard: Hashable, Identifiable {
     var icon: String {
         switch self {
         case .stat(let metric): metric.icon
+        case .daily: "calendar"
         case .quiz(_, _, let icon): icon
         }
     }
@@ -88,19 +92,21 @@ enum LeaderboardBoard: Hashable, Identifiable {
     var unit: String {
         switch self {
         case .stat(let metric): metric.title
-        case .quiz: "Punkte (Bestwert je Runde)"
+        case .daily: "Punkte in der heutigen Tageschallenge"
+        case .quiz: "Gemeisterte Fragen (verschiedene richtig beantwortet)"
         }
     }
 
     func format(_ value: Int) -> String {
         switch self {
         case .stat(let metric): metric.formatted(value)
-        case .quiz: "\(value.formatted()) P."
+        case .daily: "\(value)/\(DailyChallenge.questionCount)"
+        case .quiz: "\(value.formatted()) Fragen"
         }
     }
 
     static var all: [LeaderboardBoard] {
-        LeaderboardMetric.allCases.map { .stat($0) }
+        [.daily] + LeaderboardMetric.allCases.map { .stat($0) }
         + QuizCatalog.all.map { .quiz(id: $0.id, name: $0.title, icon: $0.icon) }
     }
 }

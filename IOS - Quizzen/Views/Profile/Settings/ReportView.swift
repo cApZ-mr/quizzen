@@ -162,7 +162,7 @@ struct ReportView: View {
             }
             Button { removeImage(at: index) } label: {
                 Image(systemName: "xmark.circle.fill")
-                    .font(.system(size: 18))
+                    .font(.system(.title3))
                     .foregroundStyle(.white, Color.black.opacity(0.6))
             }
             .padding(4)
@@ -177,7 +177,7 @@ struct ReportView: View {
         PhotosPicker(selection: $selectedItems, maxSelectionCount: maxImages - selectedImagesData.count, matching: .images) {
             VStack(spacing: 6) {
                 Image(systemName: "plus")
-                    .font(.system(size: 20, weight: .semibold))
+                    .font(.system(.title3, weight: .semibold))
                 Text("Hinzufügen")
                     .font(.caption2)
             }

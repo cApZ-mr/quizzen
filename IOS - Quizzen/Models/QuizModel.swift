@@ -53,6 +53,8 @@ nonisolated struct Question: Codable, Identifiable {
     let imageName: String?
     let options: [String]
     let correctAnswerIndex: Int
+    /// Eigener Fragetext für Bild-Fragen außerhalb ihres Quiz (z. B. Tageschallenge)
+    var promptText: String? = nil
 }
 
 // MARK: - Angezeigter Fragetext
@@ -62,13 +64,10 @@ extension Question {
     /// Achtung: Bei Bild-Fragen enthält `question` die LÖSUNG (dient als ID),
     /// darf also während des Spiels nie angezeigt werden.
     func prompt(quizId: String) -> String {
+        if let promptText { return promptText }
         guard imageName != nil else { return question }
         if quizId.hasPrefix("Flags") { return "Welches Land hat diese Flagge?" }
-        switch quizId {
-        case "AviationLogos":      return "Zu welcher Airline gehört dieses Logo?"
-        case "AviationPlaneModel": return "Welches Flugzeug ist das?"
-        default:                   return "Was ist auf dem Bild zu sehen?"
-        }
+        return "Was ist auf dem Bild zu sehen?"
     }
 }
 

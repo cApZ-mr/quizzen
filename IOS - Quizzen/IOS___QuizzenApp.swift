@@ -11,6 +11,7 @@ struct IOS___Quizzen: App {
     @StateObject private var userViewModel = UserViewModel()
     @StateObject private var authViewModel = AuthViewModel()
     @StateObject private var friendsViewModel = FriendsViewModel()
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
         WindowGroup {
@@ -20,6 +21,11 @@ struct IOS___Quizzen: App {
                 .environmentObject(authViewModel)
                 .environmentObject(friendsViewModel)
                 .preferredColorScheme(.dark)
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .background {
+                StreakReminder.reschedule(stats: statsManager.globalManager.stats)
+            }
         }
     }
 }

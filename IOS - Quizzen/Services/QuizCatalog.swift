@@ -236,7 +236,8 @@ struct QuizDefinition: Identifiable {
         var options = distractors + [correct]
         options.shuffle(using: &rng)
         return Question(question: item.question.question, imageName: item.question.imageName,
-                        options: options, correctAnswerIndex: options.firstIndex(of: correct) ?? 0)
+                        options: options, correctAnswerIndex: options.firstIndex(of: correct) ?? 0,
+                        promptText: item.question.imageName == nil ? nil : item.question.prompt(quizId: id))
     }
 
     func build(config: QuizConfig, label: String, knownQuestions: Set<String> = []) -> QuizDetail {

@@ -19,7 +19,7 @@ struct PvPJoinForm: View {
         VStack(spacing: 28) {
             VStack(spacing: 10) {
                 Image(systemName: "number")
-                    .font(.system(size: 28, weight: .bold))
+                    .font(.system(.title, weight: .bold))
                     .foregroundStyle(.white)
                     .frame(width: 72, height: 72)
                     .background(Color.purple.gradient, in: Circle())
@@ -96,7 +96,7 @@ struct PvPJoinForm: View {
                     let digit = index < code.count ? String(Array(code)[index]) : ""
                     let isActive = index == code.count && isFocused
                     Text(digit)
-                        .font(.system(size: 30, weight: .bold, design: .rounded))
+                        .font(.system(.largeTitle, design: .rounded, weight: .bold))
                         .frame(width: 46, height: 58)
                         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 12))
                         .overlay(RoundedRectangle(cornerRadius: 12)

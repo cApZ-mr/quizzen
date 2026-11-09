@@ -149,15 +149,18 @@ struct QuizResultView: View {
                     .padding(.vertical, 16)
                     .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
             }
-            Button {
-                withAnimation { viewModel.restart() }
-            } label: {
-                Label("Nochmal", systemImage: "arrow.counterclockwise")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 16)
-                    .foregroundStyle(.white)
-                    .background(Color.brand, in: RoundedRectangle(cornerRadius: 16))
+            // Tageschallenge: nur ein Versuch pro Tag
+            if !DailyChallenge.isDaily(viewModel.quiz.id) {
+                Button {
+                    withAnimation { viewModel.restart() }
+                } label: {
+                    Label("Nochmal", systemImage: "arrow.counterclockwise")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 16)
+                        .foregroundStyle(.white)
+                        .background(Color.brand, in: RoundedRectangle(cornerRadius: 16))
+                }
             }
         }
         .buttonStyle(.plain)

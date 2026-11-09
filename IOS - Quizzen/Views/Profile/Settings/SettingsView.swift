@@ -36,6 +36,7 @@ struct SettingsRow: View {
 struct SettingsView: View {
     @EnvironmentObject var viewModel: UserViewModel
     @EnvironmentObject var authViewModel: AuthViewModel
+    @EnvironmentObject var statsManager: StatsManager
     @Environment(\.openURL) private var openURL
 
 
@@ -67,7 +68,10 @@ struct SettingsView: View {
                 answer: "Die App ist für jedes Alter geeignet. Alle fragen sind FSK0 und für jedes Alter geeignet."),
 
         FAQItem(question: "Kann ich gegen Freunde oder andere Spieler antreten (Multiplayer/Duell-Modus)?",
-                answer: "Ja! Im Tab „Duell“ erstellst du ein Duell und schickst deinem Freund den 6-stelligen Code. Ihr bekommt dieselben 10 Fragen mit je 20 Sekunden und seht nach jeder Frage, wer richtig lag."),
+                answer: "Ja! Fordere einen Freund direkt aus seinem Profil heraus oder erstelle im Tab „Duell“ ein Duell und teile den 6-stelligen Code. Du wählst Quiz, Stufe oder eigene Einstellungen – ihr bekommt dieselben Fragen und seht nach jeder Frage, wer richtig lag."),
+
+        FAQItem(question: "Wie melde oder blockiere ich andere Spieler?",
+                answer: "Öffne das Profil der Person und tippe oben rechts auf „…“. Dort kannst du sie melden oder blockieren. Blockierte Nutzer verwaltest du in den Einstellungen unter „Blockierte Nutzer“."),
 
         FAQItem(question: "Ist die App komplett kostenlos, oder gibt es Werbung und In-App-Käufe (z. B. Premium-Quizze)?",
                 answer: "Aktuell ist die App komplett kosten- und werbefrei. Quizzen behält sich aber vor, dies zukünftig aus Gründen der Kostendeckung zu ändern."),
@@ -93,6 +97,20 @@ struct SettingsView: View {
         }
     }
 
+    @AppStorage(StreakReminder.enabledKey) private var reminderEnabled = false
+    @State private var reminderDenied = false
+
+    private func setReminder(_ enabled: Bool) async {
+        if enabled {
+            let granted = await StreakReminder.requestPermission()
+            reminderDenied = !granted
+            reminderEnabled = granted
+        } else {
+            reminderEnabled = false
+        }
+        StreakReminder.reschedule(stats: statsManager.globalManager.stats)
+    }
+
     var body: some View {
         List {
             // Account Section
@@ -102,6 +120,21 @@ struct SettingsView: View {
                 }
             }
             
+            // Benachrichtigungen
+            Section {
+                Toggle(isOn: Binding(
+                    get: { reminderEnabled },
+                    set: { newValue in Task { await setReminder(newValue) } }
+                )) {
+                    SettingsRow(icon: "bell.badge.fill", title: "Streak-Erinnerung (19 Uhr)", iconColor: .orange)
+                }
+                .tint(.orange)
+            } footer: {
+                Text(reminderDenied
+                     ? "Benachrichtigungen sind in den iOS-Einstellungen für Quizzen ausgeschaltet."
+                     : "Erinnert dich abends, wenn du heute noch nicht gespielt hast.")
+            }
+
             // Daten Section
             Section() {
                 NavigationLink(destination: DeleteAccountView()) {
@@ -110,6 +143,9 @@ struct SettingsView: View {
 
                 NavigationLink(destination: ResetStatsView()) {
                     SettingsRow(icon: "chart.xyaxis.line", title: "Statistiken")
+                }
+                NavigationLink(destination: BlockedUsersView()) {
+                    SettingsRow(icon: "hand.raised", title: "Blockierte Nutzer")
                 }
 
                 /*NavigationLink(destination: SelectLanguageView()) {
@@ -172,7 +208,7 @@ struct SettingsView: View {
     private var faqSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Häufige fragen")
-                .font(.system(size: 13))
+                .font(.system(.footnote))
                 .foregroundColor(.gray)
                 .padding(.leading, 4)
 
@@ -191,7 +227,7 @@ struct SettingsView: View {
 
                 if filteredFAQ.isEmpty {
                     Text("Keine Treffer für „\(searchText)“")
-                        .font(.system(size: 14))
+                        .font(.system(.subheadline))
                         .foregroundColor(.gray)
                         .padding(16)
                 }
@@ -241,14 +277,14 @@ private struct FAQRow: View {
             Button(action: onTap) {
                 HStack {
                     Text(item.question)
-                        .font(.system(size: 15))
+                        .font(.system(.subheadline))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
 
                     Spacer()
 
                     Image(systemName: "chevron.down")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(.subheadline, weight: .semibold))
                         .foregroundColor(isExpanded ? .blue : Color(white: 0.4))
                         .rotationEffect(.degrees(isExpanded ? 180 : 0))
                 }
@@ -261,7 +297,7 @@ private struct FAQRow: View {
 
             if isExpanded {
                 Text(item.answer)
-                    .font(.system(size: 13))
+                    .font(.system(.footnote))
                     .foregroundColor(Color(white: 0.65))
                     .lineSpacing(4)
                     .padding(.horizontal, 16)
@@ -293,11 +329,11 @@ private struct ContactRow<Destination: View>: View {
                 HStack(spacing: 12) {
                     Image(systemName: icon)
                         .foregroundColor(iconColor)
-                        .font(.system(size: 18))
+                        .font(.system(.title3))
                         .frame(width: 24)
                     
                     Text(title)
-                        .font(.system(size: 15))
+                        .font(.system(.subheadline))
                         .foregroundColor(.white)
                     
                     Spacer()

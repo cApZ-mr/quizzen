@@ -31,12 +31,17 @@ enum FriendsTab: CaseIterable {
 }
 
 struct FriendsView: View {
-    @StateObject var friendsViewModel = FriendsViewModel()
+    @EnvironmentObject var friendsViewModel: FriendsViewModel
     @State private var selectedTab: FriendsTab = .friends
     @Namespace private var underlineNamespace
 
     var body: some View {
-        NavigationStack {
+        content
+            .navigationTitle("Freunde")
+            .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private var content: some View {
             VStack(spacing: 0) {
                 tabSwitcher
 
@@ -57,7 +62,6 @@ struct FriendsView: View {
             .navigationDestination(for: Account.self) { account in
                 PublicProfileView(account: account)
             }
-        }
         .task {
             await friendsViewModel.loadFriends()
             await friendsViewModel.loadIncomingRequests()
@@ -83,13 +87,13 @@ struct FriendsView: View {
                     VStack(spacing: 8) {
                         HStack(spacing: 6) {
                             Image(systemName: tab.icon)
-                                .font(.system(size: 14))
+                                .font(.system(.subheadline))
                             Text(tab.title)
                                 .font(.subheadline)
 
                             if let count = badgeCount(for: tab), count > 0 {
                                 Text("\(count)")
-                                    .font(.system(size: 11, weight: .bold))
+                                    .font(.system(.caption2, weight: .bold))
                                     .foregroundStyle(.white)
                                     .frame(minWidth: 16, minHeight: 16)
                                     .background(Color.red)
@@ -135,7 +139,7 @@ struct FriendsView: View {
             } else if friendsViewModel.friends.isEmpty {
                 VStack(spacing: 8) {
                     Image(systemName: "person.2.slash")
-                        .font(.system(size: 32))
+                        .font(.system(.largeTitle))
                         .foregroundStyle(.secondary)
                     Text("Noch keine Freunde")
                         .fontWeight(.medium)

@@ -53,10 +53,12 @@ final class LeaderboardViewModel: ObservableObject {
                 async let ownRank = try? supabase.fetchMyRank(metric: metric, myValue: metric.value(in: myStats), filter: filter)
                 result = try await list
                 rank = await ownRank ?? nil
+            case .daily:
+                result = try await supabase.fetchQuizCategoryLeaderboard(quizIds: [DailyChallenge.quizId()], filter: filter)
+                rank = result.first { $0.id == myUserId }?.rank
             case .quiz(let quizId, _, _):
-                // Neue Runden + Versuche der früheren Einzel-Quizze
-                let quizIds = [quizId] + (QuizCatalog.definition(for: quizId)?.legacyQuizIds ?? [])
-                result = try await supabase.fetchQuizCategoryLeaderboard(quizIds: quizIds, filter: filter)
+                // Gemeisterte Fragen – unabhängig von Rundenlänge und Wiederholungen
+                result = try await supabase.fetchQuizMastery(quizId: quizId, filter: filter)
                 rank = result.first { $0.id == myUserId }?.rank
             }
 
@@ -71,8 +73,10 @@ final class LeaderboardViewModel: ObservableObject {
             log.error("Bestenliste konnte nicht geladen werden: \(error.localizedDescription)")
             entries = []
             myRank = nil
-            if case .quiz = board {
-                state = .failed("Quiz-Bestenlisten sind noch nicht freigeschaltet (Server-Update 002 ausstehend).")
+            if case .daily = board {
+                state = .failed("Die Tages-Bestenliste ist noch nicht freigeschaltet (Server-Update 002 ausstehend).")
+            } else if case .quiz = board {
+                state = .failed("Quiz-Bestenlisten sind noch nicht freigeschaltet (Server-Update 006 ausstehend).")
             } else {
                 state = .failed("Bestenliste konnte nicht geladen werden. Prüfe deine Internetverbindung.")
             }

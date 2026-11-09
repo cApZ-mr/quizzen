@@ -9,28 +9,36 @@ import SwiftUI
 
 // MARK: TabView
 struct MainAppContainer: View {
+    @StateObject private var router = AppRouter()
+    @EnvironmentObject var friendsViewModel: FriendsViewModel
+
     var body: some View {
-        TabView {
-            Tab("Home", systemImage: "house") {
+        TabView(selection: $router.selectedTab) {
+            Tab("Home", systemImage: "house", value: AppTab.home) {
                 HomeView()
             }
 
-            Tab("Duell", systemImage: "bolt.fill") {
+            Tab("Duell", systemImage: "bolt.fill", value: AppTab.duel) {
                 PvPLobbyView()
             }
-            
-            Tab("Bestenliste", systemImage: "trophy") {
+
+            Tab("Bestenliste", systemImage: "trophy", value: AppTab.leaderboard) {
                 LeaderboardView()
             }
-            
-            Tab("Freunde", systemImage: "point.3.filled.connected.trianglepath.dotted") {
-                FriendsView()
-            }
 
-            Tab(role: .search) {
+            Tab("Freunde", systemImage: "person.2", value: AppTab.friends) {
+                NavigationStack {
+                    FriendsView()
+                }
+            }
+            .badge(friendsViewModel.incomingRequests.count)
+
+            Tab(value: AppTab.search, role: .search) {
                 SearchView()
             }
         }
+        .environmentObject(router)
+        .task { await BlockList.shared.refresh() }
     }
 }
 
@@ -63,6 +71,7 @@ struct DifficultyBadge: View {
 struct HomeView: View {
     @EnvironmentObject var viewModel: UserViewModel
     @EnvironmentObject var statsManager: StatsManager
+    @EnvironmentObject var router: AppRouter
 
     private let allQuizzes = DataService.loadAllQuizzes()
 
@@ -71,6 +80,8 @@ struct HomeView: View {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 28) {
                     header
+
+                    DailyChallengeCard()
 
                     if let spotlight = spotlightQuiz {
                         SpotlightCard(quiz: spotlight.quiz, label: spotlight.label, stats: statsManager.globalManager.stats)
@@ -101,7 +112,7 @@ struct HomeView: View {
         }
         guard !allQuizzes.isEmpty else { return nil }
         let day = Calendar.current.ordinality(of: .day, in: .era, for: .now) ?? 0
-        return (allQuizzes[day % allQuizzes.count], "Quiz des Tages")
+        return (allQuizzes[day % allQuizzes.count], "Empfohlen für dich")
     }
 
     // MARK: Header
@@ -128,6 +139,7 @@ struct HomeView: View {
                             .offset(x: 4, y: 4)
                     }
             }
+            .buttonStyle(.plain)
             .accessibilityLabel("Profil öffnen")
         }
     }
@@ -273,6 +285,77 @@ struct HomeQuizCard: View {
     }
 }
 
+// MARK: - Tageschallenge
+struct DailyChallengeCard: View {
+    @EnvironmentObject var statsManager: StatsManager
+    @EnvironmentObject var router: AppRouter
+    /// Wird beim Erscheinen neu gelesen (nach dem Spielen aktualisiert)
+    @State private var score: Int?
+
+    var body: some View {
+        HStack(spacing: 14) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(LinearGradient(colors: [.orange, .pink], startPoint: .topLeading, endPoint: .bottomTrailing))
+                VStack(spacing: 0) {
+                    Text(Date.now.formatted(.dateTime.month(.abbreviated)).uppercased())
+                        .font(.caption2.weight(.bold))
+                    Text(Date.now.formatted(.dateTime.day()))
+                        .font(.system(.title, design: .rounded, weight: .black))
+                }
+                .foregroundStyle(.white)
+            }
+            .frame(width: 64, height: 64)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("TAGESCHALLENGE")
+                    .font(.caption2.weight(.bold))
+                    .tracking(0.8)
+                    .foregroundStyle(.orange)
+                if let score {
+                    Text("Geschafft: \(score)/\(DailyChallenge.questionCount)")
+                        .font(.headline)
+                    Text("Morgen gibt's neue Fragen")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                } else {
+                    Text("10 Fragen aus allen Quizzen")
+                        .font(.headline)
+                    Text("Für alle gleich · 20 s pro Frage · 1 Versuch")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            Spacer(minLength: 0)
+
+            if score != nil {
+                Button {
+                    router.showLeaderboard(.daily)
+                } label: {
+                    Image(systemName: "trophy.fill")
+                        .font(.title3)
+                        .foregroundStyle(.orange)
+                        .frame(width: 44, height: 44)
+                        .background(Color.orange.opacity(0.15), in: Circle())
+                }
+                .accessibilityLabel("Tages-Bestenliste")
+            } else {
+                NavigationLink {
+                    QuizPlayView(currentQuiz: DailyChallenge.quiz(), statsManager: statsManager)
+                } label: {
+                    Image(systemName: "play.circle.fill")
+                        .font(.system(.largeTitle))
+                        .foregroundStyle(.orange)
+                }
+                .accessibilityLabel("Tageschallenge starten")
+            }
+        }
+        .padding(12)
+        .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 22))
+        .onAppear { score = DailyChallenge.completedScore() }
+    }
+}
+
 // MARK: - Spotlight (Streak + Quiz-Empfehlung)
 struct SpotlightCard: View {
     let quiz: QuizDetail
@@ -286,7 +369,8 @@ struct SpotlightCard: View {
 
     private var streakText: String {
         if stats.currentStreak == 0 { return "Starte heute eine Streak!" }
-        if playedToday { return "\(stats.currentStreak) Tage Streak – heute gesichert ✓" }
+        let days = stats.currentStreak == 1 ? "1 Tag" : "\(stats.currentStreak) Tage"
+        if playedToday { return "\(days) Streak – heute gesichert ✓" }
         return "Spiel heute, um deine \(stats.currentStreak)-Tage-Streak zu halten"
     }
 
@@ -313,7 +397,7 @@ struct SpotlightCard: View {
                 }
                 Spacer(minLength: 0)
                 Image(systemName: "play.circle.fill")
-                    .font(.system(size: 34))
+                    .font(.system(.largeTitle))
                     .foregroundStyle(Color.brand)
             }
             .padding(12)

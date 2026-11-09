@@ -60,11 +60,10 @@ struct PvPDuelSettingsPanel: View {
         VStack(alignment: .leading, spacing: 14) {
             Text("Einstellungen").font(.title3.bold())
 
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
-                    ForEach(definition.presets) { preset in
-                        levelChip(preset)
-                    }
+            // Umbrechendes Raster statt Scroll-Leiste: alle Stufen sichtbar, nichts springt
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: 8)], alignment: .leading, spacing: 8) {
+                ForEach(definition.presets) { preset in
+                    levelChip(preset)
                 }
             }
 
@@ -86,6 +85,9 @@ struct PvPDuelSettingsPanel: View {
         } label: {
             Label(preset.name, systemImage: preset.icon)
                 .font(.subheadline.weight(.semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+                .frame(maxWidth: .infinity)
                 .padding(.horizontal, 12)
                 .padding(.vertical, 8)
                 .foregroundStyle(isActive ? .white : .primary)

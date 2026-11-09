@@ -50,6 +50,31 @@ nonisolated private struct OutgoingFriendshipRow: Decodable {
     let addressee_id: UUID
 }
 
+/// Fortschritt eines Quiz auf dem Server (Tabelle user_quiz_progress)
+nonisolated struct QuizProgressRecord: Codable {
+    var user_id: String = ""
+    let quiz_key: String
+    let quiz_id: String
+    let rounds_played: Int
+    let answered_ids: [String]
+    let correct_ids: [String]
+    let false_ids: [String]
+
+    init(quizKey: String, quizId: String, stats: CategoryStats) {
+        quiz_key = quizKey
+        quiz_id = quizId
+        rounds_played = stats.roundsPlayed
+        answered_ids = Array(stats.answeredIDs)
+        correct_ids = Array(stats.correctIDs.intersection(stats.answeredIDs))
+        false_ids = Array(stats.falseIDs.intersection(stats.answeredIDs))
+    }
+
+    var stats: CategoryStats {
+        CategoryStats(roundsPlayed: rounds_played, answeredIDs: Set(answered_ids),
+                      correctIDs: Set(correct_ids), falseIDs: Set(false_ids))
+    }
+}
+
 struct FriendWithSince: Identifiable, Hashable {
     let account: AccountWithStats
     let friendsSince: Date
@@ -160,6 +185,38 @@ extension SupabaseClient {
     }
     
     
+    // MARK: - Quiz-Fortschritt
+
+    /// Lädt den Fortschritt aller Quizze (nil bei Fehler, z. B. Migration 006 fehlt)
+    func loadQuizProgress() async -> [String: CategoryStats]? {
+        guard let userId = try? await auth.session.user.id else { return nil }
+        do {
+            let rows: [QuizProgressRecord] = try await from("user_quiz_progress")
+                .select()
+                .eq("user_id", value: userId.uuidString)
+                .execute()
+                .value
+            return Dictionary(rows.map { ($0.quiz_key, $0.stats) }, uniquingKeysWith: { first, _ in first })
+        } catch {
+            log.notice("Quiz-Fortschritt konnte nicht geladen werden: \(error.localizedDescription)")
+            return nil
+        }
+    }
+
+    func syncQuizProgress(_ records: [QuizProgressRecord]) async {
+        guard !records.isEmpty, let userId = try? await auth.session.user.id else { return }
+        let rows = records.map { record -> QuizProgressRecord in
+            var row = record
+            row.user_id = userId.uuidString
+            return row
+        }
+        do {
+            try await from("user_quiz_progress").upsert(rows).execute()
+        } catch {
+            log.notice("Quiz-Fortschritt konnte nicht synchronisiert werden: \(error.localizedDescription)")
+        }
+    }
+
     // Lädt alle bestätigten Freunde
     func fetchFriends() async throws -> [FriendWithSince] {
         guard let myId = try? await auth.session.user.id else { return [] }
@@ -200,6 +257,10 @@ extension SupabaseClient {
     
     // Anzahl bestätigter Freunde einer beliebigen Person (z. B. für PublicProfileView)
     func fetchFriendCount(for userId: UUID) async throws -> Int {
+        // Bevorzugt die RPC aus 009 (RLS zeigt sonst nur eigene Freundschaften)
+        if let count: Int = try? await rpc("friend_count", params: ["p_user": userId.uuidString]).execute().value {
+            return count
+        }
         let rows: [FriendshipRow] = try await from("friendships")
             .select("requester_id, addressee_id")
             .eq("status", value: "accepted")
@@ -325,13 +386,14 @@ extension SupabaseClient {
         guard !query.isEmpty else { return [] }
         guard let myId = try? await auth.session.user.id else { return [] }
 
-        return try await from("accounts")
+        let results: [AccountWithStats] = try await from("accounts")
             .select("*, user_stats(*)")
             .ilike("username", pattern: "%\(query)%")
             .neq("id", value: myId.uuidString)
             .limit(30)
             .execute()
             .value
+        return results.filter { !BlockList.shared.isHidden($0.id) }
     }
     
     func fetchSuggestedAccounts(count: Int = 5) async throws -> [AccountWithStats] {
@@ -348,7 +410,9 @@ extension SupabaseClient {
             .value
 
         let order = Dictionary(uniqueKeysWithValues: ids.enumerated().map { ($1, $0) })
-        return accounts.sorted { (order[$0.id] ?? 0) < (order[$1.id] ?? 0) }
+        return accounts
+            .filter { !BlockList.shared.isHidden($0.id) }
+            .sorted { (order[$0.id] ?? 0) < (order[$1.id] ?? 0) }
     }
     
     

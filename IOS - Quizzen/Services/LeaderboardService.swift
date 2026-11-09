@@ -96,6 +96,26 @@ extension SupabaseClient {
         return (response.count ?? 0) + 1
     }
 
+    /// Faire Quiz-Bestenliste: Anzahl gemeisterter (richtig beantworteter) Fragen
+    func fetchQuizMastery(quizId: String, filter: LeaderboardFilter) async throws -> [LeaderboardEntry] {
+        struct Params: Encodable {
+            let p_quiz_id: String
+            let user_ids: [String]?
+            let country_code: String?
+            let max_rows: Int
+        }
+        let rows: [LeaderboardRPCRow] = try await rpc("leaderboard_quiz_mastery", params: Params(
+            p_quiz_id: quizId, user_ids: filter.userIds?.map(\.uuidString),
+            country_code: filter.countryCode, max_rows: Self.leaderboardLimit))
+            .execute()
+            .value
+        return LeaderboardEntry.ranked(rows.map { row in
+            (Account(id: row.user_id, username: row.username, avatarUrl: row.avatar_url,
+                     country: row.country, createdAt: row.created_at),
+             Int(row.value))
+        })
+    }
+
     /// Top-Liste für eine Quiz-Kategorie: Summe der Bestwerte pro Quiz.
     func fetchQuizCategoryLeaderboard(quizIds: [String], filter: LeaderboardFilter) async throws -> [LeaderboardEntry] {
         let params = LeaderboardRPCParams(

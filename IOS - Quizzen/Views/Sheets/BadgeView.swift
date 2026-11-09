@@ -101,7 +101,7 @@ struct BadgeView: View {
                     .frame(width: 22, height: 22)
                     .overlay(
                         Text("\(level)")
-                            .font(.system(size: 10, weight: .bold, design: .rounded))
+                            .font(.system(.caption2, design: .rounded, weight: .bold))
                             .foregroundStyle(reached ? .black.opacity(0.7) : .secondary)
                     )
             }

@@ -35,8 +35,8 @@ class AccountSettingsViewModel: ObservableObject {
     }
 
     func saveUsername() async {
-        guard !username.trimmingCharacters(in: .whitespaces).isEmpty else {
-            errorMessage = "Username darf nicht leer sein."
+        if let problem = UsernameFilter.validationError(for: username) {
+            errorMessage = problem
             return
         }
         isSaving = true
@@ -45,7 +45,9 @@ class AccountSettingsViewModel: ObservableObject {
             try await supabase.updateUsername(username)
             successMessage = "Username aktualisiert."
         } catch {
-            errorMessage = "Username konnte nicht gespeichert werden: \(error.localizedDescription)"
+            errorMessage = error.localizedDescription.contains("username_not_allowed")
+                ? "Dieser Benutzername ist nicht erlaubt"
+                : "Username konnte nicht gespeichert werden: \(error.localizedDescription)"
         }
     }
 

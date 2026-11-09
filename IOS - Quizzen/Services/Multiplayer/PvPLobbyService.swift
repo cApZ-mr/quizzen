@@ -31,6 +31,8 @@ nonisolated struct Match: Codable, Identifiable, Equatable {
     var left_by: UUID?
     /// Vom Host gewählte Einstellungen (nil = Standard: handverlesene Antworten)
     var settings: DuelSettings?
+    /// Direkt eingeladener Freund (nil = Einladung per Code)
+    var invited_id: UUID?
 
     enum Status: String {
         case waiting, active, finished, cancelled
@@ -98,15 +100,17 @@ final class PvPLobbyService {
         let invite_code: String
         let host_id: String
         let status: String
+        let invited_id: String?   // nil wird weggelassen (Spalte erst ab Migration 006)
     }
 
     /// Erstellt ein neues Duell. Bei Code-Kollision (Unique-Index) wird neu gewürfelt.
-    func createMatch() async throws -> Match {
+    func createMatch(inviting invitedId: UUID? = nil) async throws -> Match {
         let hostId = try await supabase.auth.session.user.id
         var lastError: Error?
 
         for _ in 0..<5 {
-            let insert = MatchInsert(invite_code: Self.generateInviteCode(), host_id: hostId.uuidString, status: "waiting")
+            let insert = MatchInsert(invite_code: Self.generateInviteCode(), host_id: hostId.uuidString,
+                                     status: "waiting", invited_id: invitedId?.uuidString)
             do {
                 return try await supabase
                     .from("matches")
@@ -190,6 +194,21 @@ final class PvPLobbyService {
 
     func fetchState(matchId: UUID) async throws -> MatchState {
         try await supabase.rpc("match_state", params: ["p_match_id": matchId.uuidString]).execute().value
+    }
+
+    /// Offene Duell-Einladungen an mich (max. 30 Minuten alt)
+    func fetchInvitations() async throws -> [Match] {
+        let myId = try await supabase.auth.session.user.id.uuidString
+        return try await supabase
+            .from("matches")
+            .select()
+            .eq("invited_id", value: myId)
+            .eq("status", value: "waiting")
+            .is("guest_id", value: nil)
+            .gte("created_at", value: Date().addingTimeInterval(-30 * 60))
+            .order("created_at", ascending: false)
+            .execute()
+            .value
     }
 
     /// Eigenes offenes Duell (z. B. nach App-Neustart), max. 2 Stunden alt

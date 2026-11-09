@@ -194,5 +194,7 @@ class QuizViewModel: ObservableObject {
         )
         // Speichert den Versuch in quiz_attempts und synct die Stats.
         statsManager.finishQuiz(quiz: quiz, score: score, maxScore: maxQuestions)
+        if DailyChallenge.isDaily(quiz.id) { DailyChallenge.markCompleted(score: score) }
+        StreakReminder.reschedule(stats: statsManager.globalManager.stats)
     }
 }

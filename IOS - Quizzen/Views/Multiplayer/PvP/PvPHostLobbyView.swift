@@ -36,6 +36,12 @@ struct PvPWaitingRoom: View {
                     .padding(.top, 12)
 
                 if session.phase == .waitingForOpponent {
+                    if let friend = session.invitedFriend {
+                        Label("Einladung an \(friend.username) gesendet – sie erscheint dort im Duell-Tab. Alternativ den Code teilen:",
+                              systemImage: "paperplane.fill")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
                     inviteCard
                     waitingIndicator("Warte, bis dein Freund beitritt…")
                 } else if session.isHost {
@@ -76,7 +82,7 @@ struct PvPWaitingRoom: View {
             HStack(spacing: 6) {
                 ForEach(Array(code.enumerated()), id: \.offset) { _, digit in
                     Text(String(digit))
-                        .font(.system(size: 34, weight: .bold, design: .rounded))
+                        .font(.system(.largeTitle, design: .rounded, weight: .bold))
                         .foregroundStyle(.white)
                         .frame(width: 42, height: 54)
                         .background(.white.opacity(0.15), in: RoundedRectangle(cornerRadius: 10))

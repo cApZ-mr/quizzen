@@ -26,10 +26,10 @@ struct WelcomeView: View {
                 
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Willkommen")
-                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .font(.system(.largeTitle, design: .rounded, weight: .bold))
                         .foregroundColor(.white)
                     Text("Trete an, sammle Punkte und\nvergleiche dich mit der Welt.")
-                        .font(.system(size: 16, design: .rounded))
+                        .font(.system(.callout, design: .rounded))
                         .foregroundColor(.white.opacity(0.6))
                         .multilineTextAlignment(.leading)
                 }
@@ -44,7 +44,7 @@ struct WelcomeView: View {
                         goToSignUp = true
                     } label: {
                         Text("Account erstellen")
-                            .font(.system(size: 17, weight: .semibold, design: .rounded))
+                            .font(.system(.body, design: .rounded, weight: .semibold))
                             .foregroundColor(.black)
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 16)
@@ -56,7 +56,7 @@ struct WelcomeView: View {
                         goToLogin = true
                     } label: {
                         Text("Einloggen")
-                            .font(.system(size: 17, weight: .semibold, design: .rounded))
+                            .font(.system(.body, design: .rounded, weight: .semibold))
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 16)

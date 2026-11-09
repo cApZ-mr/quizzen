@@ -100,7 +100,7 @@ struct ProfileMoreView: View {
     private func actionRow(icon: String, tint: Color, title: String, subtitle: String) -> some View {
         HStack(spacing: 16) {
             Image(systemName: icon)
-                .font(.system(size: 18, weight: .semibold))
+                .font(.system(.title3, weight: .semibold))
                 .foregroundColor(tint)
                 .frame(width: 44, height: 44)
                 .background(tint.opacity(0.15))

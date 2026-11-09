@@ -98,12 +98,32 @@ class CategoryStatsManager: ObservableObject {
     }
 
 
+    /// Speicher-Schlüssel eines Quiz (z. B. „Flaggen_Flags“)
+    func key(for definition: QuizDefinition) -> String {
+        makeKey(categoryId: definition.categoryId, subCategory: definition.title, quizID: definition.id)
+    }
+
+    /// Server-Stand einmischen: Mengen vereinigen, Runden = Maximum
+    func mergeRemote(_ remote: [String: CategoryStats]) {
+        var registry = categoryRegistry
+        for (key, theirs) in remote {
+            var mine = registry[key] ?? CategoryStats(roundsPlayed: 0, answeredIDs: [], correctIDs: [], falseIDs: [])
+            mine.roundsPlayed = max(mine.roundsPlayed, theirs.roundsPlayed)
+            mine.answeredIDs.formUnion(theirs.answeredIDs)
+            mine.correctIDs.formUnion(theirs.correctIDs)
+            mine.falseIDs.formUnion(theirs.falseIDs)
+            registry[key] = mine
+        }
+        categoryRegistry = registry
+    }
+
     private func makeKey(categoryId: String, subCategory: String, quizID: String) -> String {
         let normalizedCategory = categoryMapping[categoryId.lowercased()] ?? subCategory
         return "\(normalizedCategory)_\(quizID)"
     }
 
     func recordAnswer(questionID: String, isCorrect: Bool, categoryID: String, subCategory: String, quizID: String) {
+        guard !DailyChallenge.isDaily(quizID) else { return }
         let key = makeKey(categoryId: categoryID, subCategory: subCategory, quizID: quizID)
         var stats = categoryRegistry[key] ?? CategoryStats(roundsPlayed: 0, answeredIDs: [], correctIDs: [], falseIDs: [])
 
@@ -113,6 +133,7 @@ class CategoryStatsManager: ObservableObject {
     }
 
     func startRound(categoryID: String, subCategory: String, quizID: String) {
+        guard !DailyChallenge.isDaily(quizID) else { return }
         let key = makeKey(categoryId: categoryID, subCategory: subCategory, quizID: quizID)
         var stats = categoryRegistry[key] ?? CategoryStats(roundsPlayed: 0, answeredIDs: [], correctIDs: [], falseIDs: [])
         stats.roundsPlayed += 1
@@ -306,9 +327,20 @@ class StatsManager: ObservableObject {
     /// zu den aggregierten Stats auch einen Verlaufs-Eintrag (quiz_attempts).
     func finishQuiz(quiz: QuizDetail, score: Int, maxScore: Int) {
         let currentStats = globalManager.stats
+        let progress = quizProgressRecords()
         Task {
             await supabase.saveQuizAttempt(quizId: quiz.id, score: score, maxScore: maxScore)
             await supabase.syncUserStats(currentStats)
+            await supabase.syncQuizProgress(progress)
+        }
+    }
+
+    /// Fortschritt aller Quizze für den Server (nur Quizze mit Daten)
+    func quizProgressRecords() -> [QuizProgressRecord] {
+        QuizCatalog.all.compactMap { definition in
+            let key = categoryManager.key(for: definition)
+            guard let stats = categoryManager.categoryRegistry[key], stats.answeredCount > 0 else { return nil }
+            return QuizProgressRecord(quizKey: key, quizId: definition.id, stats: stats)
         }
     }
 
@@ -318,8 +350,10 @@ class StatsManager: ObservableObject {
     /// So zählt Teilfortschritt auch in der Datenbank, nicht nur lokal.
     func syncStatsOnly() {
         let currentStats = globalManager.stats
+        let progress = quizProgressRecords()
         Task {
             await supabase.syncUserStats(currentStats)
+            await supabase.syncQuizProgress(progress)
         }
     }
 
@@ -327,6 +361,12 @@ class StatsManager: ObservableObject {
     /// Es gewinnt der Stand mit mehr beantworteten Fragen – so gehen weder
     /// offline gespielte Runden noch Fortschritt von anderen Geräten verloren.
     func syncFromServer() async {
+        // Fortschritt pro Quiz: vereinigen und den gemeinsamen Stand zurückschreiben
+        if let remoteProgress = await supabase.loadQuizProgress() {
+            categoryManager.mergeRemote(remoteProgress)
+            await supabase.syncQuizProgress(quizProgressRecords())
+        }
+
         let local = globalManager.stats
 
         guard let remote = await supabase.loadUserStats() else {

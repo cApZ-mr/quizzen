@@ -70,7 +70,7 @@ struct CountrySelectionView: View {
             }
         } label: {
             Text(continent.rawValue)
-                .font(.system(size: 13, weight: isSelected ? .semibold : .regular))
+                .font(.system(.footnote, weight: isSelected ? .semibold : .regular))
                 .foregroundColor(isSelected ? .white : .white.opacity(0.5))
                 .padding(.horizontal, 14)
                 .padding(.vertical, 8)
@@ -114,7 +114,7 @@ struct CountrySelectionView: View {
                     )
 
                 Text(country.name)
-                    .font(.system(size: 12, weight: isSelected ? .semibold : .regular))
+                    .font(.system(.caption, weight: isSelected ? .semibold : .regular))
                     .foregroundColor(isSelected ? .white : .white.opacity(0.6))
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)

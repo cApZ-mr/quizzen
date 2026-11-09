@@ -29,6 +29,7 @@ class FriendsViewModel: ObservableObject {
     func loadIncomingRequests() async {
         do {
             self.incomingRequests = try await supabase.fetchIncomingRequests()
+                .filter { !BlockList.shared.isHidden($0.id) }
         } catch {
             log.error("Fehler beim Laden der Anfragen: \(error.localizedDescription)")
         }

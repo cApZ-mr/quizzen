@@ -195,9 +195,13 @@ final class PvPSession: ObservableObject {
 
     // MARK: - Aktionen
 
-    func createMatch() async {
+    /// Eingeladener Freund (für die Anzeige im Warteraum)
+    @Published private(set) var invitedFriend: Account?
+
+    func createMatch(inviting friend: Account? = nil) async {
+        invitedFriend = friend
         await run {
-            let match = try await self.service.createMatch()
+            let match = try await self.service.createMatch(inviting: friend?.id)
             try await self.attach(to: match)
         }
     }
@@ -293,6 +297,7 @@ final class PvPSession: ObservableObject {
         lastAdvanceAttempt = nil
         cachedQuiz = nil
         backgroundedAt = nil
+        invitedFriend = nil
         connection = .idle
     }
 

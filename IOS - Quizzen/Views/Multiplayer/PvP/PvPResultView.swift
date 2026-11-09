@@ -13,7 +13,17 @@ struct PvPResultView: View {
 
     @State private var appeared = false
 
+    /// Abgebrochen, bevor ein Quiz gestartet wurde (z. B. im Warteraum verlassen)
+    private var endedBeforeStart: Bool {
+        session.phase == .cancelled && session.quiz == nil
+    }
+
     private var outcome: (title: String, icon: String, color: Color) {
+        if endedBeforeStart {
+            return session.didIWin == true
+                ? ("\(session.opponentName) hat das Duell verlassen", "door.left.hand.open", .secondary)
+                : ("Duell abgebrochen", "xmark.circle", .secondary)
+        }
         if session.phase == .cancelled {
             return session.didIWin == true
                 ? ("\(session.opponentName) hat aufgegeben", "flag.fill", .green)
@@ -46,8 +56,10 @@ struct PvPResultView: View {
                 }
                 .padding(.top, 24)
 
-                scoreboard
-                breakdown
+                if !endedBeforeStart {
+                    scoreboard
+                    breakdown
+                }
             }
             .padding(.horizontal)
             .padding(.bottom, 24)
@@ -67,7 +79,9 @@ struct PvPResultView: View {
         }
         .onAppear {
             withAnimation(.spring(duration: 0.7, bounce: 0.45)) { appeared = true }
-            UINotificationFeedbackGenerator().notificationOccurred(session.didIWin == true ? .success : .warning)
+            if !endedBeforeStart {
+                UINotificationFeedbackGenerator().notificationOccurred(session.didIWin == true ? .success : .warning)
+            }
         }
     }
 
@@ -75,7 +89,7 @@ struct PvPResultView: View {
         HStack {
             resultPlayer(name: "Du", account: session.me, score: session.myScore, isWinner: session.didIWin == true)
             Text(":")
-                .font(.system(size: 36, weight: .black, design: .rounded))
+                .font(.system(.largeTitle, design: .rounded, weight: .black))
                 .foregroundStyle(.secondary)
             resultPlayer(name: session.opponentName, account: session.opponent, score: session.opponentScore,
                          isWinner: session.didIWin == false)

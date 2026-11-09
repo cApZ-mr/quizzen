@@ -84,10 +84,10 @@ struct SignupView: View {
         SetupPage(imageName: "AppIconDark", showProgress: false, currentPage: currentPage, lastPage: lastPage, buttonsDelay: 2) {
             VStack(alignment: .leading, spacing: 14) {
                 Text("Willkommen")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .font(.system(.largeTitle, design: .rounded, weight: .bold))
                     .foregroundColor(.white)
                 Text("Lass uns dein Profil in wenigen\nSchritten einrichten.")
-                    .font(.system(size: 16, design: .rounded))
+                    .font(.system(.callout, design: .rounded))
                     .foregroundColor(.white.opacity(0.6))
                     .multilineTextAlignment(.leading)
             }
@@ -113,7 +113,7 @@ struct SignupView: View {
             VStack(spacing: 20) {
                 VStack(spacing: 8) {
                     Text("Deine Nutzerdaten")
-                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .font(.system(.title, design: .rounded, weight: .bold))
                         .foregroundColor(.white)
                     Text("Dein Account wird sicher gespeichert und synchronisiert.")
                         .font(.subheadline)
@@ -163,7 +163,7 @@ struct SignupView: View {
                     dismiss()
                 } label: {
                     Text("Schon einen Account? Einloggen")
-                        .font(.system(size: 15, weight: .medium, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded, weight: .medium))
                         .foregroundColor(.white.opacity(0.6))
                 }
             }
@@ -171,8 +171,8 @@ struct SignupView: View {
         } onBack: {
             goToPreviousPage()
         } onContinue: {
-            if viewModel.username.count < 3 {
-                showValidationMessage("Benutzername muss mind. 3 Zeichen haben")
+            if let problem = UsernameFilter.validationError(for: viewModel.username) {
+                showValidationMessage(problem)
                 return
             }
             guard isValidEmail(viewModel.email) else {
@@ -200,7 +200,7 @@ struct SignupView: View {
             Image(systemName: "exclamationmark.triangle.fill")
                 .foregroundColor(.orange)
             Text(message)
-                .font(.system(size: 14, weight: .medium))
+                .font(.system(.subheadline, weight: .medium))
                 .foregroundColor(.white)
         }
         .padding(.horizontal, 16)
@@ -230,7 +230,7 @@ struct SignupView: View {
             VStack(spacing: 28) {
                 VStack(spacing: 8) {
                     Text("Wähle ein Profilbild")
-                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .font(.system(.title, design: .rounded, weight: .bold))
                         .foregroundColor(.white)
                     Text("Optional – du kannst es jederzeit später ändern.")
                         .font(.subheadline)
@@ -266,7 +266,7 @@ struct SignupView: View {
                             .frame(width: 36, height: 36)
                             .overlay(
                                 Image(systemName: "camera.fill")
-                                    .font(.system(size: 14, weight: .semibold))
+                                    .font(.system(.subheadline, weight: .semibold))
                                     .foregroundColor(.white)
                             )
                             .overlay(
@@ -286,7 +286,7 @@ struct SignupView: View {
                         }
                     } label: {
                         Text("Bild entfernen")
-                            .font(.system(size: 14, weight: .medium))
+                            .font(.system(.subheadline, weight: .medium))
                             .foregroundColor(.white.opacity(0.5))
                     }
                 }
@@ -303,7 +303,7 @@ struct SignupView: View {
             VStack(spacing: 16) {
                 VStack(spacing: 8) {
                     Text("Repräsentiertes Land")
-                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .font(.system(.title, design: .rounded, weight: .bold))
                         .foregroundColor(.white)
                     Text("Optional – wähle das Land, welches du repräsentieren möchtest.")
                         .font(.subheadline)
@@ -378,7 +378,7 @@ struct SignupView: View {
                 }
                 VStack(spacing: 12) {
                     Text(loadingText)
-                        .font(.system(size: 18, weight: .medium, design: .rounded))
+                        .font(.system(.title3, design: .rounded, weight: .medium))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .id(loadingText) // erzwingt Transition bei Textwechsel
@@ -393,7 +393,7 @@ struct SignupView: View {
                             }
                         } label: {
                             Text("Erneut versuchen")
-                                .font(.system(size: 15, weight: .semibold, design: .rounded))
+                                .font(.system(.subheadline, design: .rounded, weight: .semibold))
                                 .foregroundColor(.white)
                                 .padding(.horizontal, 24)
                                 .padding(.vertical, 12)
@@ -619,7 +619,7 @@ struct SetupPage<Content: View>: View {
             if currentPage >= 1 {
                 Button(action: onBack) {
                     Text("Zurück")
-                        .font(.system(size: 17, weight: .semibold, design: .rounded))
+                        .font(.system(.body, design: .rounded, weight: .semibold))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
@@ -629,7 +629,7 @@ struct SetupPage<Content: View>: View {
             }
             Button(action: onContinue) {
                 Text(continueTitle)
-                    .font(.system(size: 17, weight: .semibold, design: .rounded))
+                    .font(.system(.body, design: .rounded, weight: .semibold))
                     .foregroundColor(.black)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)

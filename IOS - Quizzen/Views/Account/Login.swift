@@ -28,7 +28,7 @@ struct LoginView: View {
                 VStack(spacing: 20) {
                     VStack(spacing: 8) {
                         Text("Willkommen zurück")
-                            .font(.system(size: 28, weight: .bold, design: .rounded))
+                            .font(.system(.title, design: .rounded, weight: .bold))
                             .foregroundColor(.white)
                         Text("Melde dich mit deinem Account an.")
                             .font(.subheadline)
@@ -78,7 +78,7 @@ struct LoginView: View {
                                     .tint(.black)
                             } else {
                                 Text("Einloggen")
-                                    .font(.system(size: 17, weight: .semibold, design: .rounded))
+                                    .font(.system(.body, design: .rounded, weight: .semibold))
                             }
                         }
                         .foregroundColor(.black)
@@ -93,7 +93,7 @@ struct LoginView: View {
                         dismiss()
                     } label: {
                         Text("Noch keinen Account? Registrieren")
-                            .font(.system(size: 15, weight: .medium, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded, weight: .medium))
                             .foregroundColor(.white.opacity(0.6))
                     }
                 }
@@ -137,7 +137,7 @@ struct LoginView: View {
             Image(systemName: "exclamationmark.triangle.fill")
                 .foregroundColor(.orange)
             Text(message)
-                .font(.system(size: 14, weight: .medium))
+                .font(.system(.subheadline, weight: .medium))
                 .foregroundColor(.white)
         }
         .padding(.horizontal, 16)

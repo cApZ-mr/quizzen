@@ -26,13 +26,6 @@ struct QuizCoverTheme {
 
     static func forQuiz(_ quiz: QuizDetail) -> QuizCoverTheme {
         switch quiz.id {
-        // Flaggen
-        case "FlagsEurope":   return flags(["de", "fr", "it", "es", "se", "gb", "pl", "gr", "pt"], .blue)
-        case "FlagsAfrica":   return flags(["ng", "ke", "za", "eg", "gh", "ma", "et", "sn", "tz"], .orange)
-        case "FlagsAmerica":  return flags(["br", "us", "ca", "mx", "ar", "co", "cl", "pe", "jm"], .red)
-        case "FlagsAsia":     return flags(["jp", "cn", "in", "kr", "th", "vn", "id", "tr", "np"], .pink)
-        case "FlagsOceania":  return flags(["au", "nz", "fj", "pg", "ws", "to", "vu", "sb", "ki"], .teal)
-        case "FlagsWorld":    return flags(["br", "jp", "de", "za", "ca", "in", "au", "mx", "kr"], .indigo)
         case "Flags":         return flags(["de", "br", "jp", "za", "us", "in", "fr", "au", "kr"], .indigo)
         case "Capitals":      return .init(colors: [.teal, .indigo],
                                            motif: .symbols(main: "globe.europe.africa.fill", scattered: ["building.columns.fill", "mappin.and.ellipse", "building.2.fill"]))
@@ -51,51 +44,6 @@ struct QuizCoverTheme {
         case "HarryPotter":   return .init(colors: [Color(hex: "5B1A1A"), Color(hex: "1E1B3A")],
                                            motif: .symbols(main: "wand.and.stars", scattered: ["sparkles", "moon.stars.fill", "book.closed.fill"]))
 
-        // Hauptstädte
-        case "CapitalsEurope":  return capitals("globe.europe.africa.fill", [.blue, .indigo])
-        case "CapitalsAfrica":  return capitals("globe.europe.africa.fill", [.orange, .brown])
-        case "CapitalsAmerica": return capitals("globe.americas.fill", [.red, .orange])
-        case "CapitalsAsia":    return capitals("globe.asia.australia.fill", [.pink, .purple])
-        case "CapitalsOceania": return capitals("globe.asia.australia.fill", [.teal, .cyan])
-        case "CapitalsWorld":   return capitals("globe", [.indigo, .teal])
-
-        // Allgemeinwissen – je schwerer, desto dunkler
-        case "BasicsEasy":   return .init(colors: [.green, .mint],
-                                          motif: .symbols(main: "lightbulb.max.fill", scattered: ["questionmark", "book.fill", "star.fill"]))
-        case "BasicsMiddle": return .init(colors: [.orange, .yellow],
-                                          motif: .symbols(main: "brain.head.profile.fill", scattered: ["questionmark", "atom", "book.fill"]))
-        case "BasicsHard":   return .init(colors: [.red, .purple],
-                                          motif: .symbols(main: "graduationcap.fill", scattered: ["questionmark", "function", "atom"]))
-
-        // Luftfahrt
-        case "AviationAirportCodes": return .init(colors: [Color(hex: "1B2A4A"), .black],
-                                                  motif: .departureBoard(["FRA", "JFK", "HKG", "CDG", "BER", "GRU"]))
-        case "AviationLogos":        return .init(colors: [.blue, .indigo],
-                                                  motif: .symbols(main: "airplane.circle.fill", scattered: ["tag.fill", "star.fill", "cloud.fill"]))
-        case "AviationPlaneModel":   return .init(colors: [.gray, .blue],
-                                                  motif: .symbols(main: "airplane", scattered: ["gearshape.fill", "wrench.fill", "cloud.fill"]))
-
-        // Film & TV
-        case "FilmsHarryPotter": return .init(colors: [Color(hex: "5B1A1A"), Color(hex: "1E1B3A")],
-                                              motif: .symbols(main: "wand.and.stars", scattered: ["sparkles", "moon.stars.fill", "book.closed.fill"]))
-        case "FilmsFilms":       return .init(colors: [.purple, .black],
-                                              motif: .symbols(main: "film.fill", scattered: ["popcorn.fill", "star.fill", "ticket.fill"]))
-        case "FilmsSeries":      return .init(colors: [.indigo, .black],
-                                              motif: .symbols(main: "tv.fill", scattered: ["play.fill", "star.fill", "sparkles.tv.fill"]))
-
-        // Sport
-        case "SportFootball", "SportBundesliga":
-            return .init(colors: [.green, Color(hex: "0B3D1E")],
-                         motif: .symbols(main: "soccerball", scattered: ["trophy.fill", "flag.checkered", "sportscourt.fill"]))
-        case "SportNBA", "SportBasketball":
-            return .init(colors: [.orange, Color(hex: "3A1C08")],
-                         motif: .symbols(main: "basketball.fill", scattered: ["trophy.fill", "figure.basketball", "sportscourt.fill"]))
-
-        // Spiele
-        case "GamesFakeOrFact":
-            return .init(colors: [.pink, .purple],
-                         motif: .symbols(main: "checkmark.seal.fill", scattered: ["xmark.seal.fill", "questionmark", "exclamationmark"]))
-
         default:
             return fallback(for: quiz.categoryId)
         }
@@ -103,10 +51,6 @@ struct QuizCoverTheme {
 
     private static func flags(_ codes: [String], _ tint: Color) -> QuizCoverTheme {
         .init(colors: [tint, .black], motif: .flags(codes))
-    }
-
-    private static func capitals(_ globe: String, _ colors: [Color]) -> QuizCoverTheme {
-        .init(colors: colors, motif: .symbols(main: globe, scattered: ["building.columns.fill", "mappin.and.ellipse", "building.2.fill"]))
     }
 
     private static func fallback(for categoryId: String) -> QuizCoverTheme {
