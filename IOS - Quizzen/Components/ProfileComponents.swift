@@ -142,12 +142,12 @@ struct ProfileStatsGrid<FriendsDestination: View>: View {
                             footnote: "Spielzeit: \(Self.formatPlayTime(stats.playTime))")
             if let friendsDestination {
                 NavigationLink { friendsDestination } label: {
-                    ProfileStatCard(value: "\(friendsCount)", label: "Freunde", icon: "person.2.fill", color: .purple,
+                    ProfileStatCard(value: "\(friendsCount)", label: friendsCount == 1 ? "Freund" : "Freunde", icon: "person.2.fill", color: .purple,
                                     footnote: "Anzeigen ›")
                 }
                 .buttonStyle(.plain)
             } else {
-                ProfileStatCard(value: "\(friendsCount)", label: "Freunde", icon: "person.2.fill", color: .purple,
+                ProfileStatCard(value: "\(friendsCount)", label: friendsCount == 1 ? "Freund" : "Freunde", icon: "person.2.fill", color: .purple,
                                 footnote: friendsCount == 1 ? "1 Freund" : "\(friendsCount) Freunde")
             }
         }

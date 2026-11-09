@@ -230,8 +230,8 @@ struct PvPLobbyView: View {
     private var howItWorks: some View {
         VStack(alignment: .leading, spacing: 14) {
             Text("So funktioniert's").font(.headline)
-            step(1, "Erstelle ein Duell und schick deinem Freund den 6-stelligen Code.")
-            step(2, "Sobald er beigetreten ist, wählst du ein Quiz aus.")
+            step(1, "Erstelle ein Duell und teile den 6-stelligen Code – oder fordere jemanden direkt aus der Freundesliste heraus.")
+            step(2, "Sobald dein Gegenüber beigetreten ist, wählst du ein Quiz aus.")
             step(3, "Du bestimmst Schwierigkeit, Fragenzahl und Zeit – ihr bekommt beide dieselben Fragen und seht nach jeder, wer richtig lag.")
             step(4, "Kein Pausieren: Wer die App länger als 30 Sekunden verlässt, gibt auf.")
         }

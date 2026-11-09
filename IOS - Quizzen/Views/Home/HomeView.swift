@@ -371,7 +371,7 @@ struct SpotlightCard: View {
         if stats.currentStreak == 0 { return "Starte heute eine Streak!" }
         let days = stats.currentStreak == 1 ? "1 Tag" : "\(stats.currentStreak) Tage"
         if playedToday { return "\(days) Streak – heute gesichert ✓" }
-        return "Spiel heute, um deine \(stats.currentStreak)-Tage-Streak zu halten"
+        return "Spiel heute, um deine Streak von \(days) zu halten"
     }
 
     var body: some View {

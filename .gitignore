@@ -16,3 +16,6 @@ build/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+# Xcode-Archive
+*.xcarchive
