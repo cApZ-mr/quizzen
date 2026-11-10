@@ -14,11 +14,16 @@ struct MainView: View {
     @EnvironmentObject var statsManager: StatsManager
 
     @State private var splashScreen = true
-    @State private var showUpdateAlert = false
+    @State private var requiredUpdate: StoreRelease?
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         Group {
-            if DebugLaunch.skipLogin {
+            if let requiredUpdate {
+                // Pflicht-Update: ersetzt die ganze App (auch offene Sheets)
+                ForceUpdateView(release: requiredUpdate)
+                    .transition(.opacity)
+            } else if DebugLaunch.skipLogin {
                 MainAppContainer()
             } else if splashScreen || authViewModel.isLoading {
                 SplashScreen()
@@ -48,21 +53,18 @@ struct MainView: View {
         }
         .task {
             // Splash höchstens 0,5 s zeigen, egal wie lange der Versions-Check braucht.
-            async let updateAvailable = AppVersionService.isUpdateAvailable()
+            async let release = AppVersionService.requiredUpdate()
             try? await Task.sleep(for: .milliseconds(500))
             withAnimation { splashScreen = false }
-            if await updateAvailable {
-                showUpdateAlert = true
-            }
+            requiredUpdate = await release
         }
-        .alert("Update verfügbar", isPresented: $showUpdateAlert) {
-            Button("Später", role: .cancel) {}
-            Button("Jetzt aktualisieren") {
-                UIApplication.shared.open(AppVersionService.appStoreURL)
-            }
-        } message: {
-            Text("Eine neuere Version ist im App Store verfügbar.")
+        .onChange(of: scenePhase) { _, phase in
+            // Beim Zurückkehren in die App erneut prüfen – so lässt sich die
+            // Sperre nicht durch Hintergrund/Vordergrund umgehen.
+            guard phase == .active, !splashScreen else { return }
+            Task { requiredUpdate = await AppVersionService.requiredUpdate() }
         }
+        .animation(.easeInOut, value: requiredUpdate)
     }
 }
 
@@ -105,38 +107,6 @@ enum DebugLaunch {
         #else
         ""
         #endif
-    }
-}
-
-// MARK: - Version checken
-enum AppVersionService {
-    static let appStoreURL = URL(string: "https://apps.apple.com/app/id6771577989")!
-
-    /// Fragt die App-Store-Version ab. Liefert nur `true`, wenn die Store-Version
-    /// wirklich NEUER ist (z. B. 1.10.0 > 1.9.3), nicht bei Dev-/TestFlight-Builds.
-    static func isUpdateAvailable() async -> Bool {
-        guard let bundleId = Bundle.main.bundleIdentifier,
-              let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
-              let url = URL(string: "https://itunes.apple.com/lookup?bundleId=\(bundleId)") else { return false }
-
-        struct LookupResponse: Decodable {
-            struct Result: Decodable { let version: String }
-            let results: [Result]
-        }
-
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            let response = try JSONDecoder().decode(LookupResponse.self, from: data)
-            guard let storeVersion = response.results.first?.version else { return false }
-            return isVersion(storeVersion, newerThan: currentVersion)
-        } catch {
-            log.info("Versions-Check fehlgeschlagen: \(error.localizedDescription)")
-            return false
-        }
-    }
-
-    nonisolated static func isVersion(_ lhs: String, newerThan rhs: String) -> Bool {
-        lhs.compare(rhs, options: .numeric) == .orderedDescending
     }
 }
 
