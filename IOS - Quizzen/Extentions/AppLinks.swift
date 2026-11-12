@@ -2,20 +2,21 @@
 //  AppLinks.swift
 //  IOS - Quizzen
 //
-//  Zentrale Links (Google-Sites-Seite von Quizzen).
+//  Zentrale Links (Website quizzen-app.com, gehostet auf Vercel).
 //
 
 import SwiftUI
 
 enum AppLinks {
-    /// Datenschutzerklärung (steht auf der Startseite)
-    static let privacyPolicy: URL? = URL(string: "https://sites.google.com/view/quizzen-app/startseite")
+    /// Datenschutzerklärung
+    static let privacyPolicy: URL? = URL(string: "https://www.quizzen-app.com/datenschutz")
     /// Nutzungsbedingungen
-    static let terms: URL? = URL(string: "https://sites.google.com/view/quizzen-app/nutzungsbedingungen")
+    static let terms: URL? = URL(string: "https://www.quizzen-app.com/nutzungsbedingungen")
     /// Website (im Profil unter „Mehr von Quizzen“)
-    /// Support-Adresse (steht auch auf der Website)
+    static let website: URL? = URL(string: "https://www.quizzen-app.com")
+    /// Support-Seite und -Adresse
+    static let support: URL? = URL(string: "https://www.quizzen-app.com/support")
     static let supportEmail = "support@quizzen-app.com"
-    static let website: URL? = URL(string: "https://sites.google.com/view/quizzen-app/startseite")
 }
 
 /// Link-Button, der bei fehlender URL einen Hinweis statt nichts zeigt

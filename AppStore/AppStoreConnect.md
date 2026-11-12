@@ -9,9 +9,9 @@
 | Bundle-ID | com.cApZ.quizzen |
 | Primäre Sprache | Deutsch |
 | Kategorie | Spiele → Quiz (Nebenkategorie: Bildung) |
-| Datenschutz-URL | https://sites.google.com/view/quizzen-app/startseite |
-| Support-URL | https://sites.google.com/view/quizzen-app/startseite |
-| Marketing-URL | (leer lassen) |
+| Datenschutz-URL | https://www.quizzen-app.com/datenschutz |
+| Support-URL | https://www.quizzen-app.com/support |
+| Marketing-URL | https://www.quizzen-app.com |
 | Preis | Kostenlos |
 
 ## Werbetext (max. 170, jederzeit änderbar)
