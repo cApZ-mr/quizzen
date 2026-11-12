@@ -114,7 +114,7 @@ enum LeaderboardBoard: Hashable, Identifiable {
 
     /// Allgemeine Bestenlisten (ohne einzelne Quizze)
     static var general: [LeaderboardBoard] {
-        [.stat(.xp), .daily, .stat(.currentStreak), .stat(.bestStreak), .stat(.quizzesPlayed)]
+        [.stat(.xp), .daily, .stat(.currentStreak), .stat(.bestStreak)]
     }
 
     static var quizzes: [LeaderboardBoard] {

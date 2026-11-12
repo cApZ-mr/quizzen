@@ -3330,12 +3330,12 @@
         }
       }
     },
-    "Ja. Im Tab „Bestenliste“ vergleichst du dich weltweit, mit Freunden oder in deinem Land – nach XP, Runden, Streaks, der Tageschallenge oder gemeisterten Fragen pro Quiz.": {
+    "Ja. Im Tab „Bestenliste“ vergleichst du dich weltweit, mit Freunden oder in deinem Land – nach XP, Streaks, der Tageschallenge oder gemeisterten Fragen pro Quiz.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yes. In the “Leaderboard” tab you compare yourself worldwide, with friends or in your country – by XP, rounds, streaks, the daily challenge or mastered questions per quiz."
+            "value": "Yes. In the “Leaderboard” tab you compare yourself worldwide, with friends or in your country – by XP, streaks, the daily challenge or mastered questions per quiz."
           }
         }
       }

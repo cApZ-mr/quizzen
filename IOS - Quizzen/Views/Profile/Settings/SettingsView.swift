@@ -77,7 +77,7 @@ struct SettingsView: View {
                 answer: String(localized: "Aktuell ist die App komplett kosten- und werbefrei. Quizzen behält sich aber vor, dies zukünftig aus Gründen der Kostendeckung zu ändern.")),
 
         FAQItem(question: String(localized: "Gibt es eine Bestenliste – global, unter Freunden oder pro Quiz?"),
-                answer: String(localized: "Ja. Im Tab „Bestenliste“ vergleichst du dich weltweit, mit Freunden oder in deinem Land – nach XP, Runden, Streaks, der Tageschallenge oder gemeisterten Fragen pro Quiz.")),
+                answer: String(localized: "Ja. Im Tab „Bestenliste“ vergleichst du dich weltweit, mit Freunden oder in deinem Land – nach XP, Streaks, der Tageschallenge oder gemeisterten Fragen pro Quiz.")),
 
         FAQItem(question: String(localized: "Wie kann ich eine falsche Antwort oder eine fehlerhafte Frage melden?"),
                 answer: String(localized: "Direkt an der Fragenbox findest du einen blauen Kreis, über den du die Frage melden kannst.")),
