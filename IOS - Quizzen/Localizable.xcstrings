@@ -207,6 +207,16 @@
         }
       }
     },
+    "%@ zum Duell fordern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenge %@ to a duel"
+          }
+        }
+      }
+    },
     "%@ · %@ starten": {
       "localizations": {
         "de": {
@@ -411,6 +421,16 @@
         }
       }
     },
+    "%lld neue Freundschaftsanfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld new friend requests"
+          }
+        }
+      }
+    },
     "%lld offene Anfragen": {
       "localizations": {
         "en": {
@@ -441,7 +461,9 @@
         }
       }
     },
-    "%lld s": {},
+    "%lld s": {
+      "shouldTranslate": false
+    },
     "%lld s pro Frage": {
       "localizations": {
         "en": {
@@ -550,7 +572,9 @@
         }
       }
     },
-    "+%lld XP": {},
+    "+%lld XP": {
+      "shouldTranslate": false
+    },
     ". Beleidigende oder anstößige Inhalte werden nicht toleriert und führen zur Sperrung.": {
       "localizations": {
         "en": {
@@ -611,6 +635,16 @@
         }
       }
     },
+    "1 neue Freundschaftsanfrage": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 new friend request"
+          }
+        }
+      }
+    },
     "1 passende Frage": {
       "localizations": {
         "en": {
@@ -644,11 +678,15 @@
         }
       }
     },
-    "10 s": {},
+    "10 s": {
+      "shouldTranslate": false
+    },
     "20": {
       "shouldTranslate": false
     },
-    "20 s": {},
+    "20 s": {
+      "shouldTranslate": false
+    },
     "30": {
       "shouldTranslate": false
     },
@@ -662,7 +700,9 @@
         }
       }
     },
-    "5 s": {},
+    "5 s": {
+      "shouldTranslate": false
+    },
     ":": {
       "shouldTranslate": false
     },
@@ -962,6 +1002,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Withdraw request"
+          }
+        }
+      }
+    },
+    "Anfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requests"
+          }
+        }
+      }
+    },
+    "Anfragen, die du verschickst, warten hier, bis sie angenommen werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requests you send wait here until they are accepted."
           }
         }
       }
@@ -2656,6 +2716,16 @@
         }
       }
     },
+    "Finde andere über die Suche und fordert euch gegenseitig zum Duell heraus.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find others via search and challenge each other to duels."
+          }
+        }
+      }
+    },
     "Folge Quizzen": {
       "localizations": {
         "en": {
@@ -3490,6 +3560,26 @@
         }
       }
     },
+    "Keine gesendeten Anfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No sent requests"
+          }
+        }
+      }
+    },
+    "Keine offenen Anfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No pending requests"
+          }
+        }
+      }
+    },
     "Keine passenden Fragen": {
       "localizations": {
         "en": {
@@ -3702,6 +3792,9 @@
         }
       }
     },
+    "Level und Streak": {
+      "shouldTranslate": false
+    },
     "Löschen": {
       "localizations": {
         "en": {
@@ -3848,6 +3941,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Do I have to unlock quizzes?"
+          }
+        }
+      }
+    },
+    "Möchte mit dir befreundet sein": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wants to be your friend"
           }
         }
       }
@@ -4324,6 +4427,16 @@
         }
       }
     },
+    "Personen suchen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find people"
+          }
+        }
+      }
+    },
     "Personen, die du kennen könntest": {
       "localizations": {
         "en": {
@@ -4369,6 +4482,9 @@
           }
         }
       }
+    },
+    "Platzhalter Name": {
+      "shouldTranslate": false
     },
     "Polarlicht": {
       "localizations": {
@@ -5110,6 +5226,16 @@
         }
       }
     },
+    "Tippe, um sie anzusehen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to view them"
+          }
+        }
+      }
+    },
     "Trefferquote": {
       "localizations": {
         "en": {
@@ -5290,6 +5416,16 @@
         }
       }
     },
+    "Wartet auf Antwort": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for a reply"
+          }
+        }
+      }
+    },
     "Wartet…": {
       "localizations": {
         "en": {
@@ -5360,6 +5496,16 @@
         }
       }
     },
+    "Weitere Freunde finden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find more friends"
+          }
+        }
+      }
+    },
     "Weitere Optionen": {
       "localizations": {
         "en": {
@@ -5396,6 +5542,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Worldwide"
+          }
+        }
+      }
+    },
+    "Wenn dir jemand eine Freundschaftsanfrage schickt, erscheint sie hier.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When someone sends you a friend request, it shows up here."
           }
         }
       }
@@ -5626,6 +5782,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Back"
+          }
+        }
+      }
+    },
+    "Zurückziehen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Withdraw"
           }
         }
       }
