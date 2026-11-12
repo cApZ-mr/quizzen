@@ -17,9 +17,9 @@ enum ResultFilter: CaseIterable {
 
     var title: String {
         switch self {
-        case .all: "Alle"
-        case .people: "Personen"
-        case .quizzes: "Quizze"
+        case .all: String(localized: "Alle")
+        case .people: String(localized: "Personen")
+        case .quizzes: String(localized: "Quizze")
         }
     }
 }
@@ -60,12 +60,12 @@ struct SearchView: View {
             }
             .scrollDismissesKeyboard(.immediately)
             .background(Color(.systemGroupedBackground))
-            .navigationTitle(isSearching ? "Ergebnisse" : "Entdecken")
+            .navigationTitle(isSearching ? String(localized: "Ergebnisse") : String(localized: "Entdecken"))
             .navigationDestination(for: QuizDetail.self) { QuizDetailView(quiz: $0) }
             .navigationDestination(for: QuizCategory.self) { CategoryView(category: $0) }
             .navigationDestination(for: AccountWithStats.self) { PublicProfileView(account: $0.asAccount) }
         }
-        .searchable(text: $searchText, prompt: "Quiz, Frage oder Person")
+        .searchable(text: $searchText, prompt: String(localized: "Quiz, Frage oder Person"))
         .onSubmit(of: .search) { rememberSearch(query) }
         .task(id: query) { await performAccountSearch() }
         .task {
@@ -91,7 +91,7 @@ struct SearchView: View {
 
     private var recentSearchesSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            sectionHeader("Zuletzt gesucht") {
+            sectionHeader(String(localized: "Zuletzt gesucht")) {
                 Button("Löschen") { withAnimation { recentSearchesData = "" } }
                     .font(.subheadline)
             }
@@ -117,7 +117,7 @@ struct SearchView: View {
 
     private var suggestionsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            sectionHeader("Personen, die du kennen könntest")
+            sectionHeader(String(localized: "Personen, die du kennen könntest"))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
                     ForEach(suggestedAccounts) { account in
@@ -195,7 +195,7 @@ struct SearchView: View {
     // Themenbereiche als Kacheln
     private var categoriesSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            sectionHeader("Themenbereiche")
+            sectionHeader(String(localized: "Themenbereiche"))
             LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 12) {
                 ForEach(QuizCatalog.categories) { category in
                     NavigationLink(value: category) {
@@ -210,7 +210,7 @@ struct SearchView: View {
                                     .font(.subheadline.weight(.semibold))
                                     .lineLimit(1)
                                     .minimumScaleFactor(0.8)
-                                Text(category.quizzes.count == 1 ? "1 Quiz" : "\(category.quizzes.count) Quizze")
+                                Text(category.quizzes.count == 1 ? String(localized: "1 Quiz") : String(localized: "\(category.quizzes.count) Quizze"))
                                     .font(.caption)
                                     .foregroundStyle(.secondary)
                             }
@@ -228,7 +228,7 @@ struct SearchView: View {
 
     private var allQuizzesSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            sectionHeader("Alle Quizze") {
+            sectionHeader(String(localized: "Alle Quizze")) {
                 Text("\(allQuizzes.count)")
                     .font(.subheadline.monospacedDigit())
                     .foregroundStyle(.secondary)
@@ -265,7 +265,7 @@ struct SearchView: View {
             Text(quiz.title)
                 .font(.subheadline.weight(.semibold))
                 .lineLimit(2, reservesSpace: true)
-            Text("\(quiz.questionCount) \(quiz.definition?.unit.plural ?? "Fragen") · \(quiz.definition?.presets.count ?? 1) Stufen")
+            Text(String(localized: "\(quiz.questionCount) \(quiz.definition?.unit.plural ?? String(localized: "Fragen")) · \(quiz.definition?.presets.count ?? 1) Stufen"))
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
@@ -293,7 +293,7 @@ struct SearchView: View {
         } else {
             if showQuizzes && !quizResults.isEmpty {
                 VStack(alignment: .leading, spacing: 10) {
-                    sectionHeader("Quizze")
+                    sectionHeader(String(localized: "Quizze"))
                     resultCard {
                         ForEach(Array(quizResults.prefix(filter == .quizzes ? .max : 5).enumerated()), id: \.element.id) { index, quiz in
                             if index > 0 { Divider().padding(.leading, 76) }
@@ -312,7 +312,7 @@ struct SearchView: View {
 
             if showPeople {
                 VStack(alignment: .leading, spacing: 10) {
-                    sectionHeader("Personen") {
+                    sectionHeader(String(localized: "Personen")) {
                         if isSearchingAccounts { ProgressView().controlSize(.small) }
                     }
                     if accountResults.isEmpty && !isSearchingAccounts {
@@ -354,7 +354,7 @@ struct SearchView: View {
                     .lineLimit(1)
                 HStack(spacing: 6) {
                     if matches > 0 {
-                        Text(matches == 1 ? "1 passende Frage" : "\(matches) passende Fragen")
+                        Text(matches == 1 ? String(localized: "1 passende Frage") : String(localized: "\(matches) passende Fragen"))
                             .foregroundStyle(Color.brandLight)
                     } else {
                         Text(QuizCatalog.category(for: quiz.id)?.name ?? "\(quiz.questionCount) Fragen")
@@ -542,8 +542,8 @@ struct SearchView: View {
     private func statusLabel(for accountId: UUID) -> (text: String, color: Color)? {
         guard let entry = friendshipStatuses[accountId] else { return nil }
         switch entry.status {
-        case .accepted: return ("Befreundet", .green)
-        case .pending:  return entry.iAmRequester ? ("Angefragt", .orange) : ("Fragt dich an", .blue)
+        case .accepted: return (String(localized: "Befreundet"), .green)
+        case .pending:  return entry.iAmRequester ? (String(localized: "Angefragt"), .orange) : (String(localized: "Fragt dich an"), .blue)
         case .declined: return nil
         }
     }

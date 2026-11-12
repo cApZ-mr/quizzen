@@ -420,7 +420,7 @@ extension SupabaseClient {
 
     func fetchCurrentAccount() async throws -> Account {
         guard let myId = try? await auth.session.user.id else {
-            throw NSError(domain: "Auth", code: 0, userInfo: [NSLocalizedDescriptionKey: "Nicht eingeloggt"])
+            throw NSError(domain: String(localized: "Auth"), code: 0, userInfo: [NSLocalizedDescriptionKey: String(localized: "Nicht eingeloggt")])
         }
         return try await from("accounts")
             .select()
@@ -439,32 +439,39 @@ extension SupabaseClient {
             .execute()
     }
 
-    /// Lädt ein neues Profilbild hoch (überschreibt das alte unter demselben Pfad)
-    /// und aktualisiert avatar_url in accounts. Gibt die neue öffentliche URL zurück.
+    /// Lädt ein neues Profilbild unter neuem Dateinamen hoch, setzt avatar_url
+    /// in accounts und entfernt ältere Bilder. Gibt die neue öffentliche URL zurück.
     func uploadAvatar(imageData: Data) async throws -> String {
         guard let myId = try? await auth.session.user.id else {
-            throw NSError(domain: "Auth", code: 0, userInfo: [NSLocalizedDescriptionKey: "Nicht eingeloggt"])
+            throw NSError(domain: String(localized: "Auth"), code: 0, userInfo: [NSLocalizedDescriptionKey: String(localized: "Nicht eingeloggt")])
         }
-        let path = "\(myId.uuidString)/avatar.jpg"   // <- Ordner-Präfix hinzugefügt
+        // Jedes Bild bekommt einen eigenen Dateinamen. Überschreiben (upsert)
+        // braucht in Supabase-Storage zusätzlich SELECT-Rechte und schlug
+        // deshalb beim zweiten Profilbild fehl. Neuer Name = nur INSERT,
+        // und Zwischenspeicher/CDN zeigen sofort das neue Bild.
+        let folder = myId.uuidString
+        let fileName = "avatar-\(Int(Date().timeIntervalSince1970 * 1000)).jpg"
+        let path = "\(folder)/\(fileName)"
 
         try await storage.from("avatars").upload(
             path,
             data: imageData,
-            options: FileOptions(cacheControl: "3600", contentType: "image/jpeg", upsert: true)
+            options: FileOptions(cacheControl: "31536000", contentType: "image/jpeg", upsert: false)
         )
 
-        // Cache-Buster: gleicher Pfad wird überschrieben, sonst zeigen
-        // AsyncImage/CDN bis zu 1 h lang noch das alte Bild.
-        let baseURL = try storage.from("avatars").getPublicURL(path: path)
-        var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false)
-        components?.queryItems = [URLQueryItem(name: "v", value: String(Int(Date().timeIntervalSince1970)))]
-        let publicURL = components?.url ?? baseURL
+        let publicURL = try storage.from("avatars").getPublicURL(path: path)
 
         struct AvatarUpdate: Encodable { let avatar_url: String }
         try await from("accounts")
             .update(AvatarUpdate(avatar_url: publicURL.absoluteString))
             .eq("id", value: myId.uuidString)
             .execute()
+
+        // Alte Bilder aufräumen (klappt nur mit Lösch-Rechten, siehe Migration 011)
+        if let files = try? await storage.from("avatars").list(path: folder) {
+            let old = files.map(\.name).filter { $0 != fileName }.map { "\(folder)/\($0)" }
+            if !old.isEmpty { _ = try? await storage.from("avatars").remove(paths: old) }
+        }
 
         return publicURL.absoluteString
     }

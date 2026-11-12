@@ -125,7 +125,7 @@ class QuizViewModel: ObservableObject {
         selectedOptionId = nil
         let correctText = displayOptions.first(where: \.isCorrect)?.text ?? ""
         answerLog.append(AnsweredQuestion(question: currentQuestion,
-                                          chosenAnswer: "Zeit abgelaufen",
+                                          chosenAnswer: String(localized: "Zeit abgelaufen"),
                                           correctAnswer: correctText))
         statsManager.recordAnswer(questionID: currentQuestion.id, isCorrect: false,
                                   categoryID: quiz.categoryId, subCategory: quiz.subCategory, quizID: quiz.id)

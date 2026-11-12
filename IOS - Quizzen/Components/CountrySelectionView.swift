@@ -69,7 +69,7 @@ struct CountrySelectionView: View {
                 selectedContinent = continent
             }
         } label: {
-            Text(continent.rawValue)
+            Text(continent.title)
                 .font(.system(.footnote, weight: isSelected ? .semibold : .regular))
                 .foregroundColor(isSelected ? .white : .white.opacity(0.5))
                 .padding(.horizontal, 14)

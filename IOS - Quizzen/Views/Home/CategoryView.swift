@@ -63,7 +63,7 @@ struct CategoryView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(category.name)
                         .font(.system(.largeTitle, design: .rounded).weight(.black))
-                    Text("\(category.quizzes.count == 1 ? "1 Quiz" : "\(category.quizzes.count) Quizze") · \(total) Fragen")
+                    Text(String(localized: "\(category.quizzes.count == 1 ? String(localized: "1 Quiz") : String(localized: "\(category.quizzes.count) Quizze")) · \(total) Fragen"))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }

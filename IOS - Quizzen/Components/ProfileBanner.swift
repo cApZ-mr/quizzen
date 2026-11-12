@@ -17,16 +17,16 @@ enum ProfileBanner: String, CaseIterable, Identifiable {
 
     var displayName: String {
         switch self {
-        case .quiz:     "Quizzen"
-        case .ocean:    "Ozean"
-        case .sunset:   "Sonnenuntergang"
-        case .forest:   "Wald"
-        case .aurora:   "Polarlicht"
-        case .confetti: "Konfetti"
-        case .neon:     "Neon"
-        case .galaxy:   "Galaxie"
-        case .lava:     "Vulkan"
-        case .gold:     "Gold"
+        case .quiz:     String(localized: "Quizzen")
+        case .ocean:    String(localized: "Ozean")
+        case .sunset:   String(localized: "Sonnenuntergang")
+        case .forest:   String(localized: "Wald")
+        case .aurora:   String(localized: "Polarlicht")
+        case .confetti: String(localized: "Konfetti")
+        case .neon:     String(localized: "Neon")
+        case .galaxy:   String(localized: "Galaxie")
+        case .lava:     String(localized: "Vulkan")
+        case .gold:     String(localized: "Gold")
         }
     }
 

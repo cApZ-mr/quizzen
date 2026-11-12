@@ -42,11 +42,11 @@ enum StreakReminder {
         // Streak, die nach dem heutigen Spielen bestehen würde
         let streak = playedToday ? stats.currentStreak : max(stats.currentStreak, 0)
         if streak > 0 {
-            content.title = "Deine \(streak)-Tage-Streak wartet 🔥"
-            content.body = "Ein kurzes Quiz reicht, um sie heute zu halten."
+            content.title = String(localized: "Deine \(streak)-Tage-Streak wartet 🔥")
+            content.body = String(localized: "Ein kurzes Quiz reicht, um sie heute zu halten.")
         } else {
-            content.title = "Zeit für ein Quiz 🧠"
-            content.body = "Starte heute eine neue Streak – oder spiel die Tageschallenge."
+            content.title = String(localized: "Zeit für ein Quiz 🧠")
+            content.body = String(localized: "Starte heute eine neue Streak – oder spiel die Tageschallenge.")
         }
         content.sound = .default
 

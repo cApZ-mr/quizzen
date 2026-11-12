@@ -22,7 +22,7 @@ struct ProfileMoreView: View {
         var components = URLComponents()
         components.scheme = "mailto"
         components.path = AppLinks.supportEmail
-        components.queryItems = [URLQueryItem(name: "subject", value: "Quizzen – Support (Version \(appVersion))")]
+        components.queryItems = [URLQueryItem(name: "subject", value: String(localized: "Quizzen – Support (Version \(appVersion))"))]
         return components.url
     }
 
@@ -32,7 +32,7 @@ struct ProfileMoreView: View {
         return version
     }
 
-    private let shareMessage = "Ich spiele gerade Quizzen – Flaggen, Hauptstädte, Harry Potter & mehr. Fordere mich zum Duell heraus! 🧠⚡️"
+    private let shareMessage = String(localized: "Ich spiele gerade Quizzen – Flaggen, Hauptstädte, Harry Potter & mehr. Fordere mich zum Duell heraus! 🧠⚡️")
 
     var body: some View {
         NavigationStack {
@@ -108,7 +108,7 @@ struct ProfileMoreView: View {
     private var socialSection: some View {
         if !socialLinks.isEmpty {
             VStack(alignment: .leading, spacing: 10) {
-                sectionTitle("Folge Quizzen")
+                sectionTitle(String(localized: "Folge Quizzen"))
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
                     ForEach(socialLinks) { link in
                         Button {
@@ -148,22 +148,22 @@ struct ProfileMoreView: View {
 
     private var contactSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            sectionTitle("Hilfe & Kontakt")
+            sectionTitle(String(localized: "Hilfe & Kontakt"))
             VStack(spacing: 0) {
                 NavigationLink { FeedbackView() } label: {
                     row(icon: "bubble.left.and.bubble.right.fill", tint: .blue,
-                        title: "Feedback geben", subtitle: "Ideen, Lob oder Wünsche", chevron: "chevron.right")
+                        title: String(localized: "Feedback geben"), subtitle: String(localized: "Ideen, Lob oder Wünsche"), chevron: "chevron.right")
                 }
                 Divider().padding(.leading, 60)
                 NavigationLink { ReportView() } label: {
                     row(icon: "ant.fill", tint: .orange,
-                        title: "Fehler melden", subtitle: "Etwas funktioniert nicht?", chevron: "chevron.right")
+                        title: String(localized: "Fehler melden"), subtitle: String(localized: "Etwas funktioniert nicht?"), chevron: "chevron.right")
                 }
                 if let supportMailURL {
                     Divider().padding(.leading, 60)
                     Button { openURL(supportMailURL) } label: {
                         row(icon: "envelope.fill", tint: .green,
-                            title: "E-Mail an den Support", subtitle: AppLinks.supportEmail, chevron: "arrow.up.right")
+                            title: String(localized: "E-Mail an den Support"), subtitle: AppLinks.supportEmail, chevron: "arrow.up.right")
                     }
                 }
             }
@@ -241,10 +241,10 @@ struct ProfileMoreView: View {
 
     private func subtitle(for link: SocialLink) -> String {
         switch link.name {
-        case "Website": "Neuigkeiten & Infos"
+        case "Website": String(localized: "Neuigkeiten & Infos")
         case "Instagram": "@quizzen.app"
-        case "TikTok": "Kurze Quiz-Videos"
-        case "WhatsApp": "Kanal beitreten"
+        case "TikTok": String(localized: "Kurze Quiz-Videos")
+        case "WhatsApp": String(localized: "Kanal beitreten")
         default: ""
         }
     }

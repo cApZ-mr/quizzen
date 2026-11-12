@@ -113,11 +113,11 @@ struct LoginView: View {
     // MARK: - Login-Logik
     private func login() async {
         guard isValidEmail(email) else {
-            showValidationMessage("Bitte gib eine gültige E-Mail-Adresse ein")
+            showValidationMessage(String(localized: "Bitte gib eine gültige E-Mail-Adresse ein"))
             return
         }
         guard !password.isEmpty else {
-            showValidationMessage("Bitte gib dein Passwort ein")
+            showValidationMessage(String(localized: "Bitte gib dein Passwort ein"))
             return
         }
 
@@ -126,7 +126,7 @@ struct LoginView: View {
             try await supabase.auth.signIn(email: email, password: password)
             // isLoggedIn wird automatisch über den Auth-State-Listener aktualisiert
         } catch {
-            showValidationMessage("E-Mail oder Passwort falsch")
+            showValidationMessage(String(localized: "E-Mail oder Passwort falsch"))
         }
         isLoggingIn = false
     }

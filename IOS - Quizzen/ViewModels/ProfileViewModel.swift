@@ -69,7 +69,7 @@ class ProfileViewModel: ObservableObject {
             await load(for: account)
         } catch {
             log.error("Fehler beim Senden der Anfrage: \(error.localizedDescription)")
-            errorMessage = "Freundschaftsanfrage konnte nicht gesendet werden. Bitte versuch es erneut."
+            errorMessage = String(localized: "Freundschaftsanfrage konnte nicht gesendet werden. Bitte versuch es erneut.")
         }
     }
 
@@ -81,7 +81,7 @@ class ProfileViewModel: ObservableObject {
             await load(for: account)
         } catch {
             log.error("Fehler beim Annehmen: \(error.localizedDescription)")
-            errorMessage = "Anfrage konnte nicht angenommen werden. Bitte versuch es erneut."
+            errorMessage = String(localized: "Anfrage konnte nicht angenommen werden. Bitte versuch es erneut.")
         }
     }
 
@@ -93,7 +93,7 @@ class ProfileViewModel: ObservableObject {
             await load(for: account)
         } catch {
             log.error("Fehler beim Entfernen: \(error.localizedDescription)")
-            errorMessage = "Aktion konnte nicht ausgeführt werden. Bitte versuch es erneut."
+            errorMessage = String(localized: "Aktion konnte nicht ausgeführt werden. Bitte versuch es erneut.")
         }
     }
     

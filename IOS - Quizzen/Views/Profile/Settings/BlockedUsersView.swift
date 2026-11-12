@@ -53,7 +53,7 @@ struct BlockedUsersView: View {
             accounts = try await supabase.fetchBlockedAccounts()
         } catch {
             log.error("Blockierte Nutzer konnten nicht geladen werden: \(error.localizedDescription)")
-            errorMessage = "Die Liste konnte nicht geladen werden."
+            errorMessage = String(localized: "Die Liste konnte nicht geladen werden.")
         }
     }
 
@@ -63,7 +63,7 @@ struct BlockedUsersView: View {
             withAnimation { accounts.removeAll { $0.id == account.id } }
         } catch {
             log.error("Entblocken fehlgeschlagen: \(error.localizedDescription)")
-            errorMessage = "Das hat nicht geklappt. Bitte versuch es erneut."
+            errorMessage = String(localized: "Das hat nicht geklappt. Bitte versuch es erneut.")
         }
     }
 }

@@ -18,7 +18,7 @@ struct ReportQuizView: View {
     @ObservedObject var viewModel: QuizViewModel
     
     @State private var selectedQuizId = ""
-    @State private var selectedReason = "Frage Fehlerhaft"
+    @State private var selectedReason = String(localized: "Frage fehlerhaft")
     @State private var beschreibung = ""
     @State private var mailDraft: MailDraft?
     @State private var showNoMailAlert = false
@@ -27,7 +27,7 @@ struct ReportQuizView: View {
     private let recipient = AppLinks.supportEmail
     
     
-    let anliegenReason = ["Frage Fehlerhaft", "Frage unpassend", "Antwortmöglichkeiten Fehlerhaft", "Sonstiges"]
+    let anliegenReason = [String(localized: "Frage fehlerhaft"), String(localized: "Frage unpassend"), String(localized: "Antwortmöglichkeiten fehlerhaft"), String(localized: "Sonstiges")]
     
     var body: some View {
         NavigationStack {

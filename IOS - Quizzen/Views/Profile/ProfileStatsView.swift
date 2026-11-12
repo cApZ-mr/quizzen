@@ -36,12 +36,12 @@ struct ProfileStatsView: View {
 
         return Section {
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
-                overviewCell("Aktuelle Streak", "\(stats.currentStreak)", "flame.fill", .orange)
-                overviewCell("Beste Streak", "\(stats.bestStreak)", "flame", .orange.opacity(0.7))
-                overviewCell("Runden gespielt", "\(stats.quizzesPlayed)", "repeat", .blue)
-                overviewCell("Fragen beantwortet", "\(stats.totalAnswers)", "bubble.left.and.bubble.right.fill", .purple)
-                overviewCell("Richtige Antworten", "\(stats.correctAnswers)", "checkmark.circle.fill", .green)
-                overviewCell("Falsche Antworten", "\(stats.falseAnswers)", "xmark.circle.fill", .red)
+                overviewCell(String(localized: "Aktuelle Streak"), "\(stats.currentStreak)", "flame.fill", .orange)
+                overviewCell(String(localized: "Beste Streak"), "\(stats.bestStreak)", "flame", .orange.opacity(0.7))
+                overviewCell(String(localized: "Runden gespielt"), "\(stats.quizzesPlayed)", "repeat", .blue)
+                overviewCell(String(localized: "Fragen beantwortet"), "\(stats.totalAnswers)", "bubble.left.and.bubble.right.fill", .purple)
+                overviewCell(String(localized: "Richtige Antworten"), "\(stats.correctAnswers)", "checkmark.circle.fill", .green)
+                overviewCell(String(localized: "Falsche Antworten"), "\(stats.falseAnswers)", "xmark.circle.fill", .red)
             }
             .padding(.vertical, 8)
         } header: {

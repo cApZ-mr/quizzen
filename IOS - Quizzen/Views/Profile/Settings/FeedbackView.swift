@@ -207,7 +207,7 @@ struct FeedbackView: View {
                     } else {
                         Image(systemName: "paperplane.fill")
                     }
-                    Text(didSend ? "Gesendet" : "Senden")
+                    Text(didSend ? String(localized: "Gesendet") : String(localized: "Senden"))
                 }
                 .padding(.horizontal, 28)
                 .padding(.vertical, 14)

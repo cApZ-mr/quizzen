@@ -13,7 +13,7 @@ final class LeaderboardViewModel: ObservableObject {
         case idle, loading, loaded, failed(String)
     }
 
-    @Published var board: LeaderboardBoard = .stat(.correctAnswers)
+    @Published var board: LeaderboardBoard = .stat(.xp)
     @Published var scope: LeaderboardScope = .global
     @Published private(set) var entries: [LeaderboardEntry] = []
     @Published private(set) var myRank: Int?
@@ -74,11 +74,13 @@ final class LeaderboardViewModel: ObservableObject {
             entries = []
             myRank = nil
             if case .daily = board {
-                state = .failed("Die Tages-Bestenliste ist noch nicht freigeschaltet (Server-Update 002 ausstehend).")
+                state = .failed(String(localized: "Die Tages-Bestenliste ist noch nicht freigeschaltet (Server-Update 002 ausstehend)."))
             } else if case .quiz = board {
-                state = .failed("Quiz-Bestenlisten sind noch nicht freigeschaltet (Server-Update 006 ausstehend).")
+                state = .failed(String(localized: "Quiz-Bestenlisten sind noch nicht freigeschaltet (Server-Update 006 ausstehend)."))
+            } else if case .stat(.xp) = board, "\(error)".contains("xp") {
+                state = .failed(String(localized: "Die XP-Bestenliste ist noch nicht freigeschaltet (Server-Update 011 ausstehend)."))
             } else {
-                state = .failed("Bestenliste konnte nicht geladen werden. Prüfe deine Internetverbindung.")
+                state = .failed(String(localized: "Bestenliste konnte nicht geladen werden. Prüfe deine Internetverbindung."))
             }
         }
     }

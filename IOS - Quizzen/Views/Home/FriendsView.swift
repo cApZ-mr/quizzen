@@ -15,9 +15,9 @@ enum FriendsTab: CaseIterable {
 
     var title: String {
         switch self {
-        case .friends: "Freunde"
-        case .incoming: "Eingehend"
-        case .outgoing: "Ausgehend"
+        case .friends: String(localized: "Freunde")
+        case .incoming: String(localized: "Eingehend")
+        case .outgoing: String(localized: "Ausgehend")
         }
     }
 

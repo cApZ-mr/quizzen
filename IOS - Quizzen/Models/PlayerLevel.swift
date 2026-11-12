@@ -34,12 +34,12 @@ nonisolated struct PlayerLevel: Equatable {
 
     var title: String {
         switch level {
-        case ..<3:   "Neuling"
-        case 3..<6:  "Rätselfreund"
-        case 6..<10: "Wissensjäger"
+        case ..<3:   String(localized: "Neuling")
+        case 3..<6:  String(localized: "Rätselfreund")
+        case 6..<10: String(localized: "Wissensjäger")
         case 10..<15: "Quiz-Profi"
-        case 15..<25: "Quizmeister"
-        default:     "Legende"
+        case 15..<25: String(localized: "Quizmeister")
+        default:     String(localized: "Legende")
         }
     }
 

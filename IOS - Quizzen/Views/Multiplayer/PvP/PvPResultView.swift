@@ -21,17 +21,17 @@ struct PvPResultView: View {
     private var outcome: (title: String, icon: String, color: Color) {
         if endedBeforeStart {
             return session.didIWin == true
-                ? ("\(session.opponentName) hat das Duell verlassen", "door.left.hand.open", .secondary)
-                : ("Duell abgebrochen", "xmark.circle", .secondary)
+                ? (String(localized: "\(session.opponentName) hat das Duell verlassen"), "door.left.hand.open", .secondary)
+                : (String(localized: "Duell abgebrochen"), "xmark.circle", .secondary)
         }
         if session.phase == .cancelled {
             return session.didIWin == true
-                ? ("\(session.opponentName) hat aufgegeben", "flag.fill", .green)
-                : ("Du hast aufgegeben", "flag.fill", .secondary)
+                ? (String(localized: "\(session.opponentName) hat aufgegeben"), "flag.fill", .green)
+                : (String(localized: "Du hast aufgegeben"), "flag.fill", .secondary)
         }
         switch session.didIWin {
         case .some(true):  return ("Gewonnen!", "trophy.fill", .yellow)
-        case .some(false): return ("Verloren", "hand.thumbsdown.fill", .red)
+        case .some(false): return (String(localized: "Verloren"), "hand.thumbsdown.fill", .red)
         case .none:        return ("Unentschieden!", "equal.circle.fill", .orange)
         }
     }

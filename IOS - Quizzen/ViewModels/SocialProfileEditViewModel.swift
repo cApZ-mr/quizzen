@@ -50,7 +50,7 @@ class SocialProfileEditViewModel: ObservableObject {
             try await supabase.upsertMySocialProfile(bannerId: selectedBannerId, selectedBadges: selectedBadgeIdentifiers)
             didSave = true
         } catch {
-            errorMessage = "Konnte nicht gespeichert werden: \(error.localizedDescription)"
+            errorMessage = String(localized: "Konnte nicht gespeichert werden: \(error.localizedDescription)")
         }
     }
 }
@@ -135,7 +135,7 @@ struct SocialProfileEditView: View {
 
     private var bannerSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            sectionHeader("Banner", subtitle: "Weitere Banner schaltest du mit höherem Level frei.")
+            sectionHeader(String(localized: "Banner"), subtitle: String(localized: "Weitere Banner schaltest du mit höherem Level frei."))
             LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 12) {
                 ForEach(ProfileBanner.allCases) { banner in
                     bannerTile(banner)
@@ -194,7 +194,7 @@ struct SocialProfileEditView: View {
     private var badgeSection: some View {
         VStack(alignment: .leading, spacing: 10) {
             sectionHeader("Abzeichen-Vitrine",
-                          subtitle: "Wähle bis zu \(viewModel.maxBadges) freigeschaltete Abzeichen. Die Reihenfolge des Antippens bestimmt die Anzeige.")
+                          subtitle: String(localized: "Wähle bis zu \(viewModel.maxBadges) freigeschaltete Abzeichen. Die Reihenfolge des Antippens bestimmt die Anzeige."))
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                 ForEach(allBadges) { badge in
                     badgeCell(badge)

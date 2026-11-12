@@ -53,11 +53,11 @@ struct ForceUpdateView: View {
                 }
 
                 HStack(spacing: 10) {
-                    versionPill(installedVersion, label: "Installiert", highlighted: false)
+                    versionPill(installedVersion, label: String(localized: "Installiert"), highlighted: false)
                     Image(systemName: "arrow.right")
                         .font(.footnote.weight(.bold))
                         .foregroundStyle(.tertiary)
-                    versionPill(release.version, label: "Neu", highlighted: true)
+                    versionPill(release.version, label: String(localized: "Neu"), highlighted: true)
                 }
 
                 if let notes = release.releaseNotes?.trimmingCharacters(in: .whitespacesAndNewlines), !notes.isEmpty {

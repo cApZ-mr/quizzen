@@ -90,8 +90,8 @@ struct QuizDetailView: View {
     private var infoPills: some View {
         HStack(spacing: 10) {
             DifficultyBadge(difficulty: quiz.difficulty)
-            pill("\(quiz.questionCount) Fragen", "square.stack.3d.up.fill")
-            pill("\(questionsPerRound) pro Runde", "timer")
+            pill(String(localized: "\(quiz.questionCount) Fragen"), "square.stack.3d.up.fill")
+            pill(String(localized: "\(questionsPerRound) pro Runde"), "timer")
         }
     }
 
@@ -111,9 +111,9 @@ struct QuizDetailView: View {
                     .tint(percentFinished == 100 ? .green : .brandLight)
 
                 HStack(spacing: 0) {
-                    progressStat("\(stats.answeredCount)/\(quiz.questionCount)", "\(definition?.unit.plural ?? "Fragen") gesehen")
-                    progressStat("\(stats.percentCorrect) %", "richtig")
-                    progressStat("\(stats.roundsPlayed)", stats.roundsPlayed == 1 ? "Runde" : "Runden")
+                    progressStat("\(stats.answeredCount)/\(quiz.questionCount)", String(localized: "\(definition?.unit.plural ?? String(localized: "Fragen")) gesehen"))
+                    progressStat("\(stats.percentCorrect) %", String(localized: "richtig"))
+                    progressStat("\(stats.roundsPlayed)", stats.roundsPlayed == 1 ? String(localized: "Runde") : String(localized: "Runden"))
                 }
             }
         }
@@ -126,9 +126,9 @@ struct QuizDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("So funktioniert's")
                 .font(.headline)
-            ruleRow("shuffle", "Jede Runde zieht \(questionsPerRound) zufällige Fragen.")
-            ruleRow("hand.tap.fill", "Antwort wählen, dann bestätigen – erst danach siehst du die Lösung.")
-            ruleRow("chart.line.uptrend.xyaxis", "Richtige Antworten zählen für deine Statistik und die Bestenliste.")
+            ruleRow("shuffle", String(localized: "Jede Runde zieht \(questionsPerRound) zufällige Fragen."))
+            ruleRow("hand.tap.fill", String(localized: "Antwort wählen, dann bestätigen – erst danach siehst du die Lösung."))
+            ruleRow("chart.line.uptrend.xyaxis", String(localized: "Richtige Antworten zählen für deine Statistik und die Bestenliste."))
         }
     }
 
@@ -158,8 +158,8 @@ struct QuizDetailView: View {
     }
 
     private var playTitle: String {
-        if definition != nil { return "\(setup.preset.name) starten" }
-        return stats.roundsPlayed > 0 ? "Nochmal spielen" : "Quiz starten"
+        if definition != nil { return String(localized: "\(setup.preset.name) starten") }
+        return stats.roundsPlayed > 0 ? String(localized: "Nochmal spielen") : String(localized: "Quiz starten")
     }
 
     private var backgroundGlow: some View {

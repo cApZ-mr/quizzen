@@ -26,11 +26,11 @@ struct ReportView: View {
     @State private var isLoading = false
     
     @State private var reportText: String = ""
-    @State private var selectedReason: String = "Inhalt fehlerhaft"
+    @State private var selectedReason: String = String(localized: "Inhalt fehlerhaft")
     @State private var isSending = false
     @State private var didSend = false
     
-    private let reasons = ["Inhalt fehlerhaft", "Unangemessen", "Technisches Problem", "Sonstiges"]
+    private let reasons = [String(localized: "Inhalt fehlerhaft"), String(localized: "Unangemessen"), String(localized: "Technisches Problem"), String(localized: "Sonstiges")]
     private let maxImages = 5
     private let maxCharacters = 500
     

@@ -56,7 +56,7 @@ struct DifficultyBadge: View {
     }
 
     var body: some View {
-        Text(difficulty.rawValue)
+        Text(difficulty.title)
             .font(.caption2).bold()
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
@@ -108,18 +108,18 @@ struct HomeView: View {
             .filter { $0.1 > 0 && $0.1 < 100 }
             .max { $0.1 < $1.1 }
         if let inProgress {
-            return (inProgress.0, "Weiterspielen · \(inProgress.1) % erkundet")
+            return (inProgress.0, String(localized: "Weiterspielen · \(inProgress.1) % erkundet"))
         }
         guard !allQuizzes.isEmpty else { return nil }
         let day = Calendar.current.ordinality(of: .day, in: .era, for: .now) ?? 0
-        return (allQuizzes[day % allQuizzes.count], "Empfohlen für dich")
+        return (allQuizzes[day % allQuizzes.count], String(localized: "Empfohlen für dich"))
     }
 
     // MARK: Header
     private var header: some View {
         HStack {
             VStack(alignment: .leading, spacing: 2) {
-                Text(viewModel.username.isEmpty ? "Hallo 👋" : "Hallo, \(viewModel.username) 👋")
+                Text(viewModel.username.isEmpty ? String(localized: "Hallo 👋") : String(localized: "Hallo, \(viewModel.username) 👋"))
                     .font(.title2).bold()
                 Text("Bereit für dein nächstes Quiz?")
                     .font(.subheadline)
@@ -162,7 +162,7 @@ struct CategoryRow: View {
                         .background(category.color.gradient, in: RoundedRectangle(cornerRadius: 9))
                     VStack(alignment: .leading, spacing: 1) {
                         Text(category.name).font(.title3.bold()).foregroundStyle(.primary)
-                        Text(category.quizzes.count == 1 ? "1 Quiz" : "\(category.quizzes.count) Quizze")
+                        Text(category.quizzes.count == 1 ? String(localized: "1 Quiz") : String(localized: "\(category.quizzes.count) Quizze"))
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
@@ -214,7 +214,7 @@ struct CompactQuizCard: View {
                         .foregroundStyle(.secondary)
                 }
             } else {
-                Text("\(quiz.questionCount) \(quiz.definition?.unit.plural ?? "Fragen") · \(quiz.definition?.presets.count ?? 1) Stufen")
+                Text(String(localized: "\(quiz.questionCount) \(quiz.definition?.unit.plural ?? String(localized: "Fragen")) · \(quiz.definition?.presets.count ?? 1) Stufen"))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -242,7 +242,7 @@ struct HomeQuizCard: View {
                 Text(quiz.title)
                     .font(.headline)
                     .foregroundStyle(.primary)
-                Text("\(quiz.questionCount) \(definition?.unit.plural ?? "Fragen") · \(definition?.presets.count ?? 1) Stufen")
+                Text(String(localized: "\(quiz.questionCount) \(definition?.unit.plural ?? String(localized: "Fragen")) · \(definition?.presets.count ?? 1) Stufen"))
                     .font(.caption)
                     .foregroundStyle(.secondary)
 
@@ -368,10 +368,10 @@ struct SpotlightCard: View {
     }
 
     private var streakText: String {
-        if stats.currentStreak == 0 { return "Starte heute eine Streak!" }
-        let days = stats.currentStreak == 1 ? "1 Tag" : "\(stats.currentStreak) Tage"
-        if playedToday { return "\(days) Streak – heute gesichert ✓" }
-        return "Spiel heute, um deine Streak von \(days) zu halten"
+        if stats.currentStreak == 0 { return String(localized: "Starte heute eine Streak!") }
+        let days = stats.currentStreak == 1 ? String(localized: "1 Tag") : String(localized: "\(stats.currentStreak) Tage")
+        if playedToday { return String(localized: "\(days) Streak – heute gesichert ✓") }
+        return String(localized: "Spiel heute, um deine Streak von \(days) zu halten")
     }
 
     var body: some View {

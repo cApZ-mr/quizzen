@@ -92,7 +92,7 @@ struct PublicProfileView: View {
         }
         .sheet(isPresented: $showReport) {
             ReportUserSheet(account: account) { blockToo in
-                moderationNotice = "Danke für deine Meldung. Wir sehen sie uns an."
+                moderationNotice = String(localized: "Danke für deine Meldung. Wir sehen sie uns an.")
                 if blockToo { Task { await block() } }
             }
         }
@@ -122,7 +122,7 @@ struct PublicProfileView: View {
             await viewModel.load(for: account)
         } catch {
             log.error("Blockieren fehlgeschlagen: \(error.localizedDescription)")
-            viewModel.errorMessage = "Blockieren hat nicht geklappt. Bitte versuch es erneut."
+            viewModel.errorMessage = String(localized: "Blockieren hat nicht geklappt. Bitte versuch es erneut.")
         }
     }
 
@@ -132,7 +132,7 @@ struct PublicProfileView: View {
             await viewModel.load(for: account)
         } catch {
             log.error("Entblocken fehlgeschlagen: \(error.localizedDescription)")
-            viewModel.errorMessage = "Das hat nicht geklappt. Bitte versuch es erneut."
+            viewModel.errorMessage = String(localized: "Das hat nicht geklappt. Bitte versuch es erneut.")
         }
     }
 

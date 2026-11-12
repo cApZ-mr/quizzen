@@ -54,13 +54,13 @@ enum BadgeTier {
 
     var name: String {
         switch self {
-        case .none:     "Noch nicht erreicht"
-        case .bronze:   "Bronze"
-        case .silver:   "Silber"
-        case .gold:     "Gold"
-        case .platinum: "Platin"
-        case .diamond:  "Diamant"
-        case .special:  "Spezial"
+        case .none:     String(localized: "Noch nicht erreicht")
+        case .bronze:   String(localized: "Bronze")
+        case .silver:   String(localized: "Silber")
+        case .gold:     String(localized: "Gold")
+        case .platinum: String(localized: "Platin")
+        case .diamond:  String(localized: "Diamant")
+        case .special:  String(localized: "Spezial")
         }
     }
 
@@ -98,22 +98,22 @@ enum BadgeType: String, CaseIterable {
     
     var name: String {
         switch self {
-        case .streak: return "Durchhalter"
-        case .runden: return "Dauerspieler"
-        case .fragen: return "Wissensdurst"
-        case .richtige: return "Volltreffer"
-        case .falsche: return "Aus Fehlern lernen"
+        case .streak: return String(localized: "Durchhalter")
+        case .runden: return String(localized: "Dauerspieler")
+        case .fragen: return String(localized: "Wissensdurst")
+        case .richtige: return String(localized: "Volltreffer")
+        case .falsche: return String(localized: "Aus Fehlern lernen")
         }
     }
 
     /// Einheit für Texte wie „42 / 50 Tage in Folge“
     var unit: String {
         switch self {
-        case .streak: return "Tage in Folge"
-        case .runden: return "Runden gespielt"
-        case .fragen: return "Fragen beantwortet"
-        case .richtige: return "richtige Antworten"
-        case .falsche: return "falsche Antworten"
+        case .streak: return String(localized: "Tage in Folge")
+        case .runden: return String(localized: "Runden gespielt")
+        case .fragen: return String(localized: "Fragen beantwortet")
+        case .richtige: return String(localized: "richtige Antworten")
+        case .falsche: return String(localized: "falsche Antworten")
         }
     }
     

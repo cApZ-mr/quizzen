@@ -101,7 +101,7 @@ final class PvPSession: ObservableObject {
 
     var me: Account? { myUserId.flatMap { profiles[$0] } }
     var opponent: Account? { opponentId.flatMap { profiles[$0] } }
-    var opponentName: String { opponent?.username ?? "Gegner" }
+    var opponentName: String { opponent?.username ?? String(localized: "Gegner") }
 
     var quiz: QuizDetail? {
         guard let quizId = match?.quiz_id else { return nil }
@@ -243,7 +243,7 @@ final class PvPSession: ObservableObject {
             await broadcastSync()
         } catch {
             submittedIndices.remove(index)   // erneut versuchen erlauben
-            if !silent { errorMessage = "Antwort konnte nicht gesendet werden. Prüfe deine Verbindung." }
+            if !silent { errorMessage = String(localized: "Antwort konnte nicht gesendet werden. Prüfe deine Verbindung.") }
             log.error("submit_answer: \(error.localizedDescription)")
         }
     }
@@ -283,7 +283,7 @@ final class PvPSession: ObservableObject {
             await refresh()
             await broadcastSync()
         } catch {
-            errorMessage = "Duell konnte nicht beendet werden."
+            errorMessage = String(localized: "Duell konnte nicht beendet werden.")
         }
     }
 

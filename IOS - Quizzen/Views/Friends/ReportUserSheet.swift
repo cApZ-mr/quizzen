@@ -29,7 +29,7 @@ struct ReportUserSheet: View {
                         } label: {
                             HStack {
                                 Label {
-                                    Text(item.rawValue).foregroundStyle(.primary)
+                                    Text(item.title).foregroundStyle(.primary)
                                 } icon: {
                                     Image(systemName: item.icon).foregroundStyle(Color.brand)
                                 }
@@ -97,7 +97,7 @@ struct ReportUserSheet: View {
             dismiss()
         } catch {
             log.error("Meldung fehlgeschlagen: \(error.localizedDescription)")
-            errorMessage = "Die Meldung konnte nicht gesendet werden. Bitte versuch es erneut."
+            errorMessage = String(localized: "Die Meldung konnte nicht gesendet werden. Bitte versuch es erneut.")
         }
     }
 }

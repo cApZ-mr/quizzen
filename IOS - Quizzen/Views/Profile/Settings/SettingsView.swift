@@ -52,41 +52,41 @@ struct SettingsView: View {
     
 
     private let faqItems: [FAQItem] = [
-        FAQItem(question: "Wie funktionieren die Schwierigkeitsstufen?",
-                answer: "Jedes Quiz hat mehrere Stufen von Leicht bis Extrem. Sie unterscheiden sich in Fragenauswahl, Anzahl der Antworten und Zeitlimit. Unter „Eigene“ stellst du dir deine Runde selbst zusammen – z. B. nur bestimmte Regionen oder nur Fragen, die du noch nicht kannst."),
+        FAQItem(question: String(localized: "Wie funktionieren die Schwierigkeitsstufen?"),
+                answer: String(localized: "Jedes Quiz hat mehrere Stufen von Leicht bis Extrem. Sie unterscheiden sich in Fragenauswahl, Anzahl der Antworten und Zeitlimit. Unter „Eigene“ stellst du dir deine Runde selbst zusammen – z. B. nur bestimmte Regionen oder nur Fragen, die du noch nicht kannst.")),
 
-        FAQItem(question: "Muss ich Quizze freischalten?",
-                answer: "Nein, alle Quizze und Stufen sind sofort verfügbar. Nur einige Profil-Banner werden über dein Level freigeschaltet."),
+        FAQItem(question: String(localized: "Muss ich Quizze freischalten?"),
+                answer: String(localized: "Nein, alle Quizze und Stufen sind sofort verfügbar. Nur einige Profil-Banner werden über dein Level freigeschaltet.")),
 
-        FAQItem(question: "Gibt es regelmäßig neue Quizze oder Inhalte?",
-                answer: "Ja, das Quizzen-Team erweitert die App laufend um neue Quizze und Fragen. Es lohnt sich also, ab und zu vorbeizuschauen."),
+        FAQItem(question: String(localized: "Gibt es regelmäßig neue Quizze oder Inhalte?"),
+                answer: String(localized: "Ja, das Quizzen-Team erweitert die App laufend um neue Quizze und Fragen. Es lohnt sich also, ab und zu vorbeizuschauen.")),
 
-        FAQItem(question: "Wie funktionieren die Abzeichen – wofür bekomme ich sie und wo sehe ich meinen Fortschritt?",
-                answer: "Die Abzeichen sind eine visuelle Darstellung deines Fortschritts. Je mehr du quizzt, desto mehr levelst du deine Abzeichen hoch. Deinen aktuellen Stand kannst du jederzeit in deinem Profil einsehen."),
+        FAQItem(question: String(localized: "Wie funktionieren die Abzeichen – wofür bekomme ich sie und wo sehe ich meinen Fortschritt?"),
+                answer: String(localized: "Die Abzeichen sind eine visuelle Darstellung deines Fortschritts. Je mehr du quizzt, desto mehr levelst du deine Abzeichen hoch. Deinen aktuellen Stand kannst du jederzeit in deinem Profil einsehen.")),
 
-        FAQItem(question: "Ist die App für Kinder geeignet bzw. gibt es einen Kindermodus/Altersfreigabe?",
-                answer: "Die App ist für jedes Alter geeignet. Alle fragen sind FSK0 und für jedes Alter geeignet."),
+        FAQItem(question: String(localized: "Ist die App für Kinder geeignet bzw. gibt es einen Kindermodus/Altersfreigabe?"),
+                answer: String(localized: "Die App ist für jedes Alter geeignet. Alle fragen sind FSK0 und für jedes Alter geeignet.")),
 
-        FAQItem(question: "Kann ich gegen Freunde oder andere Spieler antreten (Multiplayer/Duell-Modus)?",
-                answer: "Ja! Fordere einen Freund direkt aus seinem Profil heraus oder erstelle im Tab „Duell“ ein Duell und teile den 6-stelligen Code. Du wählst Quiz, Stufe oder eigene Einstellungen – ihr bekommt dieselben Fragen und seht nach jeder Frage, wer richtig lag."),
+        FAQItem(question: String(localized: "Kann ich gegen Freunde oder andere Spieler antreten (Multiplayer/Duell-Modus)?"),
+                answer: String(localized: "Ja! Fordere einen Freund direkt aus seinem Profil heraus oder erstelle im Tab „Duell“ ein Duell und teile den 6-stelligen Code. Du wählst Quiz, Stufe oder eigene Einstellungen – ihr bekommt dieselben Fragen und seht nach jeder Frage, wer richtig lag.")),
 
-        FAQItem(question: "Wie melde oder blockiere ich andere Spieler?",
-                answer: "Öffne das Profil der Person und tippe oben rechts auf „…“. Dort kannst du sie melden oder blockieren. Blockierte Nutzer verwaltest du in den Einstellungen unter „Blockierte Nutzer“."),
+        FAQItem(question: String(localized: "Wie melde oder blockiere ich andere Spieler?"),
+                answer: String(localized: "Öffne das Profil der Person und tippe oben rechts auf „…“. Dort kannst du sie melden oder blockieren. Blockierte Nutzer verwaltest du in den Einstellungen unter „Blockierte Nutzer“.")),
 
-        FAQItem(question: "Ist die App komplett kostenlos, oder gibt es Werbung und In-App-Käufe (z. B. Premium-Quizze)?",
-                answer: "Aktuell ist die App komplett kosten- und werbefrei. Quizzen behält sich aber vor, dies zukünftig aus Gründen der Kostendeckung zu ändern."),
+        FAQItem(question: String(localized: "Ist die App komplett kostenlos, oder gibt es Werbung und In-App-Käufe (z. B. Premium-Quizze)?"),
+                answer: String(localized: "Aktuell ist die App komplett kosten- und werbefrei. Quizzen behält sich aber vor, dies zukünftig aus Gründen der Kostendeckung zu ändern.")),
 
-        FAQItem(question: "Gibt es eine Bestenliste – global, unter Freunden oder pro Quiz?",
-                answer: "Ja. Im Tab „Bestenliste“ vergleichst du dich weltweit, mit Freunden oder in deinem Land – nach richtigen Antworten, Runden, Streaks oder Punkten pro Quiz."),
+        FAQItem(question: String(localized: "Gibt es eine Bestenliste – global, unter Freunden oder pro Quiz?"),
+                answer: String(localized: "Ja. Im Tab „Bestenliste“ vergleichst du dich weltweit, mit Freunden oder in deinem Land – nach XP, Runden, Streaks, der Tageschallenge oder gemeisterten Fragen pro Quiz.")),
 
-        FAQItem(question: "Wie kann ich eine falsche Antwort oder eine fehlerhafte Frage melden?",
-                answer: "Direkt an der Fragenbox findest du einen blauen Kreis, über den du die Frage melden kannst."),
+        FAQItem(question: String(localized: "Wie kann ich eine falsche Antwort oder eine fehlerhafte Frage melden?"),
+                answer: String(localized: "Direkt an der Fragenbox findest du einen blauen Kreis, über den du die Frage melden kannst.")),
 
-        FAQItem(question: "Funktioniert Quizzen offline, z. B. unterwegs ohne Internet?",
-                answer: "Ja, Quizzen ist eine reine Offline-App und funktioniert ohne Internetverbindung."),
+        FAQItem(question: String(localized: "Funktioniert Quizzen offline, z. B. unterwegs ohne Internet?"),
+                answer: String(localized: "Ja, Quizzen ist eine reine Offline-App und funktioniert ohne Internetverbindung.")),
 
-        FAQItem(question: "Wie setze ich meinen Fortschritt/meine Statistik zurück oder lösche mein Konto?",
-                answer: "In den Einstellungen kannst du unter 'Account' dein Konto löschen und unter 'Statistiken' deine Statistiken zurücksetzen."),
+        FAQItem(question: String(localized: "Wie setze ich meinen Fortschritt/meine Statistik zurück oder lösche mein Konto?"),
+                answer: String(localized: "In den Einstellungen kannst du unter 'Account' dein Konto löschen und unter 'Statistiken' deine Statistiken zurücksetzen.")),
     ]
     
     private var filteredFAQ: [FAQItem] {
@@ -111,12 +111,19 @@ struct SettingsView: View {
         StreakReminder.reschedule(stats: statsManager.globalManager.stats)
     }
 
+    /// Name der aktuellen App-Sprache in dieser Sprache („Deutsch“, „English“)
+    private var currentLanguageName: String {
+        let code = Bundle.main.preferredLocalizations.first ?? "de"
+        let locale = Locale(identifier: code)
+        return locale.localizedString(forLanguageCode: code)?.capitalized(with: locale) ?? code
+    }
+
     var body: some View {
         List {
             // Account Section
             Section() {
                 NavigationLink(destination: AccountSettingsView()) {
-                    SettingsRow(icon: "person.crop.circle", title: "Accountdaten")
+                    SettingsRow(icon: "person.crop.circle", title: String(localized: "Accountdaten"))
                 }
             }
             
@@ -126,31 +133,52 @@ struct SettingsView: View {
                     get: { reminderEnabled },
                     set: { newValue in Task { await setReminder(newValue) } }
                 )) {
-                    SettingsRow(icon: "bell.badge.fill", title: "Streak-Erinnerung (19 Uhr)", iconColor: .orange)
+                    SettingsRow(icon: "bell.badge.fill", title: String(localized: "Streak-Erinnerung (19 Uhr)"), iconColor: .orange)
                 }
                 .tint(.orange)
             } footer: {
                 Text(reminderDenied
-                     ? "Benachrichtigungen sind in den iOS-Einstellungen für Quizzen ausgeschaltet."
-                     : "Erinnert dich abends, wenn du heute noch nicht gespielt hast.")
+                     ? String(localized: "Benachrichtigungen sind in den iOS-Einstellungen für Quizzen ausgeschaltet.")
+                     : String(localized: "Erinnert dich abends, wenn du heute noch nicht gespielt hast."))
             }
 
             // Daten Section
             Section() {
                 NavigationLink(destination: DeleteAccountView()) {
-                    SettingsRow(icon: "person.crop.circle", title: "Account")
+                    SettingsRow(icon: "person.crop.circle", title: String(localized: "Account"))
                 }
 
                 NavigationLink(destination: ResetStatsView()) {
-                    SettingsRow(icon: "chart.xyaxis.line", title: "Statistiken")
+                    SettingsRow(icon: "chart.xyaxis.line", title: String(localized: "Statistiken"))
                 }
                 NavigationLink(destination: BlockedUsersView()) {
-                    SettingsRow(icon: "hand.raised", title: "Blockierte Nutzer")
+                    SettingsRow(icon: "hand.raised", title: String(localized: "Blockierte Nutzer"))
                 }
 
-                /*NavigationLink(destination: SelectLanguageView()) {
-                    SettingsRow(icon: "bubble", title: "Sprache")
-                }*/
+            }
+
+            // Sprache: iOS verwaltet die App-Sprache selbst (Einstellungen → Quizzen → Sprache)
+            // und startet die App danach neu – so wechseln alle Texte und Quizinhalte sauber.
+            Section {
+                Button {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    HStack {
+                        SettingsRow(icon: "globe", title: String(localized: "Sprache"), iconColor: .blue)
+                        Spacer()
+                        Text(currentLanguageName)
+                            .foregroundStyle(.secondary)
+                        Image(systemName: "arrow.up.forward.app")
+                            .font(.footnote)
+                            .foregroundStyle(.tertiary)
+                    }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+            } footer: {
+                Text("Öffnet die iOS-Einstellungen für Quizzen. Dort kannst du unter „Sprache“ zwischen Deutsch und Englisch wählen.")
             }
             
             Section {
@@ -159,16 +187,16 @@ struct SettingsView: View {
 
             Section {
                 NavigationLink(destination: FeedbackView()) {
-                    SettingsRow(icon: "bubble.left.and.bubble.right.fill", title: "Feedback", iconColor: .blue)
+                    SettingsRow(icon: "bubble.left.and.bubble.right.fill", title: String(localized: "Feedback"), iconColor: .blue)
                 }
                 NavigationLink(destination: ReportView()) {
-                    SettingsRow(icon: "ant.fill", title: "Fehler melden", iconColor: .orange)
+                    SettingsRow(icon: "ant.fill", title: String(localized: "Fehler melden"), iconColor: .orange)
                 }
             }
 
             Section {
-                legalRow(icon: "hand.raised.circle", title: "Datenschutzerklärung", url: AppLinks.privacyPolicy)
-                legalRow(icon: "doc.text", title: "Nutzungsbedingungen", url: AppLinks.terms)
+                legalRow(icon: "hand.raised.circle", title: String(localized: "Datenschutzerklärung"), url: AppLinks.privacyPolicy)
+                legalRow(icon: "doc.text", title: String(localized: "Nutzungsbedingungen"), url: AppLinks.terms)
             } header: {
                 Text("Rechtliches")
             }
@@ -262,12 +290,12 @@ struct SettingsView: View {
     private var contactSection: some View {
         Section() {
             NavigationLink(destination: FeedbackView()) {
-                SettingsRow(icon: "bubble.left.and.bubble.right.fill", title: "Feedback")
+                SettingsRow(icon: "bubble.left.and.bubble.right.fill", title: String(localized: "Feedback"))
                     .foregroundColor(.blue)
             }
             
             NavigationLink(destination: ReportView()) {
-                SettingsRow(icon: "ant.fill", title: "Fehler melden")
+                SettingsRow(icon: "ant.fill", title: String(localized: "Fehler melden"))
                     .foregroundColor(.orange)
             }
         }
@@ -280,7 +308,7 @@ struct SettingsView: View {
         do {
             try await authViewModel.logout()
         } catch {
-            errorMessage = "Abmelden fehlgeschlagen"
+            errorMessage = String(localized: "Abmelden fehlgeschlagen")
         }
         isLoggingOut = false
     }

@@ -21,9 +21,9 @@ extension Badge {
 
         let memberBadge = Badge(
             identifier: "member",
-            color: .teal, icon: "calendar.badge.checkmark", name: "Mitglied",
+            color: .teal, icon: "calendar.badge.checkmark", name: String(localized: "Mitglied"),
             goal: memberSince.formatted(date: .numeric, time: .omitted),
-            explanation: "Dabei seit dem \(memberSince.formatted(date: .long, time: .omitted)). Danke für deinen Support ❤️",
+            explanation: String(localized: "Dabei seit dem \(memberSince.formatted(date: .long, time: .omitted)). Danke für deinen Support ❤️"),
             isLocked: false,
             level: 1, maxLevel: 1,
             isSpecial: true
@@ -36,16 +36,16 @@ extension Badge {
             let previous = level > 0 ? thresholds[level - 1] : 0
             let explanation: String
             if let next {
-                explanation = "Noch \(next - value) \(type.unit) bis Level \(level + 1)."
+                explanation = String(localized: "Noch \(next - value) \(type.unit) bis Level \(level + 1).")
             } else {
-                explanation = "Maximales Level erreicht – stark! 🏆"
+                explanation = String(localized: "Maximales Level erreicht – stark! 🏆")
             }
             return Badge(
                 identifier: type.rawValue,
                 color: type.color,
                 icon: type.icon,
                 name: type.name,
-                goal: level == 0 ? "Noch nicht erreicht" : "Level \(level) von \(thresholds.count)",
+                goal: level == 0 ? String(localized: "Noch nicht erreicht") : String(localized: "Level \(level) von \(thresholds.count)"),
                 explanation: explanation,
                 isLocked: level == 0,
                 level: level,

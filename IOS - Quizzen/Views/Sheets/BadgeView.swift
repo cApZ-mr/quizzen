@@ -72,7 +72,7 @@ struct BadgeView: View {
     private var progressCard: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Text(badge.nextThreshold == nil ? "Maximum erreicht" : "Bis Level \(badge.level + 1)")
+                Text(badge.nextThreshold == nil ? String(localized: "Maximum erreicht") : String(localized: "Bis Level \(badge.level + 1)"))
                     .font(.subheadline.weight(.semibold))
                 Spacer()
                 Text(badge.nextThreshold.map { "\(badge.currentValue) / \($0)" } ?? "\(badge.currentValue)")
@@ -111,7 +111,7 @@ struct BadgeView: View {
     }
 
     private var shareText: String {
-        let what = badge.isSpecial ? "das Abzeichen „\(badge.name)“" : "\(badge.tier.name) (Level \(badge.level)) im Abzeichen „\(badge.name)“"
-        return "Ich habe \(what) in Quizzen erreicht! 🏆\n\nLade dir die Quizzen App im App Store: \(AppVersionService.appStoreURL.absoluteString)"
+        let what = badge.isSpecial ? String(localized: "das Abzeichen „\(badge.name)“") : String(localized: "\(badge.tier.name) (Level \(badge.level)) im Abzeichen „\(badge.name)“")
+        return String(localized: "Ich habe \(what) in Quizzen erreicht! 🏆\n\nLade dir die Quizzen App im App Store: \(AppVersionService.appStoreURL.absoluteString)")
     }
 }

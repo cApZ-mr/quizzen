@@ -49,26 +49,26 @@ struct DeleteAccountView: View {
 
                     ConsequenceRow(
                         icon: "chart.bar.xaxis",
-                        title: "Alle Statistiken gehen verloren",
-                        description: "Deine gesamten Verlaufsdaten und Auswertungen werden unwiderruflich gelöscht."
+                        title: String(localized: "Alle Statistiken gehen verloren"),
+                        description: String(localized: "Deine gesamten Verlaufsdaten und Auswertungen werden unwiderruflich gelöscht.")
                     )
 
                     ConsequenceRow(
                         icon: "flag.checkered",
-                        title: "Dein gesamter Fortschritt wird gelöscht",
-                        description: "Erreichte Ziele, Level, Erfolge und gesammelte Punkte sind danach nicht mehr abrufbar."
+                        title: String(localized: "Dein gesamter Fortschritt wird gelöscht"),
+                        description: String(localized: "Erreichte Ziele, Level, Erfolge und gesammelte Punkte sind danach nicht mehr abrufbar.")
                     )
 
                     ConsequenceRow(
                         icon: "person.crop.circle.badge.questionmark",
-                        title: "Persönliche Einstellungen verschwinden",
-                        description: "Individuelle Anpassungen, Präferenzen und personalisierte Inhalte werden vollständig entfernt."
+                        title: String(localized: "Persönliche Einstellungen verschwinden"),
+                        description: String(localized: "Individuelle Anpassungen, Präferenzen und personalisierte Inhalte werden vollständig entfernt.")
                     )
 
                     ConsequenceRow(
                         icon: "trash",
-                        title: "Endgültige Löschung",
-                        description: "Alle Daten werden unwiederruflich entfernt und können nicht wiederhergestellt werden."
+                        title: String(localized: "Endgültige Löschung"),
+                        description: String(localized: "Alle Daten werden unwiederruflich entfernt und können nicht wiederhergestellt werden.")
                     )
                 }
                 .padding()
@@ -78,9 +78,9 @@ struct DeleteAccountView: View {
                 )
 
                 VStack(alignment: .leading) {
-                    LegalLinkButton(title: "Unsere Datenschutzrichtlinien", url: AppLinks.privacyPolicy)
+                    LegalLinkButton(title: String(localized: "Unsere Datenschutzrichtlinien"), url: AppLinks.privacyPolicy)
 
-                    LegalLinkButton(title: "Unsere AGB", url: AppLinks.terms)
+                    LegalLinkButton(title: String(localized: "Unsere AGB"), url: AppLinks.terms)
                 }
                 .padding(.horizontal)
 
@@ -141,7 +141,7 @@ struct DeleteAccountView: View {
             try await supabase.rpc("delete_own_account").execute()
         } catch {
             log.error("RPC-Fehler beim Löschen: \(error.localizedDescription)")
-            errorMessage = "Löschen fehlgeschlagen. Bitte versuch es erneut."
+            errorMessage = String(localized: "Löschen fehlgeschlagen. Bitte versuch es erneut.")
             isDeleting = false
             return
         }

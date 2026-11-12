@@ -51,16 +51,16 @@ struct FriendsListView: View {
                 ProgressView()
             } else if filteredFriends.isEmpty {
                 ContentUnavailableView(
-                    searchText.isEmpty ? "Noch keine Freunde" : "Keine Treffer",
+                    searchText.isEmpty ? String(localized: "Noch keine Freunde") : String(localized: "Keine Treffer"),
                     systemImage: "person.2",
                     description: Text(searchText.isEmpty
-                                      ? "Im Tab „Freunde“ kannst du andere suchen und Anfragen senden."
-                                      : "Kein Freund heißt „\(searchText)“.")
+                                      ? String(localized: "Im Tab „Freunde“ kannst du andere suchen und Anfragen senden.")
+                                      : String(localized: "Kein Freund heißt „\(searchText)“."))
                 )
             }
         }
         .navigationTitle("Freunde")
-        .searchable(text: $searchText, prompt: "Freunde durchsuchen")
+        .searchable(text: $searchText, prompt: String(localized: "Freunde durchsuchen"))
         .refreshable { await friendsViewModel.loadFriends() }
         .task { if friendsViewModel.friends.isEmpty { await friendsViewModel.loadFriends() } }
     }

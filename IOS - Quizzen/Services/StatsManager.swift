@@ -77,7 +77,7 @@ class CategoryStatsManager: ObservableObject {
 
         var registry = categoryRegistry
         for definition in QuizCatalog.all {
-            let newKey = makeKey(categoryId: definition.categoryId, subCategory: definition.title, quizID: definition.id)
+            let newKey = makeKey(categoryId: definition.categoryId, subCategory: definition.titleKey, quizID: definition.id)
             var merged = registry[newKey] ?? CategoryStats(roundsPlayed: 0, answeredIDs: [], correctIDs: [], falseIDs: [])
             var changed = false
 
@@ -100,7 +100,7 @@ class CategoryStatsManager: ObservableObject {
 
     /// Speicher-Schlüssel eines Quiz (z. B. „Flaggen_Flags“)
     func key(for definition: QuizDefinition) -> String {
-        makeKey(categoryId: definition.categoryId, subCategory: definition.title, quizID: definition.id)
+        makeKey(categoryId: definition.categoryId, subCategory: definition.titleKey, quizID: definition.id)
     }
 
     /// Server-Stand einmischen: Mengen vereinigen, Runden = Maximum

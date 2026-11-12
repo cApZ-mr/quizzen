@@ -143,7 +143,7 @@ struct QuizSetupSection: View {
                 }
             }
 
-            setting("Fragen pro Runde") {
+            setting(String(localized: "Fragen pro Runde")) {
                 Picker("Fragen", selection: $model.custom.questionCount) {
                     Text("10").tag(10)
                     Text("20").tag(20)
@@ -153,7 +153,7 @@ struct QuizSetupSection: View {
                 .pickerStyle(.segmented)
             }
 
-            setting("Antwortmöglichkeiten") {
+            setting(String(localized: "Antwortmöglichkeiten")) {
                 Picker("Antworten", selection: $model.custom.answerCount) {
                     ForEach(definition.answerChoices, id: \.self) { Text("\($0)").tag($0) }
                 }
@@ -161,20 +161,20 @@ struct QuizSetupSection: View {
             }
 
             if definition.supportsRandomDistractors {
-                setting("Falsche Antworten") {
+                setting(String(localized: "Falsche Antworten")) {
                     Picker("Falsche Antworten", selection: $model.custom.distractors) {
                         ForEach(QuizConfig.Distractors.allCases, id: \.self) { Text($0.name).tag($0) }
                     }
                     .pickerStyle(.segmented)
                     Text(model.custom.distractors == .similar
-                         ? "Leicht zu verwechselnde Antworten – deutlich schwerer."
-                         : "Beliebige andere Antworten.")
+                         ? String(localized: "Leicht zu verwechselnde Antworten – deutlich schwerer.")
+                         : String(localized: "Beliebige andere Antworten."))
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
             }
 
-            setting("Zeit pro Frage") {
+            setting(String(localized: "Zeit pro Frage")) {
                 Picker("Zeit", selection: $model.custom.timeLimit) {
                     Text("Aus").tag(Int?.none)
                     Text("20 s").tag(Int?.some(20))
@@ -198,8 +198,8 @@ struct QuizSetupSection: View {
             .tint(.purple)
 
             Label(available == 0
-                  ? "Keine \(definition.unit.plural) passen zu diesen Einstellungen."
-                  : "\(available) \(available == 1 ? definition.unit.singular : definition.unit.plural) verfügbar",
+                  ? String(localized: "Keine \(definition.unit.plural) passen zu diesen Einstellungen.")
+                  : String(localized: "\(available) \(available == 1 ? definition.unit.singular : definition.unit.plural) verfügbar"),
                   systemImage: available == 0 ? "exclamationmark.triangle.fill" : "checkmark.seal.fill")
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(available == 0 ? .red : .secondary)

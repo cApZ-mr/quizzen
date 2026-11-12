@@ -73,10 +73,10 @@ enum PvPLobbyError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .codeNotFound:     "Kein offenes Duell mit diesem Code gefunden."
-        case .matchAlreadyFull: "Diesem Duell ist bereits jemand beigetreten."
-        case .ownMatch:         "Das ist dein eigenes Duell – teile den Code mit einem Freund."
-        case .serverNotReady:   "Der Duell-Server ist noch nicht eingerichtet (Migration 003 fehlt)."
+        case .codeNotFound:     String(localized: "Kein offenes Duell mit diesem Code gefunden.")
+        case .matchAlreadyFull: String(localized: "Diesem Duell ist bereits jemand beigetreten.")
+        case .ownMatch:         String(localized: "Das ist dein eigenes Duell – teile den Code mit einem Freund.")
+        case .serverNotReady:   String(localized: "Der Duell-Server ist noch nicht eingerichtet (Migration 003 fehlt).")
         case .other(let text):  text
         }
     }
@@ -123,7 +123,7 @@ final class PvPLobbyService {
                 lastError = error
             }
         }
-        throw lastError ?? PvPLobbyError.other("Duell konnte nicht erstellt werden.")
+        throw lastError ?? PvPLobbyError.other(String(localized: "Duell konnte nicht erstellt werden."))
     }
 
     func joinMatch(code: String) async throws -> Match {

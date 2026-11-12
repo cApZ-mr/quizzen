@@ -62,7 +62,7 @@ enum DailyChallenge {
 
         return QuizDetail(
             id: quizId(for: date), categoryId: "daily", subCategory: "Tageschallenge",
-            title: "Tageschallenge", description: "10 Fragen aus allen Quizzen – für alle gleich.",
+            title: String(localized: "Tageschallenge"), description: String(localized: "10 Fragen aus allen Quizzen – für alle gleich."),
             imageName: "", difficulty: .medium, questions: picked,
             settings: QuizPlaySettings(roundLength: picked.count, timeLimit: timeLimit,
                                        label: date.formatted(.dateTime.day().month(.wide))))

@@ -15,11 +15,13 @@ struct LeaderboardView: View {
     @EnvironmentObject var router: AppRouter
 
     @StateObject private var viewModel = LeaderboardViewModel()
+    @State private var showQuizPicker = false
+    @Namespace private var scopeNamespace
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 20) {
+                VStack(spacing: 16) {
                     scopePicker
                     boardChips
                     content
@@ -59,37 +61,139 @@ struct LeaderboardView: View {
 
     // MARK: - Filter
 
+    /// Bereich: Weltweit / Freunde / Mein Land
     private var scopePicker: some View {
-        Picker("Bereich", selection: $viewModel.scope) {
+        HStack(spacing: 4) {
             ForEach(LeaderboardScope.allCases) { scope in
-                Text(scope.title).tag(scope)
+                let isActive = scope == viewModel.scope
+                Button {
+                    withAnimation(.snappy) { viewModel.scope = scope }
+                } label: {
+                    Label(scope.title, systemImage: scope.icon)
+                        .font(.subheadline.weight(.semibold))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 9)
+                        .foregroundStyle(isActive ? .white : .secondary)
+                        .background {
+                            if isActive {
+                                Capsule()
+                                    .fill(Color.brand.gradient)
+                                    .matchedGeometryEffect(id: "scope", in: scopeNamespace)
+                            }
+                        }
+                        .contentShape(Capsule())
+                }
+                .buttonStyle(.plain)
+                .accessibilityAddTraits(isActive ? .isSelected : [])
             }
         }
-        .pickerStyle(.segmented)
+        .padding(4)
+        .background(Color(.secondarySystemGroupedBackground), in: Capsule())
         .padding(.horizontal)
     }
 
+    /// Bestenlisten als Kacheln: allgemeine Listen + eine Kachel für die Quizze
     private var boardChips: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                ForEach(LeaderboardBoard.all) { board in
-                    let isActive = board == viewModel.board
-                    Button {
-                        withAnimation(.snappy) { viewModel.board = board }
-                    } label: {
-                        Label(board.title, systemImage: board.icon)
-                            .font(.subheadline.weight(.semibold))
-                            .padding(.horizontal, 14)
-                            .padding(.vertical, 9)
-                            .background(isActive ? Color.brand : Color(.secondarySystemGroupedBackground), in: Capsule())
-                            .foregroundStyle(isActive ? .white : .primary)
+        VStack(alignment: .leading, spacing: 12) {
+            ScrollViewReader { proxy in
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(LeaderboardBoard.general) { board in
+                            boardTile(icon: board.icon, title: board.title, tint: board.tint,
+                                      isActive: board == viewModel.board) {
+                                withAnimation(.snappy) { viewModel.board = board }
+                            }
+                            .id(board.id)
+                        }
+                        quizTile.id("quizzes")
                     }
-                    .buttonStyle(.plain)
-                    .accessibilityAddTraits(isActive ? .isSelected : [])
+                    .padding(.horizontal)
+                    .padding(.vertical, 2)
+                }
+                .onChange(of: viewModel.board) { _, board in
+                    withAnimation { proxy.scrollTo(board.isQuiz ? "quizzes" : board.id, anchor: .center) }
                 }
             }
-            .padding(.horizontal)
+
+            // Was wird gezählt?
+            HStack(spacing: 10) {
+                Image(systemName: viewModel.board.icon)
+                    .font(.subheadline.weight(.bold))
+                    .foregroundStyle(viewModel.board.tint)
+                VStack(alignment: .leading, spacing: 1) {
+                    Text(viewModel.board.isQuiz ? viewModel.board.title : boardHeadline)
+                        .font(.subheadline.weight(.semibold))
+                    Text(viewModel.board.unit)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 20)
+            .animation(.snappy, value: viewModel.board)
         }
+        .sheet(isPresented: $showQuizPicker) {
+            QuizBoardPicker(selected: viewModel.board) { board in
+                withAnimation(.snappy) { viewModel.board = board }
+            }
+        }
+    }
+
+    private var boardHeadline: String {
+        switch viewModel.board {
+        case .stat(let metric): metric.title
+        case .daily: String(localized: "Tageschallenge")
+        case .quiz(_, let name, _): name
+        }
+    }
+
+    private var quizTile: some View {
+        let board = viewModel.board
+        return boardTile(icon: board.isQuiz ? board.icon : "square.grid.2x2.fill",
+                         title: board.isQuiz ? board.title : String(localized: "Quizze"),
+                         tint: board.isQuiz ? board.tint : .indigo,
+                         isActive: board.isQuiz,
+                         showsChevron: true) {
+            showQuizPicker = true
+        }
+    }
+
+    private func boardTile(icon: String, title: String, tint: Color, isActive: Bool,
+                           showsChevron: Bool = false, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack {
+                    Image(systemName: icon)
+                        .font(.system(size: 15, weight: .bold))
+                        .foregroundStyle(isActive ? tint : .white)
+                        .frame(width: 32, height: 32)
+                        .background(isActive ? AnyShapeStyle(.white) : AnyShapeStyle(tint.gradient), in: Circle())
+                    Spacer(minLength: 0)
+                    if showsChevron {
+                        Image(systemName: "chevron.down")
+                            .font(.caption.weight(.bold))
+                            .foregroundStyle(isActive ? .white.opacity(0.8) : .secondary)
+                    }
+                }
+                Text(title)
+                    .font(.subheadline.weight(.semibold))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                    .foregroundStyle(isActive ? .white : .primary)
+            }
+            .padding(12)
+            .frame(width: 112, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 18)
+                    .fill(isActive ? AnyShapeStyle(tint.gradient) : AnyShapeStyle(Color(.secondarySystemGroupedBackground)))
+            )
+            .shadow(color: isActive ? tint.opacity(0.35) : .clear, radius: 8, y: 4)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(title)
+        .accessibilityAddTraits(isActive ? .isSelected : [])
     }
 
     // MARK: - Inhalt
@@ -117,9 +221,6 @@ struct LeaderboardView: View {
                 emptyState
             } else {
                 VStack(spacing: 20) {
-                    Text(viewModel.board.unit)
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
                     podium
                     list
                 }
@@ -136,8 +237,8 @@ struct LeaderboardView: View {
             switch viewModel.scope {
             case .friends: Text("Füge Freunde hinzu, um euch zu vergleichen.")
             case .country: Text(userViewModel.selectedOriginCode.isEmpty
-                                ? "Lege in deinem Profil ein Land fest."
-                                : "In deinem Land hat hier noch niemand gepunktet. Sei die erste Person!")
+                                ? String(localized: "Lege in deinem Profil ein Land fest.")
+                                : String(localized: "In deinem Land hat hier noch niemand gepunktet. Sei die erste Person!"))
             case .global:  Text("Spiel ein Quiz und sichere dir den ersten Platz!")
             }
         }
@@ -239,7 +340,7 @@ struct LeaderboardView: View {
             AvatarView(username: entry.account.username, url: entry.account.avatarUrl, size: 40)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text(isMe ? "\(entry.account.username) (Du)" : entry.account.username)
+                Text(isMe ? String(localized: "\(entry.account.username) (Du)") : entry.account.username)
                     .font(.subheadline.weight(.semibold))
                     .lineLimit(1)
                 if let country = entry.account.country, !country.isEmpty {
@@ -304,5 +405,79 @@ struct LeaderboardView: View {
         case 2: Color(hex: "A7B0BA")
         default: Color(hex: "B87333")
         }
+    }
+}
+
+// MARK: - Quiz-Auswahl
+
+/// Sheet mit allen Quizzen, gruppiert nach Themenbereich
+private struct QuizBoardPicker: View {
+    let selected: LeaderboardBoard
+    let onSelect: (LeaderboardBoard) -> Void
+    @Environment(\.dismiss) private var dismiss
+
+    private let columns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 24) {
+                    ForEach(QuizCatalog.categories) { category in
+                        VStack(alignment: .leading, spacing: 10) {
+                            Label(category.name, systemImage: category.icon)
+                                .font(.subheadline.weight(.semibold))
+                                .foregroundStyle(category.color)
+                            LazyVGrid(columns: columns, spacing: 12) {
+                                ForEach(category.quizzes) { quiz in
+                                    let board = LeaderboardBoard.quiz(id: quiz.id, name: quiz.title, icon: quiz.icon)
+                                    tile(board, quiz: quiz, color: category.color)
+                                }
+                            }
+                        }
+                    }
+                }
+                .padding()
+            }
+            .background(Color(.systemGroupedBackground))
+            .navigationTitle("Quiz-Bestenliste")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Schließen") { dismiss() }
+                }
+            }
+        }
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
+    }
+
+    private func tile(_ board: LeaderboardBoard, quiz: QuizDefinition, color: Color) -> some View {
+        let isActive = board == selected
+        return Button {
+            onSelect(board)
+            dismiss()
+        } label: {
+            HStack(spacing: 10) {
+                Image(systemName: quiz.icon)
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 34, height: 34)
+                    .background(color.gradient, in: RoundedRectangle(cornerRadius: 10))
+                Text(quiz.title)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.primary)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.85)
+                Spacer(minLength: 0)
+                if isActive {
+                    Image(systemName: "checkmark.circle.fill").foregroundStyle(color)
+                }
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 14))
+            .overlay(RoundedRectangle(cornerRadius: 14).stroke(isActive ? color : .clear, lineWidth: 2))
+        }
+        .buttonStyle(.plain)
     }
 }

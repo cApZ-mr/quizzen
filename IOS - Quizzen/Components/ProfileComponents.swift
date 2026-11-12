@@ -110,8 +110,8 @@ struct ProfileLevelCard: View {
                 .tint(level.color)
 
             Text(showsHowToEarn
-                 ? "Noch \((level.xpForNextLevel - level.xpIntoLevel).formatted()) XP bis Level \(level.level + 1) · \(PlayerLevel.xpPerCorrectAnswer) XP pro richtiger Antwort, \(PlayerLevel.xpPerRound) XP pro Runde"
-                 : "Noch \((level.xpForNextLevel - level.xpIntoLevel).formatted()) XP bis Level \(level.level + 1)")
+                 ? String(localized: "Noch \((level.xpForNextLevel - level.xpIntoLevel).formatted()) XP bis Level \(level.level + 1) · \(PlayerLevel.xpPerCorrectAnswer) XP pro richtiger Antwort, \(PlayerLevel.xpPerRound) XP pro Runde")
+                 : String(localized: "Noch \((level.xpForNextLevel - level.xpIntoLevel).formatted()) XP bis Level \(level.level + 1)"))
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
@@ -132,23 +132,23 @@ struct ProfileStatsGrid<FriendsDestination: View>: View {
     var body: some View {
         LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 12) {
             ProfileStatCard(value: "\(stats.currentStreak)",
-                            label: stats.currentStreak == 1 ? "Tag Streak" : "Tage Streak",
+                            label: stats.currentStreak == 1 ? String(localized: "Tag Streak") : String(localized: "Tage Streak"),
                             icon: "flame.fill", color: .orange,
-                            footnote: "Rekord: \(stats.bestStreak)")
-            ProfileStatCard(value: "\(stats.accuracy) %", label: "Trefferquote", icon: "target", color: .green,
-                            footnote: "\(stats.correctAnswers.formatted()) von \(stats.totalAnswers.formatted())")
-            ProfileStatCard(value: stats.quizzesPlayed.formatted(), label: "Runden gespielt",
+                            footnote: String(localized: "Rekord: \(stats.bestStreak)"))
+            ProfileStatCard(value: "\(stats.accuracy) %", label: String(localized: "Trefferquote"), icon: "target", color: .green,
+                            footnote: String(localized: "\(stats.correctAnswers.formatted()) von \(stats.totalAnswers.formatted())"))
+            ProfileStatCard(value: stats.quizzesPlayed.formatted(), label: String(localized: "Runden gespielt"),
                             icon: "arrow.triangle.2.circlepath", color: .blue,
-                            footnote: "Spielzeit: \(Self.formatPlayTime(stats.playTime))")
+                            footnote: String(localized: "Spielzeit: \(Self.formatPlayTime(stats.playTime))"))
             if let friendsDestination {
                 NavigationLink { friendsDestination } label: {
-                    ProfileStatCard(value: "\(friendsCount)", label: friendsCount == 1 ? "Freund" : "Freunde", icon: "person.2.fill", color: .purple,
-                                    footnote: "Anzeigen ›")
+                    ProfileStatCard(value: "\(friendsCount)", label: friendsCount == 1 ? String(localized: "Freund") : String(localized: "Freunde"), icon: "person.2.fill", color: .purple,
+                                    footnote: String(localized: "Anzeigen ›"))
                 }
                 .buttonStyle(.plain)
             } else {
-                ProfileStatCard(value: "\(friendsCount)", label: friendsCount == 1 ? "Freund" : "Freunde", icon: "person.2.fill", color: .purple,
-                                footnote: friendsCount == 1 ? "1 Freund" : "\(friendsCount) Freunde")
+                ProfileStatCard(value: "\(friendsCount)", label: friendsCount == 1 ? String(localized: "Freund") : String(localized: "Freunde"), icon: "person.2.fill", color: .purple,
+                                footnote: friendsCount == 1 ? String(localized: "1 Freund") : String(localized: "\(friendsCount) Freunde"))
             }
         }
         .padding(.horizontal)
@@ -158,7 +158,7 @@ struct ProfileStatsGrid<FriendsDestination: View>: View {
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = seconds >= 3600 ? [.hour, .minute] : [.minute]
         formatter.unitsStyle = .abbreviated
-        return formatter.string(from: seconds) ?? "0 Min."
+        return formatter.string(from: seconds) ?? String(localized: "0 Min.")
     }
 }
 
@@ -203,7 +203,7 @@ struct ProfileStatCard: View {
 
 struct ProfileBadgeShowcase<SeeAll: View>: View {
     let badges: [Badge]
-    var title: String = "Abzeichen"
+    var title: String = String(localized: "Abzeichen")
     @ViewBuilder var seeAll: () -> SeeAll
 
     var body: some View {

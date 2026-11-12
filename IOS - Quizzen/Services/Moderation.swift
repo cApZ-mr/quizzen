@@ -43,9 +43,9 @@ nonisolated enum UsernameFilter {
     /// Fehlermeldung für die Eingabe oder nil, wenn der Name in Ordnung ist
     static func validationError(for name: String) -> String? {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        if trimmed.count < 3 { return "Benutzername muss mind. 3 Zeichen haben" }
-        if trimmed.count > 20 { return "Benutzername darf höchstens 20 Zeichen haben" }
-        if isOffensive(trimmed) { return "Dieser Benutzername ist nicht erlaubt" }
+        if trimmed.count < 3 { return String(localized: "Benutzername muss mind. 3 Zeichen haben") }
+        if trimmed.count > 20 { return String(localized: "Benutzername darf höchstens 20 Zeichen haben") }
+        if isOffensive(trimmed) { return String(localized: "Dieser Benutzername ist nicht erlaubt") }
         return nil
     }
 }
@@ -60,6 +60,17 @@ enum UserReportReason: String, CaseIterable, Identifiable {
     case other = "Sonstiges"
 
     var id: String { rawValue }
+
+    /// Angezeigter Grund (rawValue bleibt deutsch und geht so an den Server)
+    var title: String {
+        switch self {
+        case .username: String(localized: "Anstößiger Benutzername")
+        case .avatar: String(localized: "Anstößiges Profilbild")
+        case .harassment: String(localized: "Belästigung oder Beleidigung")
+        case .cheating: String(localized: "Schummeln")
+        case .other: String(localized: "Sonstiges")
+        }
+    }
 
     var icon: String {
         switch self {

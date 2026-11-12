@@ -16,15 +16,29 @@ import SwiftUI
 /// Eine Auswahlmöglichkeit eines Filters, z. B. „Europa“ oder „Leicht“
 struct QuizFilterOption: Identifiable, Hashable {
     let id: String
-    let name: String
+    let nameKey: String
     let icon: String
+    var name: String { tr(nameKey) }
+
+    init(id: String, name: String, icon: String) {
+        self.id = id
+        self.nameKey = name
+        self.icon = icon
+    }
 }
 
 /// Ein Filter mit mehreren Optionen, z. B. „Regionen“
 struct QuizFilter: Identifiable {
     let id: String
-    let title: String
+    let titleKey: String
     let options: [QuizFilterOption]
+    var title: String { tr(titleKey) }
+
+    init(id: String, title: String, options: [QuizFilterOption]) {
+        self.id = id
+        self.titleKey = title
+        self.options = options
+    }
 }
 
 /// Eine Frage im Pool + Zuordnung zu Filter-Optionen
@@ -46,7 +60,7 @@ struct QuizItem {
 struct QuizConfig: Codable, Equatable {
     enum Distractors: String, Codable, CaseIterable {
         case random, similar
-        var name: String { self == .random ? "Zufällig" : "Ähnlich" }
+        var name: String { self == .random ? String(localized: "Zufällig") : String(localized: "Ähnlich") }
     }
 
     /// filterId → gewählte Options-IDs. Fehlt ein Filter, gilt „alle“.
@@ -72,11 +86,11 @@ struct QuizPreset: Identifiable {
 
         var label: String {
             switch self {
-            case .easy: "Leicht"
-            case .medium: "Mittel"
-            case .hard: "Schwer"
-            case .extreme: "Extrem"
-            case .custom: "Individuell"
+            case .easy: String(localized: "Leicht")
+            case .medium: String(localized: "Mittel")
+            case .hard: String(localized: "Schwer")
+            case .extreme: String(localized: "Extrem")
+            case .custom: String(localized: "Individuell")
             }
         }
 
@@ -92,12 +106,22 @@ struct QuizPreset: Identifiable {
     }
 
     let level: Level
-    let name: String
+    let nameKey: String
     let icon: String
-    let tagline: String
+    let taglineKey: String
     let config: QuizConfig?
 
+    var name: String { tr(nameKey) }
+    var tagline: String { tr(taglineKey) }
     var id: String { level.rawValue }
+
+    init(level: Level, name: String, icon: String, tagline: String, config: QuizConfig?) {
+        self.level = level
+        self.nameKey = name
+        self.icon = icon
+        self.taglineKey = tagline
+        self.config = config
+    }
     var color: Color { level.color }
 
     static func custom(_ tagline: String = "Stell dir deine Runde selbst zusammen") -> QuizPreset {
@@ -110,11 +134,23 @@ struct QuizPreset: Identifiable {
 /// Oberkategorie, die mehrere eigenständige Quizze bündelt (z. B. Geografie)
 struct QuizCategory: Identifiable, Hashable {
     let id: String
-    let name: String
+    let nameKey: String
     let icon: String
     let color: Color
-    let description: String
+    let descriptionKey: String
     let quizzes: [QuizDefinition]
+
+    var name: String { tr(nameKey) }
+    var description: String { tr(descriptionKey) }
+
+    init(id: String, name: String, icon: String, color: Color, description: String, quizzes: [QuizDefinition]) {
+        self.id = id
+        self.nameKey = name
+        self.icon = icon
+        self.color = color
+        self.descriptionKey = description
+        self.quizzes = quizzes
+    }
 
     static func == (lhs: QuizCategory, rhs: QuizCategory) -> Bool { lhs.id == rhs.id }
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
@@ -126,20 +162,43 @@ struct QuizCategory: Identifiable, Hashable {
 
 struct QuizDefinition: Identifiable {
     let id: String
-    let title: String
-    let description: String
+    /// Deutscher Titel – Teil des Statistik-Schlüssels, daher nie übersetzen
+    let titleKey: String
+    private let descriptionKey: String
     let icon: String
-    /// z. B. („Flagge“, „Flaggen“) für Texte wie „63 von 197 Flaggen“
-    let unit: (singular: String, plural: String)
+    private let unitKey: (singular: String, plural: String)
     let filters: [QuizFilter]
-    /// Beschriftung des Einsteiger-Schalters (nil = gibt es nicht)
-    let starterLabel: String?
+    private let starterLabelKey: String?
     let presets: [QuizPreset]
     /// Alte Einzel-Quizze, deren Fortschritt/Bestenliste übernommen wird
     let legacyQuizIds: [String]
     /// Für Statistik-Schlüssel (bleibt mit alten Ständen kompatibel)
     let categoryId: String
     let items: [QuizItem]
+
+    init(id: String, title: String, description: String, icon: String, unit: (singular: String, plural: String),
+         filters: [QuizFilter], starterLabel: String?, presets: [QuizPreset], legacyQuizIds: [String],
+         categoryId: String, items: [QuizItem]) {
+        self.id = id
+        self.titleKey = title
+        self.descriptionKey = description
+        self.icon = icon
+        self.unitKey = unit
+        self.filters = filters
+        self.starterLabelKey = starterLabel
+        self.presets = presets
+        self.legacyQuizIds = legacyQuizIds
+        self.categoryId = categoryId
+        self.items = items
+    }
+
+    /// Angezeigte (ggf. übersetzte) Texte
+    var title: String { tr(titleKey) }
+    var description: String { tr(descriptionKey) }
+    /// z. B. („Flagge“, „Flaggen“) für Texte wie „63 von 197 Flaggen“
+    var unit: (singular: String, plural: String) { (tr(unitKey.singular), tr(unitKey.plural)) }
+    /// Beschriftung des Einsteiger-Schalters (nil = gibt es nicht)
+    var starterLabel: String? { starterLabelKey.map { tr($0) } }
 
     /// Zufällige Falschantworten nur, wenn alle Antworten typisiert sind
     var supportsRandomDistractors: Bool { items.allSatisfy { $0.answerType != nil } }
@@ -150,7 +209,7 @@ struct QuizDefinition: Identifiable {
 
     /// Das Quiz, wie es in Listen, Suche und Duell erscheint (ganzer Pool)
     var baseQuiz: QuizDetail {
-        QuizDetail(id: id, categoryId: categoryId, subCategory: title, title: title,
+        QuizDetail(id: id, categoryId: categoryId, subCategory: titleKey, title: title,
                    description: description, imageName: "", difficulty: .medium,
                    questions: items.map(\.question))
     }
@@ -178,10 +237,11 @@ struct QuizDefinition: Identifiable {
             guard let selected = config.selections[filter.id], selected.count < filter.options.count else { continue }
             parts.append(filter.options.filter { selected.contains($0.id) }.map(\.name).joined(separator: ", "))
         }
-        if config.starterOnly, let starterLabel { parts.append(starterLabel.replacingOccurrences(of: "Nur ", with: "")) }
-        if parts.isEmpty { parts.append("Alles gemischt") }
-        parts.append(config.questionCount == 0 ? "alle \(availableCount(for: config))" : "\(config.questionCount) Fragen")
-        parts.append("\(config.answerCount) Antworten")
+        if config.starterOnly, let starterLabelKey { parts.append(tr(starterLabelKey.replacingOccurrences(of: "Nur ", with: ""))) }
+        if parts.isEmpty { parts.append(String(localized: "Alles gemischt")) }
+        parts.append(config.questionCount == 0 ? String(localized: "alle \(availableCount(for: config))")
+                                               : String(localized: "\(config.questionCount) Fragen"))
+        parts.append(String(localized: "\(config.answerCount) Antworten"))
         if let time = config.timeLimit { parts.append("\(time) s") }
         return parts.joined(separator: " · ")
     }
@@ -237,7 +297,8 @@ struct QuizDefinition: Identifiable {
         options.shuffle(using: &rng)
         return Question(question: item.question.question, imageName: item.question.imageName,
                         options: options, correctAnswerIndex: options.firstIndex(of: correct) ?? 0,
-                        promptText: item.question.imageName == nil ? nil : item.question.prompt(quizId: id))
+                        promptText: item.question.imageName == nil ? nil : item.question.prompt(quizId: id),
+                        key: item.question.key)
     }
 
     func build(config: QuizConfig, label: String, knownQuestions: Set<String> = []) -> QuizDetail {
@@ -375,7 +436,7 @@ enum QuizCatalog {
     static let capitals: QuizDefinition = {
         let items = regionFiles.flatMap { region in
             (DataService.loadQuiz(from: "Capitals\(region.suffix)")?.questions ?? []).map { question -> QuizItem in
-                let toCapital = question.question.hasPrefix("Was ist die Hauptstadt")
+                let toCapital = question.id.hasPrefix("Was ist die Hauptstadt")
                 return QuizItem(question: question,
                                 tags: ["region": region.id, "direction": toCapital ? "toCapital" : "toCountry"],
                                 answerType: toCapital ? "capital" : "country",
@@ -413,7 +474,7 @@ enum QuizCatalog {
 
     static let airportCodes: QuizDefinition = {
         let items = (DataService.loadQuiz(from: "AviationAirportCodes")?.questions ?? []).map { question -> QuizItem in
-            let toCode = question.question.hasPrefix("Abkürzung")
+            let toCode = question.id.hasPrefix("Abkürzung")
             return QuizItem(question: question, tags: ["direction": toCode ? "toCode" : "toAirport"],
                             answerType: toCode ? "code" : "airport", isStarter: false)
         }

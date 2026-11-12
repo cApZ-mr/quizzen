@@ -28,7 +28,7 @@ struct PvPGameView: View {
                 statusLine
             } else {
                 Spacer()
-                ProgressView("Frage wird geladen…")
+                ProgressView(String(localized: "Frage wird geladen…"))
                 Spacer()
             }
         }
@@ -241,8 +241,8 @@ struct PvPGameView: View {
                 HStack(spacing: 8) {
                     ProgressView().controlSize(.small)
                     Text(session.opponentCurrentAnswer != nil
-                         ? "Auflösung kommt…"
-                         : "Warte auf \(session.opponentName)…")
+                         ? String(localized: "Auflösung kommt…")
+                         : String(localized: "Warte auf \(session.opponentName)…"))
                 }
                 .foregroundStyle(.secondary)
             } else if session.opponentCurrentAnswer != nil {
@@ -258,10 +258,10 @@ struct PvPGameView: View {
 
     private func revealText(me: Bool, them: Bool) -> String {
         switch (me, them) {
-        case (true, true):   "Beide richtig! +1 für jeden"
-        case (true, false):  "Punkt für dich! 🎯"
-        case (false, true):  "Punkt für \(session.opponentName)"
-        case (false, false): "Diesmal keiner richtig"
+        case (true, true):   String(localized: "Beide richtig! +1 für jeden")
+        case (true, false):  String(localized: "Punkt für dich! 🎯")
+        case (false, true):  String(localized: "Punkt für \(session.opponentName)")
+        case (false, false): String(localized: "Diesmal keiner richtig")
         }
     }
 

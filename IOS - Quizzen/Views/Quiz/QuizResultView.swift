@@ -34,8 +34,8 @@ struct QuizResultView: View {
                     .padding(.horizontal)
 
                 HStack(spacing: 12) {
-                    StatBox(title: "Richtig", value: score, icon: "checkmark", color: .green)
-                    StatBox(title: "Fehler", value: maxQuestions - score, icon: "xmark", color: .red)
+                    StatBox(title: String(localized: "Richtig"), value: score, icon: "checkmark", color: .green)
+                    StatBox(title: String(localized: "Fehler"), value: maxQuestions - score, icon: "xmark", color: .red)
                     StatBox(title: "XP", value: viewModel.earnedXP, icon: "star.fill", color: .yellow)
                 }
                 .padding(.horizontal)
@@ -171,11 +171,11 @@ struct QuizResultView: View {
 
     func getFeedback(for score: Double) -> String {
         switch score {
-        case 100: return "Perfekt! Volle Punktzahl! 🏆"
-        case 80..<100: return "Sehr gut! Starke Leistung."
-        case 50..<80: return "Solide! Da geht aber noch mehr."
-        case 25..<50: return "Ausbaufähig. Lass uns weiterüben!"
-        default: return "Kopf hoch! Versuch es noch einmal."
+        case 100: return String(localized: "Perfekt! Volle Punktzahl! 🏆")
+        case 80..<100: return String(localized: "Sehr gut! Starke Leistung.")
+        case 50..<80: return String(localized: "Solide! Da geht aber noch mehr.")
+        case 25..<50: return String(localized: "Ausbaufähig. Lass uns weiterüben!")
+        default: return String(localized: "Kopf hoch! Versuch es noch einmal.")
         }
     }
 }

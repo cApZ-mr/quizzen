@@ -183,10 +183,10 @@ struct QuizPlayView: View {
     private var primaryTitle: String {
         if viewModel.isConfirmed {
             let last = viewModel.currentIndex + 1 >= viewModel.maxQuestions
-            let next = last ? "Ergebnis anzeigen" : "Nächste Frage"
-            return viewModel.didTimeOut ? "Zeit abgelaufen – \(next)" : next
+            let next = last ? String(localized: "Ergebnis anzeigen") : String(localized: "Nächste Frage")
+            return viewModel.didTimeOut ? String(localized: "Zeit abgelaufen – \(next)") : next
         }
-        return viewModel.selectedOptionId == nil ? "Antwort wählen" : "Antwort bestätigen"
+        return viewModel.selectedOptionId == nil ? String(localized: "Antwort wählen") : String(localized: "Antwort bestätigen")
     }
 
     private func primaryAction() {

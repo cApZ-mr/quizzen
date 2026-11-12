@@ -45,26 +45,26 @@ struct ResetStatsView: View {
 
                     ConsequenceRow(
                         icon: "flame.fill",
-                        title: "Tägliche Streak geht verloren",
-                        description: "Deine Tägliche Aktivitätsstreak geht verloren und wird auf 0 gesetzt."
+                        title: String(localized: "Tägliche Streak geht verloren"),
+                        description: String(localized: "Deine Tägliche Aktivitätsstreak geht verloren und wird auf 0 gesetzt.")
                     )
 
                     ConsequenceRow(
                         icon: "lock.shield.fill",
-                        title: "Erspielte Abzeichen",
-                        description: "Alle deine erspielten Abzeichen gehen verloren und werden auf 0 zurückgesetzt."
+                        title: String(localized: "Erspielte Abzeichen"),
+                        description: String(localized: "Alle deine erspielten Abzeichen gehen verloren und werden auf 0 zurückgesetzt.")
                     )
 
                     ConsequenceRow(
                         icon: "flag.checkered",
-                        title: "Quiz Statistiken",
-                        description: "Deine Statistiken für die Quizze werden allesamt auf 0 zurückgesetzt."
+                        title: String(localized: "Quiz Statistiken"),
+                        description: String(localized: "Deine Statistiken für die Quizze werden allesamt auf 0 zurückgesetzt.")
                     )
 
                     ConsequenceRow(
                         icon: "trash",
-                        title: "Endgültige Löschung",
-                        description: "Alle Daten werden unwiederruflich entfernt und können nicht wiederhergestellt werden."
+                        title: String(localized: "Endgültige Löschung"),
+                        description: String(localized: "Alle Daten werden unwiederruflich entfernt und können nicht wiederhergestellt werden.")
                     )
                 }
                 .padding()
@@ -75,9 +75,9 @@ struct ResetStatsView: View {
                 
                 
                 VStack(alignment: .leading) {
-                    LegalLinkButton(title: "Unsere Datenschutzrichtlinien", url: AppLinks.privacyPolicy)
+                    LegalLinkButton(title: String(localized: "Unsere Datenschutzrichtlinien"), url: AppLinks.privacyPolicy)
                     
-                    LegalLinkButton(title: "Unsere AGB", url: AppLinks.terms)
+                    LegalLinkButton(title: String(localized: "Unsere AGB"), url: AppLinks.terms)
                 }
                 .padding(.horizontal)
                 

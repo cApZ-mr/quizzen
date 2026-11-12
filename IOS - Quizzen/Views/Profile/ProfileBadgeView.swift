@@ -32,7 +32,7 @@ struct BadgeProgress {
         self.level = reachedLevel
         self.isMaxLevel = reachedLevel >= thresholds.count
         
-        self.goalText = "\(reachedLevel) von 10"
+        self.goalText = String(localized: "\(reachedLevel) von 10")
     }
 }
 

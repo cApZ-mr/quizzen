@@ -1,997 +1,5751 @@
 {
-  "sourceLanguage" : "de",
-  "strings" : {
-    "" : {
-
+  "sourceLanguage": "de",
+  "strings": {
+    "": {
+      "shouldTranslate": false
     },
-    " " : {
-
+    " ": {
+      "shouldTranslate": false
     },
-    "–" : {
-
-    },
-    ":" : {
-
-    },
-    "·" : {
-
-    },
-    "· %lld %% richtig" : {
-
-    },
-    "#%lld" : {
-
-    },
-    "%@ · %@ starten" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ · %2$@ starten"
+    " und ": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " and "
           }
         }
       }
     },
-    "%@ · %lld Fragen" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ · %2$lld Fragen"
+    "#%lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "#%lld"
           }
         }
       }
     },
-    "%@ auch blockieren" : {
-
-    },
-    "%@ blockieren?" : {
-
-    },
-    "%@ fordert dich heraus" : {
-
-    },
-    "%@ gewinnt dann automatisch. Ein Duell lässt sich nicht pausieren." : {
-
-    },
-    "%@ hat das gewählt" : {
-
-    },
-    "%@ hat schon geantwortet" : {
-
-    },
-    "%@ melden" : {
-
-    },
-    "%@ öffnen" : {
-
-    },
-    "%@ XP" : {
-
-    },
-    "%@, %@%@" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@, %2$@%3$@"
+    "%@ (Du)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (You)"
           }
         }
       }
     },
-    "%@%@" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@%2$@"
+    "%@ (Level %lld) im Abzeichen „%@“": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (level %lld) in the “%@” badge"
           }
         }
       }
     },
-    "%lld" : {
-
-    },
-    "%lld / %lld" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld / %2$lld"
+    "%@ Fragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ questions"
           }
         }
       }
     },
-    "%lld %@" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld %2$@"
+    "%@ Streak – heute gesichert ✓": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streak: %@ – secured today ✓"
           }
         }
       }
     },
-    "%lld %@ · %lld Stufen" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld %2$@ · %3$lld Stufen"
+    "%@ XP": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ XP"
           }
         }
       }
     },
-    "%lld %@ verfügbar" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld %2$@ verfügbar"
+    "%@ auch blockieren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also block %@"
           }
         }
       }
     },
-    "%lld %%" : {
-
-    },
-    "%lld %% gesehen" : {
-
-    },
-    "%lld %% richtig beantwortet" : {
-
-    },
-    "%lld offene Anfragen" : {
-
-    },
-    "%lld passende Fragen" : {
-
-    },
-    "%lld Quizze" : {
-
-    },
-    "%lld s" : {
-
-    },
-    "%lld von %lld %@ gesehen" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld von %2$lld %3$@ gesehen"
+    "%@ blockieren?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Block %@?"
           }
         }
       }
     },
-    "%lld von %lld Fragen gesehen" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld von %2$lld Fragen gesehen"
+    "%@ fordert dich heraus": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is challenging you"
           }
         }
       }
     },
-    "%lld von %lld freigeschaltet" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld von %2$lld freigeschaltet"
+    "%@ gesehen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ seen"
           }
         }
       }
     },
-    "%lld von %lld richtig" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld von %2$lld richtig"
+    "%@ gewinnt dann automatisch. Ein Duell lässt sich nicht pausieren.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will win automatically. A duel can’t be paused."
           }
         }
       }
     },
-    "%lld." : {
-
-    },
-    "%lld/%lld" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld/%2$lld"
+    "%@ hat aufgegeben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gave up"
           }
         }
       }
     },
-    "%lld× gespielt" : {
-
-    },
-    "+%lld XP" : {
-
-    },
-    "1 gegen 1" : {
-
-    },
-    "1 passende Frage" : {
-
-    },
-    "1 Quiz" : {
-
-    },
-    "5 s" : {
-
-    },
-    "10" : {
-
-    },
-    "10 Fragen aus allen Quizzen" : {
-
-    },
-    "10 s" : {
-
-    },
-    "20" : {
-
-    },
-    "20 s" : {
-
-    },
-    "30" : {
-
-    },
-    "Ab Level %lld" : {
-
-    },
-    "Abbrechen" : {
-
-    },
-    "Ablehnen" : {
-
-    },
-    "Abmelden" : {
-
-    },
-    "Absenden" : {
-
-    },
-    "Abzeichen" : {
-
-    },
-    "Abzeichen von %@" : {
-
-    },
-    "Account erstellen" : {
-
-    },
-    "Accountdaten" : {
-
-    },
-    "Alle" : {
-
-    },
-    "Alle ansehen" : {
-
-    },
-    "Alle deine Statistiken werden unwiederruflich zurückgesetzt und können nicht wiederhergesdtellt werden." : {
-
-    },
-    "Als Freund hinzufügen" : {
-
-    },
-    "Anfrage gesendet" : {
-
-    },
-    "Anfrage zurückziehen" : {
-
-    },
-    "Annehmen" : {
-
-    },
-    "Antworten" : {
-
-    },
-    "Aufgeben" : {
-
-    },
-    "Aufheben" : {
-
-    },
-    "Auflösung kommt…" : {
-
-    },
-    "Aus" : {
-
-    },
-    "Ausloggen" : {
-
-    },
-    "Befreundet" : {
-
-    },
-    "Befreundet – Optionen" : {
-
-    },
-    "Beitreten" : {
-
-    },
-    "Beliebige andere Antworten." : {
-
-    },
-    "Benachrichtigungen sind in den iOS-Einstellungen für Quizzen ausgeschaltet." : {
-
-    },
-    "Benutzername" : {
-
-    },
-    "Bereich" : {
-
-    },
-    "Bereich erkundet" : {
-
-    },
-    "Bereit für dein nächstes Quiz?" : {
-
-    },
-    "Bericht senden" : {
-
-    },
-    "Beschreibe dein Anliegen oder melde einen Fehler. Screenshots helfen uns, das Problem schneller zu verstehen." : {
-
-    },
-    "Beschreibung" : {
-
-    },
-    "Bestenliste" : {
-
-    },
-    "Bewerten" : {
-
-    },
-    "Bild entfernen" : {
-
-    },
-    "Bilder" : {
-
-    },
-    "Bilder werden geladen…" : {
-
-    },
-    "Bis Level %lld" : {
-
-    },
-    "Bist du absolut sicher?" : {
-
-    },
-    "Bitte schreib uns direkt an %@." : {
-
-    },
-    "Blockieren" : {
-
-    },
-    "Blockieren kannst du über „…“ oben rechts in einem Profil." : {
-
-    },
-    "Blockiert – aufheben" : {
-
-    },
-    "Blockierte Nutzer" : {
-
-    },
-    "Blockierte Nutzer sehen dich nicht in der Suche, können dir keine Anfragen schicken und dich nicht zum Duell einladen." : {
-
-    },
-    "Blockierung aufheben" : {
-
-    },
-    "Code %@" : {
-
-    },
-    "Code eingeben" : {
-
-    },
-    "Code teilen" : {
-
-    },
-    "Code, %lld von 6 Ziffern" : {
-
-    },
-    "Cover: %@" : {
-
-    },
-    "Dabei seit %@" : {
-
-    },
-    "Danach wählst du die Schwierigkeit oder eigene Einstellungen." : {
-
-    },
-    "Das bist du" : {
-
-    },
-    "Das hat nicht geklappt" : {
-
-    },
-    "Das passiert, wenn du dein Konto löschst:" : {
-
-    },
-    "Das passiert, wenn du deine Statistiken zurücksetzt:" : {
-
-    },
-    "Datenschutz" : {
-
-    },
-    "Dein Account wird sicher gespeichert und synchronisiert." : {
-
-    },
-    "Dein Einladungscode" : {
-
-    },
-    "Dein Fortschritt" : {
-
-    },
-    "Dein Konto sowie alle Statistiken, Fortschritte und persönlichen Einstellungen werden unwiderruflich gelöscht." : {
-
-    },
-    "Dein Platz" : {
-
-    },
-    "Deine Fehler (%lld)" : {
-
-    },
-    "Deine Nutzerdaten" : {
-
-    },
-    "Details" : {
-
-    },
-    "Diese Aktion kann nicht rückgängig gemacht werden." : {
-
-    },
-    "Dieser Link wird gerade eingerichtet. Bei Fragen erreichst du uns über „Feedback“ in den Einstellungen." : {
-
-    },
-    "Du" : {
-
-    },
-    "Du hast dieses Quiz noch nicht gespielt. Leg los!" : {
-
-    },
-    "Duell" : {
-
-    },
-    "Duell konnte nicht erstellt werden" : {
-
-    },
-    "Duell wird erstellt…" : {
-
-    },
-    "Duell wirklich aufgeben?" : {
-
-    },
-    "E-Mail" : {
-
-    },
-    "Eine Bewertung oder eine Einladung an Freunde hilft uns am meisten." : {
-
-    },
-    "Eine neuere Version ist im App Store verfügbar." : {
-
-    },
-    "Eingabe löschen" : {
-
-    },
-    "Einladen" : {
-
-    },
-    "Einladung an %@ gesendet – sie erscheint dort im Duell-Tab. Alternativ den Code teilen:" : {
-
-    },
-    "Einladungen" : {
-
-    },
-    "Einloggen" : {
-
-    },
-    "Einstellungen" : {
-
-    },
-    "Endgültig löschen" : {
-
-    },
-    "Entdecken" : {
-
-    },
-    "Ergebnisse" : {
-
-    },
-    "Erinnert dich abends, wenn du heute noch nicht gespielt hast." : {
-
-    },
-    "Erledigt" : {
-
-    },
-    "Erneut versuchen" : {
-
-    },
-    "Eure Freundschaft und offene Anfragen werden beendet. Ihr seht euch nicht mehr in der Suche und könnt euch nicht mehr zum Duell einladen. Du kannst das in den Einstellungen wieder aufheben." : {
-
-    },
-    "Falsche Antworten" : {
-
-    },
-    "Feedback" : {
-
-    },
-    "Fehler" : {
-
-    },
-    "Fertig" : {
-
-    },
-    "Fordere deine Freunde heraus" : {
-
-    },
-    "Frage %lld von %lld" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Frage %1$lld von %2$lld"
+    "%@ hat das Duell verlassen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ left the duel"
           }
         }
       }
     },
-    "Frage %lld von %lld, noch %lld Sekunden" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Frage %1$lld von %2$lld, noch %3$lld Sekunden"
+    "%@ hat das gewählt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ picked this"
           }
         }
       }
     },
-    "Frage melden" : {
-
-    },
-    "Frage Melden" : {
-
-    },
-    "Frage wird geladen…" : {
-
-    },
-    "Frage:  %@" : {
-
-    },
-    "Fragen" : {
-
-    },
-    "Freunde" : {
-
-    },
-    "Freunde durchsuchen" : {
-
-    },
-    "Freunde seit %@" : {
-
-    },
-    "Freundschaft beenden" : {
-
-    },
-    "Freundschaft mit %@ beenden?" : {
-
-    },
-    "Füge Freunde hinzu, um euch zu vergleichen." : {
-
-    },
-    "Für alle gleich · 20 s pro Frage · 1 Versuch" : {
-
-    },
-    "Gefällt dir Quizzen?" : {
-
-    },
-    "Gemeldet" : {
-
-    },
-    "Gesamt-Level %lld / %lld" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Gesamt-Level %1$lld / %2$lld"
+    "%@ hat schon geantwortet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ has already answered"
           }
         }
       }
     },
-    "Gesamtübersicht" : {
-
-    },
-    "Geschafft: %lld/%lld" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Geschafft: %1$lld/%2$lld"
+    "%@ melden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Report %@"
           }
         }
       }
     },
-    "Gesendet" : {
-
-    },
-    "Gib den 6-stelligen Code ein, den dir dein Freund geschickt hat." : {
-
-    },
-    "Gleiche Fragen, gleiche Zeit – wer weiß mehr?" : {
-
-    },
-    "Grund" : {
-
-    },
-    "Hallo 👋" : {
-
-    },
-    "Hallo, %@ 👋" : {
-
-    },
-    "Häufige fragen" : {
-
-    },
-    "Hilf uns, Quizzen zu verbessern" : {
-
-    },
-    "Hinzufügen" : {
-
-    },
-    "Home" : {
-
-    },
-    "Im Tab „Freunde“ kannst du andere suchen und Anfragen senden." : {
-
-    },
-    "In deinem Land hat hier noch niemand gepunktet. Sei die erste Person!" : {
-
-    },
-    "Inhalt melden" : {
-
-    },
-    "Jetzt aktualisieren" : {
-
-    },
-    "Kein Freund heißt „%@“." : {
-
-    },
-    "Keine %@ passen zu diesen Einstellungen." : {
-
-    },
-    "Keine ausgehenden Anfragen" : {
-
-    },
-    "Keine eingehenden Anfragen" : {
-
-    },
-    "Keine Mail-App eingerichtet" : {
-
-    },
-    "Keine passenden Fragen" : {
-
-    },
-    "Keine Person heißt so." : {
-
-    },
-    "Keine Treffer" : {
-
-    },
-    "Keine Treffer für „%@“" : {
-
-    },
-    "Konto endgültig löschen" : {
-
-    },
-    "Konto löschen" : {
-
-    },
-    "Konto wirklich löschen?" : {
-
-    },
-    "Kopieren" : {
-
-    },
-    "Land suchen" : {
-
-    },
-    "Land wählen" : {
-
-    },
-    "Lass uns dein Profil in wenigen\nSchritten einrichten." : {
-
-    },
-    "Lege in deinem Profil ein Land fest." : {
-
-    },
-    "Leicht zu verwechselnde Antworten – deutlich schwerer." : {
-
-    },
-    "Level %lld" : {
-
-    },
-    "Level %lld · %@" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Level %1$lld · %2$@"
+    "%@ starten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start %@"
           }
         }
       }
     },
-    "Level %lld von %lld" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Level %1$lld von %2$lld"
+    "%@ von %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ of %@"
           }
         }
       }
     },
-    "Löschen" : {
-
-    },
-    "Maximum erreicht" : {
-
-    },
-    "Mehr von Quizzen" : {
-
-    },
-    "Melde dich mit deinem Account an." : {
-
-    },
-    "Meldungen sind anonym. Wir prüfen sie und entfernen Inhalte, die gegen unsere Regeln verstoßen." : {
-
-    },
-    "Meldungsgrund" : {
-
-    },
-    "Morgen gibt's neue Fragen" : {
-
-    },
-    "Neues Duell" : {
-
-    },
-    "Nicht verfügbar" : {
-
-    },
-    "Niemand blockiert" : {
-
-    },
-    "Noch %@ XP bis Level %lld" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Noch %1$@ XP bis Level %2$lld"
+    "%@ wählt gerade ein Quiz aus…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is choosing a quiz…"
           }
         }
       }
     },
-    "Noch %@ XP bis Level %lld · %lld XP pro richtiger Antwort, %lld XP pro Runde" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Noch %1$@ XP bis Level %2$lld · %3$lld XP pro richtiger Antwort, %4$lld XP pro Runde"
+    "%@ · %@ starten": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · %2$@ starten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start %@ · %@"
           }
         }
       }
     },
-    "Noch %lld Sekunden" : {
-
-    },
-    "Noch keine Abzeichen freigeschaltet." : {
-
-    },
-    "Noch keine Einträge" : {
-
-    },
-    "Noch keine Freunde" : {
-
-    },
-    "Noch keinen Account? Registrieren" : {
-
-    },
-    "Noch nicht gespielt" : {
-
-    },
-    "Noch nicht platziert" : {
-
-    },
-    "Noch nicht verfügbar" : {
-
-    },
-    "Nochmal" : {
-
-    },
-    "Nur %@, die ich noch nicht kann" : {
-
-    },
-    "Nutze die Suche, um andere zu finden" : {
-
-    },
-    "Nutzer melden" : {
-
-    },
-    "Nutzungsbedingungen" : {
-
-    },
-    "offline" : {
-
-    },
-    "OK" : {
-
-    },
-    "online" : {
-
-    },
-    "Optional – du kannst es jederzeit später ändern." : {
-
-    },
-    "Optional – wähle das Land, welches du repräsentieren möchtest." : {
-
-    },
-    "Passwort" : {
-
-    },
-    "Personen (%lld)" : {
-
-    },
-    "Platz %lld, %@, %@" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Platz %1$lld, %2$@, %3$@"
+    "%@ · %lld Fragen": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · %2$lld Fragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %lld questions"
           }
         }
       }
     },
-    "Profil gestalten" : {
-
+    "%@ öffnen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open %@"
+          }
+        }
+      }
     },
-    "Profil öffnen" : {
-
+    "%@%@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@%2$@"
+          }
+        }
+      },
+      "shouldTranslate": false
     },
-    "Profil Vorschau" : {
-
+    "%@, %@%@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@%3$@"
+          }
+        }
+      },
+      "shouldTranslate": false
     },
-    "Profilbild ändern" : {
-
+    "%lld": {
+      "shouldTranslate": false
     },
-    "Punkte" : {
-
+    "%lld %%": {
+      "shouldTranslate": false
     },
-    "Quiz, Frage oder Person" : {
-
+    "%lld %% gesehen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%% seen"
+          }
+        }
+      }
     },
-    "Quiz: %@" : {
-
+    "%lld %% richtig beantwortet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%% answered correctly"
+          }
+        }
+      }
     },
-    "Quizze (%lld)" : {
-
+    "%lld %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld %2$@"
+          }
+        }
+      },
+      "shouldTranslate": false
     },
-    "Quizzen" : {
-
+    "%lld %@ verfügbar": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld %2$@ verfügbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %@ available"
+          }
+        }
+      }
     },
-    "Quizzen %@" : {
-
+    "%lld %@ · %lld Stufen": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld %2$@ · %3$lld Stufen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %@ · %lld levels"
+          }
+        }
+      }
     },
-    "Rechtliches" : {
-
+    "%lld / %lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld / %2$lld"
+          }
+        }
+      },
+      "shouldTranslate": false
     },
-    "Repräsentiertes Land" : {
-
+    "%lld Antworten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld answers"
+          }
+        }
+      }
     },
-    "Schließen" : {
-
+    "%lld Fragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld questions"
+          }
+        }
+      }
     },
-    "Schon einen Account? Einloggen" : {
-
+    "%lld Freunde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld friends"
+          }
+        }
+      }
     },
-    "Schwierigkeit" : {
-
+    "%lld Quizze": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld quizzes"
+          }
+        }
+      }
     },
-    "Senden" : {
-
+    "%lld Tage": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days"
+          }
+        }
+      }
     },
-    "So funktioniert's" : {
-
+    "%lld XP pro richtiger Antwort, %lld XP pro Runde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld XP per correct answer, %lld XP per round"
+          }
+        }
+      }
     },
-    "Später" : {
-
+    "%lld offene Anfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld pending requests"
+          }
+        }
+      }
     },
-    "Speichern" : {
-
+    "%lld passende Fragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld matching questions"
+          }
+        }
+      }
     },
-    "Spiel ein Quiz und sichere dir den ersten Platz!" : {
-
+    "%lld pro Runde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld per round"
+          }
+        }
+      }
     },
-    "Sprache" : {
-
+    "%lld s": {},
+    "%lld s pro Frage": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld s per question"
+          }
+        }
+      }
     },
-    "Statistiken" : {
-
+    "%lld von %lld %@ gesehen": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld von %2$lld %3$@ gesehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld %@ seen"
+          }
+        }
+      }
     },
-    "Statistiken zurücksetzten" : {
-
+    "%lld von %lld Fragen gesehen": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld von %2$lld Fragen gesehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld questions seen"
+          }
+        }
+      }
     },
-    "Tages-Bestenliste" : {
-
+    "%lld von %lld freigeschaltet": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld von %2$lld freigeschaltet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld unlocked"
+          }
+        }
+      }
     },
-    "TAGESCHALLENGE" : {
-
+    "%lld von %lld richtig": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld von %2$lld richtig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld correct"
+          }
+        }
+      }
     },
-    "Tageschallenge starten" : {
-
+    "%lld von 10": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of 10"
+          }
+        }
+      }
     },
-    "Trete an, sammle Punkte und\nvergleiche dich mit der Welt." : {
-
+    "%lld.": {
+      "shouldTranslate": false
     },
-    "Update verfügbar" : {
-
+    "%lld/%lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld/%2$lld"
+          }
+        }
+      },
+      "shouldTranslate": false
     },
-    "Vielen Dank, dass du uns dabei hilfst, Quizzen sicher und korrekt zu halten." : {
-
+    "%lld× gespielt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Played %lld×"
+          }
+        }
+      }
     },
-    "Vorschau deines öffentlichen Profils" : {
-
+    "+%lld XP": {},
+    ". Beleidigende oder anstößige Inhalte werden nicht toleriert und führen zur Sperrung.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Offensive or abusive content is not tolerated and leads to a ban."
+          }
+        }
+      }
     },
-    "VS" : {
-
+    "0 Min.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 min"
+          }
+        }
+      }
     },
-    "Wähle ein Profilbild" : {
-
+    "1 Freund": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 friend"
+          }
+        }
+      }
     },
-    "Wähle ein Quiz" : {
-
+    "1 Quiz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 quiz"
+          }
+        }
+      }
     },
-    "Wähle zuerst ein Quiz" : {
-
+    "1 Tag": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 day"
+          }
+        }
+      }
     },
-    "Warte auf %@…" : {
-
+    "1 gegen 1": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 vs 1"
+          }
+        }
+      }
     },
-    "Warum meldest du %@?" : {
-
+    "1 passende Frage": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 matching question"
+          }
+        }
+      }
     },
-    "Was ist passiert? (optional)" : {
-
+    "10": {
+      "shouldTranslate": false
     },
-    "Was möchtest du uns mitteilen?" : {
-
+    "10 Fragen aus allen Quizzen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 questions from all quizzes"
+          }
+        }
+      }
     },
-    "Weitere Optionen" : {
-
+    "10 Fragen aus allen Quizzen – für alle gleich.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 questions from all quizzes – the same for everyone."
+          }
+        }
+      }
     },
-    "Wenn du dich ausloggst, dann musst du dich wieder einloggen oder dir einen neuen Account erstellen um die App nutzen zu können." : {
-
+    "10 s": {},
+    "20": {
+      "shouldTranslate": false
     },
-    "Willkommen" : {
-
+    "20 s": {},
+    "30": {
+      "shouldTranslate": false
     },
-    "Willkommen zurück" : {
-
+    "3–20 Zeichen. So sehen dich andere in Bestenlisten und Duellen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3–20 characters. This is how others see you in leaderboards and duels."
+          }
+        }
+      }
     },
-    "Zeit" : {
-
+    "5 s": {},
+    ":": {
+      "shouldTranslate": false
     },
-    "Zum Duell fordern" : {
-
+    "Ab Level %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From level %lld"
+          }
+        }
+      }
     },
-    "Zurück" : {
-
+    "Abbrechen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "Ablehnen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decline"
+          }
+        }
+      }
+    },
+    "Abmelden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out"
+          }
+        }
+      }
+    },
+    "Abmelden fehlgeschlagen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign-out failed"
+          }
+        }
+      }
+    },
+    "Absenden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Submit"
+          }
+        }
+      }
+    },
+    "Abzeichen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badges"
+          }
+        }
+      }
+    },
+    "Abzeichen von %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@’s badges"
+          }
+        }
+      }
+    },
+    "Account": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        }
+      }
+    },
+    "Account bearbeiten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit account"
+          }
+        }
+      }
+    },
+    "Account erstellen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create account"
+          }
+        }
+      }
+    },
+    "Accountdaten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account details"
+          }
+        }
+      }
+    },
+    "Accountdaten werden verarbeitet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processing account details"
+          }
+        }
+      }
+    },
+    "Afrika": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Africa"
+          }
+        }
+      }
+    },
+    "Aktion konnte nicht ausgeführt werden. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That didn’t work. Please try again."
+          }
+        }
+      }
+    },
+    "Aktuell ist die App komplett kosten- und werbefrei. Quizzen behält sich aber vor, dies zukünftig aus Gründen der Kostendeckung zu ändern.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The app is currently completely free and ad-free. Quizzen reserves the right to change this in the future to cover costs."
+          }
+        }
+      }
+    },
+    "Aktuelle Streak": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current streak"
+          }
+        }
+      }
+    },
+    "Alle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        }
+      }
+    },
+    "Alle Daten werden unwiederruflich entfernt und können nicht wiederhergestellt werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All data is permanently removed and cannot be restored."
+          }
+        }
+      }
+    },
+    "Alle Quizze": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All quizzes"
+          }
+        }
+      }
+    },
+    "Alle Statistiken gehen verloren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All statistics will be lost"
+          }
+        }
+      }
+    },
+    "Alle ansehen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See all"
+          }
+        }
+      }
+    },
+    "Alle deine Statistiken werden unwiederruflich zurückgesetzt und können nicht wiederhergesdtellt werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All your statistics will be permanently reset and cannot be restored."
+          }
+        }
+      }
+    },
+    "Alle deine erspielten Abzeichen gehen verloren und werden auf 0 zurückgesetzt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All badges you’ve earned will be lost and reset to 0."
+          }
+        }
+      }
+    },
+    "Alles gemischt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything mixed"
+          }
+        }
+      }
+    },
+    "Als Freund hinzufügen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add friend"
+          }
+        }
+      }
+    },
+    "Amerika": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Americas"
+          }
+        }
+      }
+    },
+    "Anfrage gesendet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request sent"
+          }
+        }
+      }
+    },
+    "Anfrage konnte nicht angenommen werden. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t accept the request. Please try again."
+          }
+        }
+      }
+    },
+    "Anfrage zurückziehen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Withdraw request"
+          }
+        }
+      }
+    },
+    "Angefragt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requested"
+          }
+        }
+      }
+    },
+    "Annehmen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accept"
+          }
+        }
+      }
+    },
+    "Anstößiger Benutzername": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offensive username"
+          }
+        }
+      }
+    },
+    "Anstößiges Profilbild": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offensive profile picture"
+          }
+        }
+      }
+    },
+    "Antwort bestätigen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm answer"
+          }
+        }
+      }
+    },
+    "Antwort konnte nicht gesendet werden. Prüfe deine Verbindung.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t send your answer. Check your connection."
+          }
+        }
+      }
+    },
+    "Antwort wählen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose an answer"
+          }
+        }
+      }
+    },
+    "Antwort wählen, dann bestätigen – erst danach siehst du die Lösung.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose an answer, then confirm – only then will you see the solution."
+          }
+        }
+      }
+    },
+    "Antworten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answers"
+          }
+        }
+      }
+    },
+    "Antwortmöglichkeiten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answer options"
+          }
+        }
+      }
+    },
+    "Antwortmöglichkeiten fehlerhaft": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answer options incorrect"
+          }
+        }
+      }
+    },
+    "Anzeigen ›": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show ›"
+          }
+        }
+      }
+    },
+    "App wird vorbereitet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing the app"
+          }
+        }
+      }
+    },
+    "Asien": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asia"
+          }
+        }
+      }
+    },
+    "Aufgeben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Give up"
+          }
+        }
+      }
+    },
+    "Aufheben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unblock"
+          }
+        }
+      }
+    },
+    "Auflösung kommt…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revealing the answer…"
+          }
+        }
+      }
+    },
+    "Aus": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        }
+      }
+    },
+    "Aus Fehlern lernen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learning from mistakes"
+          }
+        }
+      }
+    },
+    "Ausbaufähig. Lass uns weiterüben!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Room for improvement. Let’s keep practicing!"
+          }
+        }
+      }
+    },
+    "Ausgehend": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Outgoing"
+          }
+        }
+      }
+    },
+    "Ausloggen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out"
+          }
+        }
+      }
+    },
+    "Auth": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auth"
+          }
+        }
+      }
+    },
+    "Banner": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Banner"
+          }
+        }
+      }
+    },
+    "Befreundet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Friends"
+          }
+        }
+      }
+    },
+    "Befreundet – Optionen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Friends – options"
+          }
+        }
+      }
+    },
+    "Beide richtig! +1 für jeden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both correct! +1 each"
+          }
+        }
+      }
+    },
+    "Beitreten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Join"
+          }
+        }
+      }
+    },
+    "Beliebige andere Antworten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Any other answers."
+          }
+        }
+      }
+    },
+    "Belästigung oder Beleidigung": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harassment or insults"
+          }
+        }
+      }
+    },
+    "Benachrichtigungen sind in den iOS-Einstellungen für Quizzen ausgeschaltet.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications for Quizzen are turned off in iOS Settings."
+          }
+        }
+      }
+    },
+    "Benutzername": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Username"
+          }
+        }
+      }
+    },
+    "Benutzername darf höchstens 20 Zeichen haben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Username can have at most 20 characters"
+          }
+        }
+      }
+    },
+    "Benutzername gespeichert": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Username saved"
+          }
+        }
+      }
+    },
+    "Benutzername konnte nicht gespeichert werden. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t save the username. Please try again."
+          }
+        }
+      }
+    },
+    "Benutzername muss mind. 3 Zeichen haben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Username must have at least 3 characters"
+          }
+        }
+      }
+    },
+    "Bereich erkundet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "explored"
+          }
+        }
+      }
+    },
+    "Bereit für dein nächstes Quiz?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready for your next quiz?"
+          }
+        }
+      }
+    },
+    "Bericht senden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send report"
+          }
+        }
+      }
+    },
+    "Beschreibe dein Anliegen oder melde einen Fehler. Screenshots helfen uns, das Problem schneller zu verstehen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Describe your request or report a bug. Screenshots help us understand the problem faster."
+          }
+        }
+      }
+    },
+    "Beschreibung": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Description"
+          }
+        }
+      }
+    },
+    "Beste Streak": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best streak"
+          }
+        }
+      }
+    },
+    "Bestenliste": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leaderboard"
+          }
+        }
+      }
+    },
+    "Bestenliste konnte nicht geladen werden. Prüfe deine Internetverbindung.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t load the leaderboard. Check your internet connection."
+          }
+        }
+      }
+    },
+    "Bestätigungslink an %@ gesendet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirmation link sent to %@"
+          }
+        }
+      }
+    },
+    "Bewerten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rate"
+          }
+        }
+      }
+    },
+    "Bild entfernen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove image"
+          }
+        }
+      }
+    },
+    "Bilder": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Images"
+          }
+        }
+      }
+    },
+    "Bilder werden geladen…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading images…"
+          }
+        }
+      }
+    },
+    "Bis Level %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Until level %lld"
+          }
+        }
+      }
+    },
+    "Bist du absolut sicher?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Are you absolutely sure?"
+          }
+        }
+      }
+    },
+    "Bitte gib dein Passwort ein": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please enter your password"
+          }
+        }
+      }
+    },
+    "Bitte gib eine gültige E-Mail-Adresse ein": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please enter a valid email address"
+          }
+        }
+      }
+    },
+    "Bitte gib eine gültige, neue E-Mail-Adresse ein.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please enter a valid new email address."
+          }
+        }
+      }
+    },
+    "Bitte schreib uns direkt an %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please email us directly at %@."
+          }
+        }
+      }
+    },
+    "Blockieren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Block"
+          }
+        }
+      }
+    },
+    "Blockieren hat nicht geklappt. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocking didn’t work. Please try again."
+          }
+        }
+      }
+    },
+    "Blockieren kannst du über „…“ oben rechts in einem Profil.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can block someone via “…” at the top right of their profile."
+          }
+        }
+      }
+    },
+    "Blockiert – aufheben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked – unblock"
+          }
+        }
+      }
+    },
+    "Blockierte Nutzer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked users"
+          }
+        }
+      }
+    },
+    "Blockierte Nutzer sehen dich nicht in der Suche, können dir keine Anfragen schicken und dich nicht zum Duell einladen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked users can’t find you in search, send you requests or invite you to duels."
+          }
+        }
+      }
+    },
+    "Blockierung aufheben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unblock"
+          }
+        }
+      }
+    },
+    "Bronze": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bronze"
+          }
+        }
+      }
+    },
+    "Code %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code %@"
+          }
+        }
+      }
+    },
+    "Code eingeben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter code"
+          }
+        }
+      }
+    },
+    "Code teilen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share code"
+          }
+        }
+      }
+    },
+    "Code, %lld von 6 Ziffern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code, %lld of 6 digits"
+          }
+        }
+      }
+    },
+    "Cover: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cover: %@"
+          }
+        }
+      }
+    },
+    "Dabei seit %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Member since %@"
+          }
+        }
+      }
+    },
+    "Dabei seit dem %@. Danke für deinen Support ❤️": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Member since %@. Thanks for your support ❤️"
+          }
+        }
+      }
+    },
+    "Danach wählst du die Schwierigkeit oder eigene Einstellungen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Then choose a difficulty or your own settings."
+          }
+        }
+      }
+    },
+    "Danke für deine Meldung. Wir sehen sie uns an.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thanks for your report. We’ll look into it."
+          }
+        }
+      }
+    },
+    "Das Passwort muss mindestens 6 Zeichen haben.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The password must have at least 6 characters."
+          }
+        }
+      }
+    },
+    "Das bist du": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That’s you"
+          }
+        }
+      }
+    },
+    "Das hat nicht geklappt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That didn’t work"
+          }
+        }
+      }
+    },
+    "Das hat nicht geklappt. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That didn’t work. Please try again."
+          }
+        }
+      }
+    },
+    "Das ist dein eigenes Duell – teile den Code mit einem Freund.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is your own duel – share the code with a friend."
+          }
+        }
+      }
+    },
+    "Das passiert, wenn du dein Konto löschst:": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This happens when you delete your account:"
+          }
+        }
+      }
+    },
+    "Das passiert, wenn du deine Statistiken zurücksetzt:": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This happens when you reset your statistics:"
+          }
+        }
+      }
+    },
+    "Datenschutz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy"
+          }
+        }
+      }
+    },
+    "Datenschutzerklärung": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy Policy"
+          }
+        }
+      }
+    },
+    "Dauerspieler": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marathon player"
+          }
+        }
+      }
+    },
+    "Dein Account wird sicher gespeichert und synchronisiert.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your account is stored and synced securely."
+          }
+        }
+      }
+    },
+    "Dein Einladungscode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your invite code"
+          }
+        }
+      }
+    },
+    "Dein Fortschritt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your progress"
+          }
+        }
+      }
+    },
+    "Dein Konto sowie alle Statistiken, Fortschritte und persönlichen Einstellungen werden unwiderruflich gelöscht.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your account and all statistics, progress and personal settings will be permanently deleted."
+          }
+        }
+      }
+    },
+    "Dein Platz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your rank"
+          }
+        }
+      }
+    },
+    "Dein gesamter Fortschritt wird gelöscht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All your progress will be deleted"
+          }
+        }
+      }
+    },
+    "Dein letztes Duell wurde abgebrochen, weil du es verlassen hast.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your last duel was cancelled because you left it."
+          }
+        }
+      }
+    },
+    "Dein offener Warteraum wurde geschlossen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your open lobby was closed."
+          }
+        }
+      }
+    },
+    "Deine %lld-Tage-Streak wartet 🔥": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your %lld-day streak is waiting 🔥"
+          }
+        }
+      }
+    },
+    "Deine Fehler (%lld)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your mistakes (%lld)"
+          }
+        }
+      }
+    },
+    "Deine Nutzerdaten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your user data"
+          }
+        }
+      }
+    },
+    "Deine Statistiken für die Quizze werden allesamt auf 0 zurückgesetzt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All your quiz statistics will be reset to 0."
+          }
+        }
+      }
+    },
+    "Deine Tägliche Aktivitätsstreak geht verloren und wird auf 0 gesetzt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your daily activity streak will be lost and set to 0."
+          }
+        }
+      }
+    },
+    "Deine gesamten Verlaufsdaten und Auswertungen werden unwiderruflich gelöscht.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All your history and analytics will be permanently deleted."
+          }
+        }
+      }
+    },
+    "Der Duell-Server ist noch nicht eingerichtet (Migration 003 fehlt).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The duel server isn’t set up yet (migration 003 missing)."
+          }
+        }
+      }
+    },
+    "Details": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Details"
+          }
+        }
+      }
+    },
+    "Diamant": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diamond"
+          }
+        }
+      }
+    },
+    "Die Abzeichen sind eine visuelle Darstellung deines Fortschritts. Je mehr du quizzt, desto mehr levelst du deine Abzeichen hoch. Deinen aktuellen Stand kannst du jederzeit in deinem Profil einsehen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badges show your progress. The more you quiz, the more your badges level up. You can check your current status in your profile at any time."
+          }
+        }
+      }
+    },
+    "Die App ist für jedes Alter geeignet. Alle fragen sind FSK0 und für jedes Alter geeignet.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The app is suitable for all ages. All questions are suitable for every age group."
+          }
+        }
+      }
+    },
+    "Die Liste konnte nicht geladen werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t load the list."
+          }
+        }
+      }
+    },
+    "Die Meldung konnte nicht gesendet werden. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t send the report. Please try again."
+          }
+        }
+      }
+    },
+    "Die Passwörter stimmen nicht überein.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The passwords don’t match."
+          }
+        }
+      }
+    },
+    "Die Tages-Bestenliste ist noch nicht freigeschaltet (Server-Update 002 ausstehend).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The daily leaderboard isn’t available yet (server update 002 pending)."
+          }
+        }
+      }
+    },
+    "Die XP-Bestenliste ist noch nicht freigeschaltet (Server-Update 011 ausstehend).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The XP leaderboard isn’t available yet (server update 011 pending)."
+          }
+        }
+      }
+    },
+    "Diese Aktion kann nicht rückgängig gemacht werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This action cannot be undone."
+          }
+        }
+      }
+    },
+    "Diesem Duell ist bereits jemand beigetreten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Someone has already joined this duel."
+          }
+        }
+      }
+    },
+    "Dieser Benutzername ist nicht erlaubt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This username isn’t allowed"
+          }
+        }
+      }
+    },
+    "Dieser Benutzername ist nicht erlaubt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This username isn’t allowed."
+          }
+        }
+      }
+    },
+    "Dieser Benutzername ist schon vergeben.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This username is already taken."
+          }
+        }
+      }
+    },
+    "Dieser Link wird gerade eingerichtet. Bei Fragen erreichst du uns über „Feedback“ in den Einstellungen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This link is being set up. If you have questions, reach us via “Feedback” in Settings."
+          }
+        }
+      }
+    },
+    "Diesmal keiner richtig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nobody got it right this time"
+          }
+        }
+      }
+    },
+    "Direkt an der Fragenbox findest du einen blauen Kreis, über den du die Frage melden kannst.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Right at the question box you’ll find a blue circle you can use to report the question."
+          }
+        }
+      }
+    },
+    "Du": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You"
+          }
+        }
+      }
+    },
+    "Du bekommst einen Bestätigungslink an die neue Adresse. Erst danach gilt sie.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You’ll get a confirmation link at the new address. It only takes effect after that."
+          }
+        }
+      }
+    },
+    "Du bestimmst Schwierigkeit, Fragenzahl und Zeit – ihr bekommt beide dieselben Fragen und seht nach jeder, wer richtig lag.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You choose the difficulty, number of questions and time – you both get the same questions and see who was right after each one."
+          }
+        }
+      }
+    },
+    "Du hast aufgegeben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You gave up"
+          }
+        }
+      }
+    },
+    "Du hast dieses Quiz noch nicht gespielt. Leg los!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You haven’t played this quiz yet. Get started!"
+          }
+        }
+      }
+    },
+    "Duell": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duel"
+          }
+        }
+      }
+    },
+    "Duell abgebrochen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duel cancelled"
+          }
+        }
+      }
+    },
+    "Duell erstellen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create duel"
+          }
+        }
+      }
+    },
+    "Duell konnte nicht beendet werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t end the duel."
+          }
+        }
+      }
+    },
+    "Duell konnte nicht erstellt werden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t create the duel"
+          }
+        }
+      }
+    },
+    "Duell konnte nicht erstellt werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t create the duel."
+          }
+        }
+      }
+    },
+    "Duell wird erstellt…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creating duel…"
+          }
+        }
+      }
+    },
+    "Duell wirklich aufgeben?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Really give up the duel?"
+          }
+        }
+      }
+    },
+    "Durchhalter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stayer"
+          }
+        }
+      }
+    },
+    "E-Mail": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email"
+          }
+        }
+      }
+    },
+    "E-Mail an den Support": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email support"
+          }
+        }
+      }
+    },
+    "E-Mail konnte nicht geändert werden: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t change the email: %@"
+          }
+        }
+      }
+    },
+    "E-Mail oder Passwort falsch": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong email or password"
+          }
+        }
+      }
+    },
+    "E-Mail-Adresse": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email address"
+          }
+        }
+      }
+    },
+    "Eigene": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom"
+          }
+        }
+      }
+    },
+    "Ein Freund": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A friend"
+          }
+        }
+      }
+    },
+    "Ein kurzes Quiz reicht, um sie heute zu halten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One quick quiz is enough to keep it today."
+          }
+        }
+      }
+    },
+    "Eine Bewertung oder eine Einladung an Freunde hilft uns am meisten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A rating or inviting friends helps us the most."
+          }
+        }
+      }
+    },
+    "Eingabe löschen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear input"
+          }
+        }
+      }
+    },
+    "Eingehend": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incoming"
+          }
+        }
+      }
+    },
+    "Einladen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invite"
+          }
+        }
+      }
+    },
+    "Einladung an %@ gesendet – sie erscheint dort im Duell-Tab. Alternativ den Code teilen:": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitation sent to %@ – it appears in their Duel tab. Or share the code:"
+          }
+        }
+      }
+    },
+    "Einladungen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitations"
+          }
+        }
+      }
+    },
+    "Einloggen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in"
+          }
+        }
+      }
+    },
+    "Einstellungen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "Empfohlen für dich": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recommended for you"
+          }
+        }
+      }
+    },
+    "Endgültig löschen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete permanently"
+          }
+        }
+      }
+    },
+    "Endgültige Löschung": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permanent deletion"
+          }
+        }
+      }
+    },
+    "Entdecken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discover"
+          }
+        }
+      }
+    },
+    "Erfahrungspunkte (XP)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Experience points (XP)"
+          }
+        }
+      }
+    },
+    "Ergebnis": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Result"
+          }
+        }
+      }
+    },
+    "Ergebnis anzeigen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show result"
+          }
+        }
+      }
+    },
+    "Ergebnisse": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Results"
+          }
+        }
+      }
+    },
+    "Erinnert dich abends, wenn du heute noch nicht gespielt hast.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminds you in the evening if you haven’t played yet today."
+          }
+        }
+      }
+    },
+    "Erledigt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "Erneut versuchen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        }
+      }
+    },
+    "Erreichte Ziele, Level, Erfolge und gesammelte Punkte sind danach nicht mehr abrufbar.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goals, levels, achievements and points collected will no longer be available."
+          }
+        }
+      }
+    },
+    "Erspielte Abzeichen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earned badges"
+          }
+        }
+      }
+    },
+    "Erstelle ein Duell und teile den 6-stelligen Code – oder fordere jemanden direkt aus der Freundesliste heraus.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create a duel and share the 6-digit code – or challenge someone directly from your friends list."
+          }
+        }
+      }
+    },
+    "Etwas funktioniert nicht?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something not working?"
+          }
+        }
+      }
+    },
+    "Etwas ist schiefgelaufen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong"
+          }
+        }
+      }
+    },
+    "Eure Freundschaft und offene Anfragen werden beendet. Ihr seht euch nicht mehr in der Suche und könnt euch nicht mehr zum Duell einladen. Du kannst das in den Einstellungen wieder aufheben.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your friendship and open requests will end. You won’t see each other in search and can’t invite each other to duels. You can undo this in Settings."
+          }
+        }
+      }
+    },
+    "Europa": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Europe"
+          }
+        }
+      }
+    },
+    "Extrem": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extreme"
+          }
+        }
+      }
+    },
+    "Falsche Antworten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong answers"
+          }
+        }
+      }
+    },
+    "Feedback": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback"
+          }
+        }
+      }
+    },
+    "Feedback geben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Give feedback"
+          }
+        }
+      }
+    },
+    "Fehler": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong"
+          }
+        }
+      }
+    },
+    "Fehler melden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Report a bug"
+          }
+        }
+      }
+    },
+    "Fertig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "Folge Quizzen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Follow Quizzen"
+          }
+        }
+      }
+    },
+    "Fordere deine Freunde heraus": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenge your friends"
+          }
+        }
+      }
+    },
+    "Frage %lld von %lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Frage %1$lld von %2$lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question %lld of %lld"
+          }
+        }
+      }
+    },
+    "Frage %lld von %lld, noch %lld Sekunden": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Frage %1$lld von %2$lld, noch %3$lld Sekunden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question %lld of %lld, %lld seconds left"
+          }
+        }
+      }
+    },
+    "Frage Melden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Report question"
+          }
+        }
+      }
+    },
+    "Frage fehlerhaft": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question incorrect"
+          }
+        }
+      }
+    },
+    "Frage melden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Report question"
+          }
+        }
+      }
+    },
+    "Frage unpassend": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question inappropriate"
+          }
+        }
+      }
+    },
+    "Frage wird geladen…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading question…"
+          }
+        }
+      }
+    },
+    "Frage:  %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question:  %@"
+          }
+        }
+      }
+    },
+    "Fragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questions"
+          }
+        }
+      }
+    },
+    "Fragen beantwortet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questions answered"
+          }
+        }
+      }
+    },
+    "Fragen pro Runde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questions per round"
+          }
+        }
+      }
+    },
+    "Fragt dich an": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wants to be friends"
+          }
+        }
+      }
+    },
+    "Freund": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Friend"
+          }
+        }
+      }
+    },
+    "Freunde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Friends"
+          }
+        }
+      }
+    },
+    "Freunde & Anfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Friends & requests"
+          }
+        }
+      }
+    },
+    "Freunde durchsuchen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search friends"
+          }
+        }
+      }
+    },
+    "Freunde seit %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Friends since %@"
+          }
+        }
+      }
+    },
+    "Freundschaft beenden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove friend"
+          }
+        }
+      }
+    },
+    "Freundschaft mit %@ beenden?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove %@ as a friend?"
+          }
+        }
+      }
+    },
+    "Freundschaftsanfrage konnte nicht gesendet werden. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t send the friend request. Please try again."
+          }
+        }
+      }
+    },
+    "Funktioniert Quizzen offline, z. B. unterwegs ohne Internet?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Does Quizzen work offline, e.g. on the go without internet?"
+          }
+        }
+      }
+    },
+    "Füge Freunde hinzu, um euch zu vergleichen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add friends to compare yourselves."
+          }
+        }
+      }
+    },
+    "Für alle gleich · 20 s pro Frage · 1 Versuch": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same for everyone · 20 s per question · 1 attempt"
+          }
+        }
+      }
+    },
+    "Galaxie": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Galaxy"
+          }
+        }
+      }
+    },
+    "Gefällt dir Quizzen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enjoying Quizzen?"
+          }
+        }
+      }
+    },
+    "Gegner": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opponent"
+          }
+        }
+      }
+    },
+    "Gemeisterte Fragen (verschiedene richtig beantwortet)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mastered questions (different ones answered correctly)"
+          }
+        }
+      }
+    },
+    "Gemeldet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reported"
+          }
+        }
+      }
+    },
+    "Gesamt-Level %lld / %lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Gesamt-Level %1$lld / %2$lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total level %lld / %lld"
+          }
+        }
+      }
+    },
+    "Gesamtübersicht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overview"
+          }
+        }
+      }
+    },
+    "Geschafft: %lld/%lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Geschafft: %1$lld/%2$lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done: %lld/%lld"
+          }
+        }
+      }
+    },
+    "Gesendet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sent"
+          }
+        }
+      }
+    },
+    "Gespielte Runden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rounds played"
+          }
+        }
+      }
+    },
+    "Gib den 6-stelligen Code ein, den dir dein Freund geschickt hat.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter the 6-digit code your friend sent you."
+          }
+        }
+      }
+    },
+    "Gibt es eine Bestenliste – global, unter Freunden oder pro Quiz?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Is there a leaderboard – global, among friends or per quiz?"
+          }
+        }
+      }
+    },
+    "Gibt es regelmäßig neue Quizze oder Inhalte?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Are there regularly new quizzes or content?"
+          }
+        }
+      }
+    },
+    "Gleiche Fragen, gleiche Zeit – wer weiß mehr?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same questions, same time – who knows more?"
+          }
+        }
+      }
+    },
+    "Gold": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gold"
+          }
+        }
+      }
+    },
+    "Grund": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reason"
+          }
+        }
+      }
+    },
+    "Hallo 👋": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hello 👋"
+          }
+        }
+      }
+    },
+    "Hallo, %@ 👋": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hello, %@ 👋"
+          }
+        }
+      }
+    },
+    "Heute": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
+          }
+        }
+      }
+    },
+    "Hilf uns, Quizzen zu verbessern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help us improve Quizzen"
+          }
+        }
+      }
+    },
+    "Hilfe & Kontakt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help & contact"
+          }
+        }
+      }
+    },
+    "Hinzufügen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
+          }
+        }
+      }
+    },
+    "Home": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        }
+      }
+    },
+    "Häufige fragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAQ"
+          }
+        }
+      }
+    },
+    "Ich habe %@ in Quizzen erreicht! 🏆\n\nLade dir die Quizzen App im App Store: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I reached %@ in Quizzen! 🏆\n\nGet the Quizzen app on the App Store: %@"
+          }
+        }
+      }
+    },
+    "Ich spiele gerade Quizzen – Flaggen, Hauptstädte, Harry Potter & mehr. Fordere mich zum Duell heraus! 🧠⚡️": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I’m playing Quizzen – flags, capitals, Harry Potter & more. Challenge me to a duel! 🧠⚡️"
+          }
+        }
+      }
+    },
+    "Ideen, Lob oder Wünsche": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ideas, praise or wishes"
+          }
+        }
+      }
+    },
+    "Im Tab „Freunde“ kannst du andere suchen und Anfragen senden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In the “Friends” tab you can search for others and send requests."
+          }
+        }
+      }
+    },
+    "In deinem Land hat hier noch niemand gepunktet. Sei die erste Person!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nobody in your country has scored here yet. Be the first!"
+          }
+        }
+      }
+    },
+    "In den Einstellungen kannst du unter 'Account' dein Konto löschen und unter 'Statistiken' deine Statistiken zurücksetzen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Settings, you can delete your account under ‘Account’ and reset your statistics under ‘Statistics’."
+          }
+        }
+      }
+    },
+    "Individuell": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom"
+          }
+        }
+      }
+    },
+    "Individuelle Anpassungen, Präferenzen und personalisierte Inhalte werden vollständig entfernt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customizations, preferences and personalized content will be removed completely."
+          }
+        }
+      }
+    },
+    "Inhalt fehlerhaft": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incorrect content"
+          }
+        }
+      }
+    },
+    "Inhalt melden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Report content"
+          }
+        }
+      }
+    },
+    "Installiert": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed"
+          }
+        }
+      }
+    },
+    "Ist die App für Kinder geeignet bzw. gibt es einen Kindermodus/Altersfreigabe?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Is the app suitable for children / is there a kids mode or age rating?"
+          }
+        }
+      }
+    },
+    "Ist die App komplett kostenlos, oder gibt es Werbung und In-App-Käufe (z. B. Premium-Quizze)?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Is the app completely free, or are there ads and in-app purchases (e.g. premium quizzes)?"
+          }
+        }
+      }
+    },
+    "Ja! Fordere einen Freund direkt aus seinem Profil heraus oder erstelle im Tab „Duell“ ein Duell und teile den 6-stelligen Code. Du wählst Quiz, Stufe oder eigene Einstellungen – ihr bekommt dieselben Fragen und seht nach jeder Frage, wer richtig lag.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes! Challenge a friend directly from their profile or create a duel in the “Duel” tab and share the 6-digit code. You choose the quiz, level or your own settings – you both get the same questions and see who was right after each one."
+          }
+        }
+      }
+    },
+    "Ja, Quizzen ist eine reine Offline-App und funktioniert ohne Internetverbindung.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes, Quizzen is an offline app and works without an internet connection."
+          }
+        }
+      }
+    },
+    "Ja, das Quizzen-Team erweitert die App laufend um neue Quizze und Fragen. Es lohnt sich also, ab und zu vorbeizuschauen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes, the Quizzen team keeps adding new quizzes and questions. So it’s worth checking back from time to time."
+          }
+        }
+      }
+    },
+    "Ja. Im Tab „Bestenliste“ vergleichst du dich weltweit, mit Freunden oder in deinem Land – nach XP, Runden, Streaks, der Tageschallenge oder gemeisterten Fragen pro Quiz.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes. In the “Leaderboard” tab you compare yourself worldwide, with friends or in your country – by XP, rounds, streaks, the daily challenge or mastered questions per quiz."
+          }
+        }
+      }
+    },
+    "Jede Runde zieht %lld zufällige Fragen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Each round draws %lld random questions."
+          }
+        }
+      }
+    },
+    "Jedes Quiz hat mehrere Stufen von Leicht bis Extrem. Sie unterscheiden sich in Fragenauswahl, Anzahl der Antworten und Zeitlimit. Unter „Eigene“ stellst du dir deine Runde selbst zusammen – z. B. nur bestimmte Regionen oder nur Fragen, die du noch nicht kannst.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every quiz has several levels from Easy to Extreme. They differ in question selection, number of answers and time limit. Under “Custom” you build your own round – e.g. only certain regions or only questions you don’t know yet."
+          }
+        }
+      }
+    },
+    "Jetzt aktualisieren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Update now"
+          }
+        }
+      }
+    },
+    "Kanal beitreten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Join channel"
+          }
+        }
+      }
+    },
+    "Kann ich gegen Freunde oder andere Spieler antreten (Multiplayer/Duell-Modus)?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can I play against friends or other players (multiplayer/duel mode)?"
+          }
+        }
+      }
+    },
+    "Kein Freund heißt „%@“.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No friend is called “%@”."
+          }
+        }
+      }
+    },
+    "Kein Pausieren: Wer die App länger als 30 Sekunden verlässt, gibt auf.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No pausing: if you leave the app for more than 30 seconds, you give up."
+          }
+        }
+      }
+    },
+    "Kein offenes Duell mit diesem Code gefunden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No open duel found with this code."
+          }
+        }
+      }
+    },
+    "Keine %@ passen zu diesen Einstellungen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No %@ match these settings."
+          }
+        }
+      }
+    },
+    "Keine Mail-App eingerichtet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No mail app set up"
+          }
+        }
+      }
+    },
+    "Keine Person heißt so.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nobody has that name."
+          }
+        }
+      }
+    },
+    "Keine Treffer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No results"
+          }
+        }
+      }
+    },
+    "Keine Treffer für „%@“": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No results for “%@”"
+          }
+        }
+      }
+    },
+    "Keine ausgehenden Anfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No outgoing requests"
+          }
+        }
+      }
+    },
+    "Keine eingehenden Anfragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No incoming requests"
+          }
+        }
+      }
+    },
+    "Keine passenden Fragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No matching questions"
+          }
+        }
+      }
+    },
+    "Konfetti": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confetti"
+          }
+        }
+      }
+    },
+    "Konnte nicht gespeichert werden: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t save: %@"
+          }
+        }
+      }
+    },
+    "Konto endgültig löschen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete account permanently"
+          }
+        }
+      }
+    },
+    "Konto löschen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete account"
+          }
+        }
+      }
+    },
+    "Konto wirklich löschen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Really delete your account?"
+          }
+        }
+      }
+    },
+    "Kopf hoch! Versuch es noch einmal.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chin up! Give it another try."
+          }
+        }
+      }
+    },
+    "Kopieren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy"
+          }
+        }
+      }
+    },
+    "Kurze Quiz-Videos": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short quiz videos"
+          }
+        }
+      }
+    },
+    "Land suchen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search country"
+          }
+        }
+      }
+    },
+    "Land wählen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose country"
+          }
+        }
+      }
+    },
+    "Lass uns dein Profil in wenigen\nSchritten einrichten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let’s set up your profile in a\nfew steps."
+          }
+        }
+      }
+    },
+    "Lass uns ein Quizzen-Duell spielen! ⚔️ Öffne die App, tippe auf „Duell“ → „Beitreten“ und gib diesen Code ein: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let’s play a Quizzen duel! ⚔️ Open the app, tap “Duel” → “Join” and enter this code: %@"
+          }
+        }
+      }
+    },
+    "Lege in deinem Profil ein Land fest.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set a country in your profile."
+          }
+        }
+      }
+    },
+    "Legende": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legend"
+          }
+        }
+      }
+    },
+    "Leicht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easy"
+          }
+        }
+      }
+    },
+    "Leicht zu verwechselnde Antworten – deutlich schwerer.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easily confused answers – much harder."
+          }
+        }
+      }
+    },
+    "Level %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level %lld"
+          }
+        }
+      }
+    },
+    "Level %lld von %lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Level %1$lld von %2$lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level %lld of %lld"
+          }
+        }
+      }
+    },
+    "Level %lld · %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Level %1$lld · %2$@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level %lld · %@"
+          }
+        }
+      }
+    },
+    "Löschen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        }
+      }
+    },
+    "Löschen fehlgeschlagen. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deletion failed. Please try again."
+          }
+        }
+      }
+    },
+    "Maximales Level erreicht – stark! 🏆": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum level reached – awesome! 🏆"
+          }
+        }
+      }
+    },
+    "Maximum erreicht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum reached"
+          }
+        }
+      }
+    },
+    "Mehr von Quizzen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More from Quizzen"
+          }
+        }
+      }
+    },
+    "Mein Land": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My country"
+          }
+        }
+      }
+    },
+    "Melde dich mit deinem Account an.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with your account."
+          }
+        }
+      }
+    },
+    "Meldungen sind anonym. Wir prüfen sie und entfernen Inhalte, die gegen unsere Regeln verstoßen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reports are anonymous. We review them and remove content that breaks our rules."
+          }
+        }
+      }
+    },
+    "Meldungsgrund": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reason for report"
+          }
+        }
+      }
+    },
+    "Mindestens 6 Zeichen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At least 6 characters."
+          }
+        }
+      }
+    },
+    "Mit der Registrierung akzeptierst du unsere ": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By signing up you accept our "
+          }
+        }
+      }
+    },
+    "Mitglied": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Member"
+          }
+        }
+      }
+    },
+    "Mittel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medium"
+          }
+        }
+      }
+    },
+    "Morgen gibt's neue Fragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New questions tomorrow"
+          }
+        }
+      }
+    },
+    "Muss ich Quizze freischalten?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do I have to unlock quizzes?"
+          }
+        }
+      }
+    },
+    "Nein, alle Quizze und Stufen sind sofort verfügbar. Nur einige Profil-Banner werden über dein Level freigeschaltet.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No, all quizzes and levels are available right away. Only some profile banners are unlocked through your level."
+          }
+        }
+      }
+    },
+    "Neon": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neon"
+          }
+        }
+      }
+    },
+    "Neu": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New"
+          }
+        }
+      }
+    },
+    "Neu in dieser Version": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New in this version"
+          }
+        }
+      }
+    },
+    "Neue E-Mail-Adresse": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New email address"
+          }
+        }
+      }
+    },
+    "Neues Duell": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New duel"
+          }
+        }
+      }
+    },
+    "Neues Passwort": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New password"
+          }
+        }
+      }
+    },
+    "Neuigkeiten & Infos": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "News & info"
+          }
+        }
+      }
+    },
+    "Neuling": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Newbie"
+          }
+        }
+      }
+    },
+    "Nicht eingeloggt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not signed in"
+          }
+        }
+      }
+    },
+    "Nicht verfügbar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not available"
+          }
+        }
+      }
+    },
+    "Niemand blockiert": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nobody blocked"
+          }
+        }
+      }
+    },
+    "Noch %@ XP bis Level %lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Noch %1$@ XP bis Level %2$lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ XP to level %lld"
+          }
+        }
+      }
+    },
+    "Noch %@ XP bis Level %lld · %lld XP pro richtiger Antwort, %lld XP pro Runde": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Noch %1$@ XP bis Level %2$lld · %3$lld XP pro richtiger Antwort, %4$lld XP pro Runde"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ XP to level %lld · %lld XP per correct answer, %lld XP per round"
+          }
+        }
+      }
+    },
+    "Noch %lld %@ bis Level %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld more %@ to level %lld."
+          }
+        }
+      }
+    },
+    "Noch %lld Sekunden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld seconds left"
+          }
+        }
+      }
+    },
+    "Noch keine Abzeichen freigeschaltet.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No badges unlocked yet."
+          }
+        }
+      }
+    },
+    "Noch keine Einträge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No entries yet"
+          }
+        }
+      }
+    },
+    "Noch keine Freunde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No friends yet"
+          }
+        }
+      }
+    },
+    "Noch keinen Account? Registrieren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No account yet? Sign up"
+          }
+        }
+      }
+    },
+    "Noch nicht erreicht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not reached yet"
+          }
+        }
+      }
+    },
+    "Noch nicht gespielt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not played yet"
+          }
+        }
+      }
+    },
+    "Noch nicht platziert": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not ranked yet"
+          }
+        }
+      }
+    },
+    "Noch nicht verfügbar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not available yet"
+          }
+        }
+      }
+    },
+    "Nochmal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Again"
+          }
+        }
+      }
+    },
+    "Nochmal spielen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play again"
+          }
+        }
+      }
+    },
+    "Nur %@, die ich noch nicht kann": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only %@ I don’t know yet"
+          }
+        }
+      }
+    },
+    "Nutze die Suche, um andere zu finden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use search to find others"
+          }
+        }
+      }
+    },
+    "Nutzer melden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Report user"
+          }
+        }
+      }
+    },
+    "Nutzungsbedingungen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terms of Use"
+          }
+        }
+      }
+    },
+    "Nächste Frage": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next question"
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Optional – du kannst es jederzeit später ändern.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional – you can change it any time later."
+          }
+        }
+      }
+    },
+    "Optional – wähle das Land, welches du repräsentieren möchtest.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional – choose the country you want to represent."
+          }
+        }
+      }
+    },
+    "Ozean": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocean"
+          }
+        }
+      }
+    },
+    "Ozeanien": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oceania"
+          }
+        }
+      }
+    },
+    "Passwort": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Password"
+          }
+        }
+      }
+    },
+    "Passwort bestätigen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm password"
+          }
+        }
+      }
+    },
+    "Passwort geändert": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Password changed"
+          }
+        }
+      }
+    },
+    "Passwort konnte nicht geändert werden: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t change the password: %@"
+          }
+        }
+      }
+    },
+    "Passwort muss mind. 6 Zeichen haben": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Password must have at least 6 characters"
+          }
+        }
+      }
+    },
+    "Passwörter stimmen nicht überein": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords don’t match"
+          }
+        }
+      }
+    },
+    "Passwörter stimmen überein": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords match"
+          }
+        }
+      }
+    },
+    "Perfekt! Volle Punktzahl! 🏆": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perfect! Full score! 🏆"
+          }
+        }
+      }
+    },
+    "Personen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "People"
+          }
+        }
+      }
+    },
+    "Personen (%lld)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "People (%lld)"
+          }
+        }
+      }
+    },
+    "Personen, die du kennen könntest": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "People you may know"
+          }
+        }
+      }
+    },
+    "Persönliche Einstellungen verschwinden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personal settings disappear"
+          }
+        }
+      }
+    },
+    "Platin": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Platinum"
+          }
+        }
+      }
+    },
+    "Platz %lld, %@, %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Platz %1$lld, %2$@, %3$@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rank %lld, %@, %@"
+          }
+        }
+      }
+    },
+    "Polarlicht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aurora"
+          }
+        }
+      }
+    },
+    "Profil Vorschau": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profile preview"
+          }
+        }
+      }
+    },
+    "Profil gestalten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customize profile"
+          }
+        }
+      }
+    },
+    "Profil konnte nicht geladen werden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t load the profile."
+          }
+        }
+      }
+    },
+    "Profil wird zusammengestellt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setting up your profile"
+          }
+        }
+      }
+    },
+    "Profil öffnen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open profile"
+          }
+        }
+      }
+    },
+    "Profilbild aktualisiert": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profile picture updated"
+          }
+        }
+      }
+    },
+    "Profilbild konnte nicht hochgeladen werden. Bitte versuch es erneut.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t upload the profile picture. Please try again."
+          }
+        }
+      }
+    },
+    "Profilbild ändern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change profile picture"
+          }
+        }
+      }
+    },
+    "Punkt für %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Point for %@"
+          }
+        }
+      }
+    },
+    "Punkt für dich! 🎯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Point for you! 🎯"
+          }
+        }
+      }
+    },
+    "Punkte": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Points"
+          }
+        }
+      }
+    },
+    "Punkte in der heutigen Tageschallenge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Points in today’s daily challenge"
+          }
+        }
+      }
+    },
+    "Quiz Statistiken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiz statistics"
+          }
+        }
+      }
+    },
+    "Quiz starten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start quiz"
+          }
+        }
+      }
+    },
+    "Quiz, Frage oder Person": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiz, question or person"
+          }
+        }
+      }
+    },
+    "Quiz-Bestenliste": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiz leaderboard"
+          }
+        }
+      }
+    },
+    "Quiz-Bestenlisten sind noch nicht freigeschaltet (Server-Update 006 ausstehend).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiz leaderboards aren’t available yet (server update 006 pending)."
+          }
+        }
+      }
+    },
+    "Quiz: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiz: %@"
+          }
+        }
+      }
+    },
+    "Quizmeister": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiz master"
+          }
+        }
+      }
+    },
+    "Quizze": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quizzes"
+          }
+        }
+      }
+    },
+    "Quizze (%lld)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quizzes (%lld)"
+          }
+        }
+      }
+    },
+    "Quizzen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quizzen"
+          }
+        }
+      }
+    },
+    "Quizzen %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quizzen %@"
+          }
+        }
+      }
+    },
+    "Quizzen – Support (Version %@)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quizzen – Support (version %@)"
+          }
+        }
+      }
+    },
+    "Rechtliches": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legal"
+          }
+        }
+      }
+    },
+    "Rekord: %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record: %lld"
+          }
+        }
+      }
+    },
+    "Repräsentiertes Land": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Represented country"
+          }
+        }
+      }
+    },
+    "Richtig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correct"
+          }
+        }
+      }
+    },
+    "Richtige Antworten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correct answers"
+          }
+        }
+      }
+    },
+    "Richtige Antworten zählen für deine Statistik und die Bestenliste.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correct answers count towards your statistics and the leaderboard."
+          }
+        }
+      }
+    },
+    "Runde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Round"
+          }
+        }
+      }
+    },
+    "Runden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rounds"
+          }
+        }
+      }
+    },
+    "Runden gespielt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rounds played"
+          }
+        }
+      }
+    },
+    "Rätselfreund": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puzzle fan"
+          }
+        }
+      }
+    },
+    "Schließen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "Schon einen Account? Einloggen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Already have an account? Log in"
+          }
+        }
+      }
+    },
+    "Schummeln": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cheating"
+          }
+        }
+      }
+    },
+    "Schwach": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weak"
+          }
+        }
+      }
+    },
+    "Schwer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard"
+          }
+        }
+      }
+    },
+    "Schwierigkeit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Difficulty"
+          }
+        }
+      }
+    },
+    "Sehr gut! Starke Leistung.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Very good! Strong performance."
+          }
+        }
+      }
+    },
+    "Senden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send"
+          }
+        }
+      }
+    },
+    "Silber": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Silver"
+          }
+        }
+      }
+    },
+    "So funktioniert's": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How it works"
+          }
+        }
+      }
+    },
+    "Sobald dein Gegenüber beigetreten ist, wählst du ein Quiz aus.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As soon as your opponent has joined, you pick a quiz."
+          }
+        }
+      }
+    },
+    "Solide! Da geht aber noch mehr.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solid! But there’s more in you."
+          }
+        }
+      }
+    },
+    "Sonnenuntergang": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunset"
+          }
+        }
+      }
+    },
+    "Sonstiges": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other"
+          }
+        }
+      }
+    },
+    "Speichern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        }
+      }
+    },
+    "Spezial": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Special"
+          }
+        }
+      }
+    },
+    "Spiel ein Quiz und sichere dir den ersten Platz!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play a quiz and grab first place!"
+          }
+        }
+      }
+    },
+    "Spiel heute, um deine Streak von %@ zu halten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play today to keep your streak of %@"
+          }
+        }
+      }
+    },
+    "Spielzeit: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play time: %@"
+          }
+        }
+      }
+    },
+    "Sprache": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        }
+      }
+    },
+    "Stark": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong"
+          }
+        }
+      }
+    },
+    "Starte heute eine Streak!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start a streak today!"
+          }
+        }
+      }
+    },
+    "Starte heute eine neue Streak – oder spiel die Tageschallenge.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start a new streak today – or play the daily challenge."
+          }
+        }
+      }
+    },
+    "Statistiken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistics"
+          }
+        }
+      }
+    },
+    "Statistiken pro Quiz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistics per quiz"
+          }
+        }
+      }
+    },
+    "Statistiken zurücksetzten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset statistics"
+          }
+        }
+      }
+    },
+    "Streak": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streak"
+          }
+        }
+      }
+    },
+    "Streak-Erinnerung (19 Uhr)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streak reminder (7 pm)"
+          }
+        }
+      }
+    },
+    "TAGESCHALLENGE": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DAILY CHALLENGE"
+          }
+        }
+      }
+    },
+    "Tag": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "day"
+          }
+        }
+      }
+    },
+    "Tag Streak": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "day streak"
+          }
+        }
+      }
+    },
+    "Tage": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "days"
+          }
+        }
+      }
+    },
+    "Tage Streak": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "day streak"
+          }
+        }
+      }
+    },
+    "Tage in Folge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "days in a row"
+          }
+        }
+      }
+    },
+    "Tages-Bestenliste": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily leaderboard"
+          }
+        }
+      }
+    },
+    "Tageschallenge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily challenge"
+          }
+        }
+      }
+    },
+    "Tageschallenge starten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start daily challenge"
+          }
+        }
+      }
+    },
+    "Technisches Problem": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Technical problem"
+          }
+        }
+      }
+    },
+    "Themenbereiche": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Topics"
+          }
+        }
+      }
+    },
+    "Trefferquote": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy"
+          }
+        }
+      }
+    },
+    "Trete an, sammle Punkte und\nvergleiche dich mit der Welt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compete, collect points and\ncompare yourself with the world."
+          }
+        }
+      }
+    },
+    "Tägliche Streak geht verloren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily streak will be lost"
+          }
+        }
+      }
+    },
+    "Unangemessen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inappropriate"
+          }
+        }
+      }
+    },
+    "Unsere AGB": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Our terms"
+          }
+        }
+      }
+    },
+    "Unsere Datenschutzrichtlinien": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Our privacy policy"
+          }
+        }
+      }
+    },
+    "Update erforderlich": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Update required"
+          }
+        }
+      }
+    },
+    "VS": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VS"
+          }
+        }
+      }
+    },
+    "Verloren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lost"
+          }
+        }
+      }
+    },
+    "Version %@ ist da. Bitte aktualisiere Quizzen, um weiterzuspielen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@ is here. Please update Quizzen to keep playing."
+          }
+        }
+      }
+    },
+    "Vielen Dank, dass du uns dabei hilfst, Quizzen sicher und korrekt zu halten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thank you for helping us keep Quizzen safe and accurate."
+          }
+        }
+      }
+    },
+    "Volltreffer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bullseye"
+          }
+        }
+      }
+    },
+    "Vorschau deines öffentlichen Profils": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preview of your public profile"
+          }
+        }
+      }
+    },
+    "Vulkan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcano"
+          }
+        }
+      }
+    },
+    "Wald": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forest"
+          }
+        }
+      }
+    },
+    "Warte auf %@…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for %@…"
+          }
+        }
+      }
+    },
+    "Warte, bis dein Freund beitritt…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for your friend to join…"
+          }
+        }
+      }
+    },
+    "Warteraum": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lobby"
+          }
+        }
+      }
+    },
+    "Wartet…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting…"
+          }
+        }
+      }
+    },
+    "Warum meldest du %@?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Why are you reporting %@?"
+          }
+        }
+      }
+    },
+    "Was ist auf dem Bild zu sehen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What can you see in the picture?"
+          }
+        }
+      }
+    },
+    "Was ist passiert? (optional)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What happened? (optional)"
+          }
+        }
+      }
+    },
+    "Was möchtest du uns mitteilen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What would you like to tell us?"
+          }
+        }
+      }
+    },
+    "Weiter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        }
+      }
+    },
+    "Weitere Banner schaltest du mit höherem Level frei.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You unlock more banners at higher levels."
+          }
+        }
+      }
+    },
+    "Weitere Optionen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More options"
+          }
+        }
+      }
+    },
+    "Weiterspielen · %lld %% erkundet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep playing · %lld%% explored"
+          }
+        }
+      }
+    },
+    "Welches Land hat diese Flagge?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which country has this flag?"
+          }
+        }
+      }
+    },
+    "Weltweit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worldwide"
+          }
+        }
+      }
+    },
+    "Wenn du dich ausloggst, dann musst du dich wieder einloggen oder dir einen neuen Account erstellen um die App nutzen zu können.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you sign out, you’ll need to sign in again or create a new account to use the app."
+          }
+        }
+      }
+    },
+    "Wie funktionieren die Abzeichen – wofür bekomme ich sie und wo sehe ich meinen Fortschritt?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How do badges work – what do I get them for and where can I see my progress?"
+          }
+        }
+      }
+    },
+    "Wie funktionieren die Schwierigkeitsstufen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How do the difficulty levels work?"
+          }
+        }
+      }
+    },
+    "Wie kann ich eine falsche Antwort oder eine fehlerhafte Frage melden?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How can I report a wrong answer or an incorrect question?"
+          }
+        }
+      }
+    },
+    "Wie melde oder blockiere ich andere Spieler?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How do I report or block other players?"
+          }
+        }
+      }
+    },
+    "Wie setze ich meinen Fortschritt/meine Statistik zurück oder lösche mein Konto?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How do I reset my progress/statistics or delete my account?"
+          }
+        }
+      }
+    },
+    "Willkommen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        }
+      }
+    },
+    "Willkommen zurück": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome back"
+          }
+        }
+      }
+    },
+    "Wissensdurst": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thirst for knowledge"
+          }
+        }
+      }
+    },
+    "Wissensjäger": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Knowledge hunter"
+          }
+        }
+      }
+    },
+    "Wähle bis zu %lld freigeschaltete Abzeichen. Die Reihenfolge des Antippens bestimmt die Anzeige.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose up to %lld unlocked badges. The order you tap them in sets the display order."
+          }
+        }
+      }
+    },
+    "Wähle ein Profilbild": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a profile picture"
+          }
+        }
+      }
+    },
+    "Wähle ein Quiz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a quiz"
+          }
+        }
+      }
+    },
+    "Wähle zuerst ein Quiz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a quiz first"
+          }
+        }
+      }
+    },
+    "Zeit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time"
+          }
+        }
+      }
+    },
+    "Zeit abgelaufen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time’s up"
+          }
+        }
+      }
+    },
+    "Zeit abgelaufen – %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time’s up – %@"
+          }
+        }
+      }
+    },
+    "Zeit für ein Quiz 🧠": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time for a quiz 🧠"
+          }
+        }
+      }
+    },
+    "Zeit pro Frage": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time per question"
+          }
+        }
+      }
+    },
+    "Zufällig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Random"
+          }
+        }
+      }
+    },
+    "Zuletzt gesucht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent searches"
+          }
+        }
+      }
+    },
+    "Zum Duell fordern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenge to a duel"
+          }
+        }
+      }
+    },
+    "Zurück": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back"
+          }
+        }
+      }
+    },
+    "alle %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "all %lld"
+          }
+        }
+      }
+    },
+    "das Abzeichen „%@“": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the “%@” badge"
+          }
+        }
+      }
+    },
+    "falsche Antworten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "wrong answers"
+          }
+        }
+      }
+    },
+    "offline": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "offline"
+          }
+        }
+      }
+    },
+    "online": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "online"
+          }
+        }
+      }
+    },
+    "richtig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "correct"
+          }
+        }
+      }
+    },
+    "richtige Antworten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "correct answers"
+          }
+        }
+      }
+    },
+    "·": {
+      "shouldTranslate": false
+    },
+    "· %lld %% richtig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· %lld%% correct"
+          }
+        }
+      }
+    },
+    "Ähnlich": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Similar"
+          }
+        }
+      }
+    },
+    "Öffne das Profil der Person und tippe oben rechts auf „…“. Dort kannst du sie melden oder blockieren. Blockierte Nutzer verwaltest du in den Einstellungen unter „Blockierte Nutzer“.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open the person’s profile and tap “…” at the top right. There you can report or block them. You manage blocked users in Settings under “Blocked users”."
+          }
+        }
+      }
+    },
+    "Öffnet die iOS-Einstellungen für Quizzen. Dort kannst du unter „Sprache“ zwischen Deutsch und Englisch wählen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opens the iOS settings for Quizzen. Under “Language” you can choose between German and English."
+          }
+        }
+      }
+    },
+    "–": {
+      "shouldTranslate": false
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

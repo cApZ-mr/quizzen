@@ -124,7 +124,7 @@ struct PvPLobbyView: View {
                 HStack(spacing: 12) {
                     AvatarView(username: host?.username ?? "?", url: host?.avatarUrl, size: 44)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("\(host?.username ?? "Ein Freund") fordert dich heraus")
+                        Text(String(localized: "\(host?.username ?? String(localized: "Ein Freund")) fordert dich heraus"))
                             .font(.subheadline.weight(.semibold))
                         Text(match.created_at.formatted(.relative(presentation: .named)))
                             .font(.caption)
@@ -188,8 +188,8 @@ struct PvPLobbyView: View {
             try await service.leave(matchId: match.id)
             withAnimation {
                 abandonedNotice = match.matchStatus == .active
-                    ? "Dein letztes Duell wurde abgebrochen, weil du es verlassen hast."
-                    : "Dein offener Warteraum wurde geschlossen."
+                    ? String(localized: "Dein letztes Duell wurde abgebrochen, weil du es verlassen hast.")
+                    : String(localized: "Dein offener Warteraum wurde geschlossen.")
             }
         } catch {
             log.error("Verlassenes Duell konnte nicht abgebrochen werden: \(error.localizedDescription)")
@@ -198,10 +198,10 @@ struct PvPLobbyView: View {
 
     private var actionCards: some View {
         HStack(spacing: 12) {
-            actionCard(title: "Duell erstellen", subtitle: "Code teilen", icon: "plus", tint: .brand) {
+            actionCard(title: String(localized: "Duell erstellen"), subtitle: String(localized: "Code teilen"), icon: "plus", tint: .brand) {
                 path.append(.create)
             }
-            actionCard(title: "Beitreten", subtitle: "Code eingeben", icon: "number", tint: .purple) {
+            actionCard(title: String(localized: "Beitreten"), subtitle: String(localized: "Code eingeben"), icon: "number", tint: .purple) {
                 path.append(.join)
             }
         }
@@ -230,10 +230,10 @@ struct PvPLobbyView: View {
     private var howItWorks: some View {
         VStack(alignment: .leading, spacing: 14) {
             Text("So funktioniert's").font(.headline)
-            step(1, "Erstelle ein Duell und teile den 6-stelligen Code – oder fordere jemanden direkt aus der Freundesliste heraus.")
-            step(2, "Sobald dein Gegenüber beigetreten ist, wählst du ein Quiz aus.")
-            step(3, "Du bestimmst Schwierigkeit, Fragenzahl und Zeit – ihr bekommt beide dieselben Fragen und seht nach jeder, wer richtig lag.")
-            step(4, "Kein Pausieren: Wer die App länger als 30 Sekunden verlässt, gibt auf.")
+            step(1, String(localized: "Erstelle ein Duell und teile den 6-stelligen Code – oder fordere jemanden direkt aus der Freundesliste heraus."))
+            step(2, String(localized: "Sobald dein Gegenüber beigetreten ist, wählst du ein Quiz aus."))
+            step(3, String(localized: "Du bestimmst Schwierigkeit, Fragenzahl und Zeit – ihr bekommt beide dieselben Fragen und seht nach jeder, wer richtig lag."))
+            step(4, String(localized: "Kein Pausieren: Wer die App länger als 30 Sekunden verlässt, gibt auf."))
         }
         .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -323,7 +323,7 @@ struct PvPMatchView: View {
                         .tint(.brand)
                 }
             } else {
-                ProgressView("Duell wird erstellt…")
+                ProgressView(String(localized: "Duell wird erstellt…"))
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         case .waitingForOpponent, .lobby:
@@ -342,11 +342,11 @@ struct PvPMatchView: View {
 
     private var title: String {
         switch session.phase {
-        case .idle: mode == .join ? "Beitreten" : "Duell"
-        case .waitingForOpponent, .lobby: "Warteraum"
+        case .idle: mode == .join ? String(localized: "Beitreten") : String(localized: "Duell")
+        case .waitingForOpponent, .lobby: String(localized: "Warteraum")
         case .playing:
             [session.quiz?.title, session.match?.settings?.label].compactMap { $0 }.joined(separator: " · ")
-        case .finished, .cancelled: "Ergebnis"
+        case .finished, .cancelled: String(localized: "Ergebnis")
         }
     }
 }
@@ -366,7 +366,7 @@ struct PvPPlayersHeader: View {
                 .font(.system(compact ? .subheadline : .title3, design: .rounded).weight(.black))
                 .foregroundStyle(.secondary)
             Spacer(minLength: 0)
-            player(session.opponent, fallback: session.opponentId == nil ? "Wartet…" : "Gegner",
+            player(session.opponent, fallback: session.opponentId == nil ? String(localized: "Wartet…") : String(localized: "Gegner"),
                    score: session.opponentScore, isMe: false)
         }
     }

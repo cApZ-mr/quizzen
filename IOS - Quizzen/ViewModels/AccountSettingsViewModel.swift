@@ -44,9 +44,9 @@ class AccountSettingsViewModel: ObservableObject {
 
         var label: String {
             switch self {
-            case .weak: "Schwach"
-            case .medium: "Mittel"
-            case .strong: "Stark"
+            case .weak: String(localized: "Schwach")
+            case .medium: String(localized: "Mittel")
+            case .strong: String(localized: "Stark")
             }
         }
 
@@ -82,7 +82,7 @@ class AccountSettingsViewModel: ObservableObject {
             username = acc.username
             currentEmail = (try? await supabase.auth.session.user.email) ?? ""
         } catch {
-            errorMessage = "Profil konnte nicht geladen werden."
+            errorMessage = String(localized: "Profil konnte nicht geladen werden.")
         }
     }
 
@@ -101,16 +101,16 @@ class AccountSettingsViewModel: ObservableObject {
                                        country: account.country, createdAt: account.createdAt)
             }
             username = trimmedUsername
-            successMessage = "Benutzername gespeichert"
+            successMessage = String(localized: "Benutzername gespeichert")
             return true
         } catch {
             let text = error.localizedDescription
             if text.contains("username_not_allowed") {
-                errorMessage = "Dieser Benutzername ist nicht erlaubt."
+                errorMessage = String(localized: "Dieser Benutzername ist nicht erlaubt.")
             } else if text.localizedCaseInsensitiveContains("duplicate") || text.contains("23505") {
-                errorMessage = "Dieser Benutzername ist schon vergeben."
+                errorMessage = String(localized: "Dieser Benutzername ist schon vergeben.")
             } else {
-                errorMessage = "Benutzername konnte nicht gespeichert werden. Bitte versuch es erneut."
+                errorMessage = String(localized: "Benutzername konnte nicht gespeichert werden. Bitte versuch es erneut.")
             }
             return false
         }
@@ -130,10 +130,10 @@ class AccountSettingsViewModel: ObservableObject {
                 country: account?.country,
                 createdAt: account?.createdAt ?? .now
             )
-            successMessage = "Profilbild aktualisiert"
+            successMessage = String(localized: "Profilbild aktualisiert")
             return true
         } catch {
-            errorMessage = "Profilbild konnte nicht hochgeladen werden. Bitte versuch es erneut."
+            errorMessage = String(localized: "Profilbild konnte nicht hochgeladen werden. Bitte versuch es erneut.")
             return false
         }
     }
@@ -141,38 +141,38 @@ class AccountSettingsViewModel: ObservableObject {
     func saveEmail() async {
         let value = newEmail.trimmingCharacters(in: .whitespaces)
         guard emailValid else {
-            errorMessage = "Bitte gib eine gültige, neue E-Mail-Adresse ein."
+            errorMessage = String(localized: "Bitte gib eine gültige, neue E-Mail-Adresse ein.")
             return
         }
         isSaving = true
         defer { isSaving = false }
         do {
             try await supabase.updateEmail(value)
-            successMessage = "Bestätigungslink an \(value) gesendet"
+            successMessage = String(localized: "Bestätigungslink an \(value) gesendet")
             newEmail = ""
         } catch {
-            errorMessage = "E-Mail konnte nicht geändert werden: \(error.localizedDescription)"
+            errorMessage = String(localized: "E-Mail konnte nicht geändert werden: \(error.localizedDescription)")
         }
     }
 
     func savePassword() async {
         guard newPassword.count >= 6 else {
-            errorMessage = "Das Passwort muss mindestens 6 Zeichen haben."
+            errorMessage = String(localized: "Das Passwort muss mindestens 6 Zeichen haben.")
             return
         }
         guard passwordsMatch else {
-            errorMessage = "Die Passwörter stimmen nicht überein."
+            errorMessage = String(localized: "Die Passwörter stimmen nicht überein.")
             return
         }
         isSaving = true
         defer { isSaving = false }
         do {
             try await supabase.updatePassword(newPassword)
-            successMessage = "Passwort geändert"
+            successMessage = String(localized: "Passwort geändert")
             newPassword = ""
             confirmPassword = ""
         } catch {
-            errorMessage = "Passwort konnte nicht geändert werden: \(error.localizedDescription)"
+            errorMessage = String(localized: "Passwort konnte nicht geändert werden: \(error.localizedDescription)")
         }
     }
 }

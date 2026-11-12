@@ -13,6 +13,15 @@ nonisolated enum Difficulty: String, Codable, CaseIterable {
     case easy = "Leicht"
     case medium = "Mittel"
     case hard = "Schwer"
+
+    /// Angezeigter Name (rawValue bleibt deutsch – steht so in den Quiz-Dateien)
+    var title: String {
+        switch self {
+        case .easy: String(localized: "Leicht")
+        case .medium: String(localized: "Mittel")
+        case .hard: String(localized: "Schwer")
+        }
+    }
 }
 
 // MARK: - QuizDetail
@@ -48,13 +57,17 @@ nonisolated struct QuizPlaySettings: Codable, Hashable {
 // MARK: - Question
 
 nonisolated struct Question: Codable, Identifiable {
-    var id: String { question }
+    /// Stabile ID = deutscher Fragetext (auch wenn `question` übersetzt ist).
+    /// Fortschritt, Tageschallenge und Duelle hängen an dieser ID.
+    var id: String { key ?? question }
     let question: String
     let imageName: String?
     let options: [String]
     let correctAnswerIndex: Int
     /// Eigener Fragetext für Bild-Fragen außerhalb ihres Quiz (z. B. Tageschallenge)
     var promptText: String? = nil
+    /// Deutscher Originaltext, falls `question` übersetzt wurde
+    var key: String? = nil
 }
 
 // MARK: - Angezeigter Fragetext
@@ -66,8 +79,8 @@ extension Question {
     func prompt(quizId: String) -> String {
         if let promptText { return promptText }
         guard imageName != nil else { return question }
-        if quizId.hasPrefix("Flags") { return "Welches Land hat diese Flagge?" }
-        return "Was ist auf dem Bild zu sehen?"
+        if quizId.hasPrefix("Flags") { return String(localized: "Welches Land hat diese Flagge?") }
+        return String(localized: "Was ist auf dem Bild zu sehen?")
     }
 }
 

@@ -23,13 +23,31 @@ extension UserViewModel {
         case oceania = "Ozeanien"
 
         var id: String { rawValue }
+
+        var title: String {
+            switch self {
+            case .europe: String(localized: "Europa")
+            case .asia: String(localized: "Asien")
+            case .africa: String(localized: "Afrika")
+            case .americas: String(localized: "Amerika")
+            case .oceania: String(localized: "Ozeanien")
+            }
+        }
     }
 
     struct Country: Identifiable {
         var id: String { code }
         let code: String
-        let name: String
+        /// Deutscher Name aus der Liste; angezeigt wird `name` (ggf. übersetzt)
+        let nameKey: String
         let continent: Continent
+        var name: String { tr(nameKey) }
+
+        init(code: String, name: String, continent: Continent) {
+            self.code = code
+            self.nameKey = name
+            self.continent = continent
+        }
     }
 
     static let allCountries: [Country] = [

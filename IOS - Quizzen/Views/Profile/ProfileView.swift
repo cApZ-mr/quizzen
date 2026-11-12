@@ -105,24 +105,24 @@ struct ProfileView: View {
     private var menu: some View {
         VStack(spacing: 0) {
             NavigationLink { FriendsView() } label: {
-                ProfileMenuRow(icon: "person.2.fill", tint: .purple, title: "Freunde & Anfragen",
+                ProfileMenuRow(icon: "person.2.fill", tint: .purple, title: String(localized: "Freunde & Anfragen"),
                                badge: friendsViewModel.incomingRequests.count)
             }
             Divider().padding(.leading, 56)
             NavigationLink { ProfileStatsView() } label: {
-                ProfileMenuRow(icon: "chart.bar.fill", tint: .blue, title: "Statistiken pro Quiz")
+                ProfileMenuRow(icon: "chart.bar.fill", tint: .blue, title: String(localized: "Statistiken pro Quiz"))
             }
             Divider().padding(.leading, 56)
             NavigationLink { AccountSettingsView() } label: {
-                ProfileMenuRow(icon: "person.crop.circle", tint: .teal, title: "Account bearbeiten")
+                ProfileMenuRow(icon: "person.crop.circle", tint: .teal, title: String(localized: "Account bearbeiten"))
             }
             Divider().padding(.leading, 56)
             Button { showMoreSheet = true } label: {
-                ProfileMenuRow(icon: "heart.fill", tint: .pink, title: "Mehr von Quizzen")
+                ProfileMenuRow(icon: "heart.fill", tint: .pink, title: String(localized: "Mehr von Quizzen"))
             }
             Divider().padding(.leading, 56)
             NavigationLink { SettingsView() } label: {
-                ProfileMenuRow(icon: "gearshape.fill", tint: .gray, title: "Einstellungen")
+                ProfileMenuRow(icon: "gearshape.fill", tint: .gray, title: String(localized: "Einstellungen"))
             }
         }
         .buttonStyle(.plain)

@@ -179,11 +179,11 @@ struct SignupView: View {
                 return
             }
             guard isValidEmail(viewModel.email) else {
-                showValidationMessage("Bitte gib eine gültige E-Mail-Adresse ein")
+                showValidationMessage(String(localized: "Bitte gib eine gültige E-Mail-Adresse ein"))
                 return
             }
             guard viewModel.password.count >= 6 else {
-                showValidationMessage("Passwort muss mind. 6 Zeichen haben")
+                showValidationMessage(String(localized: "Passwort muss mind. 6 Zeichen haben"))
                 return
             }
             goToNextPage()
@@ -428,7 +428,7 @@ struct SignupView: View {
     // MARK: - Profil-Erstellung
     private func startProfileCreation() {
         progress = 0
-        loadingText = "Accountdaten werden verarbeitet"
+        loadingText = String(localized: "Accountdaten werden verarbeitet")
         isLoading = true
         showCheckmark = false
         checkmarkProgress = 0
@@ -444,10 +444,10 @@ struct SignupView: View {
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.7) {
-            withAnimation { loadingText = "Profil wird zusammengestellt" }
+            withAnimation { loadingText = String(localized: "Profil wird zusammengestellt") }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.4) {
-            withAnimation { loadingText = "App wird vorbereitet" }
+            withAnimation { loadingText = String(localized: "App wird vorbereitet") }
         }
         
         
@@ -464,11 +464,11 @@ struct SignupView: View {
 
                 if let imageData = viewModel.profileImageData {
                     // Gleicher Pfad wie in SupabaseClient.uploadAvatar (Ordner = User-ID)
-                    let fileName = "\(result.user.id.uuidString)/avatar.jpg"
+                    let fileName = "\(result.user.id.uuidString)/avatar-\(Int(Date().timeIntervalSince1970 * 1000)).jpg"
 
                     try await supabase.storage
                         .from("avatars")
-                        .upload(fileName, data: imageData, options: FileOptions(contentType: "image/jpeg", upsert: true))
+                        .upload(fileName, data: imageData, options: FileOptions(cacheControl: "31536000", contentType: "image/jpeg", upsert: false))
                     
                     avatarUrl = try supabase.storage
                         .from("avatars")
@@ -502,13 +502,13 @@ struct SignupView: View {
 
     /// Hinweis auf Regeln und Datenschutz (App-Store-Richtlinie 1.2: keine Toleranz für anstößige Inhalte)
     private var legalConsent: some View {
-        var text = AttributedString("Mit der Registrierung akzeptierst du unsere ")
-        var terms = AttributedString("Nutzungsbedingungen")
+        var text = AttributedString(String(localized: "Mit der Registrierung akzeptierst du unsere "))
+        var terms = AttributedString(String(localized: "Nutzungsbedingungen"))
         if let url = AppLinks.terms { terms.link = url; terms.underlineStyle = .single }
-        var privacy = AttributedString("Datenschutzerklärung")
+        var privacy = AttributedString(String(localized: "Datenschutzerklärung"))
         if let url = AppLinks.privacyPolicy { privacy.link = url; privacy.underlineStyle = .single }
-        text += terms + AttributedString(" und ") + privacy
-            + AttributedString(". Beleidigende oder anstößige Inhalte werden nicht toleriert und führen zur Sperrung.")
+        text += terms + AttributedString(String(localized: " und ")) + privacy
+            + AttributedString(String(localized: ". Beleidigende oder anstößige Inhalte werden nicht toleriert und führen zur Sperrung."))
         return Text(text)
             .font(.system(.caption, design: .rounded))
             .foregroundColor(.white.opacity(0.5))
@@ -549,7 +549,7 @@ struct SignupView: View {
         signUpFailed = true
         signUpErrorMessage = error.localizedDescription
         withAnimation {
-            loadingText = "Etwas ist schiefgelaufen"
+            loadingText = String(localized: "Etwas ist schiefgelaufen")
         }
     }
 
@@ -581,7 +581,7 @@ struct SetupPage<Content: View>: View {
     let showProgress: Bool
     let currentPage: Int
     let lastPage: Int
-    var continueTitle: String = "Weiter"
+    var continueTitle: String = String(localized: "Weiter")
     var buttonsDelay: Double = 0
     
     @ViewBuilder var content: Content

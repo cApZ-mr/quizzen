@@ -43,7 +43,7 @@ struct PvPWaitingRoom: View {
                             .foregroundStyle(.secondary)
                     }
                     inviteCard
-                    waitingIndicator("Warte, bis dein Freund beitritt…")
+                    waitingIndicator(String(localized: "Warte, bis dein Freund beitritt…"))
                 } else if session.isHost {
                     quizPicker
                     if let definition = selectedDefinition {
@@ -51,7 +51,7 @@ struct PvPWaitingRoom: View {
                             .id(definition.id)
                     }
                 } else {
-                    waitingIndicator("\(session.opponentName) wählt gerade ein Quiz aus…")
+                    waitingIndicator(String(localized: "\(session.opponentName) wählt gerade ein Quiz aus…"))
                 }
 
                 if let error = session.errorMessage {
@@ -92,7 +92,7 @@ struct PvPWaitingRoom: View {
             .accessibilityLabel("Code \(code.map(String.init).joined(separator: " "))")
 
             HStack(spacing: 10) {
-                ShareLink(item: "Lass uns ein Quizzen-Duell spielen! ⚔️ Öffne die App, tippe auf „Duell“ → „Beitreten“ und gib diesen Code ein: \(code)") {
+                ShareLink(item: String(localized: "Lass uns ein Quizzen-Duell spielen! ⚔️ Öffne die App, tippe auf „Duell“ → „Beitreten“ und gib diesen Code ein: \(code)")) {
                     Label("Code teilen", systemImage: "square.and.arrow.up")
                 }
                 Button {
@@ -205,7 +205,7 @@ struct PvPWaitingRoom: View {
                 if session.isBusy {
                     ProgressView().tint(.white)
                 } else if let quiz = selectedQuiz, let definition = selectedDefinition {
-                    Label(canStart ? "\(quiz.title) · \(duelSetup.resolved(for: definition).label) starten" : "Keine passenden Fragen",
+                    Label(canStart ? String(localized: "\(quiz.title) · \(duelSetup.resolved(for: definition).label) starten") : String(localized: "Keine passenden Fragen"),
                           systemImage: "play.fill")
                 } else {
                     Text("Wähle zuerst ein Quiz")

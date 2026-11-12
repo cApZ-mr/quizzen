@@ -32,7 +32,7 @@ struct DuelSetup: Equatable {
         } else {
             config = custom
             duration = customDuration
-            label = "Eigene"
+            label = String(localized: "Eigene")
         }
         config.onlyUnknown = false   // im Duell für beide gleich
         config.answerCount = min(max(config.answerCount, 2), definition.maxAnswers)
@@ -102,7 +102,7 @@ struct PvPDuelSettingsPanel: View {
     private var summary: some View {
         let config = resolved.config
         let count = min(config.questionCount, available)
-        var parts = ["\(count) Fragen", "\(config.answerCount) Antworten", "\(resolved.duration) s pro Frage"]
+        var parts = [String(localized: "\(count) Fragen"), String(localized: "\(config.answerCount) Antworten"), String(localized: "\(resolved.duration) s pro Frage")]
         for filter in definition.visibleFilters {
             if let selected = config.selections[filter.id], selected.count < filter.options.count {
                 parts.append(filter.options.filter { selected.contains($0.id) }.map(\.name).joined(separator: ", "))
@@ -130,21 +130,21 @@ struct PvPDuelSettingsPanel: View {
                 }
             }
 
-            option("Fragen") {
+            option(String(localized: "Fragen")) {
                 Picker("Fragen", selection: $setup.custom.questionCount) {
                     ForEach(DuelSetup.questionCounts, id: \.self) { Text("\($0)").tag($0) }
                 }
                 .pickerStyle(.segmented)
             }
 
-            option("Zeit pro Frage") {
+            option(String(localized: "Zeit pro Frage")) {
                 Picker("Zeit", selection: $setup.customDuration) {
                     ForEach(DuelSetup.durations, id: \.self) { Text("\($0) s").tag($0) }
                 }
                 .pickerStyle(.segmented)
             }
 
-            option("Antwortmöglichkeiten") {
+            option(String(localized: "Antwortmöglichkeiten")) {
                 Picker("Antworten", selection: $setup.custom.answerCount) {
                     ForEach(definition.answerChoices, id: \.self) { Text("\($0)").tag($0) }
                 }
@@ -152,7 +152,7 @@ struct PvPDuelSettingsPanel: View {
             }
 
             if definition.supportsRandomDistractors {
-                option("Falsche Antworten") {
+                option(String(localized: "Falsche Antworten")) {
                     Picker("Falsche Antworten", selection: $setup.custom.distractors) {
                         ForEach(QuizConfig.Distractors.allCases, id: \.self) { Text($0.name).tag($0) }
                     }

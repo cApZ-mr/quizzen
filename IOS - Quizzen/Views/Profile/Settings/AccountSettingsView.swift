@@ -100,15 +100,15 @@ struct AccountSettingsView: View {
     // MARK: - Benutzername
 
     private var usernameCard: some View {
-        SettingsCard(title: "Benutzername", icon: "person.fill", tint: .blue) {
-            inputField(icon: "at", text: $viewModel.username, prompt: "Benutzername", field: .username)
+        SettingsCard(title: String(localized: "Benutzername"), icon: "person.fill", tint: .blue) {
+            inputField(icon: "at", text: $viewModel.username, prompt: String(localized: "Benutzername"), field: .username)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
 
             if let problem = viewModel.usernameProblem, viewModel.usernameChanged {
                 hint(problem, icon: "exclamationmark.circle.fill", color: .red)
             } else {
-                hint("3–20 Zeichen. So sehen dich andere in Bestenlisten und Duellen.", icon: "info.circle", color: .secondary)
+                hint(String(localized: "3–20 Zeichen. So sehen dich andere in Bestenlisten und Duellen."), icon: "info.circle", color: .secondary)
             }
 
             primaryButton("Benutzername speichern", busy: viewModel.isSaving,
@@ -126,14 +126,14 @@ struct AccountSettingsView: View {
     // MARK: - E-Mail
 
     private var emailCard: some View {
-        SettingsCard(title: "E-Mail-Adresse", icon: "envelope.fill", tint: .orange) {
-            inputField(icon: "envelope", text: $viewModel.newEmail, prompt: "Neue E-Mail-Adresse", field: .email)
+        SettingsCard(title: String(localized: "E-Mail-Adresse"), icon: "envelope.fill", tint: .orange) {
+            inputField(icon: "envelope", text: $viewModel.newEmail, prompt: String(localized: "Neue E-Mail-Adresse"), field: .email)
                 .textContentType(.emailAddress)
                 .keyboardType(.emailAddress)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
 
-            hint("Du bekommst einen Bestätigungslink an die neue Adresse. Erst danach gilt sie.",
+            hint(String(localized: "Du bekommst einen Bestätigungslink an die neue Adresse. Erst danach gilt sie."),
                  icon: "info.circle", color: .secondary)
 
             primaryButton("E-Mail ändern", busy: viewModel.isSaving, enabled: viewModel.emailValid) {
@@ -146,26 +146,26 @@ struct AccountSettingsView: View {
     // MARK: - Passwort
 
     private var passwordCard: some View {
-        SettingsCard(title: "Passwort", icon: "lock.fill", tint: .purple) {
-            inputField(icon: "lock", text: $viewModel.newPassword, prompt: "Neues Passwort", field: .password, secure: true)
+        SettingsCard(title: String(localized: "Passwort"), icon: "lock.fill", tint: .purple) {
+            inputField(icon: "lock", text: $viewModel.newPassword, prompt: String(localized: "Neues Passwort"), field: .password, secure: true)
                 .textContentType(.newPassword)
 
             if !viewModel.newPassword.isEmpty {
                 PasswordStrengthBar(strength: viewModel.passwordStrength)
             }
 
-            inputField(icon: "lock.rotation", text: $viewModel.confirmPassword, prompt: "Passwort bestätigen",
+            inputField(icon: "lock.rotation", text: $viewModel.confirmPassword, prompt: String(localized: "Passwort bestätigen"),
                        field: .confirm, secure: true)
                 .textContentType(.newPassword)
 
             if !viewModel.confirmPassword.isEmpty {
                 if viewModel.passwordsMatch {
-                    hint("Passwörter stimmen überein", icon: "checkmark.circle.fill", color: .green)
+                    hint(String(localized: "Passwörter stimmen überein"), icon: "checkmark.circle.fill", color: .green)
                 } else {
-                    hint("Passwörter stimmen nicht überein", icon: "xmark.circle.fill", color: .red)
+                    hint(String(localized: "Passwörter stimmen nicht überein"), icon: "xmark.circle.fill", color: .red)
                 }
             } else {
-                hint("Mindestens 6 Zeichen.", icon: "info.circle", color: .secondary)
+                hint(String(localized: "Mindestens 6 Zeichen."), icon: "info.circle", color: .secondary)
             }
 
             primaryButton("Passwort ändern", busy: viewModel.isSaving, enabled: viewModel.passwordValid) {
