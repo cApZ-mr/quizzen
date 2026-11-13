@@ -1,0 +1,401 @@
+{
+  "id": "SportsBundesliga",
+  "categoryId": "sports",
+  "subCategory": "Fußball",
+  "title": "Fußball (Bundesliga)",
+  "description": "Vereine, Spieler und Rekorde der deutschen Bundesliga.",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wie viele Vereine spielen in der 1. Bundesliga?",
+      "options": [
+        "18",
+        "16",
+        "20",
+        "17"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein hat die meisten deutschen Meisterschaften gewonnen?",
+      "options": [
+        "FC Bayern München",
+        "Borussia Dortmund",
+        "Hamburger SV",
+        "1. FC Köln"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Meisterschaften in Folge gewann der FC Bayern München von 2013 bis 2023?",
+      "options": [
+        "11",
+        "9",
+        "13",
+        "7"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Stadt spielt Borussia Dortmund?",
+      "options": [
+        "Dortmund",
+        "Düsseldorf",
+        "Duisburg",
+        "Essen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das Stadion von Borussia Dortmund?",
+      "options": [
+        "Signal Iduna Park",
+        "Allianz Arena",
+        "Veltins-Arena",
+        "Volksparkstadion"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das Stadion des FC Bayern München?",
+      "options": [
+        "Allianz Arena",
+        "Olympiastadion",
+        "Signal Iduna Park",
+        "Red Bull Arena"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler erzielte die meisten Tore in der Bundesliga-Geschichte?",
+      "options": [
+        "Robert Lewandowski",
+        "Gerd Müller",
+        "Klaus Fischer",
+        "Miroslav Klose"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Tore erzielte Robert Lewandowski in der Saison 2020/21?",
+      "options": [
+        "41",
+        "40",
+        "38",
+        "36"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Rekord von Gerd Müller hielt fast 50 Jahre?",
+      "options": [
+        "Meiste Saisontore",
+        "Meiste Länderspiele",
+        "Meiste Elfmeter",
+        "Meiste Vorlagen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein trägt den Spitznamen „Die Werkself“?",
+      "options": [
+        "Bayer 04 Leverkusen",
+        "VfL Wolfsburg",
+        "TSG Hoffenheim",
+        "RB Leipzig"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein wird „Geißböcke“ genannt?",
+      "options": [
+        "1. FC Köln",
+        "Fortuna Düsseldorf",
+        "Borussia Mönchengladbach",
+        "SC Freiburg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Stadt spielt der Hamburger SV?",
+      "options": [
+        "Hamburg",
+        "Bremen",
+        "Kiel",
+        "Rostock"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein war bis zum Abstieg 2018 nie aus der Bundesliga abgestiegen?",
+      "options": [
+        "Hamburger SV",
+        "Werder Bremen",
+        "1. FC Köln",
+        "VfB Stuttgart"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der Fußballverein aus Gelsenkirchen?",
+      "options": [
+        "FC Schalke 04",
+        "Borussia Dortmund",
+        "MSV Duisburg",
+        "Fortuna Düsseldorf"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein gewann 2004 als Außenseiter die Meisterschaft?",
+      "options": [
+        "Werder Bremen",
+        "Bayer Leverkusen",
+        "VfL Bochum",
+        "Hertha BSC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das traditionelle Duell zwischen Borussia Dortmund und Schalke 04?",
+      "options": [
+        "Revierderby",
+        "Nordderby",
+        "Rheinderby",
+        "Südderby"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Trainer führte Bayer Leverkusen 2024 ungeschlagen zur Meisterschaft?",
+      "options": [
+        "Xabi Alonso",
+        "Jürgen Klopp",
+        "Julian Nagelsmann",
+        "Thomas Tuchel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Spiele blieb Bayer Leverkusen in der Meistersaison 2023/24 ungeschlagen?",
+      "options": [
+        "51",
+        "34",
+        "45",
+        "38"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein spielt seine Heimspiele im Volksparkstadion?",
+      "options": [
+        "Hamburger SV",
+        "FC St. Pauli",
+        "Werder Bremen",
+        "Holstein Kiel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein aus Leipzig stieg 2016 erstmals in die Bundesliga auf?",
+      "options": [
+        "RB Leipzig",
+        "FC Sachsen Leipzig",
+        "Chemie Leipzig",
+        "Lok Leipzig"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Punkte gibt es für einen Sieg in der Bundesliga?",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "4"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler wurde mehrfach zum Welttorhüter gewählt und spielte für den FC Bayern?",
+      "options": [
+        "Manuel Neuer",
+        "Oliver Kahn",
+        "Jens Lehmann",
+        "Sepp Maier"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Torwart hielt bei der WM 2002 für Deutschland und spielte zuvor für Bayern München?",
+      "options": [
+        "Oliver Kahn",
+        "Manuel Neuer",
+        "Jens Lehmann",
+        "Andreas Köpke"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein stieg nach der Saison 2020/21 nach 55 Jahren Erstliga-Zugehörigkeit erstmals ab?",
+      "options": [
+        "Schalke 04",
+        "Werder Bremen",
+        "VfB Stuttgart",
+        "Hertha BSC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Mannschaften steigen am Saisonende direkt aus der Bundesliga ab?",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein wird „Die Fohlen“ genannt?",
+      "options": [
+        "Borussia Mönchengladbach",
+        "Borussia Dortmund",
+        "SC Freiburg",
+        "1. FC Union Berlin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Stadtteil Berlins spielt Hertha BSC?",
+      "options": [
+        "Charlottenburg",
+        "Kreuzberg",
+        "Köpenick",
+        "Spandau"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein aus Berlin feierte 2019 den erstmaligen Aufstieg in die Bundesliga?",
+      "options": [
+        "1. FC Union Berlin",
+        "Hertha BSC",
+        "BFC Dynamo",
+        "Tennis Borussia Berlin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler erzielte für Deutschland bei der WM 2014 im Finale das entscheidende Tor?",
+      "options": [
+        "Mario Götze",
+        "Thomas Müller",
+        "Miroslav Klose",
+        "Toni Kroos"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein spielt im Borussia-Park?",
+      "options": [
+        "Borussia Mönchengladbach",
+        "Borussia Dortmund",
+        "1. FC Köln",
+        "Bayer Leverkusen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Spieltage hat eine Bundesliga-Saison mit 18 Mannschaften?",
+      "options": [
+        "34",
+        "38",
+        "30",
+        "36"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein gewann zuletzt 1988 die deutsche Meisterschaft und spielt heute meist unterklassig?",
+      "options": [
+        "Werder Bremen",
+        "Hamburger SV",
+        "1. FC Kaiserslautern",
+        "VfB Stuttgart"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher ehemalige Nationalspieler gewann mit Bayern München siebenmal die Meisterschaft als Kapitän in den 2010ern?",
+      "options": [
+        "Philipp Lahm",
+        "Bastian Schweinsteiger",
+        "Thomas Müller",
+        "Manuel Neuer"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein trägt den Beinamen „Breisgau-Brasilianer“?",
+      "options": [
+        "SC Freiburg",
+        "TSG Hoffenheim",
+        "1. FC Heidenheim",
+        "SV Darmstadt 98"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Stadt spielt Eintracht Frankfurt?",
+      "options": [
+        "Frankfurt am Main",
+        "Mainz",
+        "Wiesbaden",
+        "Offenbach"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein gewann 2022 die Europa League?",
+      "options": [
+        "Eintracht Frankfurt",
+        "Bayer Leverkusen",
+        "VfL Wolfsburg",
+        "RB Leipzig"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler wechselte 2013 von Borussia Dortmund zum FC Bayern München?",
+      "options": [
+        "Mario Götze",
+        "Mats Hummels",
+        "Robert Lewandowski",
+        "Marco Reus"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Verein feierte 2009 die Meisterschaft unter Trainer Louis van Gaal?",
+      "options": [
+        "FC Bayern München",
+        "VfL Wolfsburg",
+        "Bayer Leverkusen",
+        "Hertha BSC"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt der DFB-Pokal-Wettbewerb, den jedes Jahr im Mai ein Finale in Berlin krönt?",
+      "options": [
+        "DFB-Pokal",
+        "UEFA Super Cup",
+        "DFL-Supercup",
+        "Ligapokal"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

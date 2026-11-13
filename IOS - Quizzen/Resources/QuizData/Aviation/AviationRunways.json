@@ -1,0 +1,528 @@
+{
+  "id": "AviationRunways",
+  "categoryId": "aviation",
+  "subCategory": "Landebahnen",
+  "title": "Flughäfen anhand der Landebahnen",
+  "difficulty": "Schwer",
+  "description": "Erkennst du Flughäfen an der Form ihrer Start- und Landebahnen?",
+  "imageName": "",
+  "questions": [
+    {
+      "question": "Frankfurt",
+      "imageName": "runway_eddf",
+      "options": [
+        "Amsterdam",
+        "Frankfurt",
+        "Neu-Delhi",
+        "Berlin"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "München",
+      "imageName": "runway_eddm",
+      "options": [
+        "München",
+        "Paris-Orly",
+        "Kairo",
+        "Madrid"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Berlin",
+      "imageName": "runway_eddb",
+      "options": [
+        "Berlin",
+        "Paris",
+        "Hamburg",
+        "München"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Hamburg",
+      "imageName": "runway_eddh",
+      "options": [
+        "Detroit",
+        "Wien",
+        "Peking",
+        "Hamburg"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Köln/Bonn",
+      "imageName": "runway_eddk",
+      "options": [
+        "Hongkong",
+        "Köln/Bonn",
+        "Frankfurt",
+        "Dublin"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "London",
+      "imageName": "runway_egll",
+      "options": [
+        "Barcelona",
+        "Los Angeles",
+        "London",
+        "Dublin"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Paris",
+      "imageName": "runway_lfpg",
+      "options": [
+        "London",
+        "Paris",
+        "Dallas",
+        "Paris-Orly"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Paris-Orly",
+      "imageName": "runway_lfpo",
+      "options": [
+        "Seoul",
+        "Paris-Orly",
+        "Las Vegas",
+        "Berlin"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Amsterdam",
+      "imageName": "runway_eham",
+      "options": [
+        "Istanbul",
+        "Peking",
+        "Amsterdam",
+        "Neu-Delhi"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Madrid",
+      "imageName": "runway_lemd",
+      "options": [
+        "Berlin",
+        "Detroit",
+        "Madrid",
+        "Köln/Bonn"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Barcelona",
+      "imageName": "runway_lebl",
+      "options": [
+        "Stockholm",
+        "Barcelona",
+        "Paris",
+        "Dallas"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Rom",
+      "imageName": "runway_lirf",
+      "options": [
+        "Barcelona",
+        "Rom",
+        "Chicago",
+        "Atlanta"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Zürich",
+      "imageName": "runway_lszh",
+      "options": [
+        "Kairo",
+        "Zürich",
+        "Sydney",
+        "Orlando"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Wien",
+      "imageName": "runway_loww",
+      "options": [
+        "Seoul",
+        "Barcelona",
+        "Helsinki",
+        "Wien"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Kopenhagen",
+      "imageName": "runway_ekch",
+      "options": [
+        "Neu-Delhi",
+        "Kopenhagen",
+        "Peking",
+        "Orlando"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Stockholm",
+      "imageName": "runway_essa",
+      "options": [
+        "Hamburg",
+        "Stockholm",
+        "Kopenhagen",
+        "Berlin"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Helsinki",
+      "imageName": "runway_efhk",
+      "options": [
+        "Helsinki",
+        "Wien",
+        "Köln/Bonn",
+        "Shanghai"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Brüssel",
+      "imageName": "runway_ebbr",
+      "options": [
+        "Las Vegas",
+        "Denver",
+        "Brüssel",
+        "Sydney"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Dublin",
+      "imageName": "runway_eidw",
+      "options": [
+        "Stockholm",
+        "Peking",
+        "Dublin",
+        "Seoul"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Istanbul",
+      "imageName": "runway_ltfm",
+      "options": [
+        "Atlanta",
+        "Istanbul",
+        "Hongkong",
+        "Denver"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Moskau",
+      "imageName": "runway_uuee",
+      "options": [
+        "Moskau",
+        "London",
+        "Paris-Orly",
+        "Hamburg"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "New York",
+      "imageName": "runway_kjfk",
+      "options": [
+        "New York",
+        "Singapur",
+        "Boston",
+        "Kairo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Los Angeles",
+      "imageName": "runway_klax",
+      "options": [
+        "Las Vegas",
+        "Singapur",
+        "Los Angeles",
+        "Tokio"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Chicago",
+      "imageName": "runway_kord",
+      "options": [
+        "Kairo",
+        "Paris-Orly",
+        "Chicago",
+        "Seoul"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Atlanta",
+      "imageName": "runway_katl",
+      "options": [
+        "Boston",
+        "Paris-Orly",
+        "Atlanta",
+        "Dublin"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Dallas",
+      "imageName": "runway_kdfw",
+      "options": [
+        "Dallas",
+        "Vancouver",
+        "Rom",
+        "Helsinki"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Denver",
+      "imageName": "runway_kden",
+      "options": [
+        "Singapur",
+        "Denver",
+        "Neu-Delhi",
+        "Vancouver"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "San Francisco",
+      "imageName": "runway_ksfo",
+      "options": [
+        "San Francisco",
+        "Seoul",
+        "Tokio",
+        "Barcelona"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Boston",
+      "imageName": "runway_kbos",
+      "options": [
+        "Boston",
+        "Toronto",
+        "München",
+        "Paris-Orly"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Miami",
+      "imageName": "runway_kmia",
+      "options": [
+        "Shanghai",
+        "Stockholm",
+        "Miami",
+        "Hamburg"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Las Vegas",
+      "imageName": "runway_klas",
+      "options": [
+        "Köln/Bonn",
+        "Las Vegas",
+        "Amsterdam",
+        "Seoul"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Seattle",
+      "imageName": "runway_ksea",
+      "options": [
+        "Barcelona",
+        "Helsinki",
+        "Peking",
+        "Seattle"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Toronto",
+      "imageName": "runway_cyyz",
+      "options": [
+        "Detroit",
+        "Toronto",
+        "Istanbul",
+        "Dallas"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Vancouver",
+      "imageName": "runway_cyvr",
+      "options": [
+        "Kopenhagen",
+        "Vancouver",
+        "Stockholm",
+        "Paris-Orly"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Tokio",
+      "imageName": "runway_rjtt",
+      "options": [
+        "Tokio",
+        "Kopenhagen",
+        "Hongkong",
+        "Peking"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Seoul",
+      "imageName": "runway_rksi",
+      "options": [
+        "Seoul",
+        "Hamburg",
+        "Detroit",
+        "Neu-Delhi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Peking",
+      "imageName": "runway_zbaa",
+      "options": [
+        "New York",
+        "Toronto",
+        "Peking",
+        "Köln/Bonn"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Shanghai",
+      "imageName": "runway_zspd",
+      "options": [
+        "Amsterdam",
+        "Tokio",
+        "Wien",
+        "Shanghai"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Hongkong",
+      "imageName": "runway_vhhh",
+      "options": [
+        "Hongkong",
+        "Zürich",
+        "Paris",
+        "Denver"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Singapur",
+      "imageName": "runway_wsss",
+      "options": [
+        "San Francisco",
+        "Los Angeles",
+        "Denver",
+        "Singapur"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Bangkok",
+      "imageName": "runway_vtbs",
+      "options": [
+        "Bangkok",
+        "Paris",
+        "Sydney",
+        "Kairo"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Neu-Delhi",
+      "imageName": "runway_vidp",
+      "options": [
+        "Paris",
+        "Neu-Delhi",
+        "Zürich",
+        "Stockholm"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Sydney",
+      "imageName": "runway_yssy",
+      "options": [
+        "Sydney",
+        "Amsterdam",
+        "San Francisco",
+        "Rom"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Melbourne",
+      "imageName": "runway_ymml",
+      "options": [
+        "Boston",
+        "Seoul",
+        "Melbourne",
+        "Köln/Bonn"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Kairo",
+      "imageName": "runway_heca",
+      "options": [
+        "London",
+        "Barcelona",
+        "Stockholm",
+        "Kairo"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Orlando",
+      "imageName": "runway_kmco",
+      "options": [
+        "Hamburg",
+        "Wien",
+        "Orlando",
+        "Dallas"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Detroit",
+      "imageName": "runway_kdtw",
+      "options": [
+        "Atlanta",
+        "Detroit",
+        "Helsinki",
+        "Miami"
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

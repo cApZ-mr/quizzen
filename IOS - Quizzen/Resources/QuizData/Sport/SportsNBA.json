@@ -1,0 +1,411 @@
+{
+  "id": "SportsNBA",
+  "categoryId": "sports",
+  "subCategory": "Basketball",
+  "title": "Basketball (NBA)",
+  "description": "Spieler, Teams und Rekorde der nordamerikanischen Basketball-Profiliga.",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Wie viele Spieler pro Team stehen in der NBA gleichzeitig auf dem Feld?",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie lange dauert ein Viertel in der NBA?",
+      "options": [
+        "12 Minuten",
+        "10 Minuten",
+        "15 Minuten",
+        "20 Minuten"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Teams spielen in der NBA?",
+      "options": [
+        "30",
+        "28",
+        "32",
+        "24"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler wurde „His Airness“ genannt?",
+      "options": [
+        "Michael Jordan",
+        "Kobe Bryant",
+        "Scottie Pippen",
+        "Julius Erving"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Für welches Team spielte Michael Jordan die meisten Jahre?",
+      "options": [
+        "Chicago Bulls",
+        "Washington Wizards",
+        "Charlotte Hornets",
+        "Detroit Pistons"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher deutsche Spieler wurde 2007 als wertvollster Spieler (MVP) der Saison ausgezeichnet?",
+      "options": [
+        "Dirk Nowitzki",
+        "Dennis Schröder",
+        "Detlef Schrempf",
+        "Franz Wagner"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Mit welchem Team gewann Dirk Nowitzki 2011 die Meisterschaft?",
+      "options": [
+        "Dallas Mavericks",
+        "Miami Heat",
+        "San Antonio Spurs",
+        "Los Angeles Lakers"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Punkte erzielte Wilt Chamberlain in seinem Rekordspiel 1962?",
+      "options": [
+        "100",
+        "81",
+        "73",
+        "92"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler erzielte 2006 in einem einzigen Spiel 81 Punkte?",
+      "options": [
+        "Kobe Bryant",
+        "LeBron James",
+        "Michael Jordan",
+        "Shaquille O'Neal"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler überholte 2023 Kareem Abdul-Jabbar als besten Punktesammler der NBA-Geschichte?",
+      "options": [
+        "LeBron James",
+        "Kevin Durant",
+        "Kobe Bryant",
+        "Karl Malone"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler ist für den „Skyhook“ berühmt?",
+      "options": [
+        "Kareem Abdul-Jabbar",
+        "Wilt Chamberlain",
+        "Hakeem Olajuwon",
+        "Bill Russell"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Meisterschaften gewann Bill Russell als Spieler?",
+      "options": [
+        "11",
+        "8",
+        "6",
+        "13"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler hat die meisten Dreipunktwürfe der NBA-Geschichte getroffen?",
+      "options": [
+        "Stephen Curry",
+        "Ray Allen",
+        "James Harden",
+        "Klay Thompson"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Für welches Team spielt Stephen Curry seit Beginn seiner Karriere?",
+      "options": [
+        "Golden State Warriors",
+        "Charlotte Hornets",
+        "Phoenix Suns",
+        "Sacramento Kings"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie hoch hängt ein Basketballkorb?",
+      "options": [
+        "3,05 m",
+        "2,90 m",
+        "3,20 m",
+        "3,50 m"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Sekunden hat ein Team in der NBA für einen Angriff (Shot Clock)?",
+      "options": [
+        "24",
+        "30",
+        "20",
+        "35"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Nach wie vielen persönlichen Fouls muss ein NBA-Spieler das Spiel verlassen?",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "7"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das Spiel, in dem jedes Jahr die besten Spieler der Saison gegeneinander antreten?",
+      "options": [
+        "All-Star Game",
+        "Final Four",
+        "Super Bowl",
+        "Summer League"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die jährliche Auswahl neuer Spieler aus College und Ausland?",
+      "options": [
+        "NBA Draft",
+        "Free Agency",
+        "Trade Deadline",
+        "Summer League"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt die Trophäe für den NBA-Meister?",
+      "options": [
+        "Larry O'Brien Trophy",
+        "Stanley Cup",
+        "Vince Lombardi Trophy",
+        "Commissioner's Trophy"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler hatte den Spitznamen „Magic“?",
+      "options": [
+        "Earvin Johnson",
+        "Larry Bird",
+        "Isiah Thomas",
+        "James Worthy"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Für welches Team spielte Larry Bird seine gesamte Karriere?",
+      "options": [
+        "Boston Celtics",
+        "Los Angeles Lakers",
+        "Indiana Pacers",
+        "New York Knicks"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Team gewann in den 1990er-Jahren sechs Titel in acht Jahren?",
+      "options": [
+        "Chicago Bulls",
+        "Houston Rockets",
+        "Detroit Pistons",
+        "Utah Jazz"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Center wurde „Shaq“ genannt?",
+      "options": [
+        "Shaquille O'Neal",
+        "Patrick Ewing",
+        "David Robinson",
+        "Dwight Howard"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Nationalmannschaft trat 1992 bei Olympia als „Dream Team“ an?",
+      "options": [
+        "USA",
+        "Kanada",
+        "Spanien",
+        "Litauen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler wurde 2003 direkt von der High School als erster Pick gedraftet?",
+      "options": [
+        "LeBron James",
+        "Carmelo Anthony",
+        "Dwyane Wade",
+        "Chris Bosh"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Stadt spielen die Lakers?",
+      "options": [
+        "Los Angeles",
+        "San Francisco",
+        "Las Vegas",
+        "San Diego"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler aus Griechenland wurde 2019 und 2020 zum MVP gewählt?",
+      "options": [
+        "Giannis Antetokounmpo",
+        "Luka Dončić",
+        "Nikola Jokić",
+        "Joel Embiid"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher serbische Center wurde 2021, 2022 und 2024 zum MVP gewählt?",
+      "options": [
+        "Nikola Jokić",
+        "Bogdan Bogdanović",
+        "Vlade Divac",
+        "Boban Marjanović"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie heißt das NBA-Team aus Toronto?",
+      "options": [
+        "Raptors",
+        "Maple Leafs",
+        "Huskies",
+        "Blue Jays"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Team gewann 2016 die Finals nach einem 1:3-Rückstand?",
+      "options": [
+        "Cleveland Cavaliers",
+        "Golden State Warriors",
+        "Boston Celtics",
+        "Miami Heat"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Siege holten die Golden State Warriors in der Rekordsaison 2015/16?",
+      "options": [
+        "73",
+        "72",
+        "70",
+        "69"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Punkte zählt ein Freiwurf?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie nennt man es, wenn ein Spieler in drei Statistik-Kategorien zweistellig punktet?",
+      "options": [
+        "Triple-Double",
+        "Hattrick",
+        "Grand Slam",
+        "Double-Double"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler hat die meisten Triple-Doubles der NBA-Geschichte?",
+      "options": [
+        "Russell Westbrook",
+        "Oscar Robertson",
+        "Magic Johnson",
+        "Jason Kidd"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher deutsche Spieler wurde 2023 bester Spieler der Basketball-WM, die Deutschland gewann?",
+      "options": [
+        "Dennis Schröder",
+        "Franz Wagner",
+        "Daniel Theis",
+        "Moritz Wagner"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Rückennummer trug Michael Jordan bei den Chicago Bulls fast immer?",
+      "options": [
+        "23",
+        "33",
+        "24",
+        "32"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Spieler wurde „The Mailman“ genannt?",
+      "options": [
+        "Karl Malone",
+        "John Stockton",
+        "Charles Barkley",
+        "Dennis Rodman"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Team spielt seine Heimspiele im Madison Square Garden?",
+      "options": [
+        "New York Knicks",
+        "Brooklyn Nets",
+        "Boston Celtics",
+        "Philadelphia 76ers"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Team hat bis 2024 die meisten NBA-Meisterschaften gewonnen?",
+      "options": [
+        "Boston Celtics",
+        "Los Angeles Lakers",
+        "Chicago Bulls",
+        "Golden State Warriors"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

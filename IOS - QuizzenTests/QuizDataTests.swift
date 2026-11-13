@@ -9,7 +9,7 @@ import Testing
 @testable import IOS___Quizzen
 
 /// Feste Liste für parametrisierte Tests (Argumente laufen außerhalb des Main Actors)
-nonisolated let allQuizIds = ["Flags", "Capitals", "Aviation", "Basics", "History", "Science", "Movies", "HarryPotter", "Sports"]
+nonisolated let allQuizIds = ["Flags", "Capitals", "Aviation", "Runways", "Basics", "History", "Science", "Movies", "HarryPotter", "Music", "Sports", "SportsNBA", "SportsBundesliga"]
 
 @Suite("Quiz-Daten")
 struct QuizDataTests {
@@ -34,7 +34,8 @@ struct QuizDataTests {
     }
 
     @Test("Bekannte Fragen-Zahlen", arguments: [("Basics", 226), ("Flags", 197), ("Capitals", 393), ("History", 50), ("Science", 49),
-                                                  ("Sports", 36), ("Movies", 36), ("HarryPotter", 61), ("Aviation", 148)])
+                                                  ("Sports", 36), ("Movies", 36), ("HarryPotter", 61), ("Aviation", 148), ("Runways", 47),
+                                                  ("Music", 40), ("SportsNBA", 40), ("SportsBundesliga", 39)])
     func expectedPoolSizes(id: String, count: Int) {
         #expect(QuizCatalog.definition(for: id)?.items.count == count)
     }

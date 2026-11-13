@@ -1,0 +1,411 @@
+{
+  "id": "MusicGeneral",
+  "categoryId": "music",
+  "subCategory": "Musik",
+  "title": "Musik",
+  "description": "Bands, Alben und Hits – von Klassik bis Pop.",
+  "imageName": "",
+  "difficulty": "Mittel",
+  "questions": [
+    {
+      "question": "Welche Band veröffentlichte das Album „Abbey Road“?",
+      "options": [
+        "The Beatles",
+        "The Rolling Stones",
+        "Pink Floyd",
+        "Queen"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer ist als „King of Pop“ bekannt?",
+      "options": [
+        "Michael Jackson",
+        "Prince",
+        "Elvis Presley",
+        "James Brown"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wie viele Mitglieder hatten die Beatles?",
+      "options": [
+        "4",
+        "5",
+        "3",
+        "6"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Sängerin veröffentlichte das Album „1989“?",
+      "options": [
+        "Taylor Swift",
+        "Adele",
+        "Beyoncé",
+        "Ariana Grande"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band singt „Bohemian Rhapsody“?",
+      "options": [
+        "Queen",
+        "The Who",
+        "Led Zeppelin",
+        "Genesis"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer sang das Lied „Like a Virgin“?",
+      "options": [
+        "Madonna",
+        "Cyndi Lauper",
+        "Whitney Houston",
+        "Cher"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Instrument spielte Jimi Hendrix hauptsächlich?",
+      "options": [
+        "Gitarre",
+        "Schlagzeug",
+        "Klavier",
+        "Saxofon"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band veröffentlichte „Thriller“ als meistverkauftes Album aller Zeiten?",
+      "options": [
+        "Michael Jackson (Solo)",
+        "The Jackson 5",
+        "Earth, Wind & Fire",
+        "Prince and the Revolution"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Musiker ist als „The Boss“ bekannt?",
+      "options": [
+        "Bruce Springsteen",
+        "Billy Joel",
+        "Tom Petty",
+        "Bob Seger"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welcher Stadt fand das legendäre Woodstock-Festival 1969 statt?",
+      "options": [
+        "Bethel (bei Woodstock)",
+        "New York City",
+        "San Francisco",
+        "Los Angeles"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band schrieb den Song „Hotel California“?",
+      "options": [
+        "Eagles",
+        "Fleetwood Mac",
+        "The Doors",
+        "Creedence Clearwater Revival"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Sänger starb 1977 auf seinem Anwesen Graceland?",
+      "options": [
+        "Elvis Presley",
+        "Jim Morrison",
+        "Jimi Hendrix",
+        "Janis Joplin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer komponierte die „Mondscheinsonate“?",
+      "options": [
+        "Ludwig van Beethoven",
+        "Wolfgang Amadeus Mozart",
+        "Johann Sebastian Bach",
+        "Frédéric Chopin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Komponist schrieb die Oper „Die Zauberflöte“?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven",
+        "Richard Wagner",
+        "Giuseppe Verdi"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche schwedische Band sang „Dancing Queen“?",
+      "options": [
+        "ABBA",
+        "Roxette",
+        "Europe",
+        "Ace of Base"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Rapper veröffentlichte das Album „The Marshall Mathers LP“?",
+      "options": [
+        "Eminem",
+        "Jay-Z",
+        "50 Cent",
+        "Dr. Dre"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band veröffentlichte „Smells Like Teen Spirit“?",
+      "options": [
+        "Nirvana",
+        "Pearl Jam",
+        "Soundgarden",
+        "Alice in Chains"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer sang den Titelsong zu „My Heart Will Go On“ aus Titanic?",
+      "options": [
+        "Céline Dion",
+        "Whitney Houston",
+        "Mariah Carey",
+        "Shania Twain"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band ist für den Song „We Will Rock You“ bekannt?",
+      "options": [
+        "Queen",
+        "AC/DC",
+        "Guns N' Roses",
+        "Aerosmith"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "In welchem Jahrzehnt entstand der Punk-Musikstil?",
+      "options": [
+        "1970er",
+        "1960er",
+        "1980er",
+        "1990er"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher deutsche Sänger ist für das Lied „99 Luftballons“ bekannt?",
+      "options": [
+        "Nena",
+        "Herbert Grönemeyer",
+        "Udo Lindenberg",
+        "Peter Maffay"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band veröffentlichte das Album „Dark Side of the Moon“?",
+      "options": [
+        "Pink Floyd",
+        "Led Zeppelin",
+        "Deep Purple",
+        "Yes"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Künstler ist für das Lied „Billie Jean“ bekannt?",
+      "options": [
+        "Michael Jackson",
+        "Prince",
+        "Lionel Richie",
+        "Stevie Wonder"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welches Instrument spielte Ray Charles hauptsächlich?",
+      "options": [
+        "Klavier",
+        "Gitarre",
+        "Trompete",
+        "Saxofon"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Wer schrieb die Musik zum Musical „The Phantom of the Opera“?",
+      "options": [
+        "Andrew Lloyd Webber",
+        "Stephen Sondheim",
+        "Tim Rice",
+        "Elton John"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band wird oft als „Fab Four“ bezeichnet?",
+      "options": [
+        "The Beatles",
+        "The Rolling Stones",
+        "The Kinks",
+        "The Who"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Sängerin ist für „Respect“ berühmt?",
+      "options": [
+        "Aretha Franklin",
+        "Diana Ross",
+        "Tina Turner",
+        "Whitney Houston"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher DJ und Produzent ist für „One More Time“ bekannt?",
+      "options": [
+        "Daft Punk",
+        "David Guetta",
+        "Calvin Harris",
+        "Avicii"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band veröffentlichte „Stairway to Heaven“?",
+      "options": [
+        "Led Zeppelin",
+        "Deep Purple",
+        "Black Sabbath",
+        "Rainbow"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Sänger führte die Band Queen an?",
+      "options": [
+        "Freddie Mercury",
+        "Brian May",
+        "Roger Taylor",
+        "John Deacon"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche US-Sängerin wird als „Queen of Pop“ bezeichnet?",
+      "options": [
+        "Madonna",
+        "Britney Spears",
+        "Mariah Carey",
+        "Whitney Houston"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band schrieb den Song „Sweet Child O' Mine“?",
+      "options": [
+        "Guns N' Roses",
+        "Bon Jovi",
+        "Mötley Crüe",
+        "Aerosmith"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Komponist schrieb die „9. Sinfonie“ mit der „Ode an die Freude“?",
+      "options": [
+        "Ludwig van Beethoven",
+        "Johannes Brahms",
+        "Franz Schubert",
+        "Johann Strauss"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Sänger veröffentlichte das Album „Purple Rain“?",
+      "options": [
+        "Prince",
+        "Michael Jackson",
+        "George Michael",
+        "Lionel Richie"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band ist bekannt für den Song „Don't Stop Believin'“?",
+      "options": [
+        "Journey",
+        "Bon Jovi",
+        "Toto",
+        "Foreigner"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Musikstil entstand in den 1970ern in New York und Jamaika beeinflusst?",
+      "options": [
+        "Hip-Hop",
+        "Disco",
+        "Reggae",
+        "Funk"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Girlgroup sang „Wannabe“?",
+      "options": [
+        "Spice Girls",
+        "Destiny's Child",
+        "TLC",
+        "En Vogue"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Sänger ist für „Rocket Man“ bekannt?",
+      "options": [
+        "Elton John",
+        "David Bowie",
+        "Rod Stewart",
+        "Billy Joel"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welche Band veröffentlichte das Album „Nevermind“?",
+      "options": [
+        "Nirvana",
+        "Pearl Jam",
+        "Foo Fighters",
+        "Soundgarden"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Welcher Künstler trat unter dem Namen „The Artist Formerly Known as Prince“ auf?",
+      "options": [
+        "Prince",
+        "Michael Jackson",
+        "George Michael",
+        "David Bowie"
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}

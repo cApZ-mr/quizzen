@@ -316,16 +316,16 @@ enum QuizCatalog {
     static let categories: [QuizCategory] = [
         QuizCategory(id: "geography", name: "Geografie", icon: "globe.europe.africa.fill", color: .teal,
                      description: "Länder, Flaggen, Städte und Flughäfen der Welt.",
-                     quizzes: [flags, capitals, airportCodes]),
+                     quizzes: [flags, capitals, airportCodes, runways]),
         QuizCategory(id: "knowledge", name: "Wissen", icon: "brain.head.profile.fill", color: .orange,
                      description: "Allgemeinbildung, Geschichte und Naturwissenschaften.",
                      quizzes: [basics, history, science]),
         QuizCategory(id: "entertainment", name: "Film & Musik", icon: "film.fill", color: .purple,
                      description: "Kino, Serien und die Welten, die wir lieben.",
-                     quizzes: [movies, harryPotter]),
+                     quizzes: [movies, harryPotter, music]),
         QuizCategory(id: "sport", name: "Sport", icon: "sportscourt.fill", color: .green,
                      description: "Regeln, Rekorde und Legenden aus der Welt des Sports.",
-                     quizzes: [sports]),
+                     quizzes: [sports, basketballNBA, soccerBundesliga]),
     ]
 
     /// Alle Quizze in Anzeige-Reihenfolge (nach Themenbereichen)
@@ -519,6 +519,91 @@ enum QuizCatalog {
                                      icons: ["person.fill", "book.closed.fill", "wand.and.rays", "crown.fill"]),
             legacyQuizIds: ["FilmsHarryPotter"],
             categoryId: "harrypotter",
+            items: items)
+    }()
+
+    // MARK: Basketball (NBA)
+
+    static let basketballNBA: QuizDefinition = {
+        let items = (DataService.loadQuiz(from: "SportsNBA")?.questions ?? []).map {
+            QuizItem(question: $0, tags: [:], answerType: nil, isStarter: false)
+        }
+        return QuizDefinition(
+            id: "SportsNBA", title: "Basketball (NBA)",
+            description: "Spieler, Teams und Rekorde der nordamerikanischen Basketball-Profiliga.",
+            icon: "basketball.fill", unit: ("Frage", "Fragen"),
+            filters: [],
+            starterLabel: nil,
+            presets: standardPresets(names: ["Rookie", "Starter", "All-Star", "Hall of Fame"],
+                                     icons: ["figure.basketball", "sportscourt.fill", "star.fill", "trophy.fill"]),
+            legacyQuizIds: [],
+            categoryId: "sports",
+            items: items)
+    }()
+
+    // MARK: Fußball (Bundesliga)
+
+    static let soccerBundesliga: QuizDefinition = {
+        let items = (DataService.loadQuiz(from: "SportsBundesliga")?.questions ?? []).map {
+            QuizItem(question: $0, tags: [:], answerType: nil, isStarter: false)
+        }
+        return QuizDefinition(
+            id: "SportsBundesliga", title: "Fußball (Bundesliga)",
+            description: "Vereine, Spieler und Rekorde der deutschen Bundesliga.",
+            icon: "soccerball", unit: ("Frage", "Fragen"),
+            filters: [],
+            starterLabel: nil,
+            presets: standardPresets(names: ["Zuschauer", "Fan", "Ultra", "Vereinslegende"],
+                                     icons: ["eyes", "flag.fill", "megaphone.fill", "trophy.fill"]),
+            legacyQuizIds: [],
+            categoryId: "sports",
+            items: items)
+    }()
+
+    // MARK: Musik
+
+    static let music: QuizDefinition = {
+        let items = (DataService.loadQuiz(from: "MusicGeneral")?.questions ?? []).map {
+            QuizItem(question: $0, tags: [:], answerType: nil, isStarter: false)
+        }
+        return QuizDefinition(
+            id: "Music", title: "Musik",
+            description: "Bands, Alben und Hits – von Klassik bis Pop.",
+            icon: "music.note", unit: ("Frage", "Fragen"),
+            filters: [],
+            starterLabel: nil,
+            presets: standardPresets(names: ["Zuhörer", "Fan", "Kenner", "Musikexperte"],
+                                     icons: ["headphones", "music.mic", "guitars.fill", "crown.fill"]),
+            legacyQuizIds: [],
+            categoryId: "music",
+            items: items)
+    }()
+
+    // MARK: Flughäfen anhand der Landebahnen
+
+    static let runways: QuizDefinition = {
+        let items = (DataService.loadQuiz(from: "AviationRunways")?.questions ?? []).map {
+            QuizItem(question: $0, tags: [:], answerType: "airport", isStarter: false)
+        }
+        return QuizDefinition(
+            id: "Runways", title: "Landebahnen",
+            description: "Erkennst du Flughäfen an der Form ihrer Start- und Landebahnen?",
+            icon: "airplane.circle.fill", unit: ("Flughafen", "Flughäfen"),
+            filters: [],
+            starterLabel: nil,
+            presets: [
+                QuizPreset(level: .easy, name: "Co-Pilot", icon: "airplane.departure", tagline: "",
+                           config: QuizConfig(questionCount: 10, answerCount: 3, distractors: .random)),
+                QuizPreset(level: .medium, name: "Pilot", icon: "airplane", tagline: "",
+                           config: QuizConfig(questionCount: 15, answerCount: 4)),
+                QuizPreset(level: .hard, name: "Fluglotse", icon: "antenna.radiowaves.left.and.right", tagline: "",
+                           config: QuizConfig(questionCount: 20, answerCount: 6, timeLimit: 15)),
+                QuizPreset(level: .extreme, name: "Kapitän", icon: "star.circle.fill", tagline: "",
+                           config: QuizConfig(questionCount: 0, answerCount: 6, timeLimit: 8)),
+                .custom(),
+            ],
+            legacyQuizIds: [],
+            categoryId: "aviation",
             items: items)
     }()
 

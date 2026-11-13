@@ -80,6 +80,7 @@ extension Question {
         if let promptText { return promptText }
         guard imageName != nil else { return question }
         if quizId.hasPrefix("Flags") { return String(localized: "Welches Land hat diese Flagge?") }
+        if quizId.hasPrefix("Runways") { return String(localized: "Welcher Flughafen ist das?") }
         return String(localized: "Was ist auf dem Bild zu sehen?")
     }
 }

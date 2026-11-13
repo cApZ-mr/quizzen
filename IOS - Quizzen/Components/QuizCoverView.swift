@@ -43,6 +43,14 @@ struct QuizCoverTheme {
                                            motif: .symbols(main: "film.fill", scattered: ["popcorn.fill", "tv.fill", "star.fill", "ticket.fill"]))
         case "HarryPotter":   return .init(colors: [Color(hex: "5B1A1A"), Color(hex: "1E1B3A")],
                                            motif: .symbols(main: "wand.and.stars", scattered: ["sparkles", "moon.stars.fill", "book.closed.fill"]))
+        case "SportsNBA":     return .init(colors: [Color(hex: "C8102E"), Color(hex: "1D428A")],
+                                           motif: .symbols(main: "basketball.fill", scattered: ["figure.basketball", "trophy.fill", "star.fill", "sportscourt.fill"]))
+        case "SportsBundesliga": return .init(colors: [Color(hex: "D3010C"), .black],
+                                           motif: .symbols(main: "soccerball", scattered: ["flag.fill", "trophy.fill", "sportscourt.fill", "megaphone.fill"]))
+        case "Music":         return .init(colors: [Color(hex: "7B2FF7"), Color(hex: "F72585")],
+                                           motif: .symbols(main: "music.note", scattered: ["guitars.fill", "headphones", "waveform", "music.mic"]))
+        case "Runways":       return .init(colors: [Color(hex: "1B2A4A"), Color(hex: "0B132B")],
+                                           motif: .symbols(main: "airplane.circle.fill", scattered: ["location.north.line.fill", "antenna.radiowaves.left.and.right", "globe", "airplane"]))
 
         default:
             return fallback(for: quiz.categoryId)
