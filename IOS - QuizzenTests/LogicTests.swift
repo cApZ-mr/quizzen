@@ -114,12 +114,12 @@ struct DuelTests {
 
     @Test("Server-Fehler werden verständlich übersetzt")
     func errorMapping() {
-        #expect(PvPLobbyError.from(FakeError(description: "P0001: code_not_found")).errorDescription
-                == PvPLobbyError.codeNotFound.errorDescription)
-        #expect(PvPLobbyError.from(FakeError(description: "match_full")).errorDescription
-                == PvPLobbyError.matchAlreadyFull.errorDescription)
-        #expect(PvPLobbyError.from(FakeError(description: "PGRST202 Could not find the function")).errorDescription
-                == PvPLobbyError.serverNotReady.errorDescription)
+        #expect(LobbyError.from(FakeError(description: "P0001: code_not_found")).errorDescription
+                == LobbyError.codeNotFound.errorDescription)
+        #expect(LobbyError.from(FakeError(description: "lobby_full")).errorDescription
+                == LobbyError.lobbyFull.errorDescription)
+        #expect(LobbyError.from(FakeError(description: "PGRST202 Could not find the function")).errorDescription
+                == LobbyError.serverNotReady.errorDescription)
     }
 
     @Test("Gemischte Antworten sind für beide Spieler gleich (fester Seed)")

@@ -127,6 +127,16 @@
         }
       }
     },
+    "%@ haben das gewählt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ chose this"
+          }
+        }
+      }
+    },
     "%@ hat aufgegeben": {
       "localizations": {
         "en": {
@@ -193,6 +203,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ of %@"
+          }
+        }
+      }
+    },
+    "%@ wählt die nächste Runde aus…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is choosing the next round…"
           }
         }
       }
@@ -421,6 +441,16 @@
         }
       }
     },
+    "%lld haben schon geantwortet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld have already answered"
+          }
+        }
+      }
+    },
     "%lld neue Freundschaftsanfragen": {
       "localizations": {
         "en": {
@@ -571,6 +601,9 @@
           }
         }
       }
+    },
+    "+%lld": {
+      "shouldTranslate": false
     },
     "+%lld XP": {
       "shouldTranslate": false
@@ -1527,6 +1560,26 @@
         }
       }
     },
+    "Bis zu 10 Personen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up to 10 people"
+          }
+        }
+      }
+    },
+    "Bis zu 10 Personen können beitreten. Sobald mindestens zwei da sind, wählt der Host ein Quiz.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up to 10 people can join. Once at least two are there, the host picks a quiz."
+          }
+        }
+      }
+    },
     "Bist du absolut sicher?": {
       "localizations": {
         "en": {
@@ -1673,6 +1726,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enter code"
+          }
+        }
+      }
+    },
+    "Code für weitere Mitspieler": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code for more players"
           }
         }
       }
@@ -1987,12 +2050,42 @@
         }
       }
     },
+    "Deine letzte Runde wurde abgebrochen, weil du die Lobby verlassen hast.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your last round was cancelled because you left the lobby."
+          }
+        }
+      }
+    },
     "Der Duell-Server ist noch nicht eingerichtet (Migration 003 fehlt).": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The duel server isn’t set up yet (migration 003 missing)."
+          }
+        }
+      }
+    },
+    "Der Host": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The host"
+          }
+        }
+      }
+    },
+    "Der Lobby-Server ist noch nicht eingerichtet (Migration 012 fehlt).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The lobby server isn’t set up yet (migration 012 missing)."
           }
         }
       }
@@ -2097,6 +2190,16 @@
         }
       }
     },
+    "Diese Lobby ist bereits voll.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This lobby is already full."
+          }
+        }
+      }
+    },
     "Diesem Duell ist bereits jemand beigetreten.": {
       "localizations": {
         "en": {
@@ -2157,12 +2260,32 @@
         }
       }
     },
+    "Diesmal nicht – weiter geht's": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not this time – onward"
+          }
+        }
+      }
+    },
     "Direkt an der Fragenbox findest du einen blauen Kreis, über den du die Frage melden kannst.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Right at the question box you’ll find a blue circle you can use to report the question."
+          }
+        }
+      }
+    },
+    "Dritter Platz!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Third place!"
           }
         }
       }
@@ -2213,6 +2336,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "You haven’t played this quiz yet. Get started!"
+          }
+        }
+      }
+    },
+    "Du verlässt die Lobby und diese Runde zählt für dich als beendet.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You’ll leave the lobby and this round counts as over for you."
           }
         }
       }
@@ -2393,6 +2526,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "A rating or inviting friends helps us the most."
+          }
+        }
+      }
+    },
+    "Eine Lobby, mehrere Runden, auch mit wechselndem Quiz.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One lobby, several rounds, even with a different quiz each time."
           }
         }
       }
@@ -2604,6 +2747,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Create a duel and share the 6-digit code – or challenge someone directly from your friends list."
+          }
+        }
+      }
+    },
+    "Erstelle eine Lobby und teile den 6-stelligen Code – oder fordere jemanden direkt aus der Freundesliste heraus.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create a lobby and share the 6-digit code – or challenge someone directly from your friends list."
+          }
+        }
+      }
+    },
+    "Es läuft schon eine Runde.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A round is already running."
           }
         }
       }
@@ -2890,6 +3053,16 @@
         }
       }
     },
+    "Freund einladen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invite friend"
+          }
+        }
+      }
+    },
     "Freunde": {
       "localizations": {
         "en": {
@@ -3102,12 +3275,32 @@
         }
       }
     },
+    "Gewonnen! 🏆": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You won! 🏆"
+          }
+        }
+      }
+    },
     "Gib den 6-stelligen Code ein, den dir dein Freund geschickt hat.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Enter the 6-digit code your friend sent you."
+          }
+        }
+      }
+    },
+    "Gib den 6-stelligen Code ein, den dir jemand geschickt hat.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter the 6-digit code someone sent you."
           }
         }
       }
@@ -3232,6 +3425,16 @@
         }
       }
     },
+    "Host": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Host"
+          }
+        }
+      }
+    },
     "Häufige fragen": {
       "localizations": {
         "en": {
@@ -3268,6 +3471,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ideas, praise or wishes"
+          }
+        }
+      }
+    },
+    "Ihr bekommt alle dieselben Fragen und seht nach jeder, wer richtig lag.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You all get the same questions and see after each one who was right."
           }
         }
       }
@@ -3482,6 +3695,16 @@
         }
       }
     },
+    "Kein Pausieren: Wer die App länger als 30 Sekunden verlässt, ist draußen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No pausing: if you leave the app for more than 30 seconds, you’re out."
+          }
+        }
+      }
+    },
     "Kein offenes Duell mit diesem Code gefunden.": {
       "localizations": {
         "en": {
@@ -3570,6 +3793,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "No sent requests"
+          }
+        }
+      }
+    },
+    "Keine offene Lobby mit diesem Code gefunden.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No open lobby found with this code."
           }
         }
       }
@@ -3714,6 +3947,26 @@
         }
       }
     },
+    "Lass uns zusammen Quizzen! ⚔️ Öffne die App, tippe auf „Duell\" → „Beitreten\" und gib diesen Code ein: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let’s play Quizzen together! ⚔️ Open the app, tap “Duel” → “Join” and enter this code: %@"
+          }
+        }
+      }
+    },
+    "Lass uns zusammen Quizzen! ⚔️ Öffne die App, tippe auf „Duell“ → „Beitreten“ und gib diesen Code ein: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let’s play Quizzen together! ⚔️ Open the app, tap “Duel” → “Join” and enter this code: %@"
+          }
+        }
+      }
+    },
     "Lege in deinem Profil ein Land fest.": {
       "localizations": {
         "en": {
@@ -3798,6 +4051,56 @@
     },
     "Level und Streak": {
       "shouldTranslate": false
+    },
+    "Lobby": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lobby"
+          }
+        }
+      }
+    },
+    "Lobby erstellen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create lobby"
+          }
+        }
+      }
+    },
+    "Lobby konnte nicht erstellt werden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t create the lobby"
+          }
+        }
+      }
+    },
+    "Lobby verlassen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave lobby"
+          }
+        }
+      }
+    },
+    "Lobby wird erstellt…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creating lobby…"
+          }
+        }
+      }
     },
     "Löschen": {
       "localizations": {
@@ -3919,6 +4222,16 @@
         }
       }
     },
+    "Mitspieler (%lld/%lld)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Players (%lld/%lld)"
+          }
+        }
+      }
+    },
     "Mittel": {
       "localizations": {
         "en": {
@@ -3955,6 +4268,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wants to be your friend"
+          }
+        }
+      }
+    },
+    "Nach der Runde geht's zurück in die Lobby – weiter geht's mit einer neuen Runde, auch mit einem anderen Quiz.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After the round you’re back in the lobby – carry on with a new round, even with a different quiz."
           }
         }
       }
@@ -4131,6 +4454,16 @@
         }
       }
     },
+    "Noch %lld warten…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld more to go…"
+          }
+        }
+      }
+    },
     "Noch keine Abzeichen freigeschaltet.": {
       "localizations": {
         "en": {
@@ -4241,6 +4574,16 @@
         }
       }
     },
+    "Nur der Host kann das.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only the host can do that."
+          }
+        }
+      }
+    },
     "Nutze die Suche, um andere zu finden": {
       "extractionState": "stale",
       "localizations": {
@@ -4278,6 +4621,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Next question"
+          }
+        }
+      }
+    },
+    "Nächste Runde": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next round"
           }
         }
       }
@@ -4468,6 +4821,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Platinum"
+          }
+        }
+      }
+    },
+    "Platz %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rank %lld"
           }
         }
       }
@@ -4781,6 +5144,16 @@
         }
       }
     },
+    "Richtig! 🎯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correct! 🎯"
+          }
+        }
+      }
+    },
     "Richtige Antworten": {
       "localizations": {
         "en": {
@@ -4811,6 +5184,26 @@
         }
       }
     },
+    "Runde beendet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Round over"
+          }
+        }
+      }
+    },
+    "Runde wirklich aufgeben?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Really give up the round?"
+          }
+        }
+      }
+    },
     "Runden": {
       "localizations": {
         "en": {
@@ -4831,6 +5224,16 @@
         }
       }
     },
+    "Rundenergebnis": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Round result"
+          }
+        }
+      }
+    },
     "Rätselfreund": {
       "localizations": {
         "en": {
@@ -4847,6 +5250,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Close"
+          }
+        }
+      }
+    },
+    "Schon dabei": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Already in"
           }
         }
       }
@@ -5431,6 +5844,26 @@
         }
       }
     },
+    "Wartet noch auf Mitspieler…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for more players…"
+          }
+        }
+      }
+    },
+    "Wartet noch auf mindestens eine weitere Person.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for at least one more person."
+          }
+        }
+      }
+    },
     "Wartet…": {
       "localizations": {
         "en": {
@@ -5801,12 +6234,32 @@
         }
       }
     },
+    "Zurück zur Lobby": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back to lobby"
+          }
+        }
+      }
+    },
     "Zurückziehen": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Withdraw"
+          }
+        }
+      }
+    },
+    "Zweiter Platz!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Second place!"
           }
         }
       }

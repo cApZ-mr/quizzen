@@ -1,25 +1,26 @@
 //
-//  PvPGameView.swift
+//  LobbyGameView.swift
 //  IOS - Quizzen
 //
-//  Spielansicht im Duell. Alle Zustände kommen aus der PvPSession
-//  (Server-Wahrheit) – die View hält nur die Antwort-Reihenfolge.
+//  Spielansicht einer Lobby-Runde (bis zu 10 Personen). Alle Zustände
+//  kommen aus der LobbySession (Server-Wahrheit) – die View hält nur die
+//  Antwort-Reihenfolge.
 //
 
 import Foundation
 import SwiftUI
 
-struct PvPGameView: View {
-    @ObservedObject var session: PvPSession
+struct LobbyGameView: View {
+    @ObservedObject var session: LobbySession
 
     @State private var options: [QuizOption] = []
     @State private var optionsIndex: Int = -1
     @State private var pendingChoice: String?
 
     var body: some View {
-        VStack(spacing: 16) {
-            scoreBar
-            progressDots
+        VStack(spacing: 14) {
+            playersStrip
+            timerAndProgress
 
             if let question = session.currentQuestion {
                 questionCard(question)
@@ -36,7 +37,7 @@ struct PvPGameView: View {
         .padding(.bottom, 16)
         .onAppear(perform: prepareOptions)
         .onChange(of: session.currentIndex) { _, _ in prepareOptions() }
-        .onChange(of: session.match?.quiz_id) { _, _ in prepareOptions() }
+        .onChange(of: session.lobby?.quiz_id) { _, _ in prepareOptions() }
         .onChange(of: session.isRevealing) { _, revealing in
             guard revealing else { return }
             let correct = session.myCurrentAnswer?.is_correct ?? false
@@ -44,62 +45,71 @@ struct PvPGameView: View {
         }
     }
 
-    // MARK: Kopf: Spieler, Punkte, Timer
+    // MARK: Kopf: Mitspielende, Punkte, Timer
 
-    private var scoreBar: some View {
-        HStack(alignment: .center) {
-            playerScore(name: "Du", account: session.me, score: session.myScore,
-                        answered: session.myCurrentAnswer != nil, isMe: true)
-            Spacer()
-            timerRing
-            Spacer()
-            playerScore(name: session.opponentName, account: session.opponent, score: session.opponentScore,
-                        answered: session.opponentCurrentAnswer != nil, isMe: false)
+    /// Horizontaler Streifen aller Mitspielenden, nach Rundenpunkten sortiert, ich zuerst bei Gleichstand
+    private var playersStrip: some View {
+        let sorted = session.activeMembers.sorted { a, b in
+            let sa = session.roundScore(of: a.user_id), sb = session.roundScore(of: b.user_id)
+            if sa != sb { return sa > sb }
+            return a.user_id == session.myUserId
+        }
+        return ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 14) {
+                ForEach(sorted) { member in
+                    playerBadge(member)
+                }
+            }
+            .padding(.horizontal, 4)
         }
         .padding(.top, 8)
     }
 
-    private func playerScore(name: String, account: Account?, score: Int, answered: Bool, isMe: Bool) -> some View {
-        HStack(spacing: 10) {
-            if !isMe { scoreText(score, isMe: false) }
-            VStack(spacing: 4) {
-                AvatarView(username: account?.username ?? name, url: account?.avatarUrl, size: 42)
-                    .overlay(alignment: .bottomTrailing) {
-                        if answered && !session.isRevealing {
-                            Image(systemName: "checkmark.circle.fill")
-                                .font(.caption)
-                                .foregroundStyle(.white, .green)
-                                .offset(x: 3, y: 3)
-                                .transition(.scale)
-                        } else if !isMe && session.connection == .connected && !session.opponentOnline {
-                            Image(systemName: "wifi.slash")
-                                .font(.system(.caption2, weight: .bold))
-                                .foregroundStyle(.white)
-                                .padding(3)
-                                .background(Color.gray, in: Circle())
-                                .offset(x: 3, y: 3)
-                        }
-                    }
-                Text(name)
-                    .font(.caption.weight(.semibold))
-                    .lineLimit(1)
-                    .frame(maxWidth: 70)
+    private func playerBadge(_ member: LobbyMember) -> some View {
+        let isMe = member.user_id == session.myUserId
+        let answered = session.answer(of: member.user_id, at: session.currentIndex) != nil
+
+        return VStack(spacing: 4) {
+            ZStack(alignment: .bottomTrailing) {
+                AvatarView(username: member.username, url: member.avatar_url, size: isMe ? 46 : 38)
+                    .overlay(isMe ? Circle().stroke(Color.brandLight, lineWidth: 2) : nil)
+                if answered && !session.isRevealing {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.caption)
+                        .foregroundStyle(.white, .green)
+                        .offset(x: 3, y: 3)
+                        .transition(.scale)
+                } else if !isMe && session.connection == .connected && !session.isOnline(member.user_id) {
+                    Image(systemName: "wifi.slash")
+                        .font(.system(.caption2, weight: .bold))
+                        .foregroundStyle(.white)
+                        .padding(3)
+                        .background(Color.gray, in: Circle())
+                        .offset(x: 3, y: 3)
+                }
             }
-            if isMe { scoreText(score, isMe: true) }
+            Text(isMe ? String(localized: "Du") : member.username)
+                .font(.caption2.weight(.semibold))
+                .lineLimit(1)
+                .frame(maxWidth: 60)
+            Text("\(session.roundScore(of: member.user_id))")
+                .font(.subheadline.weight(.bold))
+                .foregroundStyle(isMe ? Color.brandLight : .secondary)
+                .contentTransition(.numericText())
+                .animation(.spring, value: session.roundScore(of: member.user_id))
         }
         .animation(.spring(duration: 0.3), value: answered)
     }
 
-    private func scoreText(_ score: Int, isMe: Bool) -> some View {
-        Text("\(score)")
-            .font(.system(.largeTitle, design: .rounded, weight: .black))
-            .foregroundStyle(isMe ? Color.brandLight : .primary)
-            .contentTransition(.numericText())
-            .animation(.spring, value: score)
+    private var timerAndProgress: some View {
+        VStack(spacing: 10) {
+            timerRing
+            progressDots
+        }
     }
 
     private var timerRing: some View {
-        let duration = Double(session.match?.duration ?? 20)
+        let duration = Double(session.lobby?.duration ?? 20)
         let remaining = session.remainingTime
         let fraction = duration > 0 ? remaining / duration : 0
         let color: Color = remaining <= 5 ? .red : (remaining <= 10 ? .orange : .brandLight)
@@ -138,7 +148,7 @@ struct PvPGameView: View {
         }
     }
 
-    private func dotColor(index: Int, answer: MatchAnswer?) -> Color {
+    private func dotColor(index: Int, answer: LobbyAnswer?) -> Color {
         if index == session.currentIndex && !session.isRevealing { return Color.brandLight }
         guard let answer, index < session.currentIndex || session.isRevealing else { return Color(.tertiarySystemFill) }
         return answer.is_correct ? .green : .red
@@ -185,10 +195,16 @@ struct PvPGameView: View {
         }
     }
 
+    /// Mitspielende (ohne mich), die während der Auflösung diese Antwort gewählt haben
+    private func othersWhoChose(_ text: String) -> [LobbyMember] {
+        guard session.isRevealing else { return [] }
+        return session.others.filter { session.answer(of: $0.user_id, at: session.currentIndex)?.answer == text }
+    }
+
     private func optionLabel(_ option: QuizOption) -> some View {
         let myChoice = session.myCurrentAnswer?.answer ?? pendingChoice
         let isMine = myChoice == option.text
-        let isOpponents = session.isRevealing && session.opponentCurrentAnswer?.answer == option.text
+        let pickers = othersWhoChose(option.text)
         let revealing = session.isRevealing
 
         let background: Color = {
@@ -207,10 +223,20 @@ struct PvPGameView: View {
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-            if isOpponents {
-                AvatarView(username: session.opponentName, url: session.opponent?.avatarUrl, size: 24)
-                    .overlay(Circle().stroke(.white, lineWidth: 1.5))
-                    .accessibilityLabel("\(session.opponentName) hat das gewählt")
+            if !pickers.isEmpty {
+                HStack(spacing: -10) {
+                    ForEach(pickers.prefix(4)) { picker in
+                        AvatarView(username: picker.username, url: picker.avatar_url, size: 24)
+                            .overlay(Circle().stroke(.white, lineWidth: 1.5))
+                    }
+                    if pickers.count > 4 {
+                        Text("+\(pickers.count - 4)")
+                            .font(.caption2.weight(.bold))
+                            .frame(width: 24, height: 24)
+                            .background(.white.opacity(0.3), in: Circle())
+                    }
+                }
+                .accessibilityLabel("\(pickers.map(\.username).joined(separator: ", ")) haben das gewählt")
             }
             if revealing && option.isCorrect {
                 Image(systemName: "checkmark.circle.fill")
@@ -222,31 +248,32 @@ struct PvPGameView: View {
         .padding(.vertical, 16)
         .foregroundStyle(foreground)
         .background(background, in: RoundedRectangle(cornerRadius: 16))
-        .opacity(revealing && !option.isCorrect && !isMine && !isOpponents ? 0.5 : 1)
+        .opacity(revealing && !option.isCorrect && !isMine && pickers.isEmpty ? 0.5 : 1)
         .animation(.easeInOut(duration: 0.2), value: revealing)
     }
 
     private var statusLine: some View {
-        Group {
+        let othersAnswered = session.othersAnswered(at: session.currentIndex)
+
+        return Group {
             if let error = session.errorMessage {
                 Label(error, systemImage: "exclamationmark.triangle.fill")
                     .foregroundStyle(.red)
                     .lineLimit(2)
             } else if session.isRevealing {
                 let me = session.myCurrentAnswer?.is_correct ?? false
-                let them = session.opponentCurrentAnswer?.is_correct ?? false
-                Text(revealText(me: me, them: them))
+                Text(me ? String(localized: "Richtig! 🎯") : String(localized: "Diesmal nicht – weiter geht's"))
                     .foregroundStyle(me ? .green : .secondary)
             } else if session.hasAnsweredCurrent || pendingChoice != nil {
                 HStack(spacing: 8) {
                     ProgressView().controlSize(.small)
-                    Text(session.opponentCurrentAnswer != nil
+                    Text(othersAnswered.count == session.others.count && !session.others.isEmpty
                          ? String(localized: "Auflösung kommt…")
-                         : String(localized: "Warte auf \(session.opponentName)…"))
+                         : String(localized: "Noch \(session.others.count - othersAnswered.count) warten…"))
                 }
                 .foregroundStyle(.secondary)
-            } else if session.opponentCurrentAnswer != nil {
-                Label("\(session.opponentName) hat schon geantwortet", systemImage: "bolt.fill")
+            } else if !othersAnswered.isEmpty {
+                Label(String(localized: "\(othersAnswered.count) haben schon geantwortet"), systemImage: "bolt.fill")
                     .foregroundStyle(.orange)
             } else {
                 Text(" ")
@@ -254,15 +281,8 @@ struct PvPGameView: View {
         }
         .font(.subheadline.weight(.medium))
         .frame(height: 22)
-    }
-
-    private func revealText(me: Bool, them: Bool) -> String {
-        switch (me, them) {
-        case (true, true):   String(localized: "Beide richtig! +1 für jeden")
-        case (true, false):  String(localized: "Punkt für dich! 🎯")
-        case (false, true):  String(localized: "Punkt für \(session.opponentName)")
-        case (false, false): String(localized: "Diesmal keiner richtig")
-        }
+        .lineLimit(1)
+        .minimumScaleFactor(0.8)
     }
 
     // MARK: Logik
@@ -278,14 +298,14 @@ struct PvPGameView: View {
         }
     }
 
-    /// Gleiche Reihenfolge der Antworten für beide Spieler (Seed = Match + Frage)
+    /// Gleiche Reihenfolge der Antworten für alle (Seed = Lobby + Runde + Frage)
     private func prepareOptions() {
         guard let question = session.currentQuestion, optionsIndex != session.currentIndex else { return }
         optionsIndex = session.currentIndex
         pendingChoice = nil
 
-        let seedBase = session.match?.id.uuidString.unicodeScalars.reduce(UInt64(0)) { $0 &* 31 &+ UInt64($1.value) } ?? 0
-        var rng = SeededRandom(seed: seedBase &+ UInt64(session.currentIndex))
+        let seedBase = session.lobby?.id.uuidString.unicodeScalars.reduce(UInt64(0)) { $0 &* 31 &+ UInt64($1.value) } ?? 0
+        var rng = SeededRandom(seed: seedBase &+ UInt64(session.lobby?.round_number ?? 0) &* 997 &+ UInt64(session.currentIndex))
         let base = question.options.enumerated().map { index, text in
             QuizOption(text: text, isCorrect: index == question.correctAnswerIndex)
         }

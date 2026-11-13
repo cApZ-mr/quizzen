@@ -83,12 +83,12 @@ struct QuizCatalogTests {
         #expect(QuizCatalog.wellKnownFlags.isSubset(of: codes), "Fehlend: \(QuizCatalog.wellKnownFlags.subtracting(codes))")
     }
 
-    @Test("Duell: gleicher Startwert erzeugt auf beiden Geräten dieselben Antworten", arguments: allQuizIds)
+    @Test("Lobby-Runde: gleicher Startwert erzeugt auf allen Geräten dieselben Antworten", arguments: allQuizIds)
     func duelQuestionsAreDeterministic(quizId: String) throws {
         let definition = try #require(QuizCatalog.definition(for: quizId))
-        let matchId = UUID()
+        let lobbyId = UUID()
         for index in 0..<min(5, definition.items.count) {
-            let seed = PvPSession.seed(matchId: matchId, index: index)
+            let seed = LobbySession.seed(lobbyId: lobbyId, round: 1, index: index)
             var deviceA = SeededGenerator(seed: seed)
             var deviceB = SeededGenerator(seed: seed)
             let a = definition.makeQuestion(for: definition.items[index], answerCount: 4, distractors: .random, using: &deviceA)
