@@ -27,6 +27,7 @@ struct MainView: View {
                 MainAppContainer()
             } else if splashScreen || authViewModel.isLoading {
                 SplashScreen()
+                    .transition(.opacity.combined(with: .scale(scale: 1.12)))
             } else {
                 if authViewModel.isLoggedIn {
                     MainAppContainer()
@@ -52,10 +53,11 @@ struct MainView: View {
             }
         }
         .task {
-            // Splash höchstens 0,5 s zeigen, egal wie lange der Versions-Check braucht.
+            // Splash so lange zeigen, bis die Animation durch ist (≈ 1,4 s),
+            // egal wie lange der Versions-Check braucht.
             async let release = AppVersionService.requiredUpdate()
-            try? await Task.sleep(for: .milliseconds(500))
-            withAnimation { splashScreen = false }
+            try? await Task.sleep(for: .milliseconds(1450))
+            withAnimation(.easeInOut(duration: 0.35)) { splashScreen = false }
             requiredUpdate = await release
         }
         .onChange(of: scenePhase) { _, phase in
