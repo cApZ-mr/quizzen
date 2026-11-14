@@ -19,7 +19,7 @@ struct MainAppContainer: View {
             }
 
             Tab("Duell", systemImage: "bolt.fill", value: AppTab.duel) {
-                PvPLobbyView()
+                LobbyHubView()
             }
 
             Tab("Bestenliste", systemImage: "trophy", value: AppTab.leaderboard) {

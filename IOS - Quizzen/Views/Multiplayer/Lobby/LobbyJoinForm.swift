@@ -1,16 +1,14 @@
 //
-//  PvPGuestLobbyView.swift
+//  LobbyJoinForm.swift
 //  IOS - Quizzen
 //
-//  Created by Malte Rein on 11.07.26.
-//
-//  Code-Eingabe zum Beitreten eines Duells.
+//  Code-Eingabe zum Beitreten einer Lobby.
 //
 
 import SwiftUI
 
-struct PvPJoinForm: View {
-    @ObservedObject var session: PvPSession
+struct LobbyJoinForm: View {
+    @ObservedObject var session: LobbySession
 
     @State private var code = ""
     @FocusState private var isFocused: Bool
@@ -25,7 +23,7 @@ struct PvPJoinForm: View {
                     .background(Color.purple.gradient, in: Circle())
                 Text("Code eingeben")
                     .font(.title2.bold())
-                Text("Gib den 6-stelligen Code ein, den dir dein Freund geschickt hat.")
+                Text("Gib den 6-stelligen Code ein, den dir jemand geschickt hat.")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
@@ -42,7 +40,7 @@ struct PvPJoinForm: View {
             }
 
             Button {
-                Task { await session.joinMatch(code: code) }
+                Task { await session.joinLobby(code: code) }
             } label: {
                 Group {
                     if session.isBusy {
@@ -63,15 +61,7 @@ struct PvPJoinForm: View {
             Spacer()
         }
         .padding(.horizontal, 24)
-        .onAppear {
-            isFocused = true
-            #if DEBUG
-            // `-debugJoinCode 123456`: Code vorbelegen (UI-Test im Simulator)
-            if let debugCode = UserDefaults.standard.string(forKey: "debugJoinCode"), code.isEmpty {
-                code = debugCode
-            }
-            #endif
-        }
+        .onAppear { isFocused = true }
     }
 
     /// Sechs einzelne Kästchen über einem unsichtbaren Textfeld
@@ -87,7 +77,7 @@ struct PvPJoinForm: View {
                     code = String(digits.prefix(6))
                     session.errorMessage = nil
                     if code.count == 6 && !session.isBusy {
-                        Task { await session.joinMatch(code: code) }
+                        Task { await session.joinLobby(code: code) }
                     }
                 }
 
