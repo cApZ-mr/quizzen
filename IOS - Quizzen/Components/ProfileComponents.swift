@@ -110,7 +110,7 @@ struct ProfileLevelCard: View {
                 .tint(level.color)
 
             Text(showsHowToEarn
-                 ? String(localized: "Noch \((level.xpForNextLevel - level.xpIntoLevel).formatted()) XP bis Level \(level.level + 1) · \(PlayerLevel.xpPerCorrectAnswer) XP pro richtiger Antwort, \(PlayerLevel.xpPerRound) XP pro Runde")
+                 ? String(localized: "Noch \((level.xpForNextLevel - level.xpIntoLevel).formatted()) XP bis Level \(level.level + 1)")
                  : String(localized: "Noch \((level.xpForNextLevel - level.xpIntoLevel).formatted()) XP bis Level \(level.level + 1)"))
                 .font(.caption)
                 .foregroundStyle(.secondary)
