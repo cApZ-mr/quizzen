@@ -23,8 +23,16 @@ struct IOS___Quizzen: App {
                 .preferredColorScheme(.dark)
         }
         .onChange(of: scenePhase) { _, phase in
-            if phase == .background {
+            switch phase {
+            case .active:
+                // Streak kann über Nacht abgelaufen sein, während die App im
+                // Hintergrund lag – ohne Neustart würde sonst der veraltete
+                // Wert weiter angezeigt.
+                statsManager.globalManager.updateStreakIfNeeded()
+            case .background:
                 StreakReminder.reschedule(stats: statsManager.globalManager.stats)
+            default:
+                break
             }
         }
     }
