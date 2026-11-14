@@ -52,16 +52,7 @@ struct LoginView: View {
                         .background(Color.white.opacity(0.08))
                         .cornerRadius(14)
 
-                        HStack(spacing: 12) {
-                            Image(systemName: "lock.fill")
-                                .foregroundColor(.white.opacity(0.6))
-                                .frame(width: 20)
-                            SecureField("", text: $password, prompt: Text("Passwort").foregroundColor(.white.opacity(0.4)))
-                                .foregroundColor(.white)
-                        }
-                        .padding(16)
-                        .background(Color.white.opacity(0.08))
-                        .cornerRadius(14)
+                        PasswordField(text: $password, textContentType: .password)
                     }
                     .padding(.horizontal, 24)
                 }
